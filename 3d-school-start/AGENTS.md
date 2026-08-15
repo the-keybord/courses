@@ -23,3 +23,4 @@ This file complements the global repository [`AGENTS.md`](../AGENTS.md) with rul
    7. **Joc Quiz / Evaluare interactivă** (Interactive quiz game on the topic studied).
    8. **Colectarea obiectelor imprimate & Fotografie de grup** (Collect printed objects and group photo).
 3. **Print Workflow**: Almost every lesson results in a 3D printed object, but for optimal time management, models created during lesson N are typically printed and collected at the beginning of lesson N+1.
+4. **Rich, Elaborate & Human Style**: The `README.md` for each lesson must be written in a comprehensive, elaborate, essay-like format. Explanations must be warm, deeply informative, human, and engaging, guiding both the instructor and students through the narrative of the 3D domain.
