@@ -1,11 +1,11 @@
 # 3D School Start
 
-Bine ați venit la cursul **3D School Start**! Acest curs este creat special pentru copii, oferindu-le o introducere captivantă în lumea imprimării 3D, a modelării spațiale și a designului digital.
+Bine ați venit la cursul **3D School Start**! Acest curs este creat special pentru copii cu vârste între **10 și 12 ani**, oferindu-le o introducere captivantă în lumea imprimării 3D, a modelării spațiale și a designului digital.
 
 ---
 
 ## 🎯 Conceptul Cursului
-- **Public Țintă**: Copii pasionați de tehnologie, creație și design (vârste recomandate: 8-14 ani).
+- **Grupa de Vârstă**: **10-12 ani** (limbaj adaptat, concepte tehnice accesibile și proiecte interactive).
 - **Durată Lecție**: **120 minute (2 ore)** per lecție.
 - **Structură Generală**: Cursul cuprinde **4 Module Principale**. În prezent lucrăm la **Modulul 1 (9 Lecții)**.
 - **Circuitul Imprimării 3D**: Obiectele modelate la lecția $N$ sunt imprimate și colectate de elevi la începutul lecției $N+1$.

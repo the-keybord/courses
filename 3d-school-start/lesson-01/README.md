@@ -3,6 +3,7 @@
 ---
 
 ## ⏱️ Detalii Lecție
+- **Grupa de Vârstă**: 10 - 12 ani
 - **Durată**: 120 minute (2 ore)
 - **Modul**: Modulul 1 (Lecția 1 din 9)
 - **Obiect Proiectat**: Breloc 3D personalizat cu nume

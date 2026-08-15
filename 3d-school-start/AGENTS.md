@@ -4,9 +4,9 @@ This file complements the global repository [`AGENTS.md`](../AGENTS.md) with rul
 
 ## Course Context & Architecture
 - **Course Name**: 3D School Start
+- **Target Age Group**: **10-12 years old** (Core fact - tone, explanations, and project complexity must be tailored specifically for ages 10-12).
 - **Course Modules**: 4 major modules overall. We are currently working on **Module 1 (9 lessons total)**.
 - **Lesson Duration**: Each lesson is **120 minutes** (2 hours).
-- **Target Audience**: Kids learning 3D modeling, design, and spatial thinking.
 
 ## Language Rules
 - **Course Content**: All lesson plans, course concepts, activities, presentations, and quizzes must be created in **Romanian**.
