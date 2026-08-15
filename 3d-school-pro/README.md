@@ -5,10 +5,10 @@ Bine ați venit la cursul **3D School Pro**! Acest curs este dezvoltat special p
 ---
 
 ## 🎯 Conceptul Cursului
-- **Grupa de Vârstă**: **12-14 ani** (concepte tehnice aprofundate, inginerie aplicată și proiecte complexe).
+- **Grupa de Vârstă**: **12-14 ani** (concepte tehnice aprofundate, inginerie aplicată, fișe tehnice și proiecte complexe).
 - **Durată Lecție**: **120 minute (2 ore)** per lecție.
 - **Structură Generală**: Cursul cuprinde **4 Module Principale**. În prezent lucrăm la **Modulul 1 (9 Lecții)**.
-- **Circuitul Imprimării 3D**: Obiectele modelate la lecția $N$ sunt imprimate și colectate de elevi la începutul lecției $N+1$.
+- **Circuitul Imprimării 3D**: Obiectele modelate la lecția $N$ sunt imprimate și colectate de elevi la începutul lecției $N+1$ *(cu excepția Lecției 01 care beneficiază de imprimare instantă pe loc!)*.
 
 ---
 
@@ -25,13 +25,17 @@ Fiecare lecție respectă un flux clar în 8 etape:
 
 ---
 
-## 📚 Modulul 1: Modulul 1 (9 Lecții)
+## 📚 Modulul 1: Bazele Imprimării 3D Pro, Slicing & Modelare Tehnică (9 Lecții)
 
-### 🔹 [Lecția 01: În Așteptare (Lecție în curs de introducere)](lesson-01/README.md)
-- **Descriere pe scurt**: *(Detalii în curs de adăugare de către instructor)*
+### 🔹 [Lecția 01: Introducere în Imprimarea 3D Pro, Ingineria Slicing-ului și Modelare în Tinkercad](lesson-01/README.md)
+- **Descriere pe scurt**: Explorăm istoria imprimării 3D (Chuck Hull, Scott Crump, RepRap), analizăm specificațiile modelelor legendare (SLA-1, Prusa MK3S+, Ender 3 V2, Bambu Lab X1C), descoperim ingineria din spatele softurilor de Slicing (G-code, layer height, infill, temp, viteze, suporturi) și polimerii FDM (PLA, PETG, TPU, ABS).
+- **Proiect Practic**: Proiectarea a 2 brelocuri personalizate (unul imprimat instant în timpul lecției și al doilea pregătit drept cadou pentru Lecția 02).
 - **Director Lecție**: [`lesson-01/`](lesson-01/)
 
 ### 🔹 Lecția 02: *(În curând)*
+- **Descriere pe scurt**: Colectare brelocuri cadou din Lecția 01 + subiectul Lecției 02.
+- **Director Lecție**: [`lesson-02/`](lesson-02/)
+
 ### 🔹 Lecția 03: *(În curând)*
 ### 🔹 Lecția 04: *(În curând)*
 ### 🔹 Lecția 05: *(În curând)*
@@ -43,4 +47,4 @@ Fiecare lecție respectă un flux clar în 8 etape:
 ---
 
 ## 🔗 Resurse Generale
-- [Planul Lecției 01](lesson-01/README.md)
+- [Planul Complet al Lecției 01](lesson-01/README.md)
