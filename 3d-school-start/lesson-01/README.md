@@ -2,9 +2,14 @@
 
 ---
 
-## ❓ Întrebări Esențiale (Obiectivele Lecției)
+## ⏱️ Detalii Lecție
+- **Durată**: 120 minute (2 ore)
+- **Modul**: Modulul 1 (Lecția 1 din 9)
+- **Obiect Proiectat**: Breloc 3D personalizat cu nume
 
-Această lecție este construită în jurul a 5 întrebări cheie care vor ghida explorarea noastră:
+---
+
+## ❓ Întrebări Esențiale (Obiectivele Lecției)
 
 1. **Când au fost inventate imprimantele 3D?**
 2. **Ce tipuri de imprimante 3D există?**
@@ -14,68 +19,45 @@ Această lecție este construită în jurul a 5 întrebări cheie care vor ghida
 
 ---
 
-## 📘 Concepte Teoretice & Explicații
+## 🕒 Structura Lecției (Planul de 120 Minute)
 
-### 1. Istoria Imprimării 3D: Când a început totul?
-* Imprimarea 3D a fost inventată în **1983** de către **Chuck Hull**, care a creat prima tehnologie de imprimare 3D numită *Stereolitografie (SLA)*.
-* Primul obiect imprimat 3D din istorie a fost o mică cupă de spălare oculară!
+### 1. Colectarea modelelor din lecția anterioară (10 min)
+* Fiind prima lecție din curs, facem cunoștință, prezentăm atelierul 3D și explicăm cum vor fi colectate obiectele imprimate începând cu lecția următoare.
 
-### 2. Tipurile Principale de Imprimante 3D
-* **FDM (Fused Deposition Modeling / Depunere de Filament Topit)**: Cea mai populară și utilizată tehnologie pentru copii și școli. Imprimanta topește un fir din plastic (filament) și îl depune strat peste strat.
-* **SLA (Stereolithography / Rășină Lichidă)**: Folosește un laser sau un ecran UV pentru a întări o rășină lichidă. Produce obiecte extrem de detaliate.
-* **SLS (Selective Laser Sintering / Pulbere)**: Folosește un laser puternic pentru a topi pulbere de plastic sau metal. Este folosită în industrie.
+### 2. Pregătirea și pornirea imprimării 3D (10 min)
+* Profesorul pregătește imprimanta 3D FDM de demonstrație și arată elevilor cum se alimentează filamentul PLA.
 
-### 3. Modele Celebre de Imprimante 3D de-a Lungul Timpului
-* **SLA-1 (1987)**: Prima imprimantă 3D comercială din lume.
-* **Proiectul RepRap (2005)**: O mișcare revoluționară de imprimante 3D care își puteau imprima singure propriile piese de schimb.
-* **Prusa i3 (2012)**: Unul dintre cele mai populare modele FDM din istorie, deschis și ușor de construit.
-* **Ender 3 (2018)**: Imprimanta 3D care a adus imprimarea 3D în casele a milioane de pasionați.
-* **Bambu Lab (Anii 2020)**: Imprimante moderne ultra-rapide și inteligente.
+### 3. Descoperirea noii teme & Vizionarea prezentării (25 min)
+* **Istoria 3D**: Chuck Hull, 1983 (Stereolitografie).
+* **Tipurile de imprimante**: FDM (filament topit), SLA (rășină lichidă), SLS (pulbere).
+* **Modele celebre**: SLA-1 (1987), RepRap (2005), Prusa i3 (2012), Ender 3 (2018), Bambu Lab.
+* **Mecanismul FDM**: Axe X, Y, Z, extrudor și depunerea strat cu strat.
+* **Materiale**: De ce folosim PLA (ecologic, non-toxic, din porumb).
 
-### 4. Cum Funcționează o Imprimantă 3D FDM?
-Gândește-te la o imprimantă 3D ca la un stilou cu lipici fierbinte atașat de un robot precis!
-* **Axa X, Y și Z**: Robotul se mișcă la stânga/dreapta (X), înainte/înapoi (Y) și urcă strat cu strat în sus (Z).
-* **Extrudorul & Duza**: Firul de plastic este împins într-un cap fierbinte (unde se topește la ~200°C) și este depus fin pe placa de imprimare.
+### 4. Pauză scurtă & Prezență (10 min)
+* Pauză de relaxare și hidratare pentru elevi + strigarea prezenței.
 
-### 5. Cum Alegem Materialele de Imprimare?
-* **PLA (Acid Polilactic)**: **Materialul ideal pentru copii!** Este realizat din resurse regenerabile (amidon de porumb sau trestie de zahăr), nu emană mirosuri toxice și este foarte ușor de imprimat.
-* **PETG**: Mai rezistent la apă și impact, grozav pentru obiecte utilizate în exterior.
-* **TPU**: Un material flexibil și cauciucat (perfect pentru huse de telefon sau roți mici).
-* **ABS**: Plastic dur, rezistent la căldură, dar necesită o imprimantă închisă din cauza vaporilor.
+### 5. Demonstrația profesorului în Tinkercad (15 min)
+* Profesorul proiectează live pe ecran brelocul pas cu pas:
+  - Crearea bazei dreptunghiulare (50x20x3 mm).
+  - Adăugarea cilindrului de tip *Hole* pentru gaură.
+  - Adăugarea textului 3D cu numele.
+  - Gruparea elementelor (`Ctrl + G`).
 
----
+### 6. Lucru individual pe propriul proiect (30 min)
+* Elevii se conectează în clasa Tinkercad și creează propriul breloc personalizat.
+* Profesorul oferă asistență individuală pentru ajustarea dimensiunilor și poziționarea numelui.
 
-## 🛠️ Activități Practice (Task-uri)
+### 7. Joc Quiz / Evaluare interactivă (10 min)
+* Joc Quiz scurt și distractiv pentru fixarea cunoștințelor despre istoria 3D, axe, tipuri de imprimante și PLA.
 
-### Task 1: Înscrierea în Clasa Tinkercad
-1. Deschideți browser-ul și accesați [Tinkercad.com](https://www.tinkercad.com).
-2. Apăsați pe **Join Class (Alătură-te clasei)**.
-3. Introduceți codul clasei furnizat de profesor și nickname-ul vostru unic.
-
-### Task 2: Explorarea Formelor în Spatial 3D
-1. Creați un proiect nou apăsând butonul **New > 3D Design**.
-2. Trageți forme geometrice de bază din panoul din dreapta pe spațiul de lucru (*Workplane*): cuburi, sfere, cilindri și conuri.
-3. Exersați:
-   - **Rotirea camerei**: Click dreapta + tragere cu mouse-ul.
-   - **Redimensionarea**: Tragerea de colțurile albe și negre.
-   - **Ridicarea obiectelor**: Tragerea de conul negru de deasupra obiectului.
-
-### Task 3: Proiectarea Brelocului Personalizat
-1. **Baza brelocului**: Adăugați o piesă plată (un paralelipiped) cu dimensiunile aproximative de **50mm lungime, 20mm lățime și 3mm înălțime**.
-2. **Gaura pentru inel**: Trageți un cilindru de tip *Hole (Gaură)* de dimensiuni mici (ex: 5mm x 5mm) și plasați-l la unul dintre capetele brelocului.
-3. **Adăugarea numelui**: Folosiți instrumentul **Text**, scrieți prenumele vostru și plasați-l deasupra bazei brelocului.
-4. **Gruparea**: Selectați toate elementele (baza, gaura și textul) și apăsați butonul **Group (Ctrl + G)**.
-
----
-
-## 🎓 Obiectul Imprimat Final
-
-* **Rezultat**: Un breloc personalizat cu numele elevului, gata de atașat la ghiozdan!
-* **Urmărirea Imprimării**: Elevii vor urmări imprimanta 3D în timp real cum creează primele straturi ale brelocului creat de ei.
+### 8. Colectarea obiectelor & Fotografie de grup (10 min)
+* Salvarea fișierelor STL pentru imprimare (modelele vor fi imprimate pentru a fi ridicate la începutul Lecției 02).
+* Fotografie de grup a clasei la prima lecție!
 
 ---
 
 ## 📁 Materiale & Resurse Lecție
-- [Prezentare Slides (PDF/PPT)](#) *(Link către prezentare)*
-- [Kviz Verificare Cunoștințe](#) *(Link către chestionar)*
-- [Fișă de Lucru Tinkercad](#) *(Link către ghidul pas cu pas)*
+- [Prezentare Slides (PDF/PPT)](#)
+- [Joc Quiz Interactiv](#)
+- [Ghid Pas cu Pas Tinkercad](#)
