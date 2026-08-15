@@ -26,6 +26,10 @@ This file contains instructions and guidelines for AI agents working in this rep
 - **Hierarchical Inheritance**: Global guidelines are defined here in the root `AGENTS.md`.
 - **Course-Level `AGENTS.md`**: Individual course directories can contain their own `AGENTS.md` file. These local rule files complement (rather than overwrite) the global rules, providing specific context (e.g., target programming languages, tools used, or age group nuances specific to that course).
 
+### 5. Language Guidelines
+- **Course Materials**: All course content, lesson plans, presentations, quizzes, worksheets, activities, and student explanations must be written in **Romanian**.
+- **Agent Communication & Meta**: Agent rules, commit messages, code comments (where applicable), and chat conversations with the user are conducted in **English**.
+
 ---
 
 ## Additional Rules
