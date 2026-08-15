@@ -22,6 +22,10 @@ This file contains instructions and guidelines for AI agents working in this rep
 - **Lesson Overviews**: The master file must include a concise summary / short description of every lesson in the course.
 - **Lesson Links**: The master file must feature clear markdown links pointing to each lesson's directory and main lesson plan file.
 
+### 4. Course-Specific Agent Rules
+- **Hierarchical Inheritance**: Global guidelines are defined here in the root `AGENTS.md`.
+- **Course-Level `AGENTS.md`**: Individual course directories can contain their own `AGENTS.md` file. These local rule files complement (rather than overwrite) the global rules, providing specific context (e.g., target programming languages, tools used, or age group nuances specific to that course).
+
 ---
 
 ## Additional Rules
