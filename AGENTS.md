@@ -30,6 +30,11 @@ This file contains instructions and guidelines for AI agents working in this rep
 - **Course Materials**: All course content, lesson plans, presentations, quizzes, worksheets, activities, and student explanations must be written in **Romanian**.
 - **Agent Communication & Meta**: Agent rules, commit messages, code comments (where applicable), and chat conversations with the user are conducted in **English**.
 
+### 6. Lesson Content & Writing Style (Storytelling & Essay Format)
+- **Elaborate Narrative Style**: All lesson `README.md` files must be written in a rich, elaborate, essay-like narrative format.
+- **Deep Explanations & Storytelling**: Avoid brief bullet points or sparse summaries for lesson content. Explanations must be warm, human, highly detailed, and structured like an engaging story or immersive educational essay tailored to the course's target age group.
+- **Explicit & Comprehensive**: Theoretical concepts, step-by-step teacher guides, and student practical tasks must be explicitly detailed so instructors can deliver the lesson seamlessly.
+
 ---
 
 ## Additional Rules
