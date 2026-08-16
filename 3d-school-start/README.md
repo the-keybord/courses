@@ -8,7 +8,7 @@ Bine ați venit la cursul **3D School Start**! Acest curs este creat special pen
 - **Grupa de Vârstă**: **10-12 ani** (limbaj adaptat, concepte tehnice accesibile și proiecte interactive).
 - **Durată Lecție**: **120 minute (2 ore)** per lecție.
 - **Structură Generală**: Cursul cuprinde **4 Module Principale**. În prezent lucrăm la **Modulul 1 (9 Lecții)**.
-- **Circuitul Imprimării 3D**: Obiectele modelate la lecția $N$ sunt imprimate și colectate de elevi la începutul lecției $N+1$.
+- **Circuitul Imprimării 3D**: Obiectele modelate la lecția $N$ sunt imprimate și colectate de elevi la începutul lecției $N+1$ *(cu excepția Lecției 01 care beneficiază de o imprimare festivă instantă pe loc, pregătind totodată al doilea obiect pentru intrarea în ritmul anual!)*.
 
 ---
 
@@ -28,8 +28,8 @@ Fiecare lecție respectă un flux clar în 8 etape:
 ## 📚 Modulul 1: Bazele Imprimării 3D și Modelării în Tinkercad (9 Lecții)
 
 ### 🔹 [Lecția 01: Introducere în Imprimarea 3D și Modelare în Tinkercad](lesson-01/README.md)
-- **Descriere pe scurt**: Descoperim istoria imprimantelor 3D, tipurile de imprimante (FDM, SLA, SLS), materialele folosite (PLA) și modul de lucru al unei imprimante. Învățăm primul program de modelare 3D (Tinkercad) și proiectăm primul obiect real: un breloc personalizat cu nume!
-- **Obiect Proiectat**: Breloc 3D personalizat (colectat la Lecția 02).
+- **Descriere pe scurt**: Descoperim istoria imprimantelor 3D (Chuck Hull, 1983), tipurile de imprimante (FDM, SLA, SLS), materialele folosite (PLA) și modul de lucru al unei imprimante. Învățăm Tinkercad și proiectăm primul obiect real.
+- **Proiect Practic**: Proiectarea a 2 brelocuri personalizate (unul imprimat instant în timpul lecției 01 și al doilea pregătit pentru a fi colectat la Lecția 02).
 - **Director Lecție**: [`lesson-01/`](lesson-01/)
 
 ### 🔹 Lecția 02: *(În curând)*

@@ -6,8 +6,8 @@
 - **Grupa de Vârstă**: 10 – 12 ani
 - **Durată Totală**: 120 minute (2 ore pline de descoperiri)
 - **Modulul**: Modulul 1 – *Bazele Modelării 3D și Tehnologiei FDM* (Lecția 1 din 9)
-- **Proiect Practic**: Proiectarea unui breloc 3D personalizat cu nume
-- **Obiect Fizic**: Breloc imprimat 3D din plastic ecologic PLA (colectat la începutul Lecției 02)
+- **Proiect Practic**: Proiectarea a 2 brelocuri personalizate (unul imprimat pe loc și unul pregătit pentru lecția viitoare)
+- **Excepție Specială Imprimare**: *Această prima lecție este o excepție de la program! Pentru a intra în ritmul întregului an școlar, copiii vor imprima primul breloc pe loc în timpul lecției pentru a pleca acasă cu el, pregătind totodată un al doilea model 3D ce va fi imprimat pentru a fi colectat la Lecția 02.*
 
 ---
 
@@ -81,16 +81,18 @@ Când alegem ce plastic să folosim, trebuie să ne gândim la siguranță, medi
 
 ## ⏱️ Desfășurarea Lecției Pas cu Pas (Planul de 120 Minute)
 
+> ⚠️ **Notă Excepție Lecția 01**: În această prima lecție, lansăm imprimările **pe loc** (Instant Print) pentru primul breloc personalizat, iar elevii vor pregăti un al doilea model 3D ce va fi imprimat pentru a fi colectat la Lecția 02. Această excepție le permite copiilor să simtă magia imprimării pe loc și instalează ritmul anual al cursurilor!
+
 | Minut | Etapă | Activitate Detaliată & Ghid pentru Profesor |
 | :--- | :--- | :--- |
-| **00 - 10 min** | **1. Bun Venit & Introducere** | Primirea elevilor. Profesorul explică comunitatea 3D și faptul că obiectele proiectate la fiecare lecție vor fi colectate proaspăt imprimate la începutul lecției următoare. |
+| **00 - 10 min** | **1. Bun Venit & Introducere** | Primirea elevilor. Profesorul explică comunitatea 3D și faptul că prima lecție este o excepție festivă în care vor imprima pe loc primul obiect, intrând în ritmul de ridicare a proiectelor la lecțiile viitoare. |
 | **10 - 20 min** | **2. Pregătirea Imprimantei Demo** | Profesorul pornește imprimanta 3D FDM din clasă, arată cum se introduce filamentul PLA și cum se încălzește duza la 200°C. Elevii observă îndeaproape extrudarea plasticului. |
 | **20 - 45 min** | **3. Prezentare & Discuție Interactivă** | Parcurgerea prezentării vizuale. Se discută despre Chuck Hull, cele 3 tehnologii (FDM, SLA, SLS), axele X, Y, Z și materialul PLA. Elevii adresează întrebări și ating mostre de plastice. |
 | **45 - 55 min** | **4. Pauză & Prezență** | Pauză de 10 minute pentru hidratare și relaxare. Verificarea și strigarea prezenței elevilor. |
 | **55 - 70 min** | **5. Demonstrația Live în Tinkercad** | Profesorul proiectează ecranul pe videoproiector și construiește pas cu pas brelocul personalizat, explicând fiecare comandă de navigare și modificare. |
-| **70 - 100 min** | **6. Lucru Practic Individual** | Elevii intră pe Tinkercad în conturile lor de clasă și își proiectează propriul breloc. Profesorul circulă prin clasă oferind asistență individuală. |
-| **100 - 110 min** | **7. Joc Quiz Interactiv** | Joc rapid de verificare a cunoștințelor (întrebări grilă despre 1983, FDM, PLA, axe și comenzi Tinkercad). |
-| **110 - 120 min** | **8. Încheiere & Poza de Grup** | Salvarea modelelor în format STL pentru imprimare. Fotografie de grup cu clasa pregătită pentru marele start 3D! |
+| **70 - 100 min** | **6. Lucru Practic: 2 Brelocuri Personalizate** | **Task 1**: Crearea brelocului primar cu nume (trimis la imprimantă pentru imprimare instantă pe loc).<br>**Task 2**: Proiectarea unui al doilea model / breloc cadou ce va fi imprimat pentru a intra în ritmul colectării la Lecția 02. |
+| **100 - 110 min** | **7. Joc Quiz Interactiv** | Joc Quiz scurt și distractiv pentru fixarea cunoștințelor despre istoria 3D, axe, tipuri de imprimante și PLA. |
+| **110 - 120 min** | **8. Colectarea Imprimării pe Loc & Poză de Grup** | Ridicarea primului breloc proaspăt imprimat pe loc și realizarea fotografiei de grup de deschidere! |
 
 ---
 
@@ -117,17 +119,20 @@ Când alegem ce plastic să folosim, trebuie să ne gândim la siguranță, medi
 2. Modificați dimensiunile cilindrului la `6 mm x 6 mm` înălțime `5 mm`.
 3. Plasați cilindrul la capătul din stânga al bazei dreptunghiulare, asigurându-vă că trece complet prin placă.
 
-### Pasul 5: Adăugarea Textului Personalizat
+### Pasul 5: Adăugarea Textului Personalizat & Exportul Instant
 1. Din panoul din dreapta, selectați forma **Text**.
 2. În fereastra de opțiuni a textului, scrieți prenumele vostru (ex: `ALEX` sau `MARIA`).
-3. Redimensionați textul pentru a se potrivi frumos pe plăcuță și setați înălțimea acestuia pe axa Z la `5 mm` (astfel încât numele să iasă în relief cu 2 mm deasupra bazei).
+3. Redimensionați textul pentru a se potrivi frumos pe plăcuță și setați înălțimea acestuia pe axa Z la `5 mm`.
+4. Selectați toate obiectele (`Ctrl + A`) și apăsați **Group (`Ctrl + G`)**.
+5. Exportați fișierul `.STL` pentru imprimarea pe loc din timpul clasei!
 
-### Pasul 6: Îmbinarea și Gruparea Finală (`Ctrl + G`)
-1. Selectați toate obiectele de pe ecran trăgând un dreptunghi de selecție cu mouse-ul peste ele (sau apăsați `Ctrl + A`).
-2. Apăsați butonul **Group** din bara de sus (sau combinația de taste `Ctrl + G`).
-3. Obiectul se va unifica! Gaura va perfora placa, iar textul va deveni o singură piesă solidă alături de bază.
+### Pasul 6: Pregătirea Proiectului pentru Lecția 02 (Intrarea în Ritm)
+1. Creați un al doilea proiect numit `Breloc_Cadou_Lectia02`.
+2. Proiectați un al doilea model personalizat pentru o persoană dragă (prieten/familie).
+3. Exportați fișierul `.STL` ce va fi pus în coada de imprimare pentru a fi ridicat festiv la începutul Lecției 02!
 
 ---
 
-## 🏆 Rezultatul Final și Pregătirea Imprimării
-Fiecare elev va obține un fișier 3D perfect optimizat pentru imprimare. Profesorul va descărca fișierele STL, le va introduce în softul de slicing (cum ar fi PrusaSlicer sau Bambu Studio) și va lansa imprimarea pe parcursul zilei. La **Lecția 02**, prima etapă va fi înmânarea festivă a brelocurilor fizice realizate!
+## 🏆 Rezultatul Final și Intrarea în Ritmul Anual
+- **Rezultat Lecția 01**: Elevii pleacă acasă încântați cu primul lor breloc 3D imprimat pe loc!
+- **Pregătire Lecția 02**: Al doilea proiect este pregătit pe slicer, garantând o tranziție lină în ritmul anual al cursurilor (imprimare între lecții, ridicare la începutul lecției următoare).
