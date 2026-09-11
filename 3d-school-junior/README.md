@@ -8,7 +8,7 @@ Bine ați venit la cursul **3D School Junior**! Acest curs este conceput ca o av
 - **Grupa de Vârstă**: **8-10 ani** (proiecte simple, forme geometrice intuitive, povești fascinante și curiozități).
 - **Stil Pedagogic**: Fiecare lecție este concepută ca o **pagină dintr-o enciclopedie pentru copii**. Ne axăm pe descoperirea lumii, istorie, natură și știință, compensând modelarea simplă prin povești pline de magie și învățare *(Lecția 01 este o introducere festivă în lumea dimensiunilor 1D/2D/3D, iar paginile de enciclopedie tematică încep de la Lecția 02!)*.
 - **Durată Lecție**: **120 minute (2 ore)** per lecție.
-- **Structură Generală**: Cursul cuprinde **4 Module Principale**. În prezent lucrăm la **Modulul 1 (9 Lecții)**.
+- **Structură Generală**: Cursul cuprinde teme independente de enciclopedie și descoperire 3D.
 - **Circuitul Imprimării 3D**: Obiectele modelate la lecția $N$ sunt imprimate și colectate de elevi la începutul lecției $N+1$ *(cu excepția Lecției 01 care beneficiază de o imprimare festivă instantă pe loc!)*.
 
 ---
@@ -26,7 +26,7 @@ Fiecare lecție respectă un flux clar în 8 etape:
 
 ---
 
-## 📚 Modulul 1: Aventuri în 3D și Descoperirea Lumii (9 Lecții)
+## 📚 Aventuri în 3D și Descoperirea Lumii
 
 ### 🔹 [Lecția 01: Introducere în Lumea 3D – De la O Linie la Propriul Nostru Nametag!](lesson-01/README.md)
 - **Descriere pe scurt**: Învățăm diferența dintre 1D, 2D și 3D, descoperim cele 3 dimensiuni (lungime, lățime, înălțime / axe X, Y, Z), cum creează oamenii lucruri 3D în lumea reală și cum pot copiii să creeze lucruri 3D acasă. Exersăm stivuirea formelor în Tinkercad și proiectăm 2 plăcuțe cu nume (nametag-uri).

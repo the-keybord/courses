@@ -7,7 +7,7 @@ Bine ați venit la cursul **3D School Pro**! Acest curs este dezvoltat special p
 ## 🎯 Conceptul Cursului
 - **Grupa de Vârstă**: **12-14 ani** (concepte tehnice aprofundate, inginerie aplicată, fișe tehnice și proiecte complexe).
 - **Durată Lecție**: **120 minute (2 ore)** per lecție.
-- **Structură Generală**: Cursul cuprinde **4 Module Principale**. În prezent lucrăm la **Modulul 1 (9 Lecții)**.
+- **Structură Generală**: Cursul cuprinde **4 Module Principale**.
 - **Circuitul Imprimării 3D**: Obiectele modelate la lecția $N$ sunt imprimate și colectate de elevi la începutul lecției $N+1$ *(cu excepția Lecției 01 care beneficiază de imprimare instantă pe loc!)*.
 
 ---
@@ -25,7 +25,7 @@ Fiecare lecție respectă un flux clar în 8 etape:
 
 ---
 
-## 📚 Modulul 1: Bazele Imprimării 3D Pro, Slicing & Modelare Tehnică (9 Lecții)
+## 📚 Modulul 1: Bazele Imprimării 3D Pro, Slicing & Modelare Tehnică
 
 ### 🔹 [Lecția 01: Introducere în Imprimarea 3D Pro, Ingineria Slicing-ului și Modelare în Tinkercad](lesson-01/README.md)
 - **Descriere pe scurt**: Explorăm istoria imprimării 3D (Chuck Hull, Scott Crump, RepRap), analizăm specificațiile modelelor legendare (SLA-1, Prusa MK3S+, Ender 3 V2, Bambu Lab X1C), descoperim ingineria din spatele softurilor de Slicing (G-code, layer height, infill, temp, viteze, suporturi) și polimerii FDM (PLA, PETG, TPU, ABS).

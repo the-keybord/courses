@@ -5,7 +5,11 @@ This file complements the global repository [`AGENTS.md`](../AGENTS.md) with rul
 ## Course Context & Architecture
 - **Course Name**: 3D School Start
 - **Target Age Group**: **10-12 years old** (Core fact - tone, explanations, and project complexity must be tailored specifically for ages 10-12).
-- **Course Modules**: 4 major modules overall. We are currently working on **Module 1 (9 lessons total)**.
+- **Course Modules**: 4 major modules overall:
+  1. **Laboratorul Creativ** (Module 1)
+  2. **Fabrica de jucării** (Module 2)
+  3. **Descoperă Orașul** (Module 3)
+  4. **Descoperă Natura** (Module 4)
 - **Lesson Duration**: Each lesson is **120 minutes** (2 hours).
 
 ## Language Rules
@@ -22,5 +26,5 @@ This file complements the global repository [`AGENTS.md`](../AGENTS.md) with rul
    6. **Lucru individual la propriul proiect** (Students work on their 3D project).
    7. **Joc Quiz / Evaluare interactivă** (Interactive quiz game on the topic studied).
    8. **Colectarea obiectelor imprimate & Fotografie de grup** (Collect printed objects and group photo).
-3. **Print Workflow**: Almost every lesson results in a 3D printed object, but for optimal time management, models created during lesson N are typically printed and collected at the beginning of lesson N+1.
+3. **Print Workflow**: Almost every lesson results in a 3D printed object. Starting from Lesson 02 onwards, models designed during Lesson $N-1$ are prepared and started on the 3D printer at the beginning of Lesson $N$ (Step 2), print throughout the 120-minute session, and are collected by students at the end of Lesson $N$ (Step 8). Models designed during Lesson $N$ (Step 6) are saved to be printed during Lesson $N+1$.
 4. **Rich, Elaborate & Human Style**: The `README.md` for each lesson must be written in a comprehensive, elaborate, essay-like format. Explanations must be warm, deeply informative, human, and engaging, guiding both the instructor and students through the narrative of the 3D domain.

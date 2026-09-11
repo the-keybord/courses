@@ -7,7 +7,7 @@ Bine ați venit la cursul **3D School Start**! Acest curs este creat special pen
 ## 🎯 Conceptul Cursului
 - **Grupa de Vârstă**: **10-12 ani** (limbaj adaptat, concepte tehnice accesibile și proiecte interactive).
 - **Durată Lecție**: **120 minute (2 ore)** per lecție.
-- **Structură Generală**: Cursul cuprinde **4 Module Principale**. În prezent lucrăm la **Modulul 1 (9 Lecții)**.
+- **Structură Generală**: Cursul cuprinde **4 Module Principale**.
 - **Circuitul Imprimării 3D**: Obiectele modelate la lecția $N$ sunt imprimate și colectate de elevi la începutul lecției $N+1$ *(cu excepția Lecției 01 care beneficiază de o imprimare festivă instantă pe loc, pregătind totodată al doilea obiect pentru intrarea în ritmul anual!)*.
 
 ---
@@ -25,18 +25,22 @@ Fiecare lecție respectă un flux clar în 8 etape:
 
 ---
 
-## 📚 Modulul 1: Bazele Imprimării 3D și Modelării în Tinkercad (9 Lecții)
+## 📚 Modulul 1: Bazele Imprimării 3D și Modelării în Tinkercad
 
 ### 🔹 [Lecția 01: Introducere în Imprimarea 3D și Modelare în Tinkercad](lesson-01/README.md)
 - **Descriere pe scurt**: Descoperim istoria imprimantelor 3D (Chuck Hull, 1983), tipurile de imprimante (FDM, SLA, SLS), materialele folosite (PLA) și modul de lucru al unei imprimante. Învățăm Tinkercad și proiectăm primul obiect real.
 - **Proiect Practic**: Proiectarea a 2 brelocuri personalizate (unul imprimat instant în timpul lecției 01 și al doilea pregătit pentru a fi colectat la Lecția 02).
 - **Director Lecție**: [`lesson-01/`](lesson-01/)
 
-### 🔹 Lecția 02: *(În curând)*
-- **Descriere pe scurt**: Colectare brelocuri din Lecția 01 + subiectul Lecției 02.
+### 🔹 [Lecția 02: Arta Pixelilor 3D – Imprimarea Multicolor prin Schimbare de Strat](lesson-02/README.md)
+- **Descriere pe scurt**: Descoperim originea pixelilor, istoria stilului Pixel Art, mozaicurile și arta Voxel. Învățăm cum funcționează imprimarea multicolor FDM prin schimbarea filamentului pe straturi (*Layer Swap / M600*) și de ce avem nevoie de trepte de înălțime de 1mm pe axa Z.
+- **Proiect Practic**: Ridicarea brelocului cadou din Lecția 01 + Construirea unei palete standardizate de pixeli cu înălțimi 2mm / 3mm / 4mm (Negru, Roșu, Alb) și crearea unui tablou Pixel Art retro personalizat.
 - **Director Lecție**: [`lesson-02/`](lesson-02/)
 
-### 🔹 Lecția 03: *(În curând)*
+### 🔹 [Lecția 03: Universul Minecraft & Pixel Art în 4 Culori](lesson-03/README.md)
+- **Descriere pe scurt**: Explorăm istoria Minecraft (Markus "Notch" Persson, 2009), conceptele de Voxel, categoriile de obiecte din joc, modul *Minecraft Mode* din Tinkercad, utilizarea tastei `Alt` pentru copiere rapidă, comutarea în vizualizarea Ortografică și alinierea precisă pe grilă.
+- **Proiect Practic**: Ridicarea tablourilor Pixel Art în 3 culori din Lecția 02 + Construirea unei palete de 4 culori cu trepte de înălțime pe Z (`2mm`, `3mm`, `4mm`, `5mm`) și realizarea unui Mini-Breloc Minecraft personalizat (Sabie, Târnăcop, Măr de Aur, Poțiune, Smarald etc.).
+- **Director Lecție**: [`lesson-03/`](lesson-03/)
 ### 🔹 Lecția 04: *(În curând)*
 ### 🔹 Lecția 05: *(În curând)*
 ### 🔹 Lecția 06: *(În curând)*

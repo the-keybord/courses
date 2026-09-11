@@ -6,7 +6,7 @@ This file complements the global repository [`AGENTS.md`](../AGENTS.md) with rul
 - **Course Name**: 3D School Junior
 - **Target Age Group**: **8-10 years old** (Core fact - tone, simplicity, and project complexity must be tailored specifically for younger children aged 8-10).
 - **Pedagogical Concept**: Kids at this age do not learn heavy technical specialization. Instead, modeling is kept simple and intuitive (small 3D creations), while each lesson is framed like a page of a **fun kids' encyclopedia** filled with real-world discoveries, historical wonders, and fascinating facts.
-- **Course Modules**: 4 major modules overall. We are currently working on **Module 1 (9 lessons total)**.
+- **Course Modules**: No structured modules — each lesson is an independent topic / discovery theme.
 - **Lesson Duration**: Each lesson is **120 minutes** (2 hours).
 
 ## Language Rules
@@ -23,5 +23,5 @@ This file complements the global repository [`AGENTS.md`](../AGENTS.md) with rul
    6. **Lucru individual la propriul proiect** (Students work on their 3D project).
    7. **Joc Quiz / Evaluare interactivă** (Interactive quiz game on the topic studied).
    8. **Colectarea obiectelor imprimate & Fotografie de grup** (Collect printed objects and group photo).
-3. **Print Workflow**: Almost every lesson results in a 3D printed object, but for optimal time management, models created during lesson N are typically printed and collected at the beginning of lesson N+1.
+3. **Print Workflow**: Almost every lesson results in a 3D printed object. Starting from Lesson 02 onwards, models designed during Lesson $N-1$ are prepared and started on the 3D printer at the beginning of Lesson $N$ (Step 2), print throughout the 120-minute session, and are collected by students at the end of Lesson $N$ (Step 8). Models designed during Lesson $N$ (Step 6) are saved to be printed during Lesson $N+1$.
 4. **Encyclopedia & Discovery Style**: The `README.md` for each lesson must be written in an engaging, elaborate, **kids' encyclopedia narrative format**. Explanations must be full of wonder, fun facts, warm human storytelling, and simple hands-on guidance suitable for 8-10 year olds.
