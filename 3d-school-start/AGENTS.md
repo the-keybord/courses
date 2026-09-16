@@ -4,6 +4,8 @@ This file complements the global repository [`AGENTS.md`](../AGENTS.md) with rul
 
 ## Course Context & Architecture
 - **Course Name**: 3D School Start
+- **Course Code**: **3DS2** (3D School Level 2 – Start)
+- **Lesson Code Format**: **`3DS2.<N>`** (e.g. Lesson 00 is **`3DS2.0`**, Lesson 01 is **`3DS2.1`**, Lesson 02 is **`3DS2.2`**).
 - **Target Age Group**: **10-12 years old** (Core fact - tone, explanations, and project complexity must be tailored specifically for ages 10-12).
 - **Course Modules**: 4 major modules overall:
   1. **Laboratorul Creativ** (Module 1)
@@ -15,21 +17,43 @@ This file complements the global repository [`AGENTS.md`](../AGENTS.md) with rul
 ## Language Rules
 - **Course Content**: All lesson plans, course concepts, activities, presentations, and quizzes must be created in **Romanian**.
 
-## Specific Lesson Guidelines
-1. **Essential Questions**: Each lesson must have **3 or more essential questions** that define the lesson objectives.
-2. **Standard 8-Step Lesson Flow (120 min)**: Unless explicitly specified as an exception, every lesson plan must follow this 8-step timeline:
+## Specific Lesson Guidelines & Workflow
+1. **The Mandatory 3-File Lesson Bundle**: Every lesson directory (`lesson-XX/`) must contain:
+   - `README.md`: Complete teacher's master plan (120 min), including the timeline, live demo guide, student workflow, and the Kahoot quiz.
+   - `presentation.md`: Slide-by-slide blueprint (8–12 fun, engaging slides) with Canva Master Prompt, speaker notes, image placeholders, and 1 text-only practical briefing slide.
+   - `presentation_summary.md`: Continuous narrative prompt for AI slide generators with header directives and pure didactic text without inline image prompts.
+2. **Essential Questions**: Each lesson must have **3 or more essential questions** defining the session's core objectives.
+3. **Standard 8-Step Lesson Flow (120 min)**: Unless explicitly specified as an exception, every lesson follows this roadmap:
    1. **Colectarea modelelor din lecția anterioară** (Collect models printed from previous lesson).
    2. **Pregătirea și pornirea imprimării 3D** (Prepare files and start 3D printing for current session).
-   3. **Descoperirea noii teme & Vizionarea prezentării** (Discover new topic and view presentation).
+   3. **Descoperirea noii teme & Vizionarea prezentării** (Discover new topic and view presentation, 15–20 min).
    4. **Pauză scurtă & Prezență** (Short break and attendance).
-   5. **Demonstrația profesorului** (Teacher demonstrates model creation step-by-step).
-   6. **Lucru individual la propriul proiect** (Students work on their 3D project).
-   7. **Joc Quiz / Evaluare interactivă** (Interactive quiz game on the topic studied).
+   5. **Demonstrația profesorului** (Teacher demonstrates model creation live in Tinkercad).
+   6. **Lucru individual la propriul proiect** (Students model their 3D project).
+   7. **Joc Quiz Kahoot / Evaluare interactivă** (10–15 engaging questions testing presentation concepts).
    8. **Colectarea obiectelor imprimate & Fotografie de grup** (Collect printed objects and group photo).
-3. **Print Workflow**: Almost every lesson results in a 3D printed object. Starting from Lesson 02 onwards, models designed during Lesson $N-1$ are prepared and started on the 3D printer at the beginning of Lesson $N$ (Step 2), print throughout the 120-minute session, and are collected by students at the end of Lesson $N$ (Step 8). Models designed during Lesson $N$ (Step 6) are saved to be printed during Lesson $N+1$.
-4. **Rich, Elaborate & Human Style**: The `README.md` for each lesson must be written in a comprehensive, elaborate, essay-like format. Explanations must be warm, deeply informative, human, and engaging, guiding both the instructor and students through the narrative of the 3D domain.
-5. **Mandatory Lesson Document Layout**: The lesson plan must never be split in half by dropping the timeline table in the middle of theoretical content. Every lesson `README.md` must follow this sequential 3-part structure:
-   1. **Lesson General Information**: Metadata (age, duration, module, project) and 3+ essential questions.
-   2. **Lesson Plan Minute-by-Minute**: The complete 120-minute timeline table right upfront as the operational roadmap.
-   3. **Explicit & Sequential Elaboration**: Deep, essay-like elaboration of each timeline stage in explicit sequential order (warm-up/icebreaker, theoretical narrative, live demonstration, practical workshop, course context, quiz, wrap-up).
+4. **Print Workflow**: Starting from Lesson 02 onwards, models designed in Lesson $N-1$ are printed during Lesson $N$ (Step 2) and collected at Step 8. Models designed in Lesson $N$ (Step 6) are queued for Lesson $N+1$.
+5. **Rich Narrative & Essay Format**: All lesson `README.md` files must be written in a warm, detailed, essay-like format without bare bullet points or ASCII art.
+6. **Mandatory 3-Part Layout for `README.md`**:
+   1. *General Info*: Metadata (including `- **Cod Lecție**: 3DS2.<N>`), 3+ essential questions, and clean bulleted *Resurse & Linkuri Utile*:
+      ```markdown
+      ### 🔗 Resurse & Linkuri Utile
+      - **Prezentare**: <URL>
+      - **Kahoot**: <URL>
+      ```
+   2. *Minute-by-Minute Table*: 120-minute operational roadmap upfront.
+   3. *Explicit Step-by-Step Elaboration*: Sequential deep pedagogical script, live demo commands, practical tasks, Kahoot quiz, and wrap-up.
+7. **Interactive Kahoot Quiz Standards (Step 7)**:
+   - 10 to 15 questions, exactly 4 answer options (`A, B, C, D`), witty distractors, balanced text lengths (correct answer never longest), immediate pedagogical explanation for each question.
+8. **Presentation Rules (`presentation.md` & `presentation_summary.md`)**:
+   - Strictly theoretical & conceptual. Never contains multi-slide CAD tutorials.
+   - Practical work is condensed into **one single slide/card with NO images**, containing only a concise text checklist for teacher orientation.
+   - For AI generators (`presentation_summary.md`), images are required for theoretical concepts, in abstract style only (2D cartoon / flat vector / watercolor), with a mature color palette. No inline image advice in the text.
+
+
+
+
+
+
+
 

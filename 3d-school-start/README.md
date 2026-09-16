@@ -27,7 +27,8 @@ Fiecare lecție respectă un flux clar în 8 etape:
 
 ## 🌟 Atelier Introductiv: Ziua Porților Deschise
 
-### 🔹 [Lecția 00: Atelier Deschis – Magia Imprimării 3D (Open Workshop)](lesson-00/README.md)
+### 🔹 [Lecția 00 [3DS2.0]: Atelier Deschis – Magia Imprimării 3D (Open Workshop)](lesson-00/README.md)
+- **Cod Lecție**: `3DS2.0`
 - **Descriere pe scurt**: Atelier de bun venit și cunoaștere în laboratorul 3D. Cercul cu micro-animale 3D colorate, prezentarea istoriei imprimării 3D (Chuck Hull, 1983), tehnologii (FDM, SLA, SLS), aplicații spectaculoase și modelarea primului breloc personalizat cu nume în Tinkercad. Lansarea imprimării și prezentarea marii aventuri a celor 4 module ale cursului, urmată de Marea Provocare Kahoot (15 întrebări).
 - **Proiect Practic**: Primul breloc tridimensional cu nume, decupaj pentru inel și text în relief.
 - **Director Lecție**: [`lesson-00/`](lesson-00/)

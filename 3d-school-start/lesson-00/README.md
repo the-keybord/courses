@@ -1,13 +1,18 @@
-# Lecția 00: Atelier Deschis – Magia Imprimării 3D (Open Workshop)
+# Lecția 00 [3DS2.0]: Atelier Deschis – Magia Imprimării 3D (Open Workshop)
 
 ---
 
 ## 1. Informații Generale despre Lecție
+- **Cod Lecție**: 3DS2.0
 - **Grupa de Vârstă**: 10 – 12 ani *(adaptabil cu ușurință și pentru grupa 12 – 14 ani din cadrul 3D School Pro)*
 - **Durată Totală**: 120 minute (2 ore de atelier introductiv)
 - **Tipul Lecției**: Atelier demonstrativ deschis (Open Workshop / Ziua Porților Deschise)
 - **Proiect Practic**: Primul breloc tridimensional personalizat cu nume în Tinkercad
 - **Obiectiv Major**: Familiarizarea elevilor cu laboratorul 3D, comunitatea colegilor, tehnologiile de fabricație aditivă, interfața de modelare și viziunea completă a cursului pe parcursul celor 4 module tematice.
+
+### 🔗 Resurse & Linkuri Utile
+- **Prezentare**: https://drive.google.com/file/d/1dXb3gZsmHT0qiG9-klGl2XX3jFB3Zxde/view?usp=drive_link
+- **Kahoot**: https://create.kahoot.it/details/66d69ac7-597e-477b-81a2-3dd381193f7a
 
 ### ❓ Întrebări Esențiale (Obiectivele de Învățare)
 1. **Ce este imprimarea 3D și prin ce diferă ea de metodele tradiționale de fabricație?**
