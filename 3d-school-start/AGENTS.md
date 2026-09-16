@@ -28,3 +28,8 @@ This file complements the global repository [`AGENTS.md`](../AGENTS.md) with rul
    8. **Colectarea obiectelor imprimate & Fotografie de grup** (Collect printed objects and group photo).
 3. **Print Workflow**: Almost every lesson results in a 3D printed object. Starting from Lesson 02 onwards, models designed during Lesson $N-1$ are prepared and started on the 3D printer at the beginning of Lesson $N$ (Step 2), print throughout the 120-minute session, and are collected by students at the end of Lesson $N$ (Step 8). Models designed during Lesson $N$ (Step 6) are saved to be printed during Lesson $N+1$.
 4. **Rich, Elaborate & Human Style**: The `README.md` for each lesson must be written in a comprehensive, elaborate, essay-like format. Explanations must be warm, deeply informative, human, and engaging, guiding both the instructor and students through the narrative of the 3D domain.
+5. **Mandatory Lesson Document Layout**: The lesson plan must never be split in half by dropping the timeline table in the middle of theoretical content. Every lesson `README.md` must follow this sequential 3-part structure:
+   1. **Lesson General Information**: Metadata (age, duration, module, project) and 3+ essential questions.
+   2. **Lesson Plan Minute-by-Minute**: The complete 120-minute timeline table right upfront as the operational roadmap.
+   3. **Explicit & Sequential Elaboration**: Deep, essay-like elaboration of each timeline stage in explicit sequential order (warm-up/icebreaker, theoretical narrative, live demonstration, practical workshop, course context, quiz, wrap-up).
+

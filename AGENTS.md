@@ -44,6 +44,30 @@ This file contains instructions and guidelines for AI agents working in this rep
 - **Strict Prohibition of ASCII Art**: Never generate ASCII art diagrams, ASCII drawings, ASCII circuit schematics, ASCII room layouts, or ASCII pseudo-box tables inside lesson `README.md` documents.
 - **Literal Essay Explanations**: Present all concepts, lesson plans, pedagogical flows, circuit architectures, and mechanical instructions in **literal prose as an essay** and clean descriptive text. Deep explanations must be written out in clear, literal, and articulate paragraphs rather than visual text diagrams.
 
+### 8. Mandatory Lesson Document Structure (`README.md` Layout)
+Every lesson plan must be structured cleanly and logically without splitting content. The timeline must appear upfront as an executive overview rather than being dropped in the middle of theoretical content:
+1. **Section 1: General Lesson Information & Essential Questions**:
+   - Metadata: age group, total duration (120 min), module, practical project, and 3+ essential learning questions.
+2. **Section 2: Lesson Plan Minute-by-Minute (Timeline Table)**:
+   - Placed directly after general information as the master roadmap for the entire 120-minute session.
+   - Summarizes time blocks, step numbers, and concise stage descriptions.
+3. **Section 3: Explicit & Comprehensive Elaboration of Each Step**:
+   - Each phase from the timeline must be explained in full, sequential, essay-like narrative detail:
+     - Detailed pedagogical script and background theory.
+     - Step-by-step teacher demonstration with exact parameters and navigation commands.
+     - Student practical workflow.
+     - Interactive quizzes and evaluation tools.
+     - Wrap-up, clean-up, and group activities.
+
+### 9. Interactive Kahoot Quizzes Standards
+- **Platform Alignment**: All course quizzes must be crafted specifically for **Kahoot** (or fast-paced classroom quiz tools).
+- **Strict 4-Option Structure**: Every question must feature exactly **4 answer choices** (labeled `A)`, `B)`, `C)`, `D)`).
+- **Answer Correctness (Single vs Multi-Select)**: By default, each question has **1 correct answer**. Occasionally and rarely, a question may have **2 correct answers** (both marked as `*(Corect)*`) to test attentiveness.
+- **Style & Tone of Distractors**: Answer choices should be varied, witty, and engaging:
+  - Incorporate plausible technical distractors alongside occasionally funny or humorous options that keep kids amused.
+- **Length Balancing (No "Longest Answer" Bias)**: **Never make the correct answer the longest choice!** Avoid obvious giveaways where the right answer is excessively detailed while wrong ones are short. Keep all options balanced in length, or make incorrect distractors longer than the correct answer.
+- **Pedagogical Explanations**: Every question must be followed by a concise explanation block (`> **Explicație**: ...`) providing immediate feedback and reinforcement for the instructor to review on screen.
+
 ---
 
 ## Additional Rules
