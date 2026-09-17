@@ -8,6 +8,10 @@ Bine ați venit la cursul **3D School Start**! Acest curs este creat special pen
 - **Grupa de Vârstă**: **10-12 ani** (limbaj adaptat, concepte tehnice accesibile și proiecte interactive).
 - **Durată Lecție**: **120 minute (2 ore)** per lecție.
 - **Structură Generală**: Cursul cuprinde **4 Module Principale**.
+- **Echipamente & Software**:
+  - **Imprimante 3D**: Folosim imprimante de ultimă generație **Bambu Lab A1** (și ocazional **A2L** sau **A1 Combo** cu AMS lite).
+  - **Soft de Feliere (Slicing)**: **Bambu Studio** pentru aranjarea plăcilor, calibrarea straturilor și lansarea printurilor.
+  - **Soft de Modelare**: **Tinkercad Classroom**.
 - **Circuitul Imprimării 3D**: Obiectele modelate la lecția $N$ sunt imprimate și colectate de elevi la începutul lecției $N+1$ *(cu excepția Lecției 01 care beneficiază de o imprimare festivă instantă pe loc, pregătind totodată al doilea obiect pentru intrarea în ritmul anual!)*.
 
 ---
@@ -30,7 +34,8 @@ Fiecare lecție respectă un flux clar în 8 etape:
 ### 🔹 [Lecția 00 [3DS2.0]: Atelier Deschis – Magia Imprimării 3D (Open Workshop)](lesson-00/README.md)
 - **Cod Lecție**: `3DS2.0`
 - **Descriere pe scurt**: Atelier de bun venit și cunoaștere în laboratorul 3D. Cercul cu micro-animale 3D colorate, prezentarea istoriei imprimării 3D (Chuck Hull, 1983), tehnologii (FDM, SLA, SLS), aplicații spectaculoase și modelarea primului breloc personalizat cu nume în Tinkercad. Lansarea imprimării și prezentarea marii aventuri a celor 4 module ale cursului, urmată de Marea Provocare Kahoot (15 întrebări).
-- **Proiect Practic**: Primul breloc tridimensional cu nume, decupaj pentru inel și text în relief.
+- **Format Special de Lucru (Atelier Deschis)**: Elevii lucrează în **echipe de câte 2 la un laptop** (`echipa1`, `echipa2`...) pentru a se sprijini reciproc în prima lor experiență 3D. Profesorul le comunică copiilor că la cursurile săptămânale normale fiecare va lucra individual la propriul calculator. În cadrul aceluiași proiect Tinkercad, echipa modelează ambele brelocuri side-by-side pentru succes garantat.
+- **Proiect Practic**: Primul breloc tridimensional cu nume, decupaj pentru inel și text în relief (câte un breloc pentru fiecare membru al echipei pe același plan de lucru).
 - **Director Lecție**: [`lesson-00/`](lesson-00/)
 
 ---

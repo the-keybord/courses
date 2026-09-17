@@ -7,6 +7,10 @@ This file complements the global repository [`AGENTS.md`](../AGENTS.md) with rul
 - **Target Age Group**: **8-10 years old** (Core fact - tone, simplicity, and project complexity must be tailored specifically for younger children aged 8-10).
 - **Pedagogical Concept**: Kids at this age do not learn heavy technical specialization. Instead, modeling is kept simple and intuitive (small 3D creations), while each lesson is framed like a page of a **fun kids' encyclopedia** filled with real-world discoveries, historical wonders, and fascinating facts.
 - **Course Modules**: No structured modules — each lesson is an independent topic / discovery theme.
+- **Hardware & Software Stack**:
+  - **3D Printers**: Bambu Lab A1 (and sometimes A2L or A1 Combo).
+  - **Slicing Software**: Bambu Studio.
+  - **3D Modeling Software**: Tinkercad Classroom.
 - **Lesson Duration**: Each lesson is **120 minutes** (2 hours).
 
 ## Language Rules

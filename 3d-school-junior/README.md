@@ -9,6 +9,10 @@ Bine ați venit la cursul **3D School Junior**! Acest curs este conceput ca o av
 - **Stil Pedagogic**: Fiecare lecție este concepută ca o **pagină dintr-o enciclopedie pentru copii**. Ne axăm pe descoperirea lumii, istorie, natură și știință, compensând modelarea simplă prin povești pline de magie și învățare *(Lecția 01 este o introducere festivă în lumea dimensiunilor 1D/2D/3D, iar paginile de enciclopedie tematică încep de la Lecția 02!)*.
 - **Durată Lecție**: **120 minute (2 ore)** per lecție.
 - **Structură Generală**: Cursul cuprinde teme independente de enciclopedie și descoperire 3D.
+- **Echipamente & Software**:
+  - **Imprimante 3D**: Imprimante performante **Bambu Lab A1** (și ocazional **A2L** sau **A1 Combo**).
+  - **Soft de Feliere (Slicing)**: **Bambu Studio**.
+  - **Soft de Modelare**: **Tinkercad Classroom**.
 - **Circuitul Imprimării 3D**: Obiectele modelate la lecția $N$ sunt imprimate și colectate de elevi la începutul lecției $N+1$ *(cu excepția Lecției 01 care beneficiază de o imprimare festivă instantă pe loc!)*.
 
 ---

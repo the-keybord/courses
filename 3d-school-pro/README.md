@@ -8,6 +8,10 @@ Bine ați venit la cursul **3D School Pro**! Acest curs este dezvoltat special p
 - **Grupa de Vârstă**: **12-14 ani** (concepte tehnice aprofundate, inginerie aplicată, fișe tehnice și proiecte complexe).
 - **Durată Lecție**: **120 minute (2 ore)** per lecție.
 - **Structură Generală**: Cursul cuprinde **4 Module Principale**.
+- **Echipamente & Software**:
+  - **Imprimante 3D**: Echipamente profesionale **Bambu Lab A1** (și uneori **A2L** sau **A1 Combo**).
+  - **Soft de Feliere (Slicing)**: **Bambu Studio**.
+  - **Soft de Modelare**: **Tinkercad Classroom** (și medii CAD avansate).
 - **Circuitul Imprimării 3D**: Obiectele modelate la lecția $N$ sunt imprimate și colectate de elevi la începutul lecției $N+1$ *(cu excepția Lecției 01 care beneficiază de imprimare instantă pe loc!)*.
 
 ---

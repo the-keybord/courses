@@ -7,7 +7,8 @@
 - **Grupa de Vârstă**: 10 – 12 ani *(adaptabil cu ușurință și pentru grupa 12 – 14 ani din cadrul 3D School Pro)*
 - **Durată Totală**: 120 minute (2 ore de atelier introductiv)
 - **Tipul Lecției**: Atelier demonstrativ deschis (Open Workshop / Ziua Porților Deschise)
-- **Proiect Practic**: Primul breloc tridimensional personalizat cu nume în Tinkercad
+- **Dinamica de Lucru la Ecrane**: **Echipe de câte 2 elevi per calculator** (`echipa1`, `echipa2`...). Elevii colaborează în pereche la aceeași stație. *Profesorul le comunică explicit elevilor că această colaborare este specifică Zilei Porților Deschise pentru acomodare și lucru în echipă, iar la cursurile săptămânale normale fiecare va lucra individual la propriul calculator.*
+- **Proiect Practic**: Primul breloc tridimensional personalizat cu nume în Tinkercad (ambii elevi modelează câte un breloc în cadrul aceluiași proiect Tinkercad, așezate unul lângă celălalt pe suprafața de lucru).
 - **Obiectiv Major**: Familiarizarea elevilor cu laboratorul 3D, comunitatea colegilor, tehnologiile de fabricație aditivă, interfața de modelare și viziunea completă a cursului pe parcursul celor 4 module tematice.
 
 ### 🔗 Resurse & Linkuri Utile
@@ -23,23 +24,55 @@
 
 ---
 
-## 2. Planul Lecției Minut cu Minut (Structura de 120 Minute)
+## 2. Pregătirea Lecției (Checklist Operațional Profesor)
+
+Înainte de intrarea elevilor în clasă, profesorul parcurge următorul checklist tehnic și logistic pentru a garanta o experiență fără timpi morți:
+
+### 🖥️ Conturi & Software
+- [ ] **Clasa Tinkercad Classroom**: Clasa virtuală este activă și verificată în contul de profesor Tinkercad.
+- [ ] **Cod de Clasă & Nickname-uri pentru Echipe**:
+  - Codul de acces la clasă este scris vizibil pe tablă.
+  - În panoul Tinkercad Classroom sunt generate din timp nickname-urile pentru perechi: `echipa1`, `echipa2`, `echipa3`, `echipa4`, `echipa5`, `echipa6`, `echipa7`, `echipa8` etc.
+  - Fiecare calculator este pregătit cu cartonașul cu numele echipei alocate, astfel încât cei doi colegi să se așeze și să se conecteze instantaneu, fără adrese de e-mail sau conturi personale.
+- [ ] **Aplicații & Tab-uri Deschise pe Laptopul Profesorului**:
+  - Prezentarea introductivă este încărcată pe videoproiector în modul prezentare completă.
+  - Jocul Kahoot este preîncărcat pe ecranul cu codul PIN de intrare.
+  - Programul de feliere **Bambu Studio** este deschis pe laptopul profesorului, având selectată imprimanta **Bambu Lab A1** (sau A1 Combo / A2L) și profilul de feliere rapidă pentru filament PLA (strat 0.20 mm).
+
+> 💡 **Notă Didactică Esențială pentru Profesor (2 Brelocuri în Același Proiect)**:
+> Pentru a garanta că **ambii elevi din echipă își finalizează brelocul cu succes deplin** și fără a crea confuzie tehnică prin schimbarea conturilor sau deschiderea mai multor ferestre de browser, **ambii copii vor modela în cadrul aceluiași proiect Tinkercad** (ex: denumit `Brelocuri_Echipa1`).
+> Pe suprafața unică de lucru (*Workplane*), elevul A își construiește brelocul în partea stângă, iar elevul B își construiește brelocul în partea dreaptă. Astfel, lucrează împreună, se ajută reciproc la setarea dimensiunilor și a textului, iar la final ambele brelocuri sunt exportate și imprimate fără riscul de a pierde vreo piesă!
+
+### 🖨️ Echipamente 3D & Tehnice
+- [ ] **Verificare & Calibrare Imprimantă 3D Bambu Lab**: Imprimanta **Bambu Lab A1** (sau A2L / A1 Combo) este pornită, patul texturat PEI este inspectat și curățat cu alcool izopropilic.
+- [ ] **Încărcare Filament**: Bobina de filament PLA (de preferat o culoare deschisă și veselă, cu contrast bun) este montată (în suportul extern sau în unitatea AMS a modelului Combo) și extrudată pentru a valida duza curată (0.4 mm).
+- [ ] **Placă Multi-Model & Verificare Timp în Bambu Studio**: Spațiul de lucru din Bambu Studio este pregătit pentru aranjarea optimă (*Auto-Arrange*). Dacă timpul estimat depășește minutul 115 (cu cel puțin 5 minute înainte de terminarea atelierului), profesorul este pregătit să scaleze global piesele pentru a finaliza printul la timp.
+
+### 🎒 Materiale Fizice & Recuzită Didactică
+- [ ] **Aranjarea Sălii pentru Echipe de Câte 2**: Fiecare calculator are alocate **2 scaune**, permițând celor doi colegi să vadă ecranul comod și să lucreze în tandem.
+- [ ] **Cutia cu Secrete 3D (Icebreaker)**: O cutie opacă plină cu micro-figurine de animale 3D viu colorate (câte una pentru fiecare participant, plus 3-4 rezerve).
+- [ ] **Mostre Tactile de Atelier**: Segmente de filament PLA brut neîncălzit, o bobină întreagă de filament, precum și o piesă finisată FDM vs. o miniatură fină SLA din rășină pentru testul tactil.
+- [ ] **Accesorii Montaj**: Inele metalice pentru brelocuri pregătite într-un recipient la masa profesorului.
+- [ ] **Ecusoane & Prezență**: Ecusoane de birou cu `Echipa 1`, `Echipa 2`... și lista de prezență tipărită.
+
+---
+
+## 3. Planul Lecției Minut cu Minut (Structura de 120 Minute)
 
 | Minut | Etapă | Rezumat Activitate & Rolul Profesorului |
 | :--- | :--- | :--- |
 | **00 - 15 min** | **Etapa 1: Bun Venit & Cercul de Cunoaștere (Icebreaker)** | Copiii se așază în cerc în laborator. Fiecare extrage din cutia secretă o micro-jucărie 3D animal colorată. Tur de prezentare: nume, animalul ales, culoarea și o superputere imaginară. |
 | **15 - 35 min** | **Etapa 2: Prezentare Teoretică – Magia Imprimării 3D** | Prezentare narativă și interactivă: ce este fabricația aditivă (strat cu strat), istoria lui Chuck Hull (1983), tipurile de imprimante (FDM, SLA, SLS) și cele mai spectaculoase obiecte imprimate 3D. |
-| **35 - 45 min** | **Etapa 3: Pauză Scurtă & Energie** | Pauză de 10 minute de relaxare și hidratare. Elevii explorează laboratorul și privesc de aproape echipamentele 3D. |
-| **45 - 60 min** | **Etapa 4: Conectarea la Tinkercad & Demonstrația Profesorului** | Elevii trec la calculatoare, se conectează la Tinkercad Classroom cu codul de clasă. Profesorul demonstrează pe proiector navigarea 3D, formele de bază și modelarea pas cu pas a unui breloc cu nume. |
-| **60 - 85 min** | **Etapa 5: Atelier Practic – Crearea Propriului Breloc** | Elevii își modelează propriul breloc personalizat (bază, gaură pentru inel, nume în relief 3D). Profesorul oferă asistență tehnică individuală. |
-| **85 - 95 min** | **Etapa 6: Colectarea Fișierelor & Pornirea Imprimării** | Profesorul colectează modelele elevilor, pregătește felierea (*slicing*) și pornește imprimanta 3D. Copiii asistă la depunerea primelor straturi de filament topit. |
-| **95 - 105 min** | **Etapa 7: Povestea Cursului 3D School & Cele 4 Module** | În timp ce imprimanta lucrează, profesorul prezintă viziunea completă a cursului: ritmul de 2 ore/săptămână, circuitul imprimării (modelare la lecția curentă, ridicare la următoarea) și cele 4 mari module tematice. |
-| **105 - 115 min** | **Etapa 8: Marea Provocare Kahoot (15 Întrebări)** | Concurs interactiv pe platforma Kahoot pentru fixarea tuturor cunoștințelor dobândite în timpul atelierului. |
-| **115 - 120 min** | **Etapa 9: Concluzii, Impresii Finale & Fotografia de Grup** | Verificarea primelor rezultate de la imprimantă, împărtășirea impresiilor într-un cuvânt și fotografia oficială de grup cu animalele 3D. |
+| **35 - 50 min** | **Etapa 3: Conectarea la Tinkercad (Echipe de 2) & Demonstrația Profesorului** | Elevii se așază câte doi la calculator, conectându-se cu nickname-ul echipei (`echipa1`, `echipa2`...). Profesorul le comunică faptul că la cursurile săptămânale fiecare va lucra pe propriul PC. Demonstrație pe proiector a modelării pas cu pas. |
+| **50 - 75 min** | **Etapa 4: Atelier Practic – 2 Brelocuri în Același Proiect de Echipă** | Ambii colegi de echipă își modelează brelocurile personalizate pe aceeași suprafață de lucru (stânga / dreapta). Se sprijină reciproc pentru succes garantat. Profesorul oferă ghidaj tehnic. |
+| **75 - 85 min** | **Etapa 5: Colectarea Fișierelor de Echipă & Pornirea Imprimării** | Profesorul colectează proiectele echipelor (fiecare conținând ambele brelocuri), pregătește felierea în Bambu Studio și pornește imprimanta Bambu Lab A1. Copiii asistă la primele straturi. |
+| **85 - 95 min** | **Etapa 6: Povestea Cursului 3D School & Cele 4 Module** | În timp ce imprimanta lucrează, profesorul prezintă viziunea completă a cursului: ritmul de 2 ore/săptămână, circuitul imprimării (modelare la lecția curentă, ridicare la următoarea) și cele 4 mari module tematice. |
+| **95 - 115 min** | **Etapa 7: Marea Provocare Kahoot (15 Întrebări & Discuții Interactive – 20 min)** | Concurs interactiv electrizant pe platforma Kahoot: timp generos dedicat parcurgerii celor 15 întrebări, clasamentului live și mini-explicațiilor profesorului după fiecare rundă. |
+| **115 - 120 min** | **Etapa 8: Înmânarea Brelocurilor, Invitația la Curs & Fotografia de Grup** | Detașarea brelocurilor imprimate, montarea inelelor metalice și oferirea lor fiecărui copil; invitația de a continua cursul săptămâna viitoare și fotografia oficială de grup. |
 
 ---
 
-## 3. Desfășurarea Detaliată și Explicită a Fiecărei Etape
+## 4. Desfășurarea Detaliată și Explicită a Fiecărei Etape
 
 ---
 
@@ -90,62 +123,72 @@ Chuck a avut ideea revoluționară: *„Dacă am ghida o rază UV cu ajutorul un
 
 ---
 
-### 🔹 Etapa 3 (Minutul 35 - 45): Pauză Scurtă & Energie
+### 🔹 Etapa 3 (Minutul 35 - 50): Conectarea la Tinkercad (Echipe de 2) & Demonstrația Profesorului
 
-O pauză de 10 minute dedicată relaxării, hidratării și socializării. Elevii pot veni lângă imprimantele 3D din laborator pentru a atinge mostre de filamente (PLA rigid, TPU flexibil ca o gumă), bobine de diferite culori și să vadă de aproape mecanica axelor.
+Elevii se așază în perechi (câte 2 elevi la fiecare calculator din laborator). Profesorul proiectează ecranul pe videoproiector și deschide etapa cu o clarificare esențială pentru copii:
 
----
+> 🗣️ **Mesajul Cheie al Profesorului către Copii**:
+> *„Dragilor, pentru această primă zi specială de atelier deschis, vom lucra în echipe de câte doi la fiecare calculator! Este o oportunitate minunată să vă cunoașteți, să faceți schimb de idei și să vă ajutați la primii pași în spațiul 3D. Vreau însă să știți de la bun început: când vom începe cursurile oficiale săptămânale de la Lecția 01, fiecare dintre voi va avea propriul calculator și va lucra 100% individual pe propriile creații!”*
 
-### 🔹 Etapa 4 (Minutul 45 - 60): Conectarea la Tinkercad & Demonstrația Profesorului
+#### 1. Conectarea la Clasa Virtuală în Echipă (Tinkercad Classroom)
+- Unul dintre membrii echipei deschide browserul Google Chrome la adresa: `www.tinkercad.com/joinclass`.
+- Introduc codul unic al clasei afișat de profesor pe tablă.
+- La solicitarea poreclei (*Nickname*), introduc numele echipei stabilit pe cartonașul de pe birou: `echipa1`, `echipa2`, `echipa3`, `echipa4` etc.
 
-Elevii se așază la calculatoarele din laborator. Profesorul proiectează ecranul pe videoproiector și ghidează întreaga clasă:
-
-#### 1. Conectarea la Clasa Virtuală (Tinkercad Classroom)
-- Se deschide browserul Google Chrome la adresa: `www.tinkercad.com/joinclass`.
-- Elevii introduc codul unic al clasei oferit de profesor pe tablă.
-- Fiecare introduce porecla (*nickname-ul*) alocată (de regulă prenumele elevului).
-
-#### 2. Familiarizarea cu Spațiul 3D (Navigarea cu Mouse-ul)
+#### 2. Familiarizarea cu Spațiul 3D (Navigarea cu Mouse-ul în Tandem)
+Cei doi colegi încearcă pe rând mișcările de cameră pentru a simți controlul spațiului:
 - **Rotirea privirii (Orbitare)**: Click Dreapta apăsat + mișcarea mouse-ului rotește unghiul de vizualizare în jurul spațiului de lucru (*Workplane*).
 - **Apropiere / Depărtare (Zoom)**: Rotița mouse-ului înainte/înapoi.
 - **Glisarea spațiului (Pan)**: Click pe rotița mouse-ului apăsată + mișcarea mâinii deplasează ecranul lateral fără a-l roti.
 - **Butonul Home**: Butonul în formă de căsuță din stânga sus readuce camera la perspectiva inițială în caz de dezorientare.
 
 #### 3. Demonstrația Live a Profesorului: Brelocul Personalizat
-Profesorul construiește brelocul pas cu pas pe ecran, explicând clar fiecare mișcare:
+Profesorul construiește brelocul pas cu pas pe ecran, arătând totodată cum pe același plan de lucru pot încăpea lejer două brelocuri distincte:
 1. **Baza brelocului**: Trage un **Box (Cub roșu)** pe suprafața de lucru. Modifică dimensiunile tastând valorile exacte: Lungime = `55 mm`, Lățime = `25 mm`, Înălțime = `3 mm`.
 2. **Orificiul pentru inel**: Trage forma **Cylinder (Hole)** – cilindrul gri hașurat. Îi setează dimensiunile la `6 mm x 6 mm`, cu înălțime de `10 mm`. Îl așază în partea stângă a bazei, păstrând o margine sigură de 3 mm față de margine.
 3. **Textul Tridimensional**: Trage forma **Text**. În caseta de opțiuni scrie numele cu majuscule. Setează înălțimea textului pe axa Z la `5 mm` (pentru a ieși cu 2 mm deasupra plăcuței de 3 mm). Redimensionează proporțional textul ținând apăsată tasta **Shift** și îl aliniază pe plăcuță.
-4. **Gruparea (*Group*)**: Selectează toate formele (`Ctrl + A`) și apasă pe comanda **Group (`Ctrl + G`)**. Cilindrul decupează gaura, iar literele fuzionează cu baza într-un corp solid unitar.
+4. **Gruparea (*Group*)**: Selectează formele primului breloc și apasă pe comanda **Group (`Ctrl + G`)**. Cilindrul decupează gaura, iar literele fuzionează cu baza într-un corp solid unitar.
+5. **Profesorul explică**: *„Vedeți? Alături, în același spațiu, colegul de echipă va construi cel de-al doilea breloc, respectând aceleași reguli de aur!”*.
 
 ---
 
-### 🔹 Etapa 5 (Minutul 60 - 85): Atelier Practic – Crearea Propriului Breloc
+### 🔹 Etapa 4 (Minutul 50 - 75): Atelier Practic – 2 Brelocuri în Același Proiect
 
-Fiecare elev deschide un proiect nou în Tinkercad și începe să își modeleze propriul breloc:
+Echipa deschide un singur proiect nou în Tinkercad. Ambii elevi colaborează activ pentru ca fiecare să își creeze propriul breloc personalizat:
 
-1. **Denumirea Proiectului**: Fiecare copil redenumește proiectul în colțul din stânga sus cu formula: `Breloc_NumeleTau`.
-2. **Modelare și Personalizare**:
-   - Construirea bazei și verificarea grosimii optime (3 mm).
-   - Plasarea orificiului de prindere pentru inelul de chei.
-   - Adăugarea numelui sau a unui logo personal în relief (5 mm înălțime pe Z).
-   - Gruparea finală a formelor pentru validarea modelului solid.
-3. **Asistența Profesorului**: Profesorul verifică individual fiecare monitor, asigurându-se că gaura trece complet prin bază și că literele sunt bine ancorate în plăcuță.
-
----
-
-### 🔹 Etapa 6 (Minutul 85 - 95): Colectarea Fișierelor & Pornirea Imprimării 3D
-
-1. **Colectarea Fișierelor**: Profesorul accesează panoul de profesor din Tinkercad Classroom și descarcă fișierele `.STL` ale elevilor.
-2. **Felierea (*Slicing*)**: Profesorul deschide programul de feliere al imprimantei, aranjează câteva dintre brelocurile elevilor pe patul virtual și generează fișierul G-code.
-3. **Pornirea Mașinii**: Fișierul este trimis către imprimanta 3D din laborator. Copiii sunt invitați lângă imprimantă:
-   - Observă cum patul cald atinge temperatura optimă (60°C).
-   - Observă cum duza se încălzește rapid la 200°C.
-   - Văd cu ochii lor calibrarea și depunerea primelor linii fine de plastic topit pe patul de imprimare.
+1. **Denumirea Unică a Proiectului**: Redenumesc proiectul în colțul din stânga sus cu formula: `Brelocuri_EchipaX` (ex: `Brelocuri_Echipa1`).
+2. **Împărțirea Spațiului de Lucru**:
+   - **Elevul A** își modelează brelocul în **jumătatea stângă** a planului de lucru.
+   - **Elevul B** își modelează brelocul în **jumătatea dreaptă** a planului de lucru.
+3. **Colaborare & Personalizare în Echipă**:
+   - Colegii se ajută reciproc la introducerea valorilor exacte (lungime 55 mm, lățime 25 mm, înălțime 3 mm).
+   - Un elev poate mânui mouse-ul în timp ce colegul dictează literele sau verifică înălțimea pe axa Z, apoi fac schimb de roluri pentru al doilea breloc.
+   - Fiecare elev își alege propriul text (prenumele său) și îl personalizează (5 mm înălțime pe axa Z).
+   - Fiecare își grupează independent propriul breloc (`Ctrl + G`), obținând două piese solide, perfect definite, pe aceeași suprafață de lucru.
+4. **Asistența Profesorului**: Profesorul trece pe la fiecare echipă, asigurându-se că ambele brelocuri sunt complete, că orificiile trec complet prin bază și că literele sunt bine sudate în plăcuțe. *Această abordare cu ambele brelocuri în același proiect garantează 100% succesul ambilor copii, fără stresul schimbării de utilizatori sau al sincronizării fișierelor multiple.*
 
 ---
 
-### 🔹 Etapa 7 (Minutul 95 - 105): Povestea Cursului 3D School & Cele 4 Module
+### 🔹 Etapa 5 (Minutul 75 - 85): Colectarea Fișierelor de Echipă & Pornirea Imprimării 3D
+
+1. **Colectarea Fișierelor**: Din panoul Tinkercad Classroom, profesorul descarcă fișierele `.STL` ale echipelor (fiecare fișier descărcat conține direct ambele brelocuri ale echipei respective).
+2. **Felierea în Bambu Studio (*Slicing*)**:
+   - Profesorul deschide **Bambu Studio** și importă modelele echipelor.
+   - Folosește funcția inteligentă de aranjare automată (**Auto-Arrange**) pentru a așeza toate brelocurile pe patul virtual al imprimantei **Bambu Lab A1** (sau A1 Combo / A2L), respectând distanțele optime de siguranță.
+   - Verifică previzualizarea straturilor (*Slice Plate*) cu profilul rapid de 0.20 mm Standard.
+
+   > ⏱️ **Regulă de Aur pentru Profesor (Controlul Timpului & Scalarea Rapidă)**:
+   > La feliere (*Slice*), profesorul verifică numaidecât timpul estimat de imprimare: **lucrarea trebuie să fie gata cu cel puțin 5 minute înainte de finalul orei** (adică cel târziu la minutul 115, pentru a permite răcirea patului și detașarea brelocurilor la Etapa 8).
+   > **Dacă timpul estimat depășește acest prag**: Profesorul selectează toate piesele din Bambu Studio (`Ctrl + A`) și **le scalează proporțional** (de exemplu la 85% – 90% din dimensiunea inițială sau reduce ușor grosimea pe axa Z de la 3 mm la 2.4 mm). Această reducere minusculă scade semnificativ durata de depunere a filamentului, garantând că toți copiii își primesc brelocul finisat înainte de a pleca acasă!
+
+3. **Pornirea Imprimării pe Bambu Lab A1**:
+   - Fișierul este trimis către imprimantă. Elevii sunt invitați în semicerc în jurul echipamentului:
+   - Observă calibrarea automată a patului texturat PEI și curățarea duzei.
+   - Urmăresc cum imprimanta atinge 200°C la hotend și începe depunerea liniei de purjare și a primelor straturi ultra-rapide și silențioase de filament PLA.
+
+---
+
+### 🔹 Etapa 6 (Minutul 85 - 95): Povestea Cursului 3D School & Cele 4 Module
 
 În timp ce imprimanta depune straturile uniforme ale noilor brelocuri, profesorul strânge atenția elevilor pentru a le prezenta marea aventură a întregului an la **3D School Start**:
 
@@ -162,164 +205,28 @@ Fiecare elev deschide un proiect nou în Tinkercad și începe să își modelez
 
 ---
 
-### 🔹 Etapa 8 (Minutul 105 - 115): Marea Provocare Kahoot (15 Întrebări Detaliate)
+### 🔹 Etapa 7 (Minutul 95 - 115): Marea Provocare Kahoot (Joc Quiz Interactiv – 20 Minute)
 
-Acest joc quiz interactiv pe ecranul mare fixează toate noțiunile discutate pe parcursul celor două ore de atelier:
+Pentru a fixa conceptele teoretice și secretele de modelare descoperite pe parcursul celor 120 de minute într-o atmosferă electrizantă și plină de energie, atelierul dedică **20 de minute complete** unui concurs Kahoot captivant pe ecranul mare al sălii:
 
----
-
-#### Întrebarea 1
-**Ce înseamnă că o imprimantă 3D folosește „fabricație aditivă”?**
-- A) Taie și cioplește dintr-un bloc masiv de marmură
-- B) Adaugă material strat cu strat de jos în sus *(Corect)*
-- C) Pictează pe ecran fără să construiască nimic palpabil
-- D) Topește piese vechi de televizor într-un ceaun uriaș
-> **Explicație**: Spre deosebire de sculptură sau frezare (care scad material), imprimarea 3D adaugă material microscopic strat cu strat până ridică piesa.
-
----
-
-#### Întrebarea 2
-**Cine este considerat inventatorul imprimării 3D?**
-- A) Thomas Edison (inventatorul becului electric)
-- B) Chuck Hull (părintele stereolitografiei) *(Corect)*
-- C) Steve Jobs (creatorul telefoanelor iPhone)
-- D) Nikola Tesla (maestrul curentului alternativ)
-> **Explicație**: Chuck Hull a inventat Stereolitografia (SLA) în 1983 și a brevetat procesul în 1986, punând bazele companiei 3D Systems.
+1. **Pregătirea și Conectarea (3-4 minute)**:
+   - Profesorul proiectează pin-ul jocului Kahoot pe ecranul mare: [Kahoot Direct Link](https://create.kahoot.it/details/66d69ac7-597e-477b-81a2-3dd381193f7a).
+   - Echipele accesează platforma pe calculatoare sau pe dispozitive dedicate, alegându-și porecle amuzante inspirate din lumea 3D.
+2. **Desfășurarea Competiției & Consolidare Didactică (15-16 minute)**:
+   - Cu un timp generos alocat, nu există grabă: fiecare dintre cele 15 întrebări dinamice (istoria lui Chuck Hull, tehnologiile FDM/SLA/SLS, navigarea pe axe, înălțimea straturilor Z și modulele cursului) se bucură de atenție completă.
+   - După fiecare rundă de răspunsuri, profesorul analizează graficul de statistici de pe ecran, explică de ce varianta corectă este cea adevărată și oferă mici curiozități suplimentare, felicitând răspunsurile rapide și menținând suspansul podiumului live.
+3. **Banca de Întrebări**:
+   - Toate cele 15 întrebări complete, variantele de răspuns cu opțiuni echilibrate și explicațiile pedagogice detaliate sunt organizate în fișierul dedicat: [quiz.md](quiz.md).
 
 ---
 
-#### Întrebarea 3
-**În ce an a fost inventată prima tehnologie funcțională de imprimare 3D?**
-- A) 1983 *(Corect)*
-- B) 2015
-- C) 1950
-- D) 2001
-> **Explicație**: În martie 1983, Chuck Hull a reușit să solidifice primul strat de rășină folosind raze ultraviolete.
+### 🔹 Etapa 8 (Minutul 115 - 120): Înmânarea Brelocurilor, Invitația la Curs & Fotografia de Grup
 
----
-
-#### Întrebarea 4
-**Care a fost primul obiect imprimat 3D vreodată în laboratorul lui Chuck Hull?**
-- A) O mașinuță de curse ultra-rapidă cu roți dinte
-- B) O cupă medicală mică pentru clătirea ochilor *(Corect)*
-- C) O carcasă fosforescentă pentru telefon mobil
-- D) O cască de astronaut cu vizieră colorată
-> **Explicație**: Primul obiect a fost o mică cupă de plastic (*eyecup*) pentru uz medical, creată pentru a testa dacă rășina întărită reține lichide.
-
----
-
-#### Întrebarea 5
-**Ce tip de material utilizează o imprimantă 3D din categoria FDM?**
-- A) Rășină lichidă vâscoasă păstrată într-un bazin
-- B) Fir de plastic înfășurat pe bobină (filament) *(Corect)*
-- C) Pulbere uscată de ciment pentru construcții
-- D) Cerneală lichidă ca într-un stilou obișnuit
-> **Explicație**: Imprimantele FDM (cele din laboratorul nostru) topesc un fir de plastic livrat pe bobine, denumit filament (de regulă PLA).
-
----
-
-#### Întrebarea 6
-**Cum funcționează o imprimantă 3D de tip SLA (Stereolitografie)?**
-- A) Lovește plasticul cu un ciocan mecanic de mare viteză
-- B) Întărește rășina lichidă cu laser sau lumină UV *(Corect)*
-- C) Pulverizează suc de fructe congelat peste o matriță
-- D) Lipește straturi de hârtie reciclată cu lipici cald
-> **Explicație**: Tehnologia SLA utilizează raze ultraviolete pentru a polimeriza și întări rășina fotoactivă strat cu strat.
-
----
-
-#### Întrebarea 7
-**Care dintre următoarele domenii folosește imprimarea 3D pentru a salva vieți?**
-- A) Medicina *(Corect)*
-- B) Astronomia antică
-- C) Pescuitul sportiv de iarnă
-- D) Fabricarea baloanelor de săpun
-> **Explicație**: În medicină, imprimarea 3D produce proteze personalizate pentru copii, ghiduri chirurgicale și modele anatomice pentru operații grele.
-
----
-
-#### Întrebarea 8
-**Cum se numește comanda din Tinkercad care unește formele solide și formele decupate într-un singur corp?**
-- A) Delete (șterge totul de pe planul de lucru)
-- B) Group (grupare prin comanda rapidă Ctrl + G) *(Corect)*
-- C) Explode (aruncă toate piesele în colțuri opuse)
-- D) Freeze (îngheață ecranul calculatorului pe loc)
-> **Explicație**: Funcția Group unește solidele și aplică formele de tip Hole, realizând decupajele dorite în piesa finală.
-
----
-
-#### Întrebarea 9
-**Ce facem cu mouse-ul în Tinkercad pentru a roti privirea (a orbita) în jurul obiectului 3D?**
-- A) Dăm click stânga de zece ori foarte repede
-- B) Ținem apăsat pe Click Dreapta și mișcăm mâna *(Corect)*
-- C) Suflăm ușor peste monitor de la stânga la dreapta
-- D) Apăsăm tasta Space de trei ori consecutiv
-> **Explicație**: Click-ul dreapta ținut apăsat permite rotirea liberă a camerei în jurul planului de lucru tridimensional.
-
----
-
-#### Întrebarea 10
-**Dacă baza brelocului nostru are o înălțime de 3 mm pe axa Z, la ce înălțime trebuie să fie literele pentru a fi reliefate?**
-- A) 1 mm (rămân ascunse complet în interiorul bazei)
-- B) 5 mm (ies cu 2 mm deasupra plăcuței) *(Corect)*
-- C) 50 mm (ies ca niște turnuri uriașe de televiziune)
-- D) 0 mm (dispar complet în altă dimensiune spațială)
-> **Explicație**: Pentru ca textul să se vadă frumos și să iasă în relief cu 2 mm deasupra plăcuței, el trebuie să aibă o înălțime totală de 5 mm pe axa verticală Z.
-
----
-
-#### Întrebarea 11
-**Câte ore durează fiecare lecție săptămânală la cursul 3D School?**
-- A) 30 de minute (o pauză rapidă de gustare)
-- B) 2 ore pline / 120 de minute de creație *(Corect)*
-- C) 5 ore fără nicio oprire pentru apă
-- D) 15 minute (doar cât deschidem calculatorul)
-> **Explicație**: Fiecare întâlnire săptămânală durează 120 de minute, oferind timp ideal pentru teorie, demonstrație, modelare practică și jocuri.
-
----
-
-#### Întrebarea 12 *(Atenție: 2 Răspunsuri Corecte!)*
-**Ce putem face cu obiectele 3D pe care le proiectăm la fiecare lecție a cursului?**
-- A) Le luăm mândri acasă pentru colecția noastră *(Corect)*
-- B) Le oferim cadou prietenilor sau familiei *(Corect)*
-- C) Le trimitem cu o rachetă poștală pe planeta Marte
-- D) Le topim obligatoriu într-o tigaie cu ulei încins
-> **Explicație**: Toate creațiile imprimate 3D le aparțin copiilor! Ei le pot păstra pentru colecția personală sau le pot dărui celor dragi.
-
----
-
-#### Întrebarea 13
-**Ce vom construi în Modulul 2 – „Fabrica de Jucării”?**
-- A) Zgârie-nori uriași cu lifturi pentru furnici
-- B) Jucării articulate, fidget toys și seturi de șah *(Corect)*
-- C) Dulapuri masive din stejar pentru haine de iarnă
-- D) Autostrăzi suspendate cu zece benzi de circulație
-> **Explicație**: Modulul 2 este dedicat universului jucăriilor mecanice inteligente, articulațiilor gata imprimate și unui set complet de șah stilizat.
-
----
-
-#### Întrebarea 14
-**Despre ce vom învăța în Modulul 3 – „Descoperă Orașul”?**
-- A) Monumente faimoase și clădiri urbane fascinante *(Corect)*
-- B) Rețete secrete de pizza cu ananas și ciocolată
-- C) Tehnici de pilotat avioane supersonice fără aripi
-- D) Reguli de dresaj pentru pinguinii de la Polul Sud
-> **Explicație**: În Modulul 3 călătorim în marile orașe ale lumii și învățăm să reproducem clădiri emblematice, turnuri și monumente istorice.
-
----
-
-#### Întrebarea 15
-**Ce activitate specială încheie Modulul 4 – „Descoperă Natura”?**
-- A) Un test grilă complicat de matematică superioară
-- B) Marele Proiect Personal creat de fiecare elev *(Corect)*
-- C) O cursă de alergat în jurul clădirii timp de o oră
-- D) O oră completă de curățenie generală cu mopul
-> **Explicație**: Modulul 4 culminează cu propriul proiect personal, în care fiecare elev își dă frâu liber imaginației și creează o piesă unică de la zero!
-
----
-
-### 🔹 Etapa 9 (Minutul 115 - 120): Concluzii, Impresii Finale & Fotografia de Grup
-
-1. **Inspecția Finală la Imprimantă**: Elevii se adună din nou în jurul imprimantei 3D pentru a analiza calitatea straturilor și a vedea cum se finalizează primele piese.
-2. **Turul Impresiilor într-un Singur Cuvânt**: Fiecare participant rostește un cuvânt care descrie experiența de astăzi (ex: *„Creativ”*, *„Uimitor”*, *„Magie”*, *„Distractiv”*).
-3. **Fotografia Oficială de Deschidere**: Copiii își ridică micile animale 3D colorate primite la început și facem o fotografie de grup festivă, marcând intrarea oficială în lumea creatorilor 3D!
+1. **Detașarea și Înmânarea Brelocurilor Personale**:
+   - Patul magnetic PEI flexibil al imprimantei Bambu Lab A1 este detașat, iar piesele proaspăt răcite se desprind cu ușurință.
+   - Fiecare elev își primește cu mândrie propriul breloc personalizat cu nume, pe care se montează inelul metalic de chei.
+2. **Invitația Călduroasă de a Continua Cursul Săptămâna Viitoare**:
+   - Profesorul îi felicită pe toți copiii pentru primul lor obiect 3D creat și realizat chiar în laborator.
+   - Le reamintește că atelierul deschis de astăzi a fost doar prima pagină dintr-o aventură uriașă și îi invită cu bucurie să continue cursul începând de săptămâna viitoare la **Lecția 01**, unde fiecare își va ocupa propriul calculator individual și va modela proiecte din ce în ce mai spectaculoase!
+3. **Fotografia Oficială de Grup**:
+   - Copiii își ridică zâmbitori brelocurile personalizate și micro-animalele 3D colorate primite la icebreaker pentru fotografia festivă de final, plecând acasă încântați cu creațiile lor palpabile!

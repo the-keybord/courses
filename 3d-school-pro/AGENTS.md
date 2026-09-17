@@ -10,6 +10,9 @@ This file complements the global repository [`AGENTS.md`](../AGENTS.md) with rul
   2. **Product Design** (Module 2)
   3. **Architect & Urbanism** (Module 3)
   4. **Character Design** (Module 4)
+- **Hardware & Software Stack**:
+  - **3D Printers**: Bambu Lab A1 (and sometimes A2L or A1 Combo).
+  - **Slicing Software**: Bambu Studio.
 - **Lesson Duration**: Each lesson is **120 minutes** (2 hours).
 
 ## Language Rules
