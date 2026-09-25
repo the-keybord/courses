@@ -1,4 +1,4 @@
-# Lecția 01: Reconectare în Cercul Inginerilor, Jocul Cărților UNO și Foaia de Parcurs RF 2.0
+# Lecția 01 [RBF2.1]: Reconectare în Cercul Inginerilor, Jocul Cărților UNO și Foaia de Parcurs RF 2.0
 
 Această sesiune deschide cursul de nivel avansat **Robot Factory: Evolution**. Pe parcursul acestui an, fiecare elev își va reproiecta și reconstrui complet propriul robot (RF 2.0), transformând prototipul de anul trecut într-un sistem mecatronic stabil, controlat prin BLE (Bluetooth Low Energy), dotat cu senzori inteligenți și pregătit pentru competiția tehnică **Orbit Odyssey**.
 
@@ -6,16 +6,29 @@ Prima lecție este dedicată cunoașterii reciproce a celor 16 cursanți printr-
 
 ---
 
-## 🎯 Obiective Operaționale & Întrebări Esențiale
+## 1. Informații Generale despre Lecție
+- **Cod Lecție**: RBF2.1
+- **Grupa de Vârstă**: 11 – 15 ani
+- **Durată Totală**: 120 minute (2 ore)
+- **Tipul Lecției**: Teorie aplicată, diagnoză inginerească & activitate de teambuilding
+- **Dinamica de Lucru**: Individual asistat (1 robot per elev) & activități de grup în cerc
+- **Proiect Practic**: Foaia de parcurs individuală RF 2.0 & diagnoza defectelor hardware
+- **Obiectiv Major**: Înțelegerea cauzelor fizice ale erorilor din sezonul trecut și stabilirea arhitecturii de tranziție către BLE și senzori avansați
 
-### Obiective Operaționale
+### 🔗 Resurse & Linkuri Utile
+- **Prezentare**: https://drive.google.com/file/d/10cZlBknw7N3r_h8eZ-QYqZ_EXAMPLE/view?usp=sharing
+- **Kahoot**: https://create.kahoot.it/details/rbf2-lesson-01-intro
+
+### ❓ Întrebări Esențiale & Obiective Operaționale
+
+#### Obiective Operaționale
 La finalul acestei sesiuni inaugurale, cursanții vor fi capabili:
 1. **Să se cunoască și să identifice interesele tehnice ale colegilor de grupă** prin intermediul jocului structurat de cărți UNO.
 2. **Să analizeze cauzele fizice ale problemelor hardware din RF 1.0**: căderi de tensiune (*voltage drop/brownout*), deconectarea cablurilor DuPont din cauza vibrațiilor și instabilitatea serverului web local pe Wi-Fi.
 3. **Să înțeleagă avantajele tranziției de la Wi-Fi AP la BLE (Bluetooth Low Energy)**: latență redusă, împerechere instantanee, păstrarea conexiunii de internet pe telefon și control prin joystick virtual.
 4. **Să cunoască etapele de lucru și cerințele competiției Orbit Odyssey**: 1 robot complet per elev, asamblare ghidată pas cu pas de către profesor, integrare senzori și formarea de alianțe de echipă.
 
-### Întrebări Esențiale de Inginerie
+#### Întrebări Esențiale de Inginerie
 - *De ce conexiunile electrice slabe și căderile de tensiune afectează comportamentul robotului chiar dacă codul scris este 100% corect?*
 - *De ce 16 rețele Wi-Fi simultane într-o singură sală generează latență și blocaje, în timp ce conexiunile BLE punct-la-punct funcționează fără interferențe?*
 - *Cum ne ajută cunoașterea punctelor forte ale colegilor de laborator în rezolvarea problemelor tehnice și în alianțele de concurs?*

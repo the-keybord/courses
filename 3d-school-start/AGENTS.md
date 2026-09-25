@@ -38,9 +38,9 @@ This file complements the global repository [`AGENTS.md`](../AGENTS.md) with rul
    7. **Joc Quiz Kahoot / Evaluare interactivă** (10–15 engaging questions testing presentation concepts; detailed in `quiz.md`).
    8. **Colectarea obiectelor imprimate & Fotografie de grup** (Collect printed objects and group photo).
 4. **Print Workflow**: Starting from Lesson 02 onwards, models designed in Lesson $N-1$ are printed during Lesson $N$ (Step 2) and collected at Step 8. Models designed in Lesson $N$ (Step 6) are queued for Lesson $N+1$.
-5. **Rich Narrative & Essay Format**: All lesson `README.md` files must be written in a warm, detailed, essay-like format without bare bullet points or ASCII art.
+5. **Clear, Practical & Age-Appropriate Style**: All lesson `README.md` files must be written in a clear, accessible, and structured instructional format. Strictly avoid overly artistic language, literary metaphors, and excessive epithets. Keep explanations concrete, engaging, and directly comprehensible for 10–12 year olds without exaggeration.
 6. **Mandatory 4-Part Layout for `README.md`**:
-   1. *General Info*: Metadata (including `- **Cod Lecție**: 3DS2.<N>`), 3+ essential questions, and clean bulleted *Resurse & Linkuri Utile* (strictly for external URLs, never local files):
+   1. *General Info*: Metadata (including `- **Cod Lecție**: 3DS2.<N>`), 3+ essential questions, and clean bulleted *Resurse & Linkuri Utile* (strictly for external URLs, never local `file:///...` links):
       ```markdown
       ### 🔗 Resurse & Linkuri Utile
       - **Prezentare**: <URL>
@@ -51,11 +51,17 @@ This file complements the global repository [`AGENTS.md`](../AGENTS.md) with rul
    4. *Explicit Step-by-Step Elaboration*: Sequential deep pedagogical script, live demo commands, practical tasks, Kahoot quiz briefing (referencing `quiz.md`), and wrap-up.
 7. **Interactive Kahoot Quiz Standards (`quiz.md`)**:
    - Resides in a dedicated `quiz.md` file (never embedded inline in `README.md` or `presentation.md`).
-   - 10 to 15 questions, exactly 4 answer options (`A, B, C, D`), witty distractors, balanced text lengths (correct answer never longest), immediate pedagogical explanation for each question.
-8. **Presentation Rules (`presentation.md` & `presentation_summary.md`)**:
-   - Strictly theoretical & conceptual. Never contains multi-slide CAD tutorials.
-   - Practical work is condensed into **one single slide/card with NO images**, containing only a concise text checklist for teacher orientation.
-   - For AI generators (`presentation_summary.md`), images are required for theoretical concepts, in abstract style only (2D cartoon / flat vector / watercolor), with a mature color palette. No inline image advice in the text.
+   - 10 to 15 questions, exactly 4 answer options (`A, B, C, D`), balanced lengths, immediate pedagogical explanation for each question.
+   - **Ultra-Short Answers (Max 1–3 Words)**: Each answer option must contain **strictly up to 1–3 words** for rapid reading during fast Kahoot rounds.
+   - **100% Pure Theoretical Focus**: Strictly tests theoretical concepts from the presentation (zero questions about the practical CAD project).
+8. **Presentation Rules (`presentation.md`, `presentation_interactive.md`, `presentation_summary.md`)**:
+   - Strictly 100% theoretical & conceptual (history, mechanics, physics, materials, safety).
+   - **Zero Practical Project Content**: Never include practical modeling steps, project instructions, or project checklists in presentations. The practical project workflow belongs strictly in `README.md`.
+   - For AI generators (`presentation_summary.md`), narrative text covers pure theory with abstract style visuals (2D cartoon / flat vector) and a mature color palette.
+   - For interactive lecture (`presentation_interactive.md`), format with 3–4 numbered sentences per slide for students to read out loud.
+9. **Risks Files Policy (`risks.md`)**:
+   - Risk analysis and pre-mortem documents are strictly for **human review and analysis**.
+   - Agents must never automatically apply tweaks or modify lesson bundle documents based on `risks.md`; all adjustments are made at the sole discretion of the author.
 
 
 

@@ -1,138 +1,208 @@
-# Lecția 01: Introducere în Lumea Imprimării 3D și Prima Noastră Creație în Tinkercad
+# Lecția 01 [3DS2.1]: Anatomia Imprimantei 3D & Brelocul „Cheese Keyring”
 
 ---
 
-## 📌 Informații Generale despre Lecție
+## 1. Informații Generale despre Lecție
+- **Cod Lecție**: 3DS2.1
 - **Grupa de Vârstă**: 10 – 12 ani
-- **Durată Totală**: 120 minute (2 ore pline de descoperiri)
-- **Modulul**: Modulul 1 – *Bazele Modelării 3D și Tehnologiei FDM* (Lecția 1 din 9)
-- **Proiect Practic**: Proiectarea a 2 brelocuri personalizate (unul imprimat pe loc și unul pregătit pentru lecția viitoare)
-- **Excepție Specială Imprimare**: *Această prima lecție este o excepție de la program! Pentru a intra în ritmul întregului an școlar, copiii vor imprima primul breloc pe loc în timpul lecției pentru a pleca acasă cu el, pregătind totodată un al doilea model 3D ce va fi imprimat pentru a fi colectat la Lecția 02.*
+- **Durată Totală**: 120 minute (2 ore)
+- **Modulul**: Modulul 1 – *Laboratorul Creativ* (Lecția 1 din 9)
+- **Formatul Grupei**: Lucru individual la propriul calculator cu nickname alocat în Tinkercad Classroom.
+- **Proiect Practic**: Proiectarea 3D a unei felii de cașcaval (*Swiss Cheese Keyring*), prevăzută cu orificiu de montaj pentru inel de breloc și personalizată cu nume/inițiale.
+- **Activitate Suplimentară**: Testarea fizicii digitale în modulul **Sim Lab** din Tinkercad (gravitație, coliziuni și rostogolire).
+- **Ritmul Imprimării 3D**: Colectarea și punerea la imprimat a modelelor restante din Lecția 00 la începutul orei; pregătirea noilor brelocuri pentru a fi imprimate și oferite elevilor la Lecția 02.
+
+### 🔗 Resurse & Linkuri Utile
+- **Prezentare**: https://docs.google.com/presentation/d/1NeSuLsu2wYscMSn2pdViqy3uiH9ek8jJp91gMVx27ak/edit?usp=sharing
+- **Kahoot**: https://create.kahoot.it/details/bfdbb8f7-042d-487f-ac71-93366e0d79b9
+- **Model**: https://www.tinkercad.com/things/duighaG85Ru-copy-of-cheese?sharecode=GvGYIbyyKjleEz7y4dDZrP-GqEEHA6JwlKMD24csn7s
+
+### ❓ Întrebări Esențiale (Obiectivele de Învățare)
+1. **Care sunt principalele etape din evoluția imprimantelor 3D (RepRap, Prusa, Ender 3, Bambu Lab) și cum au devenit ele accesibile tuturor?**
+2. **Ce rol are fiecare axă de mișcare (X, Y, Z și E) într-o imprimantă 3D de tip FDM?**
+3. **Care sunt piesele care încălzesc și controlează temperatura (patul cald, blocul de încălzire, duza, termistorul) și de ce este important controlul termic?**
+4. **Cum combinăm forme de bază (cilindru, cuburi și sfere decupate) pentru a modela o felie de cașcaval în Tinkercad?**
+5. **Cum adăugăm un orificiu funcțional de 1–1.5 mm pentru montarea tijei de breloc și cum testăm obiectul în Sim Lab?**
 
 ---
 
-## ❓ Întrebări Esențiale (Obiectivele de Învățare)
+## 2. Pregătirea Lecției (Checklist Operațional Profesor)
 
-Această prima lecție este concepută ca o călătorie fascinantă de la idee la obiect real. Pe parcursul celor 120 de minute, vom explora și vom răspunde în detaliu la 5 întrebări fundamentale care definesc întreaga industrie a imprimării 3D:
+Înainte de sosirea elevilor în sală, profesorul parcurge următorul checklist:
 
-1. **Când au fost inventate imprimantele 3D și de la ce idee a pornit totul?**
-2. **Ce tehnologii și tipuri de imprimante 3D există în lumea modernă?**
-3. **Care sunt cele mai reprezentative și celebre modele de imprimante 3D din istorie?**
-4. **Cum transformă o imprimantă 3D FDM un desen de pe ecran într-un obiect fizic real?**
-5. **Cum alegem materialele potrivite (filamentele) și de ce PLA este alegerea ideală pentru noi?**
+### 🖥️ Conturi & Software
+- [ ] **Tinkercad Classroom**: Clasa este deschisă pe contul de profesor, iar codul de acces este afișat pe tablă sau ecran.
+- [ ] **Nickname-uri Elevi**: Fiecare calculator are deschis browserul pe pagina de conectare Tinkercad, cu biletul de acces pregătit (ex: `student1`, `student2`...).
+- [ ] **Materiale Digitale**: Prezentarea este pregătită în mod ecran complet, iar jocul Kahoot este deschis în tab separat.
+- [ ] **Bambu Studio**: Slicerul este deschis cu profilul standard de 0.20 mm pentru Bambu Lab A1, pregătit pentru aranjarea modelelor din Lecția 00.
 
----
+### 🖨️ Echipamente 3D & Hardware
+- [ ] **Imprimanta Bambu Lab A1**: Pornită, calibrată, cu placa de imprimare PEI curată.
+- [ ] **Filament**: Bobină de filament PLA încărcată (galben pentru tema cașcavalului și culorile necesare pentru piesele din Lecția 00).
+- [ ] **Piese Demonstrative**: O duză de 0.4 mm, un senzor termistor și o mostră de tijă filetată sau curea pentru a fi arătate fizic elevilor.
 
-## 📖 Povestea Tehnologiei 3D: Ghid Elaborat și Detaliat
-
-### 1. Nașterea Imprimării 3D: De la o idee îndrăzneață la o revoluție globală
-Până nu demult, pentru a crea un obiect din plastic, fabricile trebuiau să construiască matrițe enorme din oțel, scumpe și greu de modificat. Totul s-a schimbat în anul **1983**, când un inventator american pe nume **Chuck Hull** s-a gândit la o metodă complet nouă. El lucra într-o fabrică unde acoperea mesele cu straturi subțiri de rășină lichidă care se întăreau la lumină ultravioletă (UV).
-
-Chuck s-a întrebat: *„Ce-ar fi dacă am suprapune mii de astfel de straturi microscopice, unul peste altul, ghidate de un calculator?”*. În acea noapte, într-un mic laborator, el a creat prima tehnologie de imprimare 3D din lume, numită **Stereolitografie (SLA)**. Primul obiect imprimat vreodată a fost o mică cupă din plastic transparent folosită în medicină pentru spălarea ochilor. În 1986, el a fondat compania *3D Systems*, punând bazele unei industrii care astăzi creează de la piese de rachete spațiale până la proteze medicale și jucării!
-
----
-
-### 2. Cum Clasificăm Imprimantele 3D? Cele 3 Tehnologii Principale
-Deși există zeci de variante industriale, imprimarea 3D se împarte în trei mari familii tehnologice:
-
-1. **FDM (Fused Deposition Modeling / Depunere de Filament Topit)**:
-   - *Cum funcționează?* Este cea mai răspândită tehnologie din școli și case. Imprimanta folosește un fir lung din plastic (numit filament) înfășurat pe o bobină. Acest fir este tras într-un cap de imprimare fierbinte (extrudor), topit la 200°C și împins printr-o duză foarte fină, depunând plasticul strat peste strat pe o placă.
-   - *Analogie*: Imaginează-ți un stilou de lipici fierbinte atașat de mâna unui robot ultra-precis care construiește o casă din straturi microscopice de lipici.
-
-2. **SLA (Stereolithography / Imprimarea cu Rășină Lichidă)**:
-   - *Cum funcționează?* În loc de filament solid, se folosește o cuvă plină cu rășină lichidă. Un fascicul laser sau un ecran digital trimite lumină UV din subțire în subțire, solidarizând rășina instantaneu.
-   - *Rezultat*: Obiecte incredibil de netede și detaliate, folosite intens în stomatologie și la fabricarea miniaturilor pentru jocuri.
-
-3. **SLS (Selective Laser Sintering / Sinterizare cu Laser)**:
-   - *Cum funcționează?* Un laser extrem de puternic topește local o pulbere fină de plastic sau metal. Este o tehnologie folosită în aviație și medicină pentru a crea piese extrem de rezistente, fără a avea nevoie de structuri de suport.
+### 🎒 Materiale Fizice & Montaj
+- [ ] **Accesorii Breloc**: Set de inele metalice cu șurub autofiletant (diametru tijă ~1–1.5 mm) pentru fiecare elev din grupă.
+- [ ] **Piese din Lecția 00**: Modelele imprimate între sesiuni sau fișierele elevilor ce trebuie pornite imediat.
 
 ---
 
-### 3. Evoluția Imprimantelor 3D: Modelele care au Schimbat Lumea
-Pentru a înțelege unde suntem astăzi, este fascinant să privim cum au evoluat aceste mașinării:
+## 3. Planul Lecției Minut cu Minut (Structura de 120 Minute)
 
-* **SLA-1 (1987)**: „Bunicul” imprimantelor 3D. O mașinărie uriașă, de mărimea unui dulap mare, extrem de scumpă, rezervată doar laboratoarelor secrete de cercetare.
-* **Proiectul RepRap (2005)**: Creat de profesorul Adrian Bowyer în Anglia, acest proiect open-source a avut o idee genială: *o imprimantă 3D care își poate imprima singură piesele de schimb!* Această mișcare a democratizat imprimarea 3D și a permis oricui să își construiască propria imprimantă acasă.
-* **Prusa i3 (2012)**: Proiectată de Josef Prusa, a devenit cel mai copiat și iubit design de imprimantă FDM din lume datorită simplității și fiabilității sale.
-* **Ender 3 (2018)**: Imprimanta care a adus modelarea 3D în camerele copiilor și pasionaților din întreaga lume, fiind accesibilă ca preț și ușor de modificat.
-* **Bambu Lab (Anii 2020)**: Noua generație de imprimante inteligente, echipate cu camere video, senzori laser și viteze de 5 ori mai mari, capabile să schimbe culorile automat în timpul imprimării.
-
----
-
-### 4. Anatomia și Mecanica unei Imprimante 3D FDM
-Cum reușește o imprimantă să se miște în spațiu cu o precizie de sutimi de milimetru? Răspunsul constă în coordonatele matematice 3D:
-
-* **Axa X (Stânga - Dreapta)**: Capul de imprimare se deplasează orizontal pe șine metalice.
-* **Axa Y (Înainte - Înapoi)**: Placa de imprimare (patul cald) se mișcă față-spate.
-* **Axa Z (Sus - Jos)**: Tija filetată ridică extrem de puțin capul de imprimare după finalizarea fiecărui strat (de obicei cu doar 0.2 mm).
-* **Extrudorul & Hotend-ul**: Extrudorul este „motorul” care prinde firul de plastic și îl împinge cu forță în *Hotend* (zona fierbinte). Duza are un orificiu minuscul (de regulă 0.4 mm) prin care plasticul curge ca un fir de ață topit.
-
----
-
-### 5. Chimia Materialelor: De ce PLA este Supereroul Nostru?
-Când alegem ce plastic să folosim, trebuie să ne gândim la siguranță, mediu și ușurința de imprimare:
-
-* **PLA (Acid Polilactic)**: **Materialul ideal pentru elevi!** Spre deosebire de plasticele obișnuite obținute din petrol, PLA este un bioplastic realizat din amidon de porumb sau trestie de zahăr. Când este topit, miroase plăcut, similar cu napolitanele sau floricelele de porumb. Este non-toxic, biodegradabil în condiții industriale și nu emană gaze nocive.
-* **PETG**: Plasticul din care sunt făcute sticlele de apă. Este mai flexibil și rezistent la apă, excelent pentru obiecte folosite afară.
-* **TPU**: Un plastic cauciucat și flexibil. Dacă vrei să printezi o husă de telefon sau o roată moale, TPU este alegerea potrivită.
-* **ABS**: Plasticul din care sunt făcute piesele LEGO. Este foarte dur, dar necesită temperaturi înalte și o imprimantă complet închisă deoarece emană mirosuri înțepătoare când se topește.
-
----
-
-## ⏱️ Desfășurarea Lecției Pas cu Pas (Planul de 120 Minute)
-
-> ⚠️ **Notă Excepție Lecția 01**: În această prima lecție, lansăm imprimările **pe loc** (Instant Print) pentru primul breloc personalizat, iar elevii vor pregăti un al doilea model 3D ce va fi imprimat pentru a fi colectat la Lecția 02. Această excepție le permite copiilor să simtă magia imprimării pe loc și instalează ritmul anual al cursurilor!
-
-| Minut | Etapă | Activitate Detaliată & Ghid pentru Profesor |
+| Minut | Etapă | Rezumat Activitate & Rolul Profesorului |
 | :--- | :--- | :--- |
-| **00 - 10 min** | **1. Bun Venit & Introducere** | Primirea elevilor. Profesorul explică comunitatea 3D și faptul că prima lecție este o excepție festivă în care vor imprima pe loc primul obiect, intrând în ritmul de ridicare a proiectelor la lecțiile viitoare. |
-| **10 - 20 min** | **2. Pregătirea Imprimantei Demo** | Profesorul pornește imprimanta 3D FDM din clasă, arată cum se introduce filamentul PLA și cum se încălzește duza la 200°C. Elevii observă îndeaproape extrudarea plasticului. |
-| **20 - 45 min** | **3. Prezentare & Discuție Interactivă** | Parcurgerea prezentării vizuale. Se discută despre Chuck Hull, cele 3 tehnologii (FDM, SLA, SLS), axele X, Y, Z și materialul PLA. Elevii adresează întrebări și ating mostre de plastice. |
-| **45 - 55 min** | **4. Pauză & Prezență** | Pauză de 10 minute pentru hidratare și relaxare. Verificarea și strigarea prezenței elevilor. |
-| **55 - 70 min** | **5. Demonstrația Live în Tinkercad** | Profesorul proiectează ecranul pe videoproiector și construiește pas cu pas brelocul personalizat, explicând fiecare comandă de navigare și modificare. |
-| **70 - 100 min** | **6. Lucru Practic: 2 Brelocuri Personalizate** | **Task 1**: Crearea brelocului primar cu nume (trimis la imprimantă pentru imprimare instantă pe loc).<br>**Task 2**: Proiectarea unui al doilea model / breloc cadou ce va fi imprimat pentru a intra în ritmul colectării la Lecția 02. |
-| **100 - 110 min** | **7. Joc Quiz Interactiv** | Joc Quiz scurt și distractiv pentru fixarea cunoștințelor despre istoria 3D, axe, tipuri de imprimante și PLA. |
-| **110 - 120 min** | **8. Colectarea Imprimării pe Loc & Poză de Grup** | Ridicarea primului breloc proaspăt imprimat pe loc și realizarea fotografiei de grup de deschidere! |
+| **00 - 10 min** | **Etapa 1: Primirea Elevilor & Verificarea Modelelor din Lecția 00** | Profesorul întâmpină elevii, verifică proiectele din prima lecție și pornește imprimarea acestora pe Bambu Lab A1. |
+| **10 - 30 min** | **Etapa 2: Prezentare Teoretică – Istoria, Axele și Sistemul Termic** | Prezentarea etapelor istorice (RepRap, Prusa, Ender 3, Bambu Lab), mișcarea pe cele 4 axe (X, Y, Z, E) și componentele de încălzire. |
+| **30 - 40 min** | **Etapa 3: Demonstrație Practică la Imprimantă** | Elevii observă imprimanta reală, identifică axele în mișcare, examinează o duză și înțeleg regulile de siguranță termică. |
+| **40 - 50 min** | **Etapa 4: Demonstrația Profesorului – Modelarea Feliei de Cașcaval** | Profesorul demonstrează pas cu pas în Tinkercad crearea feliei dintr-un cilindru, decuparea găurilor cu sfere Hole și adăugarea orificiului de breloc. |
+| **50 - 60 min** | **Etapa 5: Pauză Scurtă & Prezență** | Pauză de 10 minute pentru relaxare și notarea prezenței. |
+| **60 - 95 min** | **Etapa 6: Lucru Individual – Proiectarea Brelocului „Cheese Keyring”** | Elevii lucrează la calculatoare, modelează felia de cașcaval, plasează orificiul de 1–1.5 mm și își adaugă numele. |
+| **95 - 105 min** | **Etapa 7: Quiz Kahoot – Verificarea Cunoștințelor** | Joc scurt pe Kahoot cu 10 întrebări pentru consolidarea noțiunilor despre axe, temperaturi și componente. |
+| **105 - 115 min** | **Etapa 8: Simulare Fizică în Tinkercad Sim Lab** | Elevii testează comportamentul feliei de cașcaval în modulul Sim Lab (gravitație, cădere pe suprafețe, materiale). |
+| **115 - 120 min** | **Etapa 9: Colectarea Pieselor Imprimate & Încheierea Orei** | Desprinderea pieselor terminate din Lecția 00, verificarea salvării modelelor curente și pregătirea pentru sesiunea următoare. |
 
 ---
 
-## 💻 Ghid Detaliat pentru Proiectul Practic: Brelocul Personalizat în Tinkercad
-
-### Pasul 1: Autentificarea în Clasa Virtuală
-1. Deschideți browser-ul Google Chrome și accesați `www.tinkercad.com`.
-2. Apăsați pe butonul verde **Join Class** (Alătură-te clasei).
-3. Introduceți codul clasei oferit de profesor pe tablă și nickname-ul vostru individual.
-
-### Pasul 2: Crearea Spațiului de Lucru
-1. Din panoul principal, apăsați butonul **Create > 3D Design**.
-2. Redenumiți proiectul în colțul din stânga sus: schimbați numele aleatoriu generat de Tinkercad în `Breloc_NumeleTau`.
-
-### Pasul 3: Construirea Bazei Brelocului
-1. Din panoul cu forme geometrice din dreapta (*Basic Shapes*), trageți un **Box (Cub roșu)** pe spațiul de lucru (*Workplane*).
-2. Dați click pe unul dintre colțurile albe ale bazei și schimbați dimensiunile:
-   - **Lungime (X)**: `50 mm`
-   - **Lățime (Y)**: `20 mm`
-   - **Înălțime (Z)**: `3 mm` (click pe pătratul alb de sus).
-
-### Pasul 4: Crearea Găurii pentru Inelul de Breloc
-1. Trageți o formă de tip **Cylinder (Hole)** - cel cilindric transparent cu dungi gri.
-2. Modificați dimensiunile cilindrului la `6 mm x 6 mm` înălțime `5 mm`.
-3. Plasați cilindrul la capătul din stânga al bazei dreptunghiulare, asigurându-vă că trece complet prin placă.
-
-### Pasul 5: Adăugarea Textului Personalizat & Exportul Instant
-1. Din panoul din dreapta, selectați forma **Text**.
-2. În fereastra de opțiuni a textului, scrieți prenumele vostru (ex: `ALEX` sau `MARIA`).
-3. Redimensionați textul pentru a se potrivi frumos pe plăcuță și setați înălțimea acestuia pe axa Z la `5 mm`.
-4. Selectați toate obiectele (`Ctrl + A`) și apăsați **Group (`Ctrl + G`)**.
-5. Exportați fișierul `.STL` pentru imprimarea pe loc din timpul clasei!
-
-### Pasul 6: Pregătirea Proiectului pentru Lecția 02 (Intrarea în Ritm)
-1. Creați un al doilea proiect numit `Breloc_Cadou_Lectia02`.
-2. Proiectați un al doilea model personalizat pentru o persoană dragă (prieten/familie).
-3. Exportați fișierul `.STL` ce va fi pus în coada de imprimare pentru a fi ridicat festiv la începutul Lecției 02!
+## 4. Desfășurarea Detaliată a Fiecărei Etape
 
 ---
 
-## 🏆 Rezultatul Final și Intrarea în Ritmul Anual
-- **Rezultat Lecția 01**: Elevii pleacă acasă încântați cu primul lor breloc 3D imprimat pe loc!
-- **Pregătire Lecția 02**: Al doilea proiect este pregătit pe slicer, garantând o tranziție lină în ritmul anual al cursurilor (imprimare între lecții, ridicare la începutul lecției următoare).
+### 🔹 Etapa 1 (Minutul 00 - 10): Primirea Elevilor & Verificarea Modelelor din Lecția 00
+
+1. **Așezarea la Calculatoare**: Elevii intră în clasă și se conectează în contul lor de Tinkercad Classroom folosind nickname-ul alocat.
+2. **Pornirea Imprimării pentru Lecția 00**:
+   - Profesorul deschide Bambu Studio, aranjează pe placă modelele rămase din Lecția 00 și trimite comanda de printare către Bambu Lab A1.
+   - Elevii văd pe scurt calibrarea inițială, după care imprimanta lucrează pe fundal în timpul prezentării.
+3. **Obiectivul Zilei**: Profesorul anunță tema orei: descoperirea modului în care funcționează o imprimantă 3D pe dinăuntru și proiectarea unui breloc util sub formă de felie de cașcaval.
+
+---
+
+### 🔹 Etapa 2 (Minutul 10 - 30): Prezentare Teoretică – Istoria, Axele și Sistemul Termic
+
+Prezentarea durează 15–20 de minute și este structurată în trei părți clare:
+
+#### 1. Evoluția Imprimantelor 3D (4 Etape Principale)
+- **Etapa RepRap (2005–2011)**:
+  - La început, imprimantele 3D industriale erau foarte scumpe și inaccesibile publicului larg.
+  - Proiectul *RepRap* a demonstrat că se poate construi o imprimantă folosind piese din plastic imprimate chiar de o altă imprimantă 3D.
+- **Etapa Prusa (2012–2018)**:
+  - Josef Prusa a dezvoltat modelul *Prusa i3*, un standard de fiabilitate cu piese open-source și software dedicat (PrusaSlicer).
+- **Etapa Ender 3 (2018–2022)**:
+  - Creality a lansat *Ender 3*, făcând imprimarea 3D accesibilă acasă și în școli datorită prețului redus și structurii din profile de aluminiu.
+- **Etapa Bambu Lab (2022 – Prezent)**:
+  - Imprimante moderne rapide, cu senzori de calibrare automată, sisteme CoreXY și opțiune de imprimare multicoloră (AMS).
+
+#### 2. Mișcarea pe Axe: X, Y, Z și E
+Imprimanta își coordonează mișcările pe 4 axe motorizate:
+- **Axa X (Stânga – Dreapta)**: Capul de printare se deplasează orizontal de-a lungul brațului.
+- **Axa Y (Față – Spate)**: La imprimantele de tip bed-slinger, patul de imprimare se mișcă înainte și înapoi.
+- **Axa Z (Sus – Jos)**: Brațul sau capul de imprimare urcă strat cu strat (de exemplu, cu câte 0.2 mm la fiecare nivel).
+- **Axa E (Extruderul)**: Motorul care trage firul de filament de pe rolă și îl împinge către zona de încălzire.
+
+#### 3. Sistemul Termic și Componentele Calde
+- **Patul de Imprimare (*Heatbed* - 50°C–65°C pentru PLA)**: Este încălzit pentru a menține aderența primului strat și pentru a preveni dezlipirea colțurilor piesei (*warping*).
+- **Blocul de Încălzire (*Heater Block*)**: Partea metalică din capul de printare care ridică temperatura filamentului la **210°C–220°C**.
+- **Duza (*Nozzle*)**: Vârful metalic prin care iese plasticul topit. Diametrul standard utilizat este de **0.4 mm**.
+- **Radiatorul și Heatbreak-ul**: Răcesc partea superioară a capului de imprimare pentru ca plasticul să nu se topească înainte de a ajunge în duză.
+- **Termistorul**: Senzorul electronic care măsoară continuu temperatura și transmite datele plăcii de bază pentru a menține căldura stabilă.
+
+---
+
+### 🔹 Etapa 3 (Minutul 30 - 40): Demonstrație Practică la Imprimantă
+
+Profesorul adună elevii în fața imprimantei **Bambu Lab A1**:
+1. **Identificarea Componentelor Reale**: Elevii observă direct axele în mișcare, cureaua dințată a axei X și motorul extruderului (axa E).
+2. **Examinarea Pieselor de Schimb**: Profesorul le arată o duză de 0.4 mm și un termistor, pentru a vedea dimensiunea reală a componentelor.
+3. **Reguli de Siguranță**:
+   - Nu se atinge duza sau blocul metalic în timpul funcționării (temperatura depășește 200°C).
+   - Nu se blochează manual axele în timp ce motoarele sunt active.
+
+---
+
+### 🔹 Etapa 4 (Minutul 40 - 50): Demonstrația Profesorului – Modelarea Feliei de Cașcaval
+
+Profesorul proiectează ecranul Tinkercad și parcurge pașii de construcție:
+
+1. **Baza Cilindrică**:
+   - Adaugă un **Cylinder** pe suprafața de lucru.
+   - Setează dimensiunile: Diametru = `70 mm x 70 mm`, Înălțime = `25 mm`.
+   - Crește numărul de fațete (*Sides*) la maxim (`64`) pentru o margine netedă.
+2. **Tăierea Feliei Triunghiulare**:
+   - Plasează un **Box (Hole)**, îl rotește la 30–45° și îl poziționează pentru a decupa o secțiune din cilindru.
+   - Folosește un al doilea cub transparent pentru a elimina restul cilindrului, păstrând o felie triunghiulară.
+   - Selectează piesele și apasă **Group (`Ctrl + G`)**.
+3. **Crearea Găurilor de Cașcaval**:
+   - Adaugă o **Sphere (Hole)** de `12–15 mm` pe una dintre muchii.
+   - Duplică sfera (`Ctrl + D`), îi modifică dimensiunile (`6 mm`, `10 mm`, `18 mm`) și le distribuie pe fețele laterale și superioare.
+   - Selectează totul și apasă **Group (`Ctrl + G`)**. Schimbă culoarea solidului în galben.
+4. **Orificiul pentru Breloc**:
+   - Plasează un **Cylinder (Hole)** de **`1.2 mm x 1.2 mm`** și înălțime de `8 mm` într-un colț plin al feliei.
+   - Explică scopul: acest orificiu permite înșurubarea tijei metalice de breloc fără a crăpa plasticul.
+5. **Personalizarea**:
+   - Adaugă un element de tip **Text** cu numele elevului pe una din fețele plane (în relief de 1 mm sau gravat ca Hole de 1 mm).
+
+---
+
+### 🔹 Etapa 5 (Minutul 50 - 60): Pauză Scurtă & Prezență
+
+Pauză de 10 minute pentru odihnă și hidratare. Profesorul verifică prezența în catalog.
+
+---
+
+### 🔹 Etapa 6 (Minutul 60 - 95): Lucru Individual – Proiectarea Brelocului „Cheese Keyring”
+
+Elevii lucrează individual la calculatoare în Tinkercad Classroom.
+
+#### Pașii de Lucru pentru Elevi:
+1. **Crearea Documentului**: Click pe **Create > 3D Design**, redenumit `Cascaval_NumeElev`.
+2. **Modelarea Formei de Bază**:
+   - Cilindru de `60–70 mm` diametru, `20–25 mm` înălțime, *Sides = 64*.
+   - Decuparea feliei cu 1 sau 2 cuburi goale (*Box Hole*) rotite corespunzător.
+   - Grupare (`Ctrl + G`).
+3. **Decuparea Găurilor**:
+   - Adăugarea de sfere goale (*Sphere Hole*) de diferite mărimi pe suprafețele feliei.
+   - Păstrarea unei zone solide pentru rezistența mecanică a brelocului.
+4. **Adăugarea Orificiului de Breloc**:
+   - Cilindru gol (*Cylinder Hole*) de **`1.2 mm x 1.2 mm`**, plasat la cel puțin 2–3 mm de marginea exterioară.
+5. **Personalizarea cu Nume**:
+   - Adăugarea numelui cu forma **Text** (relief de 1 mm sau gravat de 1 mm).
+6. **Gruparea Finală**: Selectarea tuturor corpurilor (`Ctrl + A`) și gruparea lor (`Ctrl + G`).
+
+> 🛠️ **Asistența Profesorului**:
+> - Verifică poziționarea corectă a orificiului de 1.2 mm (să nu se intersecteze cu o gaură de cașcaval).
+> - Ajută elevii să folosească scurtăturile utile (`Ctrl + D` pentru duplicare, Click Dreapta pentru rotirea camerei).
+
+---
+
+### 🔹 Etapa 7 (Minutul 95 - 105): Quiz Kahoot – Verificarea Cunoștințelor
+
+Elevii deschid un tab la `kahoot.it` și introduc codul PIN afișat de profesor.
+
+- **Format**: 10 întrebări cu 4 variante de răspuns despre etapele istorice, axele X/Y/Z/E și sistemul de încălzire.
+- **Obiectiv**: Fixarea rapidă a noțiunilor teoretice parcurse la începutul orei.
+- *(Întrebările complete, variantele de răspuns și explicațiile sunt disponibile în fișierul `quiz.md`).*
+
+---
+
+### 🔹 Etapa 8 (Minutul 105 - 115): Simulare Fizică în Tinkercad Sim Lab
+
+Elevii care au finalizat modelul explorează modulul de simulare fizică din Tinkercad:
+
+1. **Deschiderea Sim Lab**: Click pe pictograma **Sim Lab** din colțul din dreapta sus al spațiului de lucru.
+2. **Proprietăți Fizice**:
+   - Selectarea feliei de cașcaval și atribuirea unui material din meniu (*Plastic*, *Rubber* sau *Hardwood*).
+3. **Rularea Simulării**:
+   - Apăsarea butonului **Play** pentru a vedea căderea liberă și rostogolirea obiectului sub acțiunea gravitației.
+4. **Adăugarea de Obstacole**: Posibilitatea de a adăuga o rampă statică (*Wedge*) pentru a testa alunecarea piesei.
+
+---
+
+### 🔹 Etapa 9 (Minutul 115 - 120): Colectarea Pieselor Imprimate & Încheierea Orei
+
+1. **Colectarea Pieselor din Lecția 00**:
+   - Imprimarea lansată la începutul orei este finalizată.
+   - Elevii își ridică brelocurile realizate în sesiunea anterioară.
+2. **Verificarea Salvării**:
+   - Profesorul confirmă că toate modelele de cașcaval sunt salvate corect în Tinkercad Classroom.
+   - Acestea vor fi pregătite în Bambu Studio și imprimate pentru Lecția 02.
+3. **Încheierea**: Elevii își închid stațiile de lucru și eliberează sala.

@@ -23,7 +23,7 @@ După un prim an intens în care am explorat bazele modelării 3D în Autodesk F
 
 - **Vârsta Recomandată**: **11 – 15 ani**.
 - **1 Robot Per Cursant**: Fiecare elev are propriul său kit hardware complet și propria sa mașină. Nu există partajarea unui singur robot între mai mulți elevi.
-- **Progresie Ghidată Pas cu Pas**: Profesorul demonstrează și explică fiecare operațiune mecanică, schemă electrică sau structură de cod C++, iar elevii aplică imediat instrucțiunea pe propriul robot, garantând calitatea și funcționarea optimă pe toate cele 16 bancuri de lucru.
+- **Progresie Ghidată Pas cu Pas**: Profesorul demonstrează și explică fiecare operațiune mecanică, schemă electrică sau structură de cod C++, iar elevii aplică imediat instrucțiunea pe propriul robot, garantând calitatea și funcționarea optimă pe toate bancurile de lucru.
 - **Prerechizite**:
   - Absolvirea primului nivel *Robot Factory 1.0* sau cunoștințe echivalente de bază în modelare 3D (Autodesk Fusion 360) și noțiuni introductive de programare C++ în mediul Arduino IDE.
   - Înțelegerea conceptelor de bază despre circuite electrice (tensiune, curent, masă comună GND, motoare DC și punți H).
@@ -56,7 +56,7 @@ Fiecare lecție din cadrul **Robot Factory: Evolution** este concepută ca o exp
 | :---: | :--- | :--- | :--- |
 | **01** | **Reconectare în Cercul Inginerilor, Jocul Cărților UNO și Foaia de Parcurs RF 2.0** | Activitate socială și de cunoaștere în cerc cu cărți UNO, analiza defectelor hardware RF 1.0, prezentarea metodologiei individuale asistate și a noii platforme RF 2.0 (BLE, senzori, Orbit Odyssey). | [Vezi Planul Lecției 01](lesson-01/README.md) |
 | **02** | **Tensiune Electrică, Arhitectura Acumulatorilor și Modelarea Suportului de Baterie în Fusion 360** | Activitate socială "Pălăria cu Componente" (20 de bilețele cu piese și regulă de solidaritate), teoria tensiunilor și a chimiilor de baterii (Alcaline, NiMH, Li-Ion, LiPo, 1S-4S, C-rating, boost/buck), modelare 3D în Fusion 360 a suportului 18650 și quiz grilă de 15 întrebări. | [Vezi Planul Lecției 02](lesson-02/README.md) |
-| **03** | *În curând: Integrarea Comunicației BLE – Servicii GATT și Control Gamepad* | Arhitectura BLE GATT Server pe ESP32, caracteristici Read/Write/Notify, maparea axelor joystick pe registrele motoarelor. | *(Urmează)* |
+| **03** | **Platforme de Microcontrolere, Anatomia ESP32 și Reconstrucția Circuitului RF 2.0** | Ecosistemul de platforme (Arduino, Micro:Bit, Makeblock, CyberBrick, ESP32, Pi Pico, STM32), deep-dive ESP32 (dual-core, Wi-Fi, BLE, GPIO, ADC, PWM), funcționarea GPIO și limitele de curent, driver H-Bridge TB6612FNG vs servomotoare micro, lipirea comutatorului de alimentare, refacerea circuitului cu cabluri DuPont noi și alimentare 7.4V 2S Li-Ion prin placa de extensie. | [Vezi Planul Lecției 03](lesson-03/README.md) |
 | **04** | *În curând: Telemetrie & Detecție de Obstacole – Senzorul Ultrasonic HC-SR04* | Calculul timpului de zbor acustic, filtrarea zgomotului de măsură și algoritm de frânare dinamică automată. | *(Urmează)* |
 | **05** | *În curând: Urmărirea Liniilor – Senzori Optici Infraroșu (IR Array)* | Calibrarea pragurilor de reflexie alb/negru, algoritm binar bang-bang vs. control proporțional de menținere a traiectoriei. | *(Urmează)* |
 | **06** | *În curând: Navigație Inerțială – Fuziune Senzorială cu IMU BNO055* | Comunicare I2C cu senzorul cu 9 axe, citirea unghiului de girație (Yaw) și execuția virajelor precise la 90° și 180°. | *(Urmează)* |

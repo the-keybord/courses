@@ -24,7 +24,13 @@ Welcome to the **Courses Repository**! This repository contains comprehensive cu
 - **Structure**: 4 Major Modules (120 min per lesson)
 - **Master File**: [`3d-school-pro/README.md`](3d-school-pro/README.md)
 
-### 4. [Robot Factory: Evolution](robot-factory-evolution/README.md)
+### 4. [Robot Factory: Creation](robot-factory-creation/README.md)
+- **Target Age Group**: **11–14 years old** (Level 1 / Year 1)
+- **Domain**: Introductory Robotics, BBC Micro:Bit, MakeCode & MicroPython, robot:bit Board, Fusion 360 & Robotics Competition
+- **Structure**: Hands-on guided format with practical coding challenges and robot building (120 min per lesson)
+- **Master File**: [`robot-factory-creation/README.md`](robot-factory-creation/README.md)
+
+### 5. [Robot Factory: Evolution](robot-factory-evolution/README.md)
 - **Target Age Group**: **11–15 years old** (Level 2 / Year 2)
 - **Domain**: Advanced Robotics, ESP32, BLE Control, Smart Sensors, 3D CAD & Orbit Odyssey Challenge
 - **Structure**: Free relate format with practical challenges, team projects, and competitive arenas (120 min per lesson)

@@ -62,10 +62,10 @@ This file contains instructions and guidelines for AI agents working in this rep
 - **Course Materials**: All student-facing content, lesson plans, presentations, quizzes, worksheets, and teacher scripts must be written in **Romanian**.
 - **Agent Communication & Meta**: Agent rules, commit messages, code comments, and chat conversations with the user are conducted in **English**.
 
-### 8. Lesson Content & Writing Style (Storytelling & Essay Format)
-- **Elaborate Narrative Style**: All lesson `README.md` files must be written in a rich, elaborate, essay-like narrative format.
-- **Deep Explanations & Storytelling**: Avoid sparse summaries or bare bullet points. Explanations must be warm, human, highly detailed, and structured like an engaging story or immersive educational essay tailored to children.
-- **Explicit & Comprehensive**: Theoretical concepts, step-by-step teacher guides, and student practical tasks must be explicitly detailed so instructors can deliver the lesson seamlessly.
+### 8. Lesson Content & Writing Style (Clear, Practical & Age-Appropriate)
+- **Direct & Clear Pedagogical Style**: All lesson `README.md` files must be written in a clear, well-structured, and easy-to-follow instructional format.
+- **No Overly Artistic / Literary Language**: Strictly avoid flowery prose, excessive epithets, theatrical metaphors, and dramatic exaggerations. Explanations should be simple, natural, and accessible for the kids' target age group without artificial literary embellishments.
+- **Explicit & Practical Explanations**: Avoid bare, uninformative bullet points, but keep concepts grounded in concrete facts, technical clarity, practical steps, and easy-to-understand real-world examples. Teacher guides and student tasks must be explicit and straightforward.
 
 ### 9. Formatting Restrictions: No ASCII Art Diagrams or Pseudo-Tables
 - **Strict Prohibition of ASCII Art**: Never generate ASCII art diagrams, ASCII drawings, ASCII circuit schematics, ASCII room layouts, or ASCII pseudo-box tables inside lesson documents.
@@ -82,6 +82,7 @@ Every lesson plan must be structured cleanly and logically without splitting con
      - **Kahoot**: <URL>
      - **Alte Materiale**: <URL> (optional)
      ```
+   - **No Local Filesystem Links in Documents**: Never insert local filesystem URLs (such as `file:///...`) or workspace markdown links inside lesson documents (`README.md`, `presentation.md`, `presentation_summary.md`, `quiz.md`, `risks.md`). Always refer to other workspace/bundle files using plain text or backticks (e.g., `quiz.md`, `risks.md`).
 2. **Section 2: Teacher Preparation Checklist (`Pregătirea Lecției (Checklist Profesor)`)**:
    - Placed directly before the timeline table.
    - Actionable checklist specifying everything that must be set up before students enter the room:
@@ -103,29 +104,20 @@ Every lesson plan must be structured cleanly and logically without splitting con
 ### 11. Interactive Kahoot Quizzes Standards (`quiz.md`)
 - **Dedicated File (`quiz.md`)**: All quiz questions, answer choices, correct markings, and pedagogical explanations must reside in a separate, dedicated `quiz.md` file within each lesson directory. Quizzes are **never** embedded directly in `README.md` (which links/refers to `quiz.md`) or in presentation files (to prevent spoilers).
 - **Document Title & Code**: Starts with `# Quiz Kahoot: Lecția XX [<Cod>] – Titlu Lecție`, followed by concise metadata (Cod Lecție, Număr întrebări, Platformă recomandată: Kahoot).
-- **Platform & Placement**: Crafted specifically for **Kahoot** (or fast-paced classroom quiz tools), played at the end of class (typically Step 7 of the standard 8-step flow).
-- **Direct Alignment with Presentation**: Questions directly test and reinforce the concepts, stories, history, and technologies taught in the presentation and live demo.
+- **Strictly 100% Theoretical Focus (Zero Project Questions)**: Questions directly test and reinforce **EXCLUSIVELY** the theoretical concepts, history, technology, and science taught in the presentation. **Never include questions about the practical modeling project, specific CAD buttons, or project geometries in the quiz.**
 - **Question Volume**: Typically **10 to 15 questions** per lesson.
 - **Strict 4-Option Structure**: Every question features exactly **4 choices** (`A)`, `B)`, `C)`, `D)`).
 - **Answer Correctness (Single vs Multi-Select)**: By default, 1 correct answer. Occasionally and rarely, 2 correct answers (both marked as `*(Corect)*`) to test attentiveness.
 - **Style & Tone of Distractors**: Witty, engaging, and plausible. Combine realistic technical distractors with humorous options that keep kids amused.
-- **Length Balancing (Anti-Longest Answer Bias)**: **Never make the correct answer the longest choice!** Keep options balanced in length, or make incorrect distractors longer than the correct answer.
-- **Pedagogical Explanations**: Followed by a concise explanation block (`> **Explicație**: ...`) for immediate on-screen teacher reinforcement.
-- **Exclusion from Presentations & Main README**: Quizzes are strictly omitted from presentation files to prevent spoilers, and kept out of `README.md` to preserve clean lesson flow documentation.
+- **Ultra-Short Answer Choices (Maximum 1–3 Words)**: For fast-paced, real-time Kahoot gameplay on mobile/laptop screens, **each answer option must be very short and punchy (strictly 1 to 3 words maximum)**. Never write long sentences or paragraphs inside the answer choices.
+- **Length Balancing (Anti-Longest Answer Bias)**: **Never make the correct answer the longest choice!** Keep options balanced in length.
+- **Pedagogical Explanations**: The context, explanation, and reinforcement belong strictly in the explanation block (`> **Explicație**: ...`), displayed by the teacher after the question ends.
 
-### 12. Presentation Blueprint Specification (`presentation.md`)
-- **Role & Scope**: Slide-by-slide blueprint for manually creating or refining a fun, engaging slide deck (typically **8–12 slides**, ~15–20 min presentation time).
-- **Theoretical Fidelity**: Preserves 100% of theoretical, historical, and conceptual knowledge from `README.md`.
-- **Canva AI Master Prompt Block**: Begins with a copy-paste ready prompt specifying:
-  - Format: Educational Presentation (16:9).
-  - Target Audience: Age group (e.g., `Copii 10–12 ani`) and tone (friendly, curious, high-tech).
-  - Goal & Scope: Core topic, history, technology, and practical mission.
-  - Visual Style: Clean, modern, mature color palette (deep blue/slate/teal/amber), structured cards, rounded containers.
-  - Image Placeholders: Specifies `[Placeholder Imagine: ...]` for manually adding real photos, screenshots, or diagrams from the web.
-- **Strict Theory Focus & Single-Slide Practical Briefing**:
-  - Presentations focus strictly on **theory and concepts**.
-  - **No multi-slide CAD tutorials**: Never detail step-by-step modeling/slicing across multiple slides (the teacher demonstrates CAD live on screen).
-  - Practical work is condensed into **one single slide with NO images**, containing only a concise step-by-step text checklist to orient the instructor.
+### 12. Presentation Blueprint Specification (`presentation.md` & `presentation_interactive.md`)
+- **Role & Scope**: Slide-by-slide blueprint for manually creating or refining a fun, engaging slide deck (typically **6–10 slides**, ~15–20 min presentation time).
+- **100% Pure Theoretical Focus (Strict Separation from Practical Project)**: Presentations focus **exclusively on theoretical knowledge, history, physics, mechanics, and concepts**. Never include slides describing the practical CAD project, modeling steps, or project instructions. The practical project belongs solely in `README.md` (live demo and student workflow).
+- **Canva AI Master Prompt Block**: Begins with a copy-paste ready prompt specifying format (16:9), target audience (e.g., `Copii 10–12 ani`), visual style (slate/navy/teal, modern cards), and placeholders `[Placeholder Imagine: ...]`.
+- **Interactive Reading Variant (`presentation_interactive.md`)**: Formatted specifically with **3–4 clearly separated, numbered sentences per slide** designed for students to read out loud from the board, accompanied by teacher guidance notes.
 
 ### 13. Presentation Narrative Summary Specification (`presentation_summary.md`)
 - **Role & Scope**: Continuous, unformatted narrative prompt designed for autonomous AI slide engines (Gamma, Canva AI, Tome).
@@ -133,16 +125,24 @@ Every lesson plan must be structured cleanly and logically without splitting con
   - **Target Audience & Scope**: Age group (`10–12 ani`) and educational objectives.
   - **Strict Grounding Directive**: AI must use **EXCLUSIVELY** provided text (zero hallucinations).
   - **Strict Step-by-Step Sequence**: AI must follow the chronological narrative order without shuffling or skipping.
-  - **Visual & Image Requirements**:
-    - Presentations **must contain images**: recommended to use an image to visualize each major theoretical concept.
-    - Style must be strictly **abstract only** (clean 2D animation, flat vector, or light watercolor; never photorealistic or 3D slop).
-    - Mature, balanced color palette (deep slate, navy blue, teal, warm amber).
-    - Practical CAD work must be a single text briefing card with **NO images**.
-- **Body Content (Continuous Narrative)**:
-  - Rich, uninterrupted essay text covering all theoretical dialogue and teacher context.
-  - Practical CAD portion is a single, concise checklist paragraph without image suggestions.
-  - **No Inline Image Prompts**: Do NOT embed inline image suggestions (`*(Sugestie pentru imagine...)*`) inside the narrative paragraphs; all styling instructions reside solely in the header block.
+  - **Visual & Image Requirements**: Abstract vector/flat 2D style, mature slate/navy/teal palette.
+- **100% Theoretical Narrative (Zero Practical Steps)**:
+  - Rich, uninterrupted didactic text covering theoretical concepts, history, and context.
+  - Contains **NO practical project steps, checklists, or modeling tutorials**.
   - Free from slide dividers, schedule tables, or Kahoot quizzes.
+
+### 14. Critical Review Filter & Anti-Boredom Quality Standard
+- **Mandatory Critical Filter**: Everything created or updated in this repository (curricula, lesson plans, challenges, demos, and presentations) must be rigorously analyzed through a critical, pre-mortem lens to identify what might fail, cause friction, or fall flat in a real classroom setting.
+- **Combatting Boredom & Monotony**:
+  - **No Passive Monologues**: Keep theoretical delivery dynamic, narrative-driven, interactive, and grounded in exciting real-world applications, pop tech, or gaming engineering rather than dry textbook lectures.
+  - **High Student Agency**: Ensure hands-on segments empower kids to make genuine creative and technical decisions rather than passively following rigid, button-by-button recipes.
+- **Calibrated Maturity (Avoid Overly Childish Tone)**:
+  - Treat students with respect as real makers, inventors, designers, and engineers.
+  - Strictly avoid cringe, condescending, or babyish tropes (especially for older kids and teens who disengage instantly if content feels patronizing).
+  - Strike the golden ratio: friendly and accessible, but authentic, cool, and technically stimulating.
+- **Proactive Classroom Risk Analysis & Risks Files (`risks.md`)**:
+  - When analyzing lessons or when requested, a dedicated risk analysis file (`risks.md`) can be created to evaluate potential classroom failure points, pacing bottlenecks, frustration risks, and boredom triggers, accompanied by actionable safeguards and teacher quick checklists.
+  - **Review-Only Policy (Zero Automatic Tweaks)**: The risk file (`risks.md`) is strictly for human instructor/author review and analysis. Agents must **NEVER** automatically apply suggestions or tweak the core lesson bundle files (`README.md`, `presentation.md`, `presentation_summary.md`, `quiz.md`) based on the risks file. The course author will analyze the risks and implement any changes solely at their own discretion.
 
 ---
 

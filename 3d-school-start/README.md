@@ -12,7 +12,7 @@ Bine ați venit la cursul **3D School Start**! Acest curs este creat special pen
   - **Imprimante 3D**: Folosim imprimante de ultimă generație **Bambu Lab A1** (și ocazional **A2L** sau **A1 Combo** cu AMS lite).
   - **Soft de Feliere (Slicing)**: **Bambu Studio** pentru aranjarea plăcilor, calibrarea straturilor și lansarea printurilor.
   - **Soft de Modelare**: **Tinkercad Classroom**.
-- **Circuitul Imprimării 3D**: Obiectele modelate la lecția $N$ sunt imprimate și colectate de elevi la începutul lecției $N+1$ *(cu excepția Lecției 01 care beneficiază de o imprimare festivă instantă pe loc, pregătind totodată al doilea obiect pentru intrarea în ritmul anual!)*.
+- **Circuitul Imprimării 3D**: Obiectele modelate la lecția $N$ sunt imprimate și colectate de elevi la începutul lecției $N+1$ (modelele restante din Lecția 00 se colectează/imprimă la Lecția 01, iar brelocurile de cașcaval modelate la Lecția 01 se colectează la începutul Lecției 02).
 
 ---
 
@@ -33,18 +33,19 @@ Fiecare lecție respectă un flux clar în 8 etape:
 
 ### 🔹 [Lecția 00 [3DS2.0]: Atelier Deschis – Magia Imprimării 3D (Open Workshop)](lesson-00/README.md)
 - **Cod Lecție**: `3DS2.0`
-- **Descriere pe scurt**: Atelier de bun venit și cunoaștere în laboratorul 3D. Cercul cu micro-animale 3D colorate, prezentarea istoriei imprimării 3D (Chuck Hull, 1983), tehnologii (FDM, SLA, SLS), aplicații spectaculoase și modelarea primului breloc personalizat cu nume în Tinkercad. Lansarea imprimării și prezentarea marii aventuri a celor 4 module ale cursului, urmată de Marea Provocare Kahoot (15 întrebări).
+- **Descriere pe scurt**: Atelier de bun venit și cunoaștere în laboratorul 3D. Cercul cu micro-animale 3D colorate (botezul noilor prieteni 3D), trecerea rapidă la modelarea primului breloc de echipă în Tinkercad pentru a porni producția devreme pe Bambu Lab A1, prezentarea teoriei (fabricație aditivă, Chuck Hull 1983, tehnologii FDM/SLA/SLS, aplicații reale) și a celor 4 mari module, Marea Provocare Kahoot (15 întrebări) și misiunea bonus de a crea un breloc cadou pentru un prieten.
 - **Format Special de Lucru (Atelier Deschis)**: Elevii lucrează în **echipe de câte 2 la un laptop** (`echipa1`, `echipa2`...) pentru a se sprijini reciproc în prima lor experiență 3D. Profesorul le comunică copiilor că la cursurile săptămânale normale fiecare va lucra individual la propriul calculator. În cadrul aceluiași proiect Tinkercad, echipa modelează ambele brelocuri side-by-side pentru succes garantat.
-- **Proiect Practic**: Primul breloc tridimensional cu nume, decupaj pentru inel și text în relief (câte un breloc pentru fiecare membru al echipei pe același plan de lucru).
+- **Proiect Practic**: Primul breloc tridimensional cu nume, decupaj pentru inel și text în relief (câte un breloc pentru fiecare membru al echipei pe același plan de lucru) + misiune bonus: un al doilea breloc cadou pentru un prieten/familie, de imprimat pentru lecția următoare.
 - **Director Lecție**: [`lesson-00/`](lesson-00/)
 
 ---
 
-## 📚 Modulul 1: Bazele Imprimării 3D și Modelării în Tinkercad
+## 📚 Modulul 1: Laboratorul Creativ
 
-### 🔹 [Lecția 01: Introducere în Imprimarea 3D și Modelare în Tinkercad](lesson-01/README.md)
-- **Descriere pe scurt**: Descoperim istoria imprimantelor 3D (Chuck Hull, 1983), tipurile de imprimante (FDM, SLA, SLS), materialele folosite (PLA) și modul de lucru al unei imprimante. Învățăm Tinkercad și proiectăm primul obiect real.
-- **Proiect Practic**: Proiectarea a 2 brelocuri personalizate (unul imprimat instant în timpul lecției 01 și al doilea pregătit pentru a fi colectat la Lecția 02).
+### 🔹 [Lecția 01 [3DS2.1]: Anatomia Imprimantei 3D & Brelocul „Cheese Keyring”](lesson-01/README.md)
+- **Cod Lecție**: `3DS2.1`
+- **Descriere pe scurt**: Descoperim secretele mecanice ale imprimantei 3D: cele 4 mari ere (Pre-Prusa/RepRap, Prusa i3, Ender 3, Bambu Lab), cinematica celor 4 axe (X, Y, Z și axa secretă E / Extrudorul) și sistemul termic de precizie (Hotend la 210°C, duza de 0.4mm, patul cald la 60°C împotriva warping-ului și termistorul). În atelierul practic sculptăm o felie organică de cașcaval elvețian găurit cu orificiu tehnic de 1mm pentru inel cu șurub și nume personalizat, iar la final explorăm gravitația în Tinkercad Sim Lab.
+- **Proiect Practic**: Colectarea/lansarea modelelor din Lecția 00 + Proiectarea brelocului 3D *Cheese Keyring* (pregătit pentru imprimare și colectare la Lecția 02) + testare fizică în Tinkercad Sim Lab.
 - **Director Lecție**: [`lesson-01/`](lesson-01/)
 
 ### 🔹 [Lecția 02: Arta Pixelilor 3D – Imprimarea Multicolor prin Schimbare de Strat](lesson-02/README.md)

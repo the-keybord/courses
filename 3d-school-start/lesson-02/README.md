@@ -81,9 +81,9 @@ Deoarece imprimanta depune plasticul **strat peste strat pe axa Z (înălțime)*
 
 ### 6. Regula Paletei Comune de Culori (Negru, Roșu, Alb)
 De ce folosim toți exact aceleași culori și aceleași trepte de înălțime?
-Dacă fiecare elev ar folosi înălțimi aleatorii și culori diferite, profesorul ar trebui să ruleze 15 șarje separate de imprimare! 
+Dacă fiecare elev ar folosi înălțimi aleatorii și culori diferite, profesorul ar trebui să ruleze zeci de șarje separate de imprimare! 
 
-Prin respectarea unei **Palete Comune cu Matematică Identică a Înălțimilor (2mm / 3mm / 4mm)** și a culorilor **Negru, Roșu și Alb**, toate proiectele celor 15 copii pot fi așezate împreună pe placa de imprimare. Imprimanta va executa o singură schimbare la 2.0mm și o singură schimbare la 3.0mm, iar la final toți copiii vor primi tablouri Pixel Art spectaculoase, unice ca design, dar perfect imprimate multicolor!
+Prin respectarea unei **Palete Comune cu Matematică Identică a Înălțimilor (2mm / 3mm / 4mm)** și a culorilor **Negru, Roșu și Alb**, toate proiectele elevilor pot fi așezate împreună pe placa de imprimare. Imprimanta va executa o singură schimbare la 2.0mm și o singură schimbare la 3.0mm, iar la final toți copiii vor primi tablouri Pixel Art spectaculoase, unice ca design, dar perfect imprimate multicolor!
 
 ---
 

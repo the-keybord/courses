@@ -1,4 +1,4 @@
-# Lecția 02: Tensiune Electrică, Arhitectura Acumulatorilor și Modelarea Suportului de Baterie în Fusion 360
+# Lecția 02 [RBF2.2]: Tensiune Electrică, Arhitectura Acumulatorilor și Modelarea Suportului de Baterie în Fusion 360
 
 Bine ați venit la a doua sesiune din cadrul programului avansat **Robot Factory: Evolution**! După ce în prima sesiune ne-am reconectat ca echipă de laborator și am stabilit obiectivele pentru noul sezon mecatronic, astăzi pătrundem adânc în inima energetică a oricărui sistem mecatronic mobil: **alimentarea electrică, dinamica tensiunii și chimia acumulatorilor**.
 
@@ -6,9 +6,22 @@ Fără o alimentare corect dimensionată și stabilă, cel mai inteligent cod C+
 
 ---
 
-## 🎯 Obiective Operaționale & Întrebări Esențiale
+## 1. Informații Generale despre Lecție
+- **Cod Lecție**: RBF2.2
+- **Grupa de Vârstă**: 11 – 15 ani
+- **Durată Totală**: 120 minute (2 ore)
+- **Tipul Lecției**: Teorie electrochimică, calcule inginerești & laborator CAD în Fusion 360
+- **Dinamica de Lucru**: Individual asistat (1 robot per elev, modelare pe calculator propriu)
+- **Proiect Practic**: Modelarea parametrică 3D a suportului de baterie Li-Ion 18650 cu fante de prindere M3
+- **Obiectiv Major**: Stăpânirea conceptelor de tensiune, capacitate, C-rating și configurare serie-paralel, plus proiectarea suportului fizic optimizat pentru printare FDM
 
-### Obiective Operaționale
+### 🔗 Resurse & Linkuri Utile
+- **Prezentare**: https://drive.google.com/file/d/10cZlBknw7N3r_h8eZ-EXAMPLE_L02/view?usp=sharing
+- **Kahoot**: https://create.kahoot.it/details/rbf2-lesson-02-battery-cad
+
+### ❓ Întrebări Esențiale & Obiective Operaționale
+
+#### Obiective Operaționale
 La finalul acestei sesiuni de 120 de minute, cursanții vor fi capabili:
 1. **Să definească și să explice conceptul de tensiune electrică (V)** folosind atât modelul fizic al diferenței de potențial, cât și analogia hidraulică a presiunii.
 2. **Să compare și să clasifice principalele chimii de acumulatori** (Alcaline, NiMH, Li-Ion, LiPo) în funcție de densitatea energetică, rata de descărcare (C-rating) și comportamentul în sarcină.
@@ -18,7 +31,7 @@ La finalul acestei sesiuni de 120 de minute, cursanții vor fi capabili:
 6. **Să modeleze parametric în Autodesk Fusion 360** un suport mecanic modular de baterie Li-Ion 18650 cu fante de montaj M3 și toleranțe reale de imprimare 3D.
 7. **Să rezolve un test tehnic grilă de 15 întrebări** demonstrând stăpânirea noțiunilor teoretice și a scenariilor de depanare electrică.
 
-### Întrebări Esențiale de Inginerie
+#### Întrebări Esențiale de Inginerie
 - *De ce microcontrolerul ESP32 se resetează instantaneu atunci când motoarele de curent continuu pornesc în sarcină maximă de pe aceeași baterie?*
 - *Care este diferența critică dintre o baterie alcalină AA de 1.5V și o celulă Li-Ion 18650 de 3.7V atunci când avem nevoie de un curent susținut de 2 Amperi?*
 - *Ce reprezintă indicele "25C" tipărit pe un acumulator LiPo și cum ne asigură el că nu vom distruge chimia bateriei la accelerații bruște?*
@@ -56,7 +69,7 @@ Sesiunea este structurată echilibrat în cinci secvențe didactice complementar
 Pentru a continua cunoașterea reciprocă într-un mod relaxat, tehnic și interactiv, debutăm cu activitatea **"Pălăria cu Componente" (The Mystery Hardware Draw)**. În loc de cărți de joc abstracte, folosim chiar vocabularul și piesele reale ale laboratorului nostru mecatronic.
 
 #### Organizare & Pregătire:
-Profesorul pregătește într-un bol, o cutie sau o șapcă 20 de bilețele împăturite, fiecare având scris numele unei componente esențiale din robotica mobilă. Elevii sunt așezați în cerc sau la bancurile lor de lucru. Pe rând, fiecare dintre cei 16 elevi extrage câte un bilețel la întâmplare.
+Profesorul pregătește într-un bol, o cutie sau o șapcă 20 de bilețele împăturite, fiecare având scris numele unei componente esențiale din robotica mobilă. Elevii sunt așezați în cerc sau la bancurile lor de lucru. Pe rând, fiecare elev extrage câte un bilețel la întâmplare.
 
 #### Cum se Desfășoară Prezentarea Fiecărui Elev (~1 minut per cursant):
 Fiecare elev se ridică sau ia cuvântul, își spune prenumele și citește cu voce tare componenta extrasă, răspunzând la trei repere simple:
