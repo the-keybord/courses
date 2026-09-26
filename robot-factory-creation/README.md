@@ -31,7 +31,8 @@ Acest curs este poarta de intrare în lumea roboticii educaționale. Cursanții 
 | **01** | *(Urmează)* | *(Urmează)* | *(Urmează)* |
 | **02** | *(Urmează)* | *(Urmează)* | *(Urmează)* |
 | **03** | **Platforme de Microcontrolere, Descoperirea BBC Micro:Bit și Primii Pași în MakeCode** | Ecosistemul de platforme (Arduino, Makeblock, CyberBrick, ESP32, Micro:Bit, Pi Pico), deep-dive Micro:Bit (senzori integrați, LED-uri, butoane, radio, BLE), exerciții practice pe simulatorul MakeCode (blocuri Basic, Input, Logic, Loops, Variables, LED). | [Vezi Planul Lecției 03](lesson-03/README.md) |
-| **04** | *(Urmează)* | *(Urmează)* | *(Urmează)* |
+| **04** | **Tipuri de Cabluri, Conectori și Programarea Senzorilor Integrați BBC Micro:Bit în MakeCode** | Teoria cablurilor și a conectorilor (cupru cositorit, izolație silicon vs PVC, lițat vs masiv, AWG, cădere de tensiune, conectori DuPont, JST, XT30), urmată de laborator practic cu plăcile fizice Micro:Bit (6 exerciții de programare cu blocuri de bază pentru senzorii integrați: temperatură, lumină, accelerometru/înclinare, pedometru, busolă și microfon). | [Vezi Planul Lecției 04](lesson-04/README.md) |
+| **05** | *(Urmează)* | *(Urmează)* | *(Urmează)* |
 
 ---
 

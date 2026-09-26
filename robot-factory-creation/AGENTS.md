@@ -14,9 +14,18 @@ This file complements the global repository [`AGENTS.md`](../AGENTS.md) with rul
 - **Lesson Structure**: Guided hands-on format with theory presentations, step-by-step teacher demonstrations, and practical exercises.
 - **Lesson Duration**: Standard **120 minutes** (2 hours) per lesson.
 
-## Language Rules
+## Language Rules & Bilingual Technical Terminology
 - **Course Content**: All lesson plans, student guides, teacher instructions, quizzes, and worksheets must be created in **Romanian**.
 - **Agent Meta & Communication**: Agent guidelines, commit messages, and conversations with the repository maintainer are in **English**.
+- **Bilingual Terminology in Presentations**: Always provide the standard English term in parentheses whenever introducing technical, specialized, or uncommon robotics/programming terms in presentations (e.g. `placă de extensie (expansion shield)`, `servomotor (servo motor)`, `senzor ultrasonic (ultrasonic sensor)`, `blocuri de logică (logic blocks)`).
+
+## The Mandatory Lesson Bundle
+Every lesson directory (`lesson-XX/`) must contain these core files:
+1. `README.md`: Complete teacher's master plan (120 min), including the timeline, live demo guide, student workflow, and wrap-up (referencing `quiz.md` for the quiz step).
+2. `presentation.md`: Slide-by-slide blueprint (8–10 slides) with Canva Master Prompt, speaker notes, image placeholders, and 1 text-only practical briefing slide.
+3. `presentation_interactive.md`: Interactive reading slide-by-slide blueprint formatted with 3–4 numbered sentences per slide for students to take turns reading out loud from the screen/board, accompanied by teacher guidance notes and Canva Master Prompt.
+4. `presentation_summary.md`: Continuous narrative prompt for autonomous AI slide engines (Gamma, Canva AI, Tome) with strict header directives and pure didactic text without inline image prompts.
+5. `quiz.md`: Complete interactive Kahoot quiz file containing 10–15 questions, 4 options (strictly 1–3 words each), balanced answer lengths, and pedagogical explanations.
 
 ## Lesson Content & Writing Style
 - **Clear & Engaging Technical Tone**: Write in a direct, technically accurate style that is warm and accessible for kids aged 11–14 encountering microcontrollers and programming for the first time.

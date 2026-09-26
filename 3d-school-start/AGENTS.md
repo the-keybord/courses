@@ -18,13 +18,15 @@ This file complements the global repository [`AGENTS.md`](../AGENTS.md) with rul
   - **3D Modeling Software**: Tinkercad Classroom.
 - **Lesson Duration**: Each lesson is **120 minutes** (2 hours).
 
-## Language Rules
+## Language Rules & Bilingual Technical Terminology
 - **Course Content**: All lesson plans, course concepts, activities, presentations, and quizzes must be created in **Romanian**.
+- **Bilingual Terminology in Presentations**: Always provide the standard English term in parentheses whenever introducing technical, specialized, or uncommon 3D printing terms in presentations (e.g. `curbarea marginilor (warping)`, `duză (nozzle)`, `pat încălzit (heatbed)`, `roți de antrenare (extruder gears)`, `compensare de contracție (shrinkage compensation)`, `fire fine de plastic (stringing)`).
 
 ## Specific Lesson Guidelines & Workflow
-1. **The Mandatory 4-File Lesson Bundle**: Every lesson directory (`lesson-XX/`) must contain:
+1. **The Mandatory Lesson Bundle**: Every lesson directory (`lesson-XX/`) must contain:
    - `README.md`: Complete teacher's master plan (120 min), including the timeline, live demo guide, student workflow, and wrap-up (referencing `quiz.md` for Step 7).
    - `presentation.md`: Slide-by-slide blueprint (8–12 fun, engaging slides) with Canva Master Prompt, speaker notes, image placeholders, and 1 text-only practical briefing slide.
+   - `presentation_interactive.md`: Interactive reading slide-by-slide blueprint formatted with 3–4 numbered sentences per slide for students to take turns reading out loud from the screen/board, accompanied by teacher guidance notes and Canva Master Prompt.
    - `presentation_summary.md`: Continuous narrative prompt for AI slide generators with header directives and pure didactic text without inline image prompts.
    - `quiz.md`: Complete interactive Kahoot quiz file containing 10–15 questions, 4 options, balanced answer lengths, and pedagogical explanations.
 2. **Essential Questions**: Each lesson must have **3 or more essential questions** defining the session's core objectives.

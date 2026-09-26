@@ -15,8 +15,17 @@ This file complements the global repository [`AGENTS.md`](../AGENTS.md) with rul
   - **Slicing Software**: Bambu Studio.
 - **Lesson Duration**: Each lesson is **120 minutes** (2 hours).
 
-## Language Rules
+## Language Rules & Bilingual Technical Terminology
 - **Course Content**: All lesson plans, course concepts, activities, presentations, and quizzes must be created in **Romanian**.
+- **Bilingual Terminology in Presentations**: Always provide the standard English term in parentheses whenever introducing technical, specialized, or uncommon 3D printing/CAD terms in presentations (e.g. `curbarea straturilor (warping)`, `duză (nozzle)`, `debit de extrudare (flow rate)`, `retragere filament (retraction)`, `fante de toleranță (clearance fit)`).
+
+## The Mandatory Lesson Bundle
+Every lesson directory (`lesson-XX/`) must contain these core files:
+1. `README.md`: Complete teacher's master plan (120 min), including the timeline, live demo guide, student workflow, and wrap-up (referencing `quiz.md` for Step 7).
+2. `presentation.md`: Slide-by-slide blueprint (8–10 fun, engaging slides) with Canva Master Prompt, speaker notes, image placeholders, and 1 text-only practical briefing slide.
+3. `presentation_interactive.md`: Interactive reading slide-by-slide blueprint formatted with 3–4 numbered sentences per slide for students to take turns reading out loud from the screen/board, accompanied by teacher guidance notes and Canva Master Prompt.
+4. `presentation_summary.md`: Continuous narrative prompt for autonomous AI slide engines (Gamma, Canva AI, Tome) with strict header directives and pure didactic text without inline image prompts.
+5. `quiz.md`: Complete interactive Kahoot quiz file containing 10–15 questions, 4 options (strictly 1–3 words each), balanced answer lengths, and pedagogical explanations.
 
 ## Specific Lesson Guidelines
 1. **Essential Questions**: Each lesson must have **3 or more essential questions** that define the lesson objectives.

@@ -13,21 +13,22 @@ This file contains instructions and guidelines for AI agents working in this rep
 - All curricula and lesson materials in this repository are designed for **kids' courses** across different domains (e.g., programming, science, creative arts, logic, etc.).
 - Content, explanations, and instructions must be clear, engaging, structured, and age-appropriate for children.
 
-### 2. Directory Structure & Mandatory 4-File Lesson Bundle
+### 2. Directory Structure & Mandatory Lesson Bundle
 - **Isolated Course Directories**: Each course has its own dedicated directory.
 - **Separate Lesson Directories**: Within a course directory, each lesson has its own dedicated folder (e.g., `lesson-00/`, `lesson-01/`, `lesson-02/`).
-- **The Mandatory 4-File Bundle**: Every lesson directory must contain exactly these four core files:
+- **The Mandatory Lesson Bundle**: Every lesson directory across all courses must contain these core files:
   1. `README.md`: Complete teacher's master document (operational timeline, deep narrative theory, step-by-step demo guide, student workflow, and wrap-up; references `quiz.md` for the quiz step).
   2. `presentation.md`: Clearly structured slide-by-slide blueprint (typically 8–12 fun and engaging slides), including Canva AI Master Prompt, slide content, speaker notes, image placeholders for real photos, and a single text-only practical briefing slide.
-  3. `presentation_summary.md`: Continuous narrative prompt for autonomous AI presentation engines (Gamma, Canva AI, Tome) with strict header directives upfront, rich continuous narrative text without inline image prompts, and a single practical briefing checklist.
-  4. `quiz.md`: Complete interactive Kahoot quiz file containing all questions, 4 options, balanced answer lengths, and pedagogical explanations.
+  3. `presentation_interactive.md`: Interactive reading slide-by-slide blueprint formatted specifically with **3–4 clearly separated, numbered sentences per slide** designed for students to take turns reading out loud from the board, accompanied by teacher guidance notes and Canva Master Prompt.
+  4. `presentation_summary.md`: Continuous narrative prompt for autonomous AI presentation engines (Gamma, Canva AI, Tome) with strict header directives upfront, rich continuous narrative text without inline image prompts, and 100% theoretical focus.
+  5. `quiz.md`: Complete interactive Kahoot quiz file containing 10–15 questions, 4 options (strictly 1–3 words each), balanced answer lengths, and pedagogical explanations.
 
 ### 3. Course Master File & Single Source of Truth (SSOT)
 - **Course Master Hub**: Each course directory contains **one master file** (`README.md`) serving as the course hub (vision, target age, prerequisites, learning objectives, and lesson overviews).
 - **Lesson `README.md` as Definitive Source of Truth**:
   - Within each lesson folder, `README.md` is the primary, authoritative master document for that entire lesson.
   - Any manual edits made by the instructor/maintainer in `README.md` represent **official, authoritative changes**.
-  - All derivative files (`presentation.md`, `presentation_summary.md`, and `quiz.md`) derive strictly from `README.md` and must be updated to maintain total consistency with it.
+  - All derivative files (`presentation.md`, `presentation_interactive.md`, `presentation_summary.md`, and `quiz.md`) derive strictly from `README.md` and must be updated to maintain total consistency with it.
 
 ### 4. Course & Lesson Identification Codes
 - **Standardized Identification System**: Every course and individual lesson uses a precise identifier code across all document titles and metadata.
@@ -35,14 +36,17 @@ This file contains instructions and guidelines for AI agents working in this rep
   - **Level 1 (`3DS1`)**: `3d-school-junior` (Ages 7–9).
   - **Level 2 (`3DS2`)**: `3d-school-start` (Ages 10–12).
   - **Level 3 (`3DS3`)**: `3d-school-pro` (Ages 12–14).
+- **Robot Factory Course Family (`RBF`)**:
+  - **Level 2 (`RBF2`)**: `robot-factory-evolution` (Ages 11–15).
 - **Lesson Code Formula**: `<CourseCode>.<LessonNumber>`
   - Examples for `3d-school-start`: Lesson 00 is `3DS2.0`, Lesson 01 is `3DS2.1`, Lesson 02 is `3DS2.2`, etc.
   - Examples for `3d-school-junior`: Lesson 00 is `3DS1.0`, Lesson 01 is `3DS1.1`, etc.
   - Examples for `3d-school-pro`: Lesson 00 is `3DS3.0`, Lesson 01 is `3DS3.1`, etc.
+  - Examples for `robot-factory-evolution`: Lesson 01 is `RBF2.1`, Lesson 02 is `RBF2.2`, Lesson 03 is `RBF2.3`, Lesson 04 is `RBF2.4`, etc.
 - **Code Placement**:
-  - In the main document title: `# Lecția 00 [3DS2.0]: Titlu Lecție`
-  - In Section 1 Metadata: `- **Cod Lecție**: 3DS2.0`
-  - In presentation file titles: `# Prezentare: Lecția 00 [3DS2.0] – Titlu Lecție`
+  - In the main document title: `# Lecția 00 [3DS2.0]: Titlu Lecție` or `# Lecția 04 [RBF2.4]: Titlu Lecție`
+  - In Section 1 Metadata: `- **Cod Lecție**: RBF2.4`
+  - In presentation file titles: `# Prezentare: Lecția 04 [RBF2.4] – Titlu Lecție`
 
 ### 5. Hardware & Slicing Software Ecosystem (3D School Family)
 - **Standard 3D Printers**: Across all 3D School courses (`3d-school-junior`, `3d-school-start`, `3d-school-pro`), classrooms use **Bambu Lab A1** printers, and sometimes **A2L** or **A1 Combo** (with AMS lite).
@@ -58,9 +62,10 @@ This file contains instructions and guidelines for AI agents working in this rep
   - **`3d-school-junior`** (`3DS1`): No modules — each lesson is an independent topic/theme focusing on simple modeling and real-world encyclopedia discoveries.
   - **`robot-factory-evolution`**: Free-relate hands-on format — focused on RF 2.0 hardware rebuild, BLE control transition, sensor integration, team identity, and the Orbit Odyssey challenge.
 
-### 7. Language Guidelines
+### 7. Language Guidelines & Bilingual Technical Terminology
 - **Course Materials**: All student-facing content, lesson plans, presentations, quizzes, worksheets, and teacher scripts must be written in **Romanian**.
 - **Agent Communication & Meta**: Agent rules, commit messages, code comments, and chat conversations with the user are conducted in **English**.
+- **Bilingual Technical Terminology (English Equivalents in Presentations)**: Across all 3D Printing and Robot Factory courses, whenever a technical, specialized, or uncommon term is introduced in Romanian within presentation files (`presentation.md`, `presentation_interactive.md`, `presentation_summary.md`), **always provide the standard English equivalent in parentheses or alongside it** (e.g., `fir lițat (stranded wire)`, `sertizare (crimping)`, `pasul pinilor (pitch)`, `cădere de tensiune (voltage drop)`, `curbarea straturilor (warping)`, `duză (nozzle)`, `polarizare mecanică (keying)`, `roți de antrenare (extruder gears)`, `miez masiv (solid core)`). This equips students with real-world engineering vocabulary used in international datasheets, CAD software, slicers, and technical documentation.
 
 ### 8. Lesson Content & Writing Style (Clear, Practical & Age-Appropriate)
 - **Direct & Clear Pedagogical Style**: All lesson `README.md` files must be written in a clear, well-structured, and easy-to-follow instructional format.
