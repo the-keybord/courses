@@ -2,9 +2,7 @@
 
 Bine ați revenit în laboratorul de inginerie avansată! În sesiunea precedentă am explorat anatomia microcontrolerului ESP32, funcționarea pinilor GPIO și arhitectura punților H pentru controlul motoarelor. Astăzi abordăm una dintre cele mai critice componente ale oricărui robot de competiție, adesea trecută cu vederea de începători, dar responsabilă pentru peste 80% din defecțiunile apărute pe teren: **cablajul și conectorii electrici**.
 
-Un robot poate avea cel mai inteligent cod C++ și cel mai puternic procesor dual-core, dar dacă un cablu este prea subțire și pierde tensiune sub sarcină, dacă o îmbinare este lipită rece sau dacă un conector iese din locaș la prima vibrație mai puternică, mașina se va opri instantaneu pe traseu. În prima parte a lecției, disecăm fizica și standardele din spatele cablurilor: din ce materiale sunt realizate conductoarele și izolațiile, ce reprezintă standardul AWG și secțiunea în milimetri pătrați, de ce cablurile subdimensionate provoacă căderi de tensiune dramatice și încălzire periculoasă prin efect Joule, ce sunt conectorii DuPont, JST-PH, JST-XH, XT30 și ce înseamnă pasul pinilor (pitch).
-
-A doua parte a lecției, inima laboratorului nostru, este dedicată integral asamblării practice a **fasciculului central de cabluri (Main Cable Harness)** pentru robotul RF 2.0. Fiecare cursant va măsura traseele pe propriul șasiu, va învăța să folosească sculele profesionale (cleștele de dezizolat, cleștele de sertizat pini și stația de lipit cu cositor), va realiza sertizări curate DuPont și JST cu test mecanic de tracțiune, va lipi comutatorul de alimentare și ramificațiile de putere cu izolație termocontractilă și va verifica întregul sistem cu multimetrul digital înainte de instalare.
+Un robot poate avea cel mai inteligent cod C++ și cel mai puternic procesor dual-core, dar dacă un cablu este prea subțire și pierde tensiune sub sarcină, dacă o îmbinare este lipită rece sau dacă un conector iese din locaș la prima vibrație mai puternică, mașina se va opri instantaneu pe traseu. În prima parte a lecției, disecăm fizica și standardele din spatele cablurilor: din ce materiale sunt realizate conductoarele și izolațiile, ce reprezintă standardul AWG și secțiunea în milimetri pătrați, de ce cablurile subdimensionate provoacă căderi de tensiune dramatice și încălzire periculoasă prin efect Joule, ce sunt conectorii DuPont, JST-PH, 7: A doua parte a lecției, inima laboratorului nostru, este dedicată integral asamblării practice a **fasciculului central de cabluri (Main Cable Harness)** pentru robotul RF 2.0. Fiecare cursant va măsura traseele pe propriul șasiu, va învăța să folosească sculele profesionale (wire stripper, crimper cu clichet și stația de lipit cu letconul), va realiza sertizări curate DuPont și JST cu test mecanic de tracțiune, va lipi comutatorul de alimentare și ramificațiile de putere cu tub heat shrink și va verifica întregul sistem cu multimetrul digital înainte de instalare.
 
 ---
 
@@ -12,9 +10,9 @@ A doua parte a lecției, inima laboratorului nostru, este dedicată integral asa
 - **Cod Lecție**: RBF2.4
 - **Grupa de Vârstă**: 11 – 15 ani
 - **Durată Totală**: 120 minute (2 ore)
-- **Tipul Lecției**: Masterclass teoretic (cabluri, izolații, AWG, cădere de tensiune, conectori JST/DuPont/XT, trusă de scule) & atelier practic de sertizare (crimping), lipire cu cositor și asamblare fascicul central de cabluri
+- **Tipul Lecției**: Masterclass teoretic (cabluri, izolații, AWG, cădere de tensiune, conectori JST/DuPont/XT, trusă de scule) & atelier practic de sertizare (crimping), lipire comutator și asamblare fascicul central de cabluri
 - **Dinamica de Lucru**: Individual asistat (1 robot per elev pe bancul individual de lucru)
-- **Proiect Practic**: Realizarea integrală a fasciculului principal de cabluri RF 2.0 (măsurare, tăiere la lungime, sertizare profesională pini DuPont & JST, lipire comutator ON/OFF și distribuție 7.4V, izolare cu tub termocontractil și test de continuitate)
+- **Proiect Practic**: Realizarea integrală a fasciculului principal de cabluri RF 2.0 (măsurare, tăiere la lungime, sertizare profesională pini DuPont & JST, lipire comutator ON/OFF și distribuție 7.4V, izolare cu tub heat shrink și test de continuitate)
 - **Obiectiv Major**: Înțelegerea profundă a fizicii conductoarelor electrice și a standardelor de conectori, urmată de dobândirea dexterității manuale în sertizare și lipire pentru crearea unui cablaj robust, fiabil și modular.
 
 ### 🔗 Resurse & Linkuri Utile
@@ -25,11 +23,11 @@ A doua parte a lecției, inima laboratorului nostru, este dedicată integral asa
 
 #### Obiective Operaționale
 La finalul acestei sesiuni de 120 de minute, cursanții vor fi capabili:
-1. **Să identifice materialele unui cablu** (conductor din cupru pur/cositorit vs aluminiu, izolație din silicon vs PVC vs Teflon) și structura miezului (multifilar/lițat vs monofilar/masiv), argumentând de ce cablurile lițate din silicon sunt optime în robotică mobilă.
+1. **Să identifice materialele unui cablu** (conductor din cupru pur / tinned copper vs aluminiu CCA, izolație din silicon vs PVC vs Teflon) și structura miezului (stranded wire vs solid core), argumentând de ce cablurile stranded din silicon sunt optime în robotică mobilă.
 2. **Să decodeze standardul AWG (American Wire Gauge)** și să înțeleagă sistemul de numerotare inversat (număr mic = fir gros; număr mare = fir subțire), corelând AWG cu secțiunea în milimetri pătrați ($mm^2$) și curentul maxim admisibil (Ampacity).
-3. **Să explice consecințele fizice ale folosirii cablurilor nepotrivite**: căderea de tensiune ($V = I \cdot R$) și reseturile de procesor (brownout) pentru cabluri prea subțiri, respectiv încălzirea prin efect Joule ($P = I^2 \cdot R$), versus rigiditatea mecanică și problemele de gabarit pentru cabluri supradimensionate.
-4. **Să definească noțiunea de pas al pinilor (pitch)** și să compare principalele tipuri de conectori: DuPont (2.54 mm), JST-XH (2.50 mm / 2.54 mm), JST-PH (2.0 mm), JST-SM (2.5 mm aerian) și XT30/XT60 pentru baterii.
-5. **Să utilizeze corect trusa de scule de cablare**: clește de dezizolat calibrat pe AWG, clește de tăiat cu tăiș plat (flush cutter), clește de sertizat (crimper cu fălci duble pentru miez și izolație), ciocan de lipit (letcon), tub termocontractil și multimetru digital.
+3. **Să explice consecințele fizice ale folosirii cablurilor nepotrivite**: căderea de tensiune (voltage drop, $V = I \cdot R$) și reseturile de procesor (brownout) pentru cabluri prea subțiri, respectiv încălzirea prin efect Joule ($P = I^2 \cdot R$), versus rigiditatea mecanică și problemele de gabarit pentru cabluri supradimensionate.
+4. **Să definească noțiunea de pas al pinilor (pin pitch)** și să compare principalele tipuri de conectori: DuPont (2.54 mm), JST-XH (2.50 mm / 2.54 mm), JST-PH (2.0 mm), JST-SM (2.5 mm aerian) și XT30/XT60 pentru baterii.
+5. **Să utilizeze corect trusa de scule de cablare**: wire stripper calibrat pe AWG, flush cutter (clește de tăiat fin), crimper (clește de sertizat pini cu dublă strângere), letcon (soldering iron), tub heat shrink și multimetru digital.
 6. **Să realizeze un fascicul complet de cabluri pentru RF 2.0**: tăiere la cote optime, dezizolare la 2 mm pentru sertizare și 5 mm pentru lipituri, sertizarea a cel puțin 6 pini metalici DuPont/JST și introducerea în carcase conform codului standard de culori (Roșu = VCC, Negru = GND, Galben/Verde/Albastru = Semnal).
 7. **Să efectueze testul de continuitate și de izolație cu multimetrul** pe funcția de buzzer pentru fiecare conductor în parte, garantând absența oricărui scurtcircuit între șina pozitivă și masă înainte de montarea pe robot.
 
@@ -37,7 +35,7 @@ La finalul acestei sesiuni de 120 de minute, cursanții vor fi capabili:
 - *De ce un fir cu numărul 18 AWG este mult mai gros decât un fir cu numărul 28 AWG?*
 - *De ce un cablu subțire poate face ca robotul să se reseteze chiar dacă bateria este complet încărcată la 8.4V?*
 - *Prin ce se deosebește un conector JST-PH (2.0mm) de un conector clasic DuPont (2.54mm) în condiții de vibrații intense?*
-- *Cum asigură un clește de sertizat profesional două strângeri distincte pe același pin metalic?*
+- *Cum asigură un crimper profesional două strângeri distincte pe același pin metalic?*
 
 ---
 
@@ -55,7 +53,7 @@ La finalul acestei sesiuni de 120 de minute, cursanții vor fi capabili:
 - [ ] **Clești de tăiat cu tăiș plat (Flush Cutters)**: 1 bucată per banc, bine ascuțiți.
 - [ ] **Clești de sertizat (Crimpers - SN-28B / IWISS mini)**: cel puțin 1 bucată la 2 elevi (8 clești în total).
 - [ ] **Stații de lipit / Letcoane reglabile**: încălzite la 320°C–350°C, cu suport stabil, burete umed și fludor subțire de 0.8 mm cu miez de flux (sacâz).
-- [ ] **Tub termocontractil (Heat Shrink)**: segmente pre-tăiate de diametru 1.5 mm, 2.5 mm și 4.0 mm, plus suflantă de aer cald (heat gun) sau brichete cu flacără antivânt la dispoziția profesorului.
+- [ ] **Tub termic (Heat Shrink)**: segmente pre-tăiate de diametru 1.5 mm, 2.5 mm și 4.0 mm, plus suflantă de aer cald (heat gun) sau brichete cu flacără antivânt la dispoziția profesorului.
 - [ ] **Cabluri flexibile din silicon**: role/fire de 22 AWG (Roșu și Negru pentru alimentare) și 26/28 AWG (Galben, Verde, Albastru, Alb pentru semnale).
 - [ ] **Pini și carcase conectori**: pungi cu pini metalici DuPont mamă/tată, pini JST-PH 2.0 mm, carcase plastice DuPont 1P, 2P, 3P, 4P și carcase JST-PH 3P/4P.
 - [ ] **Multimetre digitale**: 1 multimetru setat pe modul test de continuitate (Buzzer) pe fiecare banc de lucru.
@@ -68,10 +66,10 @@ La finalul acestei sesiuni de 120 de minute, cursanții vor fi capabili:
 | Interval Timp | Durată | Etapă | Descriere Operațională |
 | :---: | :---: | :--- | :--- |
 | **00:00 – 00:05** | 5 min | **Pasul 1: Recap Rapid & Conexiunea Tematică** | Recapitulare de 5 minute a noțiunilor din Lecția 03 (ESP32, limită curent GPIO ~40mA, rolul driverului TB6612FNG și alimentarea la 7.4V). Lansarea temei: importanța vitală a cablurilor și a conexiunilor. |
-| **00:05 – 00:30** | 25 min | **Pasul 2: Masterclass Teoretic – Cabluri, AWG, Conectori și Scule** | Prezentare pe ecran: structura cablului (cupru cositorit, silicon vs PVC, lițat vs masiv), standardul AWG și căderea de tensiune ($V=I \cdot R$), tipuri de conectori (DuPont, JST-PH, JST-XH, XT30, pitch) și demonstrația uneltelor (stripper, crimper, letcon, multimetru). |
+| **00:05 – 00:30** | 25 min | **Pasul 2: Masterclass Teoretic – Cabluri, AWG, Conectori și Scule** | Prezentare pe ecran: structura cablului (tinned copper, silicon vs PVC, stranded vs solid core), standardul AWG și căderea de tensiune (voltage drop, $V=I \cdot R$), tipuri de conectori (DuPont, JST-PH, JST-XH, XT30, pin pitch) și demonstrația uneltelor (wire stripper, crimper, letcon, multimetru). |
 | **00:30 – 00:35** | 5 min | **Pasul 3: Pauză Operațională & Organizarea Bancului** | Hidratare, distribuirea truselor de sertizare, a rolelor de cablu siliconic și a schemelor de cablaj pe fiecare masă. |
-| **00:35 – 01:45** | 70 min | **Pasul 4: Laborator Practic – Asamblarea Fasciculului Central RF 2.0** | Lucru individual asistat pe șasiul propriu: măsurarea lungimilor, tăiere, dezizolare, sertizarea pinilor DuPont și JST-PH, lipirea comutatorului de alimentare, aplicarea tubului termocontractil și testarea riguroasă a continuității cu multimetrul. |
-| **01:45 – 02:00** | 15 min | **Pasul 5: Quiz Kahoot de Evaluare (12 Întrebări)** | Test interactiv pe ecranul mare, axat 100% pe teoria cablurilor, a materialelor, a standardului AWG și a tipurilor de conectori. Întrebările și explicațiile complete se află în `quiz.md`. |
+| **00:35 – 01:45** | 70 min | **Pasul 4: Laborator Practic – Asamblarea Fasciculului Central RF 2.0** | Lucru individual asistat pe șasiul propriu: măsurarea lungimilor, tăiere, dezizolare, sertizarea pinilor DuPont și JST-PH, lipirea comutatorului de alimentare, aplicarea tubului heat shrink și testarea riguroasă a continuității cu multimetrul. |
+| **01:45 – 02:00** | 15 min | **Pasul 5: Quiz Kahoot de Evaluare (13 Întrebări)** | Test interactiv pe ecranul mare, axat 100% pe teoria cablurilor, a materialelor, a standardului AWG și a tipurilor de conectori. Întrebările și explicațiile complete se află în `quiz.md`. |
 
 ---
 
@@ -101,17 +99,17 @@ Orice cablu electric este alcătuit din două elemente de bază: **conductorul i
 
 1. **Materialul Conductorului**:
    - **Cuprul Pur (OFC - Oxygen Free Copper)**: Este cel mai utilizat metal în electronica de performanță datorită conductivității electrice extrem de ridicate și a flexibilității bune.
-   - **Cuprul Cositorit (Tinned Copper)**: Fiecare liță microscopică de cupru este acoperită cu un strat subțire de staniu (cositor). Această acoperire previne oxidarea cuprului (care devine verde și izolator în timp la umiditate) și face firul incredibil de ușor de lipit cu letconul, deoarece fludorul aderă instantaneu. Acesta este standardul de aur în robotica mobilă și modelism.
+   - **Tinned Copper (cupru cu strat de staniu)**: Fiecare liță microscopică de cupru este acoperită cu un strat subțire de staniu. Această acoperire previne oxidarea cuprului și face firul incredibil de ușor de lipit cu letconul. Acesta este standardul de aur în robotica mobilă.
    - **Aluminiul Cupru-Placat (CCA - Copper Clad Aluminum)**: Un miez ieftin de aluminiu învelit într-o pojghiță subțire de cupru. Este rigid, casant la îndoiri repetate, are o rezistență electrică cu 60% mai mare decât cuprul pur și se lipește extrem de greu. *Nu se folosește niciodată pe roboți de competiție.*
 
-2. **Structura Miezului: Multifilar (Lițat / Stranded) vs Monofilar (Masiv / Solid Core)**:
-   - **Firul Monofilar (Solid Core)**: Conține o singură sârmă groasă de cupru. Își păstrează forma când este îndoit, fiind excelent pentru breadboard-uri de laborator fixe sau instalații electrice de casă. Însă, dacă este montat pe un robot mobil supus la vibrații continue, sârma masivă obosește mecanic și se rupe în interiorul izolației.
-   - **Firul Multifilar (Lițat / Stranded)**: Conține zeci sau chiar sute de firișoare minuscule de cupru răsucite împreună. Este extrem de flexibil, poate suporta mii de cicluri de îndoire și nu se fracturează sub vibrațiile induse de motoarele robotului.
+2. **Structura Miezului: Stranded Wire (fir flexibil) vs Solid Core (fir rigid)**:
+   - **Firul Solid Core (sârmă rigidă)**: Conține o singură sârmă groasă de metal. Își păstrează forma când este îndoit, fiind bun pentru breadboard fix. Însă, pe un robot mobil supus la vibrații continue, sârma masivă obosește mecanic și se rupe în interiorul izolației.
+   - **Firul Stranded Wire (fir flexibil)**: Conține zeci de lițe minuscule de cupru răsucite împreună. Este extrem de flexibil, poate suporta mii de cicluri de mișcare și nu se rupe la vibrațiile robotului.
 
 3. **Materialul Izolației: Silicon vs PVC vs Teflon (PTFE)**:
-   - **Siliconul**: Izolația modernă preferată în robotică. Este ultra-flexibilă (se simte ca un șnur moale), rezistă la temperaturi extreme (-60°C până la +200°C) și nu se topește dacă atingeți accidental vârful letconului încins la 350°C.
-   - **PVC (Policlorură de Vinil)**: Izolația clasică, mai rigidă și ieftină. Marele său dezavantaj în atelier este că se topește instantaneu la căldura letconului, retrăgându-se și lăsând sârma dezvelită.
-   - **Teflon (PTFE)**: Izolație ultra-subțire și extrem de rezistentă chimic și termic, folosită în industria aerospațială și militară, dar costisitoare și dificil de dezizolat fără clești speciali.
+   - **Siliconul (Silicone Wire)**: Izolația modernă preferată în robotică. Este ultra-flexibilă, rezistă la temperaturi extreme (-60°C până la +200°C) și nu se topește dacă atingeți accidental vârful letconului încins la 350°C.
+   - **PVC (cabluri standard ieftine)**: Izolația clasică, mai rigidă. Se topește instantaneu la căldura letconului, retrăgându-se și lăsând sârma dezvelită.
+   - **Teflon (PTFE)**: Izolație ultra-subțire și extrem de rezistentă chimic și termic, folosită în industria aerospațială, dar costisitoare și dificil de tăiat fără stripper special.
 
 ---
 

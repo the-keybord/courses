@@ -14,10 +14,10 @@ This file complements the global repository [`AGENTS.md`](../AGENTS.md) with rul
 - **Lesson Structure**: Guided hands-on format with theory presentations, step-by-step teacher demonstrations, and practical exercises.
 - **Lesson Duration**: Standard **120 minutes** (2 hours) per lesson.
 
-## Language Rules & Bilingual Technical Terminology
-- **Course Content**: All lesson plans, student guides, teacher instructions, quizzes, and worksheets must be created in **Romanian**.
+## Language Rules & Direct English Technical Terminology
+- **Course Content**: All lesson plans, student guides, teacher instructions, quizzes, and worksheets are written in natural, modern **Romanian** suited for students in the Republic of Moldova.
 - **Agent Meta & Communication**: Agent guidelines, commit messages, and conversations with the repository maintainer are in **English**.
-- **Bilingual Terminology in Presentations**: Always provide the standard English term in parentheses whenever introducing technical, specialized, or uncommon robotics/programming terms in presentations (e.g. `placă de extensie (expansion shield)`, `servomotor (servo motor)`, `senzor ultrasonic (ultrasonic sensor)`, `blocuri de logică (logic blocks)`).
+- **Direct English Technical Terminology**: Never use archaic or forced Romanian translations that kids never use (e.g. avoid `cupru cositorit`, `fier galvanat`, `fir lițat`, `miez masiv`, `tub termocontractil`). Use direct standard English terms naturally within Romanian explanations (e.g. `tinned copper`, `stranded wire`, `solid core`, `heat shrink`, `crimping`, `pitch`, `header pins`, `jumper wires`, `expansion shield`, `servo motor`, `ultrasonic sensor`, `logic blocks`, `breadboard`, `pull-up`, `pull-down`).
 
 ## The Mandatory Lesson Bundle
 Every lesson directory (`lesson-XX/`) must contain these core files:
@@ -26,6 +26,7 @@ Every lesson directory (`lesson-XX/`) must contain these core files:
 3. `presentation_interactive.md`: Interactive reading slide-by-slide blueprint formatted with 3–4 numbered sentences per slide for students to take turns reading out loud from the screen/board, accompanied by teacher guidance notes and Canva Master Prompt.
 4. `presentation_summary.md`: Continuous narrative prompt for autonomous AI slide engines (Gamma, Canva AI, Tome) with strict header directives and pure didactic text without inline image prompts.
 5. `quiz.md`: Complete interactive Kahoot quiz file containing 10–15 questions, 4 options (strictly 1–3 words each), balanced answer lengths, and pedagogical explanations.
+6. `risks.md`: Complete pedagogical & technical pre-mortem risk analysis (potential bottlenecks, boredom/frustration triggers, technical failure points, teacher safeguards, and quick verification checklist).
 
 ## Lesson Content & Writing Style
 - **Clear & Engaging Technical Tone**: Write in a direct, technically accurate style that is warm and accessible for kids aged 11–14 encountering microcontrollers and programming for the first time.

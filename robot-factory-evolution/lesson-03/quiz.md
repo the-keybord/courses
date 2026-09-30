@@ -14,112 +14,122 @@
 ## 🏆 Banca de Întrebări & Răspunsuri
 
 ### Întrebarea 1
-**Care dintre următoarele platforme de microcontrolere are Wi-Fi ȘI Bluetooth Low Energy integrate direct pe cip, fără module externe?**
-- A) Arduino Uno (ATmega328P)
-- B) BBC Micro:Bit v2
-- C) ESP32 (Espressif Systems) *(Corect)*
-- D) Raspberry Pi Pico (RP2040, fără W)
+Care platformă are Wi-Fi și Bluetooth Low Energy integrate direct pe cip?
 
-> **Explicație**: ESP32 integrează atât modulul Wi-Fi 802.11 b/g/n, cât și Bluetooth Classic + BLE 4.2 pe același cip. Arduino Uno nu are radio, Micro:Bit v2 are doar un protocol radio proprietar de 2.4 GHz și BLE, iar Pico standard (fără W) nu are conectivitate wireless.
+- A) Arduino Uno
+- B) BBC Micro:Bit
+- C) ESP32 *(Corect)*
+- D) Raspberry Pico
+
+> **Explicație**: ESP32 integrează atât modulul Wi-Fi, cât și Bluetooth Classic + BLE 4.2 direct pe același cip.
 
 ---
 
 ### Întrebarea 2
-**Câte nuclee de procesare are cipul ESP32-WROOM utilizat în robotul nostru RF 2.0?**
-- A) Un singur nucleu (single-core)
-- B) Două nuclee (dual-core) *(Corect)*
-- C) Patru nuclee (quad-core)
-- D) Opt nuclee (octa-core)
+Câte nuclee de procesare are cipul ESP32-WROOM de pe robot?
 
-> **Explicație**: ESP32 folosește un procesor Xtensa LX6 cu două nuclee (dual-core) tactate la 240 MHz. Un nucleu poate gestiona controlul motoarelor, iar celălalt poate rula comunicația Bluetooth simultan.
+- A) Un nucleu
+- B) Două nuclee *(Corect)*
+- C) Patru nuclee
+- D) Opt nuclee
+
+> **Explicație**: ESP32 folosește un procesor dual-core la 240 MHz: un nucleu poate comanda motoarele, iar celălalt rulează conexiunea BLE.
 
 ---
 
 ### Întrebarea 3
-**La ce tensiune logică funcționează pinii GPIO ai ESP32?**
+La ce nivel de tensiune logică funcționează pinii GPIO de la ESP32?
+
 - A) 1.8V
 - B) 3.3V *(Corect)*
 - C) 5.0V
 - D) 7.4V
 
-> **Explicație**: Nucleul ESP32 și pinii săi GPIO operează la standardul logic de 3.3V. Aplicarea unei tensiuni superioare (peste 3.6V) pe un pin GPIO riscă să distrugă ireversibil tranzistoarele interne ale cipului.
+> **Explicație**: Pinii GPIO operează la nivelul logic de 3.3V. Aplicarea unei tensiuni de 5V pe un pin GPIO poate arde cipul.
 
 ---
 
 ### Întrebarea 4
-**Care este curentul maxim aproximativ pe care un singur pin GPIO al ESP32 îl poate furniza (source)?**
+Care este curentul maxim aproximativ pe care îl poate da un pin GPIO?
+
 - A) 5 Amperi
 - B) 500 mA
-- C) Aproximativ 40 mA *(Corect)*
+- C) ~40 mA *(Corect)*
 - D) 10 Amperi
 
-> **Explicație**: Un pin GPIO al ESP32 poate furniza maxim aproximativ 40 mA (miliamperi), cu o valoare recomandată de 12 mA pentru operare de durată. Această cantitate este suficientă pentru un LED, dar complet insuficientă pentru un motor electric.
+> **Explicație**: Un pin GPIO poate furniza maxim circa 40 mA (recomandat 12 mA), suficient pentru un LED, dar insuficient pentru motoare.
 
 ---
 
 ### Întrebarea 5
-**De ce un motor DC TT nu poate fi conectat direct la un pin GPIO al ESP32?**
-- A) Motorul funcționează doar pe curent alternativ
-- B) Curentul cerut de motor depășește cu mult limita GPIO, iar pinul s-ar arde *(Corect)*
-- C) ESP32 nu suportă motoare mai mari de 1 gram
-- D) Pinii GPIO sunt doar de intrare, nu de ieșire
+De ce nu putem conecta un motor DC direct la un pin GPIO de la ESP32?
 
-> **Explicație**: Un motor DC TT consumă între 200 mA și 1000 mA, de 5 până la 80 de ori mai mult decât cele ~40 mA pe care le poate furniza un pin GPIO. Conectarea directă ar distruge pinul sau ar lăsa motorul nemișcat.
+- A) Necesită curent alternativ
+- B) Supracurent / risc ardere *(Corect)*
+- C) Motorul e greu
+- D) Pinii sunt intrări
+
+> **Explicație**: Un motor DC cere între 200 mA și 1000 mA. Un pin GPIO arde instantaneu dacă încercăm să alimentăm motorul direct din el.
 
 ---
 
 ### Întrebarea 6
-**Ce face circuitul H-Bridge din interiorul driverului de motoare TB6612FNG?**
-- A) Convertește curentul alternativ în curent continuu
-- B) Amplifică semnalul slab de pe GPIO și permite inversarea sensului curentului prin motor *(Corect)*
-- C) Transformă semnalul Bluetooth în impulsuri de lumină
-- D) Măsoară temperatura internă a motorului
+Ce rol principal are puntea H (H-Bridge) din driverul TB6612FNG?
 
-> **Explicație**: Puntea H (H-Bridge) este un aranjament de 4 tranzistoare MOSFET care comută curentul de putere din baterie prin motor în ambele sensuri. ESP32 trimite doar semnale de control pe pini (AIN1, AIN2, PWM), iar driverul furnizează curentul de forță necesar motoarelor.
+- A) Schimbă frecvența Wi-Fi
+- B) Sens și putere *(Corect)*
+- C) Măsoară temperatura carcasei
+- D) Încarcă bateria Li-Ion
+
+> **Explicație**: Puntea H comută curentul de forță din baterie și permite inversarea sensului de rotație al motoarelor stânga/dreapta.
 
 ---
 
 ### Întrebarea 7
-**De ce servomotoarele micro (SG90 / MG90S) NU au nevoie de un driver extern de tip TB6612FNG?**
-- A) Servomotoarele nu conțin motor electric
-- B) Au un circuit de control integrat în interiorul carcasei *(Corect)*
-- C) Funcționează exclusiv pe energie solară
-- D) Sunt alimentate doar cu 0.5V din baterii ceas
+De ce servomotoarele mici (SG90) NU au nevoie de driver extern separat?
 
-> **Explicație**: Servomotoarele micro conțin în interiorul carcasei un motor DC miniaturizat, un reductor mecanic și un circuit electronic de control care primește semnalul PWM, compară poziția curentă a axului și comandă intern motorul. ESP32 trimite doar un semnal PWM pe firul de semnal.
+- A) Fără motor electric
+- B) Driver integrat intern *(Corect)*
+- C) Funcționează pe lumină
+- D) Baterie internă ceas
+
+> **Explicație**: Servomotoarele au deja integrată în carcasă propria plăcuță electronică de control care comandă motorul intern pe baza semnalului PWM.
 
 ---
 
 ### Întrebarea 8
-**Care este tensiunea nominală a pachetului nostru de acumulatori Li-Ion 2S folosit în robotul RF 2.0?**
-- A) 3.7V (o singură celulă)
-- B) 5.0V (nivel USB)
-- C) 7.4V (două celule în serie) *(Corect)*
-- D) 12.0V (pachet auto standard)
+Care este tensiunea nominală a bateriei Li-Ion 2S de pe robotul RF 2.0?
 
-> **Explicație**: Configurația 2S conectează două celule Li-Ion de 3.7V în serie, rezultând o tensiune nominală de 7.4V (3.7V + 3.7V) și o tensiune maximă la încărcare completă de 8.4V.
+- A) 3.7V
+- B) 5.0V
+- C) 7.4V *(Corect)*
+- D) 12.0V
+
+> **Explicație**: Pachetul 2S are 2 celule Li-Ion conectate în serie: 3.7V + 3.7V = 7.4V nominal (8.4V încărcat complet).
 
 ---
 
 ### Întrebarea 9
-**Ce rol are comutatorul de alimentare (power switch) pe care l-am lipit în circuitul robotului?**
-- A) Reglează viteza motoarelor printr-un potențiometru
-- B) Deconectează fizic polul pozitiv al bateriei de restul circuitului *(Corect)*
-- C) Amplifică semnalul Bluetooth primit de ESP32
-- D) Schimbă frecvența de comunicație Wi-Fi
+Ce face comutatorul de alimentare (power switch) montat pe robot?
 
-> **Explicație**: Comutatorul de alimentare întrerupe fizic firul pozitiv al bateriei. În poziția OFF, niciun curent nu circulă prin circuit, prevenind descărcarea accidentală a acumulatorilor și eliminând riscul de scurtcircuit în repaus.
+- A) Reglează viteza motoarelor
+- B) Întrerupe polul pozitiv *(Corect)*
+- C) Amplifică semnalul Bluetooth
+- D) Schimbă culoarea LED-urilor
+
+> **Explicație**: Comutatorul taie fizic linia pozitivă a bateriei, oprind complet alimentarea robotului pentru siguranță.
 
 ---
 
 ### Întrebarea 10
-**Ce tensiune trebuie să citim cu multimetrul pe pinul VM al driverului de motoare TB6612FNG când comutatorul robotului este pe ON?**
-- A) 0V (nicio tensiune)
-- B) 3.3V (tensiune logică ESP32)
-- C) Tensiunea bateriei: între 7.0V și 8.4V *(Corect)*
-- D) Exact 220V (tensiune de rețea)
+Ce tensiune trebuie să măsurăm pe pinul VM al driverului cu comutatorul pe ON?
 
-> **Explicație**: Pinul VM (motor voltage) al driverului TB6612FNG este conectat direct la bateria 2S Li-Ion. Tensiunea citită trebuie să reflecte starea de încărcare a acumulatorilor, variind între 7.0V (descărcată) și 8.4V (încărcată complet).
+- A) 0V (lipsă)
+- B) 3.3V
+- C) 7.0V – 8.4V *(Corect)*
+- D) 220V
+
+> **Explicație**: Pinul VM este conectat direct la bateria de 7.4V prin comutator, primind tensiunea completă a acumulatorilor.
 
 ---
 
@@ -128,12 +138,12 @@
 | Nr. | Răspuns Corect |
 | :---: | :--- |
 | 1 | C – ESP32 |
-| 2 | B – Dual-core |
+| 2 | B – Două nuclee |
 | 3 | B – 3.3V |
 | 4 | C – ~40 mA |
-| 5 | B – Curentul depășește limita GPIO |
-| 6 | B – Amplifică semnal și inversează sens curent |
-| 7 | B – Circuit de control integrat intern |
+| 5 | B – Supracurent / risc ardere |
+| 6 | B – Sens și putere |
+| 7 | B – Driver integrat intern |
 | 8 | C – 7.4V |
-| 9 | B – Deconectează fizic polul pozitiv |
-| 10 | C – Tensiunea bateriei (7.0V–8.4V) |
+| 9 | B – Întrerupe polul pozitiv |
+| 10 | C – 7.0V – 8.4V |

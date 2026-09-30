@@ -26,11 +26,12 @@ Every lesson directory (`lesson-XX/`) must contain these core files:
 3. `presentation_interactive.md`: Interactive reading slide-by-slide blueprint formatted with 3–4 numbered sentences per slide for students to take turns reading out loud from the screen/board, accompanied by teacher guidance notes and Canva Master Prompt.
 4. `presentation_summary.md`: Continuous narrative prompt for autonomous AI presentation engines (Gamma, Canva AI, Tome) with strict header directives upfront, rich continuous narrative text without inline image prompts, and 100% theoretical focus.
 5. `quiz.md`: Complete interactive Kahoot quiz file containing 10–15 questions, 4 options (max 1–3 words each), balanced answer lengths, and pedagogical explanations.
+6. `risks.md`: Complete pedagogical & technical pre-mortem risk analysis (potential bottlenecks, boredom/frustration triggers, technical failure points, teacher safeguards, and quick verification checklist).
 
-## Language Rules & Bilingual Technical Terminology
-- **Course Content**: All lesson plans, student guides, teacher instructions, challenges, worksheets, presentations, and quizzes must be created in **Romanian**.
+## Language Rules & Direct English Technical Terminology
+- **Course Content**: All lesson plans, student guides, teacher instructions, challenges, worksheets, presentations, and quizzes are written in natural, modern **Romanian** suited for students in the Republic of Moldova.
 - **Agent Meta & Communication**: Agent guidelines, commit messages, and conversations with the repository maintainer are in **English**.
-- **Bilingual Terminology in Presentations**: Always provide the standard English term in parentheses whenever introducing technical, specialized, or uncommon terms in presentations (e.g. `fir lițat (stranded wire)`, `sertizare (crimping)`, `pasul pinilor (pitch)`, `cădere de tensiune (voltage drop)`, `polarizare mecanică (keying)`, `tub termocontractil (heat shrink)`).
+- **Direct English Technical Terminology**: Never use archaic, forced, or obscure Romanian translations that kids in Moldova never use (e.g. avoid `cupru cositorit`, `fier galvanat`, `fir lițat`, `miez masiv`, `tub termocontractil`, `pasul pinilor`, `polarizare mecanică`). Use standard English technical terms directly in the Romanian narrative (e.g. `tinned copper`, `galvanized steel`, `stranded wire`, `solid core wire`, `heat shrink`, `crimping`, `pitch`, `mechanical keying`, `header pins`, `jumper wires`, `breadboard`, `brownout`, `voltage drop`, `servo`, `chassis`, `harness`, `wire stripper`).
 
 ## Lesson Content & Writing Style: Technical Precision & Directness
 - **Strictly Technical & Practical Tone**: Do NOT use excessive metaphors, dramatic space narratives, or flowery literary tropes. Write like a modern engineering specification and hands-on lab guide.

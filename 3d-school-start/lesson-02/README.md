@@ -1,232 +1,249 @@
-# Lecția 02: Arta Pixelilor 3D – Imprimarea Multicolor prin Schimbare de Strat (Layer Swap)
+# Lecția 02 [3DS2.2]: Ingineria Preciziei în CAD – Rigla Personalizată & Semnul de Carte
+
+Bine ați revenit în laboratorul de tehnologie 3D! În prima lecție am explorat componentele mecanice și termice ale imprimantei Bambu Lab A1 și am modelat o felie organică de cașcaval (Cheese Keyring). Astăzi facem un pas uriaș către adevărata inginerie digitală: trecem de la sculptură artistică liberă la **modelarea CAD de precizie milimetrică**.
+
+În lumea reală, fiecare obiect din jurul nostru — de la carcasa telefonului mobil și roțile unei mașini, până la aripile unui avion sau instrumentele medicale — a fost proiectat cu o precizie strictă într-un soft de proiectare asistată de calculator (**CAD - Computer-Aided Design**). O eroare de doar jumătate de milimetru poate face ca două piese să nu se îmbine deloc. În prima parte a lecției, descoperim istoria CAD-ului (cum s-a trecut de la planșetele uriașe de desen tehnic la ecrane 3D în anii 1960), înțelegem de ce precizia este vitală în producție, explorăm uneltele reale de măsurare (șublerul digital, micrometrul, raportorul) și învățăm cum să controlăm milimetrii în Tinkercad folosind instrumentul **Ruler (Rigla)**, casetele numerice și grila **Snap Grid**.
+
+În partea practică, fiecare elev va proiecta propriul instrument funcțional de precizie: o **riglă de 10 cm cu rol dublu de semn de carte (Ruler & Bookmark)**. Obiectul va avea o bază plată de `110 mm x 30 mm`, o scală gradată milimetric realizată prin decupaje de precizie, o zonă liberă pentru șabloane geometrice (stencils) și nume gravat. La finalul sesiunii, organizăm un joc-provocare tehnică: construirea unui **raportor semicircular (Angle Ruler / Protractor)** pentru măsurarea unghiurilor de la $0^\circ$ la $180^\circ$.
 
 ---
 
-## 📌 Informații Generale despre Lecție
+## 1. Informații Generale despre Lecție
+- **Cod Lecție**: 3DS2.2
 - **Grupa de Vârstă**: 10 – 12 ani
-- **Durată Totală**: 120 minute (2 ore pline de creativitate și inginerie)
-- **Modulul**: Modulul 1 – *Bazele Modelării 3D și Tehnologiei FDM* (Lecția 2)
-- **Proiect Practic**: Construirea unei palete de blocuri pixel cu înălțimi diferențiate și realizarea unui tablou **Multicolor Pixel Art** personalizat folosind culorile Negru, Roșu și Alb.
-- **Flux Imprimare 3D**: 
-  1. *Pornire la începutul Lecției 02 (Etapa 2)*: Imprimanta 3D este pregătită și pornită cu fișierele brelocurilor cadou create în Lecția 01. Acestea se imprimă pe parcursul celor 120 de minute.
-  2. *Lucru în Lecția 02 (Etapa 6)*: Elevii proiectează tablourile Pixel Art (exportate ca fișiere `.STL` pentru a fi pregătite și imprimate la Lecția 03).
-  3. *Colectare la finalul Lecției 02 (Etapa 8)*: Imprimarea brelocurilor cadou din Lecția 01 se încheie, iar elevii își ridică festiv obiectele fizice terminate!
+- **Durată Totală**: 120 minute (2 ore)
+- **Modul**: Modulul 1: Laboratorul Creativ
+- **Tipul Lecției**: Masterclass teoretic (Istoria CAD, instrumente de măsură, controlul preciziei) & Atelier practic de modelare parametrică în Tinkercad
+- **Dinamica de Lucru**: Individual (1 elev per computer la stația de lucru)
+- **Proiect Practic**: Proiectarea riglei de 10 cm cu șabloane și funcție de semn de carte (`110 mm x 30 mm x 1.6 mm`) + Jocul Raportorului Semicircular
+- **Ritmul Imprimării 3D**: Modelele proiectate în Lecția 01 (*Cheese Keyring*) sunt trimise la imprimat pe Bambu Lab A1 la începutul orei (Pasul 1) și sunt colectate de către elevi la finalul orei (Pasul 8). Riglele proiectate astăzi vor fi imprimate pe parcursul Lecției 03.
+- **Obiectiv Major**: Înțelegerea conceptului de CAD și dezvoltarea deprinderii de a introduce cote numerice exacte în Tinkercad, înlocuind tragerea la ochi a formelor cu dimensionarea milimetrică.
+
+### 🔗 Resurse & Linkuri Utile
+- **Prezentare**: https://docs.google.com/presentation/d/1HiYxr5UE8dSYKHLvq3oRj4f7gyeIssEc2urHP1UghN4/edit?usp=drive_link
+- **Kahoot**: https://create.kahoot.it/details/c7a1ee20-42f9-4420-943a-906122eadbda
+- **Platforma de Lucru**: https://www.tinkercad.com/things/gD5gKg0QHwU-3ds-22
+
+### ❓ Întrebări Esențiale & Obiective Operaționale
+
+#### Obiective Operaționale
+La finalul acestei sesiuni de 120 de minute, cursanții vor fi capabili:
+1. **Să explice ce înseamnă acronimul CAD (Computer-Aided Design)** și să descrie cum a transformat desenul manual pe hârtie în inginerie digitală tridimensională.
+2. **Să argumenteze importanța toleranțelor și a preciziei milimetrice**, dând exemple de componente din viața reală care nu ar funcționa fără cote exacte (carcase de baterii, șuruburi, angrenaje).
+3. **Să identifice uneltele profesionale de măsură**: șublerul mecanic/digital (*caliper*), micrometrul, ruleta și raportorul (*protractor*), explicând rolul fiecăruia în atelier.
+4. **Să controleze precizia absolută în Tinkercad**: utilizarea instrumentului **Ruler**, editarea directă a valorilor numerice din casete, setarea grilei **Snap Grid** (1.0 mm, 0.5 mm, 0.1 mm) și deplasarea fină cu tastele săgeți.
+5. **Să construiască o scală gradată de 10 cm**: generarea liniilor de 1 cm (lungime 6–8 mm) și a liniilor de 5 mm (lungime 4 mm) la distanțe egale, folosind comanda Duplicate & Repeat (`Ctrl + D`).
+6. **Să creeze o riglă perfect plată și funcțională**: menținerea grosimii maxime de `1.6 mm` (sau `2.0 mm`) pe întreaga suprafață, adăugând șabloane geometrice decupate (stencils) și text gravat fără proeminențe care ar bloca utilizarea ei pe caiet sau într-o carte.
+7. **Să participe la provocarea finală (Jocul Raportorului)**: realizarea unui semicerc gradat pentru măsurarea unghiurilor prin rotirea liniilor la unghiuri precise de $15^\circ$, $30^\circ$, $45^\circ$, $90^\circ$.
+
+#### Întrebări Esențiale de Inginerie
+- *Ce înseamnă CAD și cum desenau inginerii avioane și automobile înainte de apariția computerelor?*
+- *De ce o greșeală de 1 milimetru poate distruge un mecanism întreg?*
+- *Cu ce instrument măsurăm grosimea exactă a unei monede sau diametrul unui ax mic?*
+- *Cum ne ajută instrumentul Ruler și comanda Duplicate în Tinkercad să desenăm 10 linii la exact 10 milimetri distanță între ele?*
 
 ---
 
-## ❓ Întrebări Esențiale (Obiectivele de Învățare)
+## 2. Pregătirea Lecției (Checklist Profesor)
 
-Această lecție face trecerea de la modele mono-color simple la fascinanta lume a obiectelor 3D formate din mai multe culori. Pe parcursul celor 120 de minute, vom investiga și vom răspunde la 6 întrebări cheie:
+Înainte de sosirea elevilor în laborator, profesorul parcurge următorul checklist operațional:
 
-1. **Ce se întâmplă dacă schimbi filamentul în mijlocul imprimării 3D?**
-2. **Cum poate o imprimantă 3D cu un singur cap să imprime multicolor (tehnica *Layer Swap / Pause at Height*)?**
-3. **De ce un obiect complet plat nu poate fi imprimat multicolor prin schimbarea filamentului și de ce avem nevoie de nivele de înălțime diferite?**
-4. **Ce sunt pixelii și unde îi găsim în viața de zi cu zi?**
-5. **Ce este Pixel Art și cum a evoluat acest stil de la jocurile arcade retro pe 8 biți până la Minecraft?**
-6. **Ce alte stiluri artistice similare cu Pixel Art există în istorie și în designul modern?**
+### Software & Conturi Digitale
+- [ ] Clasa Tinkercad Classroom deschisă, cu codul de acces afișat pe ecran sau pe bilețele la fiecare banc.
+- [ ] Proiectele elevilor din Lecția 01 (*Cheese Keyring*) descărcate și importate în Bambu Studio pe o singură placă de printare (print plate), gata de lansare.
+- [ ] Proiectul demonstrativ „Ruler & Bookmark Template” deschis pe ecranul principal al profesorului.
+- [ ] Prezentarea teoretică deschisă în modul Fullscreen pe ecranul proiectorului.
+- [ ] Quiz-ul Kahoot pregătit în modul Classic Live Game pe un tab secundar.
 
----
+### Echipamente Hardware & Imprimante 3D
+- [ ] Imprimantele **Bambu Lab A1** (și A1 Combo) pornite, verificate și calibrate.
+- [ ] Plăcile de imprimare șterse cu alcool izopropilic pentru aderență perfectă a primului strat.
+- [ ] Filamentele încărcate (PLA galben pentru cașcavalul din Lecția 01 și culorile suplimentare).
+- [ ] Bambu Studio conectat la imprimantă, pregătit să pornească printul brelocurilor *Cheese Keyring* chiar în primele 10 minute ale orei.
 
-## 📖 Povestea Tehnologiei și a Pixelilor: Ghid Elaborat și Detaliat
-
-### 1. Ce sunt Pixelii și Unde îi Găsim? De la Ecrane la Imagini Digitale
-Când te uiți la ecranul unui telefon mobil, al unei tablete, al unui televizor sau al unui monitor de calculator, vezi imagini fluide, personaje din jocuri și videoclipuri pline de viață. Însă, dacă am lua o lupă extrem de puternică și ne-am uita foarte aproape de ecran, am descoperi un secret uimitor: **întreaga imagine este compusă din milioane de pătrățele minuscule colorate!**
-
-Cuvântul **Pixel** vine din limba engleză, fiind o prescurtare de la *„Picture Element”* (element de imagine). Pixelul este cea mai mică unitate constitutivă a unei imagini digitale. Fiecare pixel poate aprinde o singură culoare la un moment dat. Atunci când mii sau milioane de pixeli sunt așezați unul lângă altul pe o grilă bidimensională, creierul nostru unește toate aceste puncte și percepe o imagine completă (un chip, un peisaj sau un obiect).
-
----
-
-### 2. Ce este Pixel Art și cum a evoluat acest Stil Retro?
-În anii 1970 și 1980, când au apărut primele jocuri video pe procesoare pe 8 biți și 16 biți (precum consolele *Arcade*, *NES*, *Game Boy* sau *Commodore 64*), calculatoarele erau extrem de slabe. Ele nu aveau suficientă memorie pentru a afișa grafică 3D complexă sau imagini de înaltă rezoluție. 
-
-Artiștii din industria jocurilor au fost nevoiți să devină extrem de ingenioși. Ei trebuiau să deseneze caractere memorabile — precum **Super Mario**, **PAC-MAN**, **Space Invaders** sau **Zelda** — folosind doar câteva zeci de pătrățele pe o grilă mică (de exemplu, 8x8 sau 16x16 pixeli). Fiecare pixel trebuia plasat cu o precizie chirurgicală!
-
-Deși astăzi calculatoarele pot reda grafică fotorealistică ultra-complexă, stilul **Pixel Art** nu a dispărut! Din contră, a devenit un stil artistic iubit și venerat la nivel mondial. Jocuri fantastice moderne precum *Minecraft*, *Terraria*, *Stardew Valley* sau *Fez* îmbrățișează estetica pixelată, dovedind că simplitatea și nostalgia au un farmec atemporal.
+### Materiale Fizice pe Masa Demonstrativă
+- [ ] **1 Șubler digital (Digital Caliper)** funcțional pentru demonstrația live a măsurării milimetrice.
+- [ ] **1 Ruletă clasică și 1 Raportor școlar transparent** pentru compararea instrumentelor.
+- [ ] **1 Mostră fizică imprimată 3D a Riglei-Semn de Carte** pe care elevii o pot atinge și testa pe un caiet.
+- [ ] Monede de 1 leu sau piese LEGO pentru demonstrația toleranțelor de măsură cu șublerul.
+- [ ] Inele metalice de breloc pregătite pentru montaj la finalul orei când se finalizează printul brelocurilor.
 
 ---
 
-### 3. Stiluri Artistice Înrudite cu Pixel Art
-Pixel Art nu a apărut din senin în era digitală! Oamenii au folosit concepte similare de mii de ani:
-- **Mozaicul Antic**: În Roma și Grecia Antică, artiștii construiau piese parietale sau pardoseli spectaculoase lipind mii de mici bucățele pătrate de piatră colorată sau sticlă (*tesserae*).
-- **Pointilismul**: Un curent pictural din secolul al XIX-lea (reprezentat de pictori precum Georges Seurat), unde tablourile erau realizate exclusiv prin aplicarea de mici puncte separate de vopsea pe pânză.
-- **Mărgelele Hama / Perler Beads**: Tubulețe mici din plastic așezate pe plăci cu pini și lipite ulterior cu fierul de călcat, transformând ideile pixelate în obiecte fizice.
-- **Cărămizile LEGO**: Proiectele de tip *LEGO Art* unde piese cilindrice de 1x1 sunt aranjate pe plăci pentru a crea portrete pixelate.
-- **Arta Voxel (3D Pixel Art)**: Trecerea de la pătratul 2D la cubul 3D. În loc de un pixel plat, folosim un cub numit **Voxel** (*Volume Pixel*), la fel ca în lumea Minecraft!
+## 3. Structura Sesiunii de 120 Minute (Timeline Table)
+
+| Interval Timp | Durată | Etapă | Descriere Operațională |
+| :---: | :---: | :--- | :--- |
+| **00:00 – 00:10** | 10 min | **Pasul 1: Primirea Elevilor & Pornirea Imprimării 3D** | Verificarea proiectelor *Cheese Keyring* din Lecția 01, lansarea printului pe Bambu Lab A1 (care va lucra pe fundal) și introducerea temei de precizie CAD. |
+| **00:10 – 00:30** | 20 min | **Pasul 2: Masterclass Teoretic – Ce este CAD, Precizia & Instrumentele de Măsură** | Prezentare interactivă pe ecran: Istoria CAD, importanța toleranțelor, șublerul digital, micrometrul, rigla și controlul milimetrilor în Tinkercad. |
+| **00:30 – 00:35** | 5 min | **Pasul 3: Pauză Operațională & Logare** | Scurtă pauză de hidratare, așezarea la stațiile individuale și logarea în Tinkercad Classroom. |
+| **00:35 – 00:55** | 20 min | **Pasul 4: Demonstrația Profesorului Pas cu Pas** | Live demo: crearea bazei riglei (110x30x1.6 mm), plasarea instrumentului Ruler, generarea gradațiilor cu `Ctrl + D`, adăugarea numerelor și a decupajelor tip stencil. |
+| **00:55 – 01:35** | 40 min | **Pasul 5: Laborator Practic Individual** | Fiecare elev își construiește rigla personalizată de 10 cm cu gradații precise, decupaje de semn de carte și nume gravat. Asistență individuală la toleranțe. |
+| **01:35 – 01:50** | 15 min | **Pasul 6: Provocarea Tehnică – Jocul Raportorului Semicircular** | Joc practic rapid: elevii încearcă să creeze un raportor semicircular ($0^\circ-180^\circ$) prin multiplicarea și rotirea radială a gradațiilor la unghiuri exacte. |
+| **01:50 – 02:00** | 10 min | **Pasul 7: Quiz Kahoot & Colectarea Pieselor Imprimate** | Joc Kahoot cu 12 întrebări 100% teoretice. Desprinderea brelocurilor *Cheese Keyring* de pe patul imprimantei, montarea inelelor, salvarea riglelor pentru Lecția 03 și poza de grup. |
 
 ---
 
-### 4. Magia Imprimării Multicolor: Cum Schimbăm Filament în Mijlocul Imprimării?
-Majoritatea imprimantelor 3D FDM din școli au un singur cap de imprimare (o singură duză). La prima vedere, ai putea crede că o astfel de imprimantă poate printa doar obiecte de o singură culoare. Dar ce se întâmplă dacă schimbăm firul de plastic în timp ce imprimanta lucrează?
-
-Tehnica se numește **Layer Color Change** (sau *Pause at Height / M600*):
-1. Imprimanta începe să depună strat peste strat folosind primul filament (de exemplu, **Negru**).
-2. Când ajunge la o înălțime Z stabilită în softul de Slicing (de exemplu, la z = 2.0 mm), imprimanta oprește automat extrudarea, mută capul de imprimare într-un colț și emite un semnal sonor (*Pauză*).
-3. Operatorul scoate filamentul negru, introduce filamentul de a doua culoare (**Roșu**), curăță duza și apasă pe butonul de continuare (*Resume*).
-4. Imprimanta continuă să printeze straturile următoare peste cele existente, folosind noua culoare!
-5. La o altă înălțime (de exemplu, z = 3.0 mm), procesul se repetă pentru a treia culoare (**Alb**).
+## 4. Desfășurarea Detaliată a Lecției
 
 ---
 
-### 5. De ce un Obiect Complet Plat NU Poate Fi Multicolor prin Schimbare de Strat?
-Aceasta este o regulă esențială a ingineriei 3D pe care fiecare elev trebuie să o înțeleagă:
+### Pasul 1: Primirea Elevilor & Pornirea Imprimării 3D (00:00 – 00:10)
 
-Deoarece imprimanta depune plasticul **strat peste strat pe axa Z (înălțime)**, o schimbare de filament afectează **întregul strat orizontal** depus la acea înălțime!
-- Dacă am avea un obiect complet plat (de exemplu, o placă subțire de 2mm înălțime) și am încerca să schimbăm filamentul la jumătate, jumătatea de jos a plăcii va fi neagră, iar jumătatea de sus va fi roșie. **Nu am putea avea zone roșii și zone albe pe aceeași suprafață plată!**
-- **Soluția Ingineriască – Treptele de Înălțime (Offset de 1mm)**: Pentru ca anumite elemente ale desenului să apară doar într-o anumită culoare, ele trebuie construite **mai înalte pe axa Z**!
-  - **Baza și Conturul (Negru)**: Se opresc la înălțimea de `2.0 mm`.
-  - **Elementele Roșii**: Se construiesc până la înălțimea de `3.0 mm` (depășesc baza neagră cu 1mm). Când imprimanta schimbă filamentul la 2.0mm în Roșu, plasticul roșu se va depune **doar în zonele unde obiectul continuă să urce spre 3mm**!
-  - **Elementele Albe**: Se construiesc până la înălțimea de `4.0 mm` (depășesc zona roșie cu încă 1mm). Când schimbăm la 3.0mm în Alb, plasticul alb se va depune **exclusiv pe vârfurile albe**!
+Sesiunea începe prin punerea în funcțiune a laboratorului de producție 3D.
 
----
-
-### 6. Regula Paletei Comune de Culori (Negru, Roșu, Alb)
-De ce folosim toți exact aceleași culori și aceleași trepte de înălțime?
-Dacă fiecare elev ar folosi înălțimi aleatorii și culori diferite, profesorul ar trebui să ruleze zeci de șarje separate de imprimare! 
-
-Prin respectarea unei **Palete Comune cu Matematică Identică a Înălțimilor (2mm / 3mm / 4mm)** și a culorilor **Negru, Roșu și Alb**, toate proiectele elevilor pot fi așezate împreună pe placa de imprimare. Imprimanta va executa o singură schimbare la 2.0mm și o singură schimbare la 3.0mm, iar la final toți copiii vor primi tablouri Pixel Art spectaculoase, unice ca design, dar perfect imprimate multicolor!
+1. **Pornirea Imprimării pentru Brelocurile din Lecția 01**:
+   - Profesorul deschide Bambu Studio pe ecranul mare, unde toate fișierele *Cheese Keyring* create de elevi la Lecția 01 sunt deja așezate pe o placă PEI comună.
+   - Profesorul apasă comanda **Print Plate** către imprimanta **Bambu Lab A1**.
+   - Elevii observă procesul de auto-calibrare (bed leveling, purjare duză) și pornirea primului strat. Pe durata prezentării și a atelierului practic, imprimanta va lucra în fundal pentru a finaliza toate piesele până la sfârșitul orei.
+2. **Lansarea Provocării Zilei**:
+   - Până acum am modelat obiecte organice (forme neregulate). Astăzi trecem la un nivel profesional: **proiectarea unui instrument de măsurare funcțional**.
+   - Misiunea: Vom crea o riglă de 10 cm care servește și ca semn de carte pentru școală. Pentru ca rigla să fie utilă la orele de matematică și desen, gradațiile trebuie să fie exacte la milimetru, nu desenate la întâmplare.
 
 ---
 
-## ⏱️ Desfășurarea Lecției Pas cu Pas (Planul de 120 Minute)
+### Pasul 2: Masterclass Teoretic – Ce este CAD, Precizia & Instrumentele de Măsură (00:10 – 00:30)
 
-| Minut | Etapă | Activitate Detaliată & Ghid pentru Profesor |
-| :--- | :--- | :--- |
-| **00 - 10 min** | **1. Bun Venit & Introducere** | Primirea elevilor. Profesorul explică planul lecției (imprimarea brelocurilor cadou din Lecția 01 pe parcursul celor 2 ore și descoperirea tehnicii de imprimare multicolor). |
-| **10 - 20 min** | **2. Pregătirea și Pornirea Imprimării 3D (Brelocurile din Lecția 01)** | Profesorul încărcă fișierele `.STL` ale brelocurilor cadou realizate în Lecția 01, pregătește imprimanta 3D FDM și dă start imprimării. Imprimanta va funcționa pe tot parcursul lecției! |
-| **20 - 45 min** | **3. Prezentare: Pixeli, Pixel Art & Matematica Înălțimilor** | Parcurgerea prezentării. Se discută despre ecrane, pixeli, istoria jocurilor 8-bit, mozaicuri și de ce avem nevoie de trepte de înălțime de 1mm pentru schimbarea culorilor (Negru, Roșu, Alb). |
-| **45 - 55 min** | **4. Pauză & Prezență** | Pauză de 10 minute pentru hidratare și socializare. Verificarea și strigarea prezenței. |
-| **55 - 70 min** | **5. Demonstrația Live în Tinkercad: Construirea Paletei** | Profesorul arată cum se creează blocurile pătrate de 5x5mm (sau 10x10mm) și cum se setează înălțimile pe Z (`2mm` pentru Negru, `3mm` pentru Roșu, `4mm` pentru Alb). |
-| **70 - 100 min** | **6. Lucru Individual: Tabloul Pixel Art Personalizat** | Elevii își construiesc propria paletă, apoi multiplică blocurile (`Ctrl + D`) pentru a compune un model retro la alegere. Fișierele sunt salvate pentru imprimarea multicolor de la Lecția 03! |
-| **100 - 110 min** | **7. Joc Quiz Interactiv** | Joc rapid de întrebări și răspunsuri pentru fixarea cunoștințelor despre pixeli, axa Z, trepte de 1mm și comanda M600 / Layer Swap. |
-| **110 - 120 min** | **8. Colectare Brelocuri din Lecția 01 & Poză de Grup** | Imprimanta își încheie treaba cu brelocurile cadou din Lecția 01! Elevii își ridică festiv produsele finite proaspăt imprimate și fac poza de grup! |
+Profesorul susține prezentarea teoretică (ghidată de cele 4 întrebări esențiale), alternând slide-urile de pe ecran cu demonstrații practice la masa demonstrativă.
 
----
+#### 1. Ce este CAD, când a apărut și unde este folosit?
+- **Definiția CAD**: CAD înseamnă **Computer-Aided Design** (Proiectare Asistată de Calculator). Este tehnologia prin care inginerii și designerii folosesc programe software pentru a crea, modifica, analiza și optimiza modele tridimensionale ale obiectelor înainte ca acestea să fie fabricate în realitate.
+- **Istoria CAD-ului**:
+  - Înainte de anii 1960, toate clădirile, vapoarele și mașinile se desenau manual pe planșete uriașe de desen, cu rigle, echere, compasuri și cerneală. Modificarea unei singure piese necesita săptămâni întregi de redesenare a zecilor de foi de hârtie.
+  - În anii 1960, cercetătorul **Ivan Sutherland** a creat la MIT primul program grafic interactiv din istorie, numit **Sketchpad**. În paralel, matematicianul francez **Pierre Bézier** (la compania auto Renault) și fizicianul **Patrick Hanratty** au inventat formulele matematice ale curbelor digitale (curbele Bézier), punând bazele primelor programe CAD industriale.
+  - Astăzi, CAD-ul este motorul întregii lumi moderne: este folosit în **aeronautică** (Boeing, SpaceX proiectează rachete în CAD), **medicină** (proteze personalizate și implanturi), **arhitectură** (zgârie-nori și poduri), **industria jocurilor video** și a **efectelor speciale**.
 
-## 💻 Ghid Detaliat pentru Proiectul Practic: Tabloul Pixel Art în Tinkercad
+#### 2. Cât de importantă este precizia în modelarea CAD?
+- În sculptura artistică sau în pictură, o linie poate fi mai la stânga sau mai la dreapta fără ca opera să fie distrusă. În ingineria CAD, **precizia este absolut obligatorie**.
+- **Conceptul de Toleranță Dimensională**: Fiecare piesă fabricată are o marjă de eroare admisibilă numită toleranță (de exemplu $\pm 0.1\text{ mm}$).
+- Dacă proiectăm un capac pentru o baterie și greșim dimensiunea cu `0.5 mm`, capacul fie nu va intra în carcasă, fie va cădea la prima mișcare. Dacă inginerii de la o fabrică de avioane greșesc diametrul unui șurub de titan cu `0.2 mm`, aripa avionului poate ceda în zbor.
 
-### Pasul 1: Pregătirea Mediului de Lucru și a Grilei
-1. Intrați pe `www.tinkercad.com`, autentificați-vă în Clasa Virtuală și apăsați **Create > 3D Design**.
-2. Redenumiți proiectul în colțul din stânga sus: `PixelArt_NumeleTau`.
-3. Setați grila de lucru (*Snap Grid*) în colțul din dreapta jos la **1 mm** (pentru ca blocurile să se lipească perfect fără goluri).
+#### 3. Ce unelte folosim pentru a măsura și reproduce un obiect în CAD?
+Profesorul arată uneltele fizice la cameră sau le trece prin bănci:
+- **Șublerul (Caliper / Digital Caliper)**: Cel mai important instrument din laboratorul 3D. Măsoară trei lucruri cu precizie de 0.01 mm:
+  1. *Dimensiuni exterioare* (folosind fălcile mari).
+  2. *Dimensiuni interioare / orificii* (folosind fălcile mici superioare).
+  3. *Adâncimi* (folosind tija metalică subțire din capăt).
+  - *Demonstrație live*: Profesorul măsoară grosimea unei piese LEGO (exact 9.6 mm înălțime, 3.2 mm grosimea unui perete) și diametrul unui bănuț.
+- **Micrometrul**: Instrument de ultra-precizie folosit pentru a măsura grosimea foilor de metal sau a filamentului 3D cu acuratețe de micrometri ($0.001\text{ mm}$).
+- **Ruleta și Rigla de Oțel**: Pentru măsurarea lungimilor mari (de la câțiva centimetri la câțiva metri).
+- **Raportorul (Protractor)**: Instrumentul semicircular cu care măsurăm și trasăm unghiuri în grade ($0^\circ - 180^\circ$).
 
----
-
-### Pasul 2: Construirea Paletei Standardizate de Culori (Offset de 1mm)
-Înainte de a desena tabloul, construim în colțul spațiului de lucru cele 3 „călimări de vopsea” (blocuri pixel de bază):
-
-1. **Pixelul Negru (Baza / Fundalul)**:
-   - Trageți un **Box (Cub)** pe spațiul de lucru.
-   - Setați dimensiunile bazei: `X = 5 mm`, `Y = 5 mm` *(sau 10mm x 10mm dacă se dorește un tablou mai mare)*.
-   - Setați înălțimea pe axa Z: **`Z = 2 mm`**.
-   - Schimbați culoarea blocului în **Negru** din meniul *Solid*.
-
-2. **Pixelul Roșu (Stratul 2)**:
-   - Trageți un al doilea cub pe spațiul de lucru.
-   - Setați dimensiunile bazei: `X = 5 mm`, `Y = 5 mm`.
-   - Setați înălțimea pe axa Z: **`Z = 3 mm`** *(cu 1mm mai înalt decât cel negru!)*.
-   - Schimbați culoarea în **Roșu**.
-
-3. **Pixelul Alb (Stratul 3 / Vârfuri)**:
-   - Trageți al treilea cub.
-   - Setați dimensiunile bazei: `X = 5 mm`, `Y = 5 mm`.
-   - Setați înălțimea pe axa Z: **`Z = 4 mm`** *(cu încă 1mm mai înalt decât cel roșu!)*.
-   - Schimbați culoarea în **Alb**.
-
-> 💡 **Explicație Tehnică**: Toate blocurile stau pe podea (`Z = 0`), dar au înălțimi diferite (2mm, 3mm, 4mm). Când imprimanta toarnă primul strat de Negru de la 0 la 2mm, va acoperi baze pentru TOATE blocurile. Când schimbăm la Roșu la 2.0mm, doar blocurile de 3mm și 4mm vor primi plastic roșu. Când schimbăm la Alb la 3.0mm, doar blocurile de 4mm vor primi ultimul strat alb!
+#### 4. Cum controlăm precizia în Tinkercad?
+Profesorul explică cele 4 instrumente de control matematic din Tinkercad:
+1. **Instrumentul Ruler (Rigla - scurtătură tasta `R`)**: Când plasăm rigla pe planul de lucru, orice obiect selectat își afișează instantaneu cotele numerice absolute și distanța exactă față de originea riglei.
+2. **Casetele Numerice Directe**: Nu tragem niciodată formele cu mouse-ul la ochi! Dăm clic pe numărul afișat (de exemplu `20.00`) și tastăm valoarea exactă dorită (de exemplu `30.00`).
+3. **Grila Snap Grid (Fixare pe Grilă)**: Situată în colțul din dreapta-jos. Putem seta pasul de mișcare la `1.0 mm` (standard), `0.5 mm`, `0.1 mm` (pentru precizie microscopică) sau `OFF` (mișcare liberă).
+4. **Tastele Săgeți de pe Tastatură**: O apăsare pe o săgeată deplasează obiectul selectat cu exact valoarea setată în Snap Grid (dacă grila e la 1.0 mm, o apăsare = exact 1.0 mm).
 
 ---
 
-### Pasul 3: Alegerea și Schițarea Ideii (Negru, Roșu, Alb)
-Elevii își aleg un subiect potrivit pentru paleta tricoloră. Iată câteva idei populare și inspiraționale din care elevii pot alege:
+### Pasul 3: Pauză Operațională & Logare (00:30 – 00:35)
 
-- **❤️ Inimă Retro 8-Bit (Minecraft / Zelda)**:
-  - *Negru (`Z = 2mm`)*: Conturul exterior de pixeli.
-  - *Roșu (`Z = 3mm`)*: Umplutura principală a inimii.
-  - *Alb (`Z = 4mm`)*: Punctul de strălucire (highlight) din colțul stânga sus.
-
-- **🍄 Ciupercă Super Mario (Power-Up Mushroom)**:
-  - *Negru (`Z = 2mm`)*: Contur pălărie, ochi și bază.
-  - *Roșu (`Z = 3mm`)*: Pălăria ciupercii.
-  - *Alb (`Z = 4mm`)*: Bulinele albe de pe pălărie și fețița ciupercii.
-
-- **⚾ Pokéball Classic (Pokémon)**:
-  - *Negru (`Z = 2mm`)*: Conturul circular exterior, banda centrală și inelul butonului.
-  - *Roșu (`Z = 3mm`)*: Semisfera superioară.
-  - *Alb (`Z = 4mm`)*: Semisfera inferioară și centrul butonului.
-
-- **🕷️ Mască Spider-Man / Pixel Shield**:
-  - *Negru (`Z = 2mm`)*: Conturul măștii și liniile de pânză.
-  - *Roșu (`Z = 3mm`)*: Masca principală.
-  - *Alb (`Z = 4mm`)*: Ochii mari retro.
-
-- **🧪 Pțiune Magică Retro**:
-  - *Negru (`Z = 2mm`)*: Conturul sticlei alchimice.
-  - *Roșu (`Z = 3mm`)*: Lichidul magic din interior.
-  - *Alb (`Z = 4mm`)*: Dopul de plută și bula de strălucire.
-
-- **👾 Space Invader / Retro Arcade Alien**:
-  - *Negru (`Z = 2mm`)*: Baza/fundalul protector.
-  - *Roșu (`Z = 3mm`)*: Corpul extraterestrului.
-  - *Alb (`Z = 4mm`)*: Ochii pixelati.
+Elevii fac o pauză scurtă de 5 minute, își spală mâinile, beau apă și revin la calculatoare, logându-se în conturile Tinkercad Classroom prin codul de clasă și nickname-ul personal.
 
 ---
 
-### Pasul 4: Asamblarea Tabloului prin Duplicare (`Ctrl + D`)
-1. Selectați blocul pixel de culoarea dorită din paletă.
-2. Apăsați comanda **Duplicate (`Ctrl + D`)** și mutați noul bloc cu săgețile de pe tastatură direct lângă primul bloc.
-3. Continuați să lipiți pixeli unul lângă altul pe grilă, rând cu rând, construind imaginea dorită.
-4. Asigurați-vă că nu lăsați spații libere între pixeli (blocurile trebuie să se atingă perfect pe laturi).
+### Pasul 4: Demonstrația Profesorului Pas cu Pas (00:35 – 00:55)
+
+Profesorul proiectează ecranul propriu și modelează de la zero Rigla-Semn de Carte, explicând fiecare pas și fiecare scurtătură de tastatură.
+
+#### Etapa 1: Crearea Corpului Principal al Riglei (Baza)
+1. Se aduce un cub roșu (**Box**) pe planul de lucru.
+2. Se activează instrumentul **Ruler** (tasta `R`) dând clic în colțul din stânga-jos al planului de lucru.
+3. Se setează dimensiunile exacte din casetele numerice:
+   - **Lungime (Axa X)**: `110.0 mm` (11 cm lungime totală, lăsând spațiu de 5 mm la capete).
+   - **Lățime (Axa Y)**: `30.0 mm` (3 cm lățime).
+   - **Înălțime (Axa Z)**: `1.6 mm` (grosimea optimă: suficient de rezistentă pentru a nu se rupe, dar suficient de subțire pentru a intra ușor între paginile unei cărți).
+4. Se colorează corpul într-o nuanță plăcută (de exemplu, albastru sau turcoaz).
+
+#### Etapa 2: Crearea Gradației de Bază (Linia de 1 cm)
+1. Se aduce un cub nou și se transformă în corp decupator (**Hole / Gol**).
+2. Se setează dimensiunile liniei de centimetru:
+   - **Lățime linie (Axa X)**: `1.0 mm` (o fantă subțire și clară).
+   - **Lungime linie (Axa Y)**: `8.0 mm` (se întinde pe marginea superioară a riglei).
+   - **Înălțime (Axa Z)**: `4.0 mm` (mai înaltă decât rigla pentru a o străpunge complet de sus până jos).
+3. Se poziționează prima linie la cota $X = 5.0\text{ mm}$ (acesta va fi punctul $0\text{ cm}$).
+
+#### Etapa 3: Magia Multiplicării Rapide (`Ctrl + D`)
+1. Cu prima linie de decupaj selectată, se apasă comanda **Duplicate** (`Ctrl + D`).
+2. Fără a da clic în altă parte, se apasă tasta **Săgeată Dreapta** de 10 ori (la Snap Grid de 1.0 mm) SAU se modifică valoarea X din caseta Ruler adăugând exact `10.0 mm`.
+3. Se apasă repetat `Ctrl + D`: Tinkercad reține automat deplasarea de 10 mm și generează instantaneu celelalte linii la cotele 20mm, 30mm, 40mm ... până la 100mm (punctul 10 cm)!
+4. Pentru liniile intermediare de **5 mm (jumătăți de centimetru)**:
+   - Se creează o linie mai scurtă (lungime Y de `4.0 mm`).
+   - Se plasează la $X = 10.0\text{ mm}$ (adică la 0.5 cm).
+   - Se multiplică cu `Ctrl + D` cu pas de 10 mm.
+
+#### Etapa 4: Adăugarea Cifrelor (Text Decupat sau Gravat)
+1. Se aduce un obiect **Text** din panoul lateral.
+2. Se tastează cifrele `0`, `1`, `2` ... `10` cu o înălțime de font mică (înălțime Y de `5.0 mm` și grosime X de `1.0 mm`).
+3. Se aliniază cifrele sub fiecare linie lungă de centimetru.
+4. Se transformă cifrele în **Hole** (adâncime de 0.8 mm pentru gravură sau străpungere completă).
+
+#### Etapa 5: Șabloanele Geometrice (Stencils) & Personalizarea
+1. În spațiul liber rămas pe corpul riglei (lățimea de 15 mm din partea inferioară), profesorul demonstrează adăugarea unor forme geometrice mici decupate (Hole):
+   - Un cerc mic ($\varnothing 6\text{ mm}$).
+   - Un triunghi echilateral ($6\text{ mm}$).
+   - O stea sau o inimioară din secțiunea *Design Starters*.
+   - Un orificiu alungit în capăt pentru agățarea unui ciucure de semn de carte.
+2. Se adaugă numele elevului (de exemplu `ALEX`) gravat la o adâncime de 0.6 mm.
+3. Se selectează toate formele (`Ctrl + A`) și se unesc cu **Group** (`Ctrl + G`).
 
 ---
 
-### Pasul 5: Adăugarea unei Baze Subțiri de Susținere (Opțional)
-Pentru a vă asigura că toți pixelii rămân lipiți impecabil într-un singur tablou solid:
-1. Adăugați o placă mare neagră sub întregul desen (sau creați un contur negru exterior care unește toți pixelii).
-2. Verificați ca baza neagră să aibă o înălțime de `2 mm`.
+### Pasul 5: Laborator Practic Individual (00:55 – 01:35)
+
+Elevii lucrează individual la propriile proiecte. Profesorul circulă printre bănci și verifică aplicarea strictă a regulilor de inginerie:
+
+- **Checklist de Verificare Tehnică la Banc**:
+  1. *Dimensiunea exterioară*: Este baza exact de `110 x 30 mm`?
+  2. *Grosimea Z*: Este înălțimea de maxim `1.6 mm` - `2.0 mm`? (Dacă un elev a lăsat baza la 20 mm, rigla va fi un bloc uriaș inutilizabil).
+  3. *Acuratețea scării*: Distanța dintre linia 0 și linia 10 este exact de `100 mm`?
+  4. *Planaritatea*: Nu există obiecte 3D voluminoase ridicate în sus care să împiedice rigla să stea dreaptă pe hârtie?
+  5. *Inspecția decupajelor*: Toate decupajele (stencils) sunt grupate corect și străpung baza fără să lase pereți microscopici mai subțiri de 0.8 mm (care s-ar rupe la imprimare)?
 
 ---
 
-### Pasul 6: Verificarea Finală și Exportul STL
-1. Rotiți camera în Tinkercad și priviți tabloul din profil (dintr-o parte).
-2. Verificați dacă se observă clar cele **3 trepte de înălțime**:
-   - Nivelul cel mai jos: Negru (2 mm)
-   - Nivelul mijlociu: Roșu (3 mm)
-   - Nivelul cel mai înalt: Alb (4 mm)
-3. Selectați toate piesele (`Ctrl + A`) și apăsați **Group (`Ctrl + G`)**.
-4. Apăsați pe butonul **Export** și descărcați fișierul **.STL**.
+### Pasul 6: Provocarea Tehnică – Jocul Raportorului Semicircular (01:35 – 01:50)
+
+Pentru elevii care finalizează rigla mai devreme și ca activitate colectivă de consolidare, profesorul lansează un joc-concurs tehnic: **Misiunea Raportorul Semicircular (Angle Ruler Challenge)**.
+
+1. **Obiectivul Jocului**: Crearea unui instrument semicircular pentru măsurat unghiuri ($0^\circ$ până la $180^\circ$).
+2. **Provocarea de Logică Spațială**: Cum obținem gradații rotunde?
+   - Se aduce un semicilindru (**Round Roof** sau cilindru tăiat în două).
+   - Se creează o linie subțire de decupaj (`1 mm x 10 mm`).
+   - Se mută punctul de rotație în centrul semicercului.
+   - Folosind roata de rotație a unghiurilor din Tinkercad (la pași de $15^\circ$ sau $30^\circ$) și comanda `Ctrl + D`, elevii văd cum liniile se multiplică în evantai circular la $0^\circ, 30^\circ, 45^\circ, 60^\circ, 90^\circ, 120^\circ, 150^\circ, 180^\circ$!
+3. Profesorul premiază elevii care au reușit să creeze cel mai precis raportor cu insigna virtuală de *„Master of Angles”*.
 
 ---
 
-## 🖨️ Ghidul Profesorului pentru Slicing (Configurarea Layer Swap)
+### Pasul 7: Quiz Kahoot, Colectarea Pieselor & Încheiere (01:50 – 02:00)
 
-În softul de Slicing (PrusaSlicer, Bambu Studio sau Cura), configurarea imprimării multicolor pentru întreaga clasă se face foarte simplu:
-
-1. Importați pe placa virtuală toate fișierele `.STL` generate de elevi.
-2. Setați **Layer Height = 0.2 mm**.
-3. Glisați bara verticală de simulare a straturilor (*Layer Slider*):
-   - La **Înălțimea Z = 2.2 mm** (stratul de după 2.0mm), adăugați prima schimbare de culoare (**Color Change / M600**) și selectați filamentul **Roșu**.
-   - La **Înălțimea Z = 3.2 mm** (stratul de după 3.0mm), adăugați a doua schimbare de culoare și selectați filamentul **Alb**.
-4. Dați **Slice** și trimiteți fișierul G-code la imprimantă. Imprimanta va funcționa autonom, oprirea făcându-se automat doar la cele două pauze programate!
-
----
-
-## 🧠 Joc Quiz Interactiv (Fixarea Cunoștințelor)
-
-1. **Ce înseamnă cuvântul „Pixel”?**
-   - *Răspuns*: Picture Element (element de imagine) – cea mai mică unitate a unei imagini digitale.
-2. **De ce aveau jocurile vechi pe 8 biți grafică din pixeli mari?**
-   - *Răspuns*: Deoarece calculatoarele de atunci aveau memorie foarte mică și nu puteau afișa imagini complexe.
-3. **Ce este tehnica Layer Swap la o imprimantă 3D FDM?**
-   - *Răspuns*: Oprirea imprimării la o anumită înălțime Z pentru a schimba firul de filament cu o altă culoare.
-4. **De ce trebuie ca elementele roșii să fie mai înalte cu 1mm decât cele negre?**
-   - *Răspuns*: Deoarece schimbarea de culoare se face pe tot stratul orizontal. Pentru ca roșul să se depună doar în anumite locuri, acele locuri trebuiau să fie singurele care continuau să fie imprimate peste înălțimea de 2mm.
-5. **Cum se numește echivalentul 3D al unui pixel?**
-   - *Răspuns*: Voxel (Volume Pixel).
+1. **Jocul Quiz Kahoot (6–8 minute)**:
+   - Elevii accesează `kahoot.it` pe laptop sau telefon.
+   - Se parcurg cele 12 întrebări 100% teoretice (istorie CAD, Ivan Sutherland, Pierre Bézier, utilizarea șublerului, toleranțe și instrumentul Ruler).
+   - Toate întrebările, variantele scurte de 1–3 cuvinte și explicațiile didactice se găsesc în `quiz.md`.
+2. **Colectarea Brelocurilor *Cheese Keyring* Imprimate în Timpul Orei**:
+   - Imprimanta Bambu Lab A1 a finalizat placa de printare pornită la începutul orei (Pasul 1). Patul încălzit s-a răcit.
+   - Elevii vin pe rând la imprimantă, flexează ușor placa PEI texturată și își desprind brelocul de cașcaval.
+   - Fiecare elev înșurubează tija inelului metalic în orificiul tehnic de 1 mm modelat la Lecția 01, testând rezistența mecanică a piesei reale.
+3. **Salvarea Riglelor pentru Slicing & Imprimare la Lecția 03**:
+   - Fiecare elev verifică salvarea proiectului în Tinkercad Classroom sub denumirea: `Nume_Rigla_10cm`.
+   - Modelele de rigle și semne de carte sunt inspectate de profesor și vor fi pregătite în Bambu Studio pentru a fi puse la imprimat pe parcursul Lecției 03.
+4. **Fotografia de Grup**: Toți elevii țin în mână brelocurile *Cheese Keyring* proaspăt asamblate și pozează zâmbitori la panoul clasei.
 
 ---
 
-## 🏆 Rezultatul Final și Încheierea Lecției
-- **Proiect Ridicat la Finalul Lecției 02**: Elevii ridică festiv cel de-al doilea breloc personalizat (modelul cadou creat la Lecția 01), proaspăt imprimat pe parcursul celor 120 de minute!
-- **Proiect Proiectat în Lecția 02**: Fiecare elev a creat propriul tablou Pixel Art 3D folosind paleta standardizată Negru-Roșu-Alb.
-- **Competențe Dobândite**: Înțelegerea pixelilor, istoria graficii 8-bit, proiectarea 3D cu nivele de înălțime diferențiate pe axa Z și logica imprimării multicolor prin schimbare de strat.
-- **Pregătire Lecția 03**: Fișierele Pixel Art sunt exportate ca `.STL` și pregătite pe slicer. La începutul Lecției 03, imprimanta va fi pornită cu aceste fișiere Pixel Art, iar copiii își vor ridica tablourile multicolore la finalul Lecției 03!
+## 5. Ghid de Depanare & Sfaturi pentru Profesor (Troubleshooting)
+
+- **Problema 1: Elevul trage de colțurile obiectului și pierde cotele exacte.**
+  - *Soluție*: Învățați elevul să nu mai folosească mânerele albe/negre cu mouse-ul. Învățați-l să dea un singur clic pe numărul dorit și să tasteze cifra de pe tastatură (`110`, `Enter`).
+- **Problema 2: Comanda `Ctrl + D` nu mai păstrează distanța de 10 mm.**
+  - *Cauză*: Elevul a dat clic pe fundal sau pe alt obiect între multiplicări, ceea ce resetează memoria Tinkercad.
+  - *Soluție*: Ștergeți liniile greșite, selectați din nou linia inițială, apăsați `Ctrl + D`, mutați-o o singură dată cu 10 mm spre dreapta, apoi apăsați direct `Ctrl + D` în continuare.
+- **Problema 3: Textul sau șabloanele decupate sunt prea subțiri și dispar la slicing.**
+  - *Cauză*: Liniile fontului au sub 0.4 mm lățime (sub diametrul duzei imprimantei Bambu Lab A1).
+  - *Soluție*: Măriți grosimea fontului sau alegeți un font mai plin (*Sans* sau *Sans Mono*).
+- **Problema 4: Rigla este curbată sau are reliefuri pe spate.**
+  - *Soluție*: Apăsați tasta `D` (Drop) pentru a așeza toate corpurile perfect la cota $Z = 0$ pe planul de lucru înainte de grupare.

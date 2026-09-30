@@ -2,7 +2,7 @@
 
 Bine ați revenit la cursul **Robot Factory: Creation**! Astăzi este o zi mult așteptată în laboratorul nostru de mecatronică: **plăcile fizice BBC Micro:Bit au sosit pe bancurile de lucru**! Trecem de la simulatoare virtuale pe ecran direct la atingerea, programarea și testarea hardware-ului real.
 
-Lecția este structurată în două părți complementare. În prima parte, abordăm un capitol fundamental de inginerie electrică: **cablurile și conectorii**. Chiar dacă Micro:Bit-ul are mulți senzori direct pe placă, pentru a comanda motoarele robotului, plăcile de extensie robot:bit și bateriile externe avem nevoie de cablaje de înaltă calitate. Vom învăța din ce sunt fabricate cablurile (cupru cositorit vs aluminiu, silicon vs PVC, lițat vs masiv), ce înseamnă sistemul inversat AWG, de ce cablurile subțiri provoacă căderi periculoase de tensiune ($V = I \cdot R$) și reseturi de procesor (brownout), ce sunt conectorii DuPont (2.54 mm), JST-PH (2.0 mm), JST-XH, XT30 și ce scule profesionale se folosesc pentru dezizolat, sertizat și lipit.
+Lecția este structurată în două părți complementare. În prima parte, abordăm un capitol fundamental de inginerie electrică: **cablurile și conectorii**. Chiar dacă Micro:Bit-ul are mulți senzori direct pe placă, pentru a comanda motoarele robotului, plăcile de extensie robot:bit și bateriile externe avem nevoie de cablaje de înaltă calitate. Vom învăța din ce sunt fabricate cablurile (tinned copper vs aluminiu CCA, silicon vs PVC, stranded vs solid core), ce înseamnă sistemul inversat AWG, de ce cablurile subțiri provoacă căderi periculoase de tensiune (voltage drop, $V = I \cdot R$) și reseturi de procesor (brownout), ce sunt conectorii DuPont (2.54 mm), JST-PH (2.0 mm), JST-XH, XT30 și ce scule profesionale se folosesc pentru dezizolat (wire stripper), sertizat (crimper) și lipit (soldering iron).
 
 A doua parte a lecției, inima laboratorului nostru de astăzi, este un maraton practic de programare hardware în Microsoft MakeCode. Elevii vor învăța să conecteze plăcile Micro:Bit prin WebUSB direct din browser și vor realiza **6 exerciții progresive cu blocuri de bază**, programând toți senzorii integrați pe placă: senzorul de temperatură, senzorul de lumină (matricea LED), accelerometrul pentru înclinare și mișcare, pedometrul cu variabile, busola magnetică și microfonul de sunet.
 
@@ -26,9 +26,9 @@ A doua parte a lecției, inima laboratorului nostru de astăzi, este un maraton 
 
 #### Obiective Operaționale
 La finalul acestei sesiuni de 120 de minute, cursanții vor fi capabili:
-1. **Să clasifice materialele unui cablu electric** (cupru cositorit vs aluminiu, izolație din silicon vs PVC, miez lițat vs masiv) și să argumenteze de ce cablurile lițate din silicon sunt optime pe roboți mobili.
-2. **Să decodeze standardul AWG (American Wire Gauge)** și logica sa inversată (număr mic = fir gros; număr mare = fir subțire), corelând grosimea firului cu capacitatea de curent și căderea de tensiune.
-3. **Să definească noțiunea de pas al pinilor (pitch)** și să compare conectorii DuPont (2.54 mm), JST-PH (2.0 mm), JST-XH și conectorii de baterie XT30 cu ghidaj de polarizare (*keying*).
+1. **Să clasifice materialele unui cablu electric** (tinned copper vs aluminiu CCA, izolație din silicon vs PVC, stranded wire vs solid core) și să argumenteze de ce cablurile stranded din silicon sunt optime pe roboți mobili.
+2. **Să decodeze standardul AWG (American Wire Gauge)** și logica sa inversată (număr mic = fir gros; număr mare = fir subțire), corelând grosimea firului cu capacitatea de curent și căderea de tensiune (voltage drop).
+3. **Să definească noțiunea de pas al pinilor (pin pitch)** și să compare conectorii DuPont (2.54 mm), JST-PH (2.0 mm), JST-XH și conectorii de baterie XT30 cu ghidaj de polarizare (**mechanical keying**).
 4. **Să împerecheze și să descarce cod direct din browser pe placa fizică Micro:Bit prin WebUSB** sau prin transferul fișierului `.hex` pe unitatea USB.
 5. **Să programeze senzorii de mediu ai plăcii** (temperatură și lumină ambientală), utilizând blocuri decizionale `if/then/else` pentru a crea un termometru digital și un far automat de noapte.
 6. **Să utilizeze accelerometrul și magnetometrul intern** pentru detecția gesturilor (`on shake`, `on tilt`), afișarea unghiului de busolă (`compass heading`) și numărarea pașilor cu variabile.
@@ -54,7 +54,7 @@ La finalul acestei sesiuni de 120 de minute, cursanții vor fi capabili:
 ### Hardware & Materiale pe Mesele de Lucru
 - [ ] **Plăci BBC Micro:Bit v2**: 1 bucată per elev (sau per pereche de 2 elevi).
 - [ ] **Cabluri micro-USB de date**: verificate prealabil (atenție: unele cabluri ieftine sunt doar pentru încărcare, fără linii de date; asigurați-vă că transmit date prin USB!).
-- [ ] **Mostre fizice de cabluri și conectori pe masa demonstrativă**: mostre de sârmă masivă, cablu lițat din silicon, cablu PVC, conectori DuPont 2.54mm, conectori JST-PH 2.0mm, conectori XT30 și un clește de dezizolat / clește de sertizat pentru demonstrație vizuală.
+- [ ] **Mostre fizice de cabluri și conectori pe masa demonstrativă**: mostre de sârmă solid core, cablu stranded wire din silicon, cablu PVC, conectori DuPont 2.54mm, conectori JST-PH 2.0mm, conectori XT30 și un wire stripper / crimper pentru demonstrație vizuală.
 - [ ] **Suporturi de baterii 2xAAA (opțional)**: pentru testarea liberă a pedometrului și busolei prin clasă.
 
 ---
@@ -64,7 +64,7 @@ La finalul acestei sesiuni de 120 de minute, cursanții vor fi capabili:
 | Interval Timp | Durată | Etapă | Descriere Operațională |
 | :---: | :---: | :--- | :--- |
 | **00:00 – 00:05** | 5 min | **Pasul 1: Deschidere & Anunțul Zilei: Hardware-ul Fizic a Sosit!** | Preluarea prezenței, primirea entuziasmantă a plăcilor BBC Micro:Bit fizice pe bancuri și lansarea temei de inginerie electrică. |
-| **00:05 – 00:30** | 25 min | **Pasul 2: Masterclass Teoretic – Cabluri, AWG, Conectori și Scule** | Prezentare pe ecran: structura conductorului (cupru cositorit vs aluminiu, lițat vs masiv), izolații (silicon vs PVC), sistemul AWG, căderea de tensiune ($V=I \cdot R$), tipuri de conectori (DuPont, JST-PH, XT30) și scule de lucru. |
+| **00:05 – 00:30** | 25 min | **Pasul 2: Masterclass Teoretic – Cabluri, AWG, Conectori și Scule** | Prezentare pe ecran: structura conductorului (tinned copper vs aluminiu CCA, stranded vs solid core), izolații (silicon vs PVC), sistemul AWG, voltage drop ($V=I \cdot R$), tipuri de conectori (DuPont, JST-PH, XT30) și scule de lucru. |
 | **00:30 – 00:35** | 5 min | **Pasul 3: Pauză & Conectarea Plăcilor Fizice prin WebUSB** | Hidratare, conectarea cablurilor micro-USB și împerecherea plăcilor fizice Micro:Bit în MakeCode cu funcția „Pair Device". |
 | **00:35 – 01:45** | 70 min | **Pasul 4: Laborator Practic – 6 Exerciții cu Senzorii Integrați** | Programare practică pas cu pas în MakeCode: Termometru de mediu, Veioză de noapte cu senzor de lumină, Nivelă 2D de înclinare, Pedometru inteligent cu variabile, Busolă magnetică cu semnal sonor și Alarmă la zgomot cu microfonul intern. |
 | **01:45 – 02:00** | 15 min | **Pasul 5: Quiz Kahoot de Evaluare (13 Întrebări)** | Test interactiv axat 100% pe teoria cablurilor, a materialelor, a standardului AWG și a conectorilor. Întrebările complete și explicațiile se regăsesc în `quiz.md`. |
@@ -89,41 +89,41 @@ Profesorul deschide sesiunea cu entuziasm:
 
 Profesorul livrează o prezentare dinamică de 25 de minute pe ecranul laboratorului, folosind mostre reale pe masa demonstrativă.
 
-#### 1. Conductorul Metalic: Cupru Pur / Cositorit vs Aluminiu
-- **Cuprul pur (OFC - Oxygen-Free Copper)**: Este metalul standard în electronică datorită conductivității electrice excelente și rezistenței mecanice bune.
-- **Cuprul cositorit (tinned copper)**: Lițele de cupru sunt acoperite cu un strat fin de staniu (cositor). Acest lucru împiedică oxidarea cuprului (care altfel prinde o pojghiță verde izolatoare) și permite lipirea instantanee cu fludorul. Este standardul numărul 1 în robotică și aeromodelism.
-- **Aluminiul placat cu cupru (CCA - Copper Clad Aluminum)**: Un fir ieftin cu miez de aluminiu. Are o rezistență electrică cu 60% mai mare decât cuprul, este rigid, se rupe ușor la îndoiri repetate și se lipește foarte greu. *Complet interzis pe roboți!*
+#### 1. Conductorul Metalic: Tinned Copper vs Aluminiu
+- **Cuprul pur (OFC - Oxygen-Free Copper)**: Este metalul standard în electronică datorită conductivității electrice excelente și flexibilității bune.
+- **Tinned Copper (cupru cu strat de staniu)**: Lițele de cupru sunt acoperite cu un strat subțire de staniu. Acest lucru împiedică oxidarea cuprului și permite lipirea instantanee cu letconul. Este standardul numărul 1 în robotică.
+- **Aluminiul placat cu cupru (CCA - Copper Clad Aluminum)**: Un fir ieftin cu miez de aluminiu. Are o rezistență electrică cu 60% mai mare decât cuprul, este rigid, se rupe ușor la îndoiri repetate și se lipește greu. *Complet interzis pe roboți!*
 
-#### 2. Miez Lițat (Stranded) vs Miez Masiv (Solid Core)
-- **Firul monofilar masiv (solid core wire)**: Conține o singură sârmă groasă. Este rigid și își păstrează forma când este îndoit, fiind bun pe breadboard-uri fixe. Însă pe un robot mobil supus vibrațiilor produse de roți și motoare, sârma masivă suferă de oboseală mecanică și se fracturează în interiorul plasticului.
-- **Firul multifilar lițat (stranded wire)**: Conține zeci de micro-firișoare fine răsucite laolaltă. Este foarte flexibil și poate rezista la mii de mișcări și vibrații fără să se rupă.
+#### 2. Stranded Wire (fir flexibil) vs Solid Core (fir rigid)
+- **Firul Solid Core (sârmă rigidă)**: Conține o singură sârmă groasă de metal. Își păstrează forma când este îndoit, fiind bun pe breadboard-uri fixe. Însă pe un robot mobil supus la vibrații, sârma masivă obosește mecanic și se rupe în interiorul plasticului.
+- **Firul Stranded Wire (fir flexibil)**: Conține zeci de micro-firișoare fine răsucite laolaltă. Este foarte flexibil și poate rezista la mii de mișcări și vibrații fără să se rupă.
 
 #### 3. Izolația: Silicon vs PVC vs Teflon
 - **Siliconul (silicone insulation)**: Materialul ideal în robotică. Este moale, ultra-flexibil și rezistă la temperaturi între -60°C și +200°C. Dacă îl atingem accidental cu vârful letconului încins la 350°C, nu se topește!
 - **PVC (polyvinyl chloride)**: Izolația clasică ieftină. Este mai rigidă și se topește instantaneu la căldura letconului, retrăgându-se și lăsând sârma dezvelită.
-- **Teflonul (PTFE)**: Izolație aerospațială ultra-subțire și extrem de rezistentă chimic, dar costisitoare și greu de dezizolat.
+- **Teflonul (PTFE)**: Izolație aerospațială ultra-subțire și extrem de rezistentă chimic, dar costisitoare și greu de tăiat cu un stripper obișnuit.
 
-#### 4. Standardul AWG (American Wire Gauge) & Căderea de Tensiune
+#### 4. Standardul AWG (American Wire Gauge) & Căderea de Tensiune (Voltage Drop)
 - **Logica inversată a AWG**:
   - **Număr AWG MIC = Fir GROS** (capacitate mare de curent).
   - **Număr AWG MARE = Fir SUBȚIRE** (destinat exclusiv semnalelor slabe).
   - *Ghid practic*: 14–16 AWG pentru baterii mari de drone (20–40A); 20–22 AWG pentru alimentarea motoarelor și plăcilor de extensie robot:bit (3–7A); 26–28 AWG pentru semnale logice și senzori subțiri (< 1A); 30 AWG pentru micro-reparații pe circuite integrate.
 - **Fizica pierderilor de tensiune**:
   - Rezistența firului este dată de formula: $R = \rho \cdot \frac{L}{A}$ (cu cât firul e mai subțire, cu atât rezistența $R$ este mai mare).
-  - Conform Legii lui Ohm, căderea de tensiune pe cablu este: $V_{drop} = I \cdot R$. Dacă motoarele absorb un curent mare la pornire printr-un fir subțire, pe cablu se pierd 1–2V. Tensiunea la microcontroler scade brusc sub pragul critic, iar **detectorul de brownout (*brownout detector*) resetează instantaneu procesorul**!
-  - În plus, energia pierdută se transformă în căldură prin **efectul Joule (*Joule heating*)**: $P = I^2 \cdot R$, existând riscul de topire a plasticului.
+  - Conform Legii lui Ohm, căderea de tensiune pe cablu este: $V_{drop} = I \cdot R$. Dacă motoarele absorb un curent mare la pornire printr-un fir subțire, pe cablu se pierd 1–2V. Tensiunea la microcontroler scade brusc sub pragul critic, iar **detectorul de brownout resetează instantaneu procesorul**!
+  - În plus, energia pierdută se transformă în căldură prin **efectul Joule**: $P = I^2 \cdot R$, existând riscul de topire a carcasei.
 
-#### 5. Conectori de Semnal și de Putere: Pitch și Polarizare (Keying)
-- **Ce este "Pitch"?**: Distanța dintre centrele a doi pini vecini. Standardul clasic este **2.54 mm** (0.1 inch / DuPont). Standardele miniaturale folosesc **2.00 mm** (JST-PH).
-- **Conectorii DuPont (pas 2.54 mm)**: Standardul universal pentru barete de pini și breadboard. Nu au clemă de blocare mecanică și pot aluneca la vibrații puternice.
-- **Conectorii JST-PH (pas 2.00 mm) & JST-XH (2.54 mm)**: Conectori compacți cu buze de fricțiune sau ghidaje polarizate (*keying*), ideali pentru senzori.
-- **Conectorii XT30 / XT60**: Conectori de forță pentru baterii Li-Po/Li-Ion cu contacte aurite și formă asimetrică trapezoidală, făcând fizic imposibilă conectarea inversă a plusului cu minusul.
+#### 5. Conectori de Semnal și de Putere: Pitch și Mechanical Keying
+- **Ce este Pin Pitch?**: Distanța dintre centrele a doi pini vecini. Standardul clasic este **2.54 mm** (0.1 inch / DuPont). Standardele miniaturale folosesc **2.00 mm** (JST-PH).
+- **Conectorii DuPont (pitch 2.54 mm)**: Standardul universal pentru barete de pini și breadboard. Nu au clemă de blocare mecanică și pot aluneca la vibrații puternice.
+- **Conectorii JST-PH (pitch 2.00 mm) & JST-XH (2.54 mm)**: Conectori compacți cu blocare fermă (latch) sau ghidaje polarizate (**mechanical keying**), ideali pentru senzori.
+- **Conectorii XT30 / XT60**: Conectori de forță pentru baterii cu contacte aurite și formă asimetrică polarizată, făcând fizic imposibilă conectarea inversă a plusului cu minusul.
 
 #### 6. Trusa de Scule a Inginerului
-- **Clește de dezizolat (*wire stripper*)**: fante calibrate pe AWG pentru a tăia doar izolația fără a ciupi lițele de cupru.
-- **Clește de sertizat cu clichet (*ratcheting crimper*)**: presează simultan aripioarele de contact electric pe cupru și aripioarele de descărcare a tensiunii mecanice (*strain relief*) pe izolație.
-- **Letcon (*soldering iron*) & tub termocontractil (*heat shrink*)**: pentru îmbinări permanente izolate profesional.
-- **Multimetru digital pe test de continuitate (*continuity buzzer*)**: verifică bip-ul pe fir și liniștea absolută între plus și masă (GND) înainte de alimentare.
+- **Wire Stripper (clește de dezizolat)**: fante calibrate pe AWG pentru a tăia doar izolația fără a ciupi lițele de cupru.
+- **Crimper cu Clichet (clește de sertizat)**: presează simultan aripioarele de contact electric pe cupru și aripioarele de descărcare a tensiunii mecanice (strain relief) pe izolație.
+- **Letcon (soldering iron) & Heat Shrink (tub termic)**: pentru îmbinări permanente izolate profesional.
+- **Multimetru digital pe test de continuitate (continuity buzzer)**: verifică bip-ul pe fir și liniștea absolută între plus și masă (GND) înainte de alimentare.
 
 ---
 

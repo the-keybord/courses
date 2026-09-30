@@ -48,14 +48,15 @@ Fiecare lecție respectă un flux clar în 8 etape:
 - **Proiect Practic**: Colectarea/lansarea modelelor din Lecția 00 + Proiectarea brelocului 3D *Cheese Keyring* (pregătit pentru imprimare și colectare la Lecția 02) + testare fizică în Tinkercad Sim Lab.
 - **Director Lecție**: [`lesson-01/`](lesson-01/)
 
-### 🔹 [Lecția 02: Arta Pixelilor 3D – Imprimarea Multicolor prin Schimbare de Strat](lesson-02/README.md)
-- **Descriere pe scurt**: Descoperim originea pixelilor, istoria stilului Pixel Art, mozaicurile și arta Voxel. Învățăm cum funcționează imprimarea multicolor FDM prin schimbarea filamentului pe straturi (*Layer Swap / M600*) și de ce avem nevoie de trepte de înălțime de 1mm pe axa Z.
-- **Proiect Practic**: Ridicarea brelocului cadou din Lecția 01 + Construirea unei palete standardizate de pixeli cu înălțimi 2mm / 3mm / 4mm (Negru, Roșu, Alb) și crearea unui tablou Pixel Art retro personalizat.
+### 🔹 [Lecția 02 [3DS2.2]: Ingineria Preciziei în CAD – Rigla Personalizată & Semnul de Carte](lesson-02/README.md)
+- **Cod Lecție**: `3DS2.2`
+- **Descriere pe scurt**: Explorăm istoria și rolul modelării CAD (Sketchpad 1963, Pierre Bézier, Renault), importanța critică a toleranțelor și a preciziei milimetrice în inginerie, instrumentele fizice de măsurare (șubler digital, micrometru, raportor) și controlul exact al dimensiunilor în Tinkercad (`Ruler Tool`, cote numerice directe, `Snap Grid` și multiplicare cu `Ctrl + D`).
+- **Proiect Practic**: Colectarea brelocurilor *Cheese Keyring* din Lecția 01 + Proiectarea unei rigle de 10 cm cu funcție dublă de semn de carte (bază `110 mm x 30 mm x 1.6 mm`, gradații milimetrice/centimetrice, stencils decupate și nume gravat) + Provocarea bonus la finalul lecției: raportorul semicircular ($0^\circ - 180^\circ$).
 - **Director Lecție**: [`lesson-02/`](lesson-02/)
 
 ### 🔹 [Lecția 03: Universul Minecraft & Pixel Art în 4 Culori](lesson-03/README.md)
 - **Descriere pe scurt**: Explorăm istoria Minecraft (Markus "Notch" Persson, 2009), conceptele de Voxel, categoriile de obiecte din joc, modul *Minecraft Mode* din Tinkercad, utilizarea tastei `Alt` pentru copiere rapidă, comutarea în vizualizarea Ortografică și alinierea precisă pe grilă.
-- **Proiect Practic**: Ridicarea tablourilor Pixel Art în 3 culori din Lecția 02 + Construirea unei palete de 4 culori cu trepte de înălțime pe Z (`2mm`, `3mm`, `4mm`, `5mm`) și realizarea unui Mini-Breloc Minecraft personalizat (Sabie, Târnăcop, Măr de Aur, Poțiune, Smarald etc.).
+- **Proiect Practic**: Ridicarea riglelor 3D din Lecția 02 + Construirea unei palete de 4 culori cu trepte de înălțime pe Z (`2mm`, `3mm`, `4mm`, `5mm`) și realizarea unui Mini-Breloc Minecraft personalizat (Sabie, Târnăcop, Măr de Aur, Poțiune, Smarald etc.).
 - **Director Lecție**: [`lesson-03/`](lesson-03/)
 ### 🔹 Lecția 04: *(În curând)*
 ### 🔹 Lecția 05: *(În curând)*
@@ -69,3 +70,4 @@ Fiecare lecție respectă un flux clar în 8 etape:
 ## 🔗 Resurse Generale
 - [Planul Complet al Lecției 00 (Atelier Deschis / Open Workshop)](lesson-00/README.md)
 - [Planul Complet al Lecției 01](lesson-01/README.md)
+- [Planul Complet al Lecției 02](lesson-02/README.md)

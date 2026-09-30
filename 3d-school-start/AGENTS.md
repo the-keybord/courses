@@ -29,6 +29,7 @@ This file complements the global repository [`AGENTS.md`](../AGENTS.md) with rul
    - `presentation_interactive.md`: Interactive reading slide-by-slide blueprint formatted with 3–4 numbered sentences per slide for students to take turns reading out loud from the screen/board, accompanied by teacher guidance notes and Canva Master Prompt.
    - `presentation_summary.md`: Continuous narrative prompt for AI slide generators with header directives and pure didactic text without inline image prompts.
    - `quiz.md`: Complete interactive Kahoot quiz file containing 10–15 questions, 4 options, balanced answer lengths, and pedagogical explanations.
+   - `risks.md`: Complete pedagogical & technical pre-mortem risk analysis (potential bottlenecks, boredom/frustration triggers, technical failure points, teacher safeguards, and quick verification checklist).
 2. **Essential Questions**: Each lesson must have **3 or more essential questions** defining the session's core objectives.
 3. **Standard 8-Step Lesson Flow (120 min)**: Unless explicitly specified as an exception, every lesson follows this roadmap:
    1. **Colectarea modelelor din lecția anterioară** (Collect models printed from previous lesson).

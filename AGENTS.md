@@ -22,6 +22,7 @@ This file contains instructions and guidelines for AI agents working in this rep
   3. `presentation_interactive.md`: Interactive reading slide-by-slide blueprint formatted specifically with **3–4 clearly separated, numbered sentences per slide** designed for students to take turns reading out loud from the board, accompanied by teacher guidance notes and Canva Master Prompt.
   4. `presentation_summary.md`: Continuous narrative prompt for autonomous AI presentation engines (Gamma, Canva AI, Tome) with strict header directives upfront, rich continuous narrative text without inline image prompts, and 100% theoretical focus.
   5. `quiz.md`: Complete interactive Kahoot quiz file containing 10–15 questions, 4 options (strictly 1–3 words each), balanced answer lengths, and pedagogical explanations.
+  6. `risks.md`: Complete pedagogical & technical pre-mortem risk analysis (potential bottlenecks, boredom/frustration triggers, technical failure points, teacher safeguards, and quick verification checklist).
 
 ### 3. Course Master File & Single Source of Truth (SSOT)
 - **Course Master Hub**: Each course directory contains **one master file** (`README.md`) serving as the course hub (vision, target age, prerequisites, learning objectives, and lesson overviews).
@@ -62,10 +63,13 @@ This file contains instructions and guidelines for AI agents working in this rep
   - **`3d-school-junior`** (`3DS1`): No modules — each lesson is an independent topic/theme focusing on simple modeling and real-world encyclopedia discoveries.
   - **`robot-factory-evolution`**: Free-relate hands-on format — focused on RF 2.0 hardware rebuild, BLE control transition, sensor integration, team identity, and the Orbit Odyssey challenge.
 
-### 7. Language Guidelines & Bilingual Technical Terminology
-- **Course Materials**: All student-facing content, lesson plans, presentations, quizzes, worksheets, and teacher scripts must be written in **Romanian**.
+### 7. Language Guidelines & Direct English Technical Terminology
+- **Course Materials**: All student-facing content, lesson plans, presentations, quizzes, worksheets, and teacher scripts are written in natural, modern **Romanian** (calibrated for students in the Republic of Moldova).
 - **Agent Communication & Meta**: Agent rules, commit messages, code comments, and chat conversations with the user are conducted in **English**.
-- **Bilingual Technical Terminology (English Equivalents in Presentations)**: Across all 3D Printing and Robot Factory courses, whenever a technical, specialized, or uncommon term is introduced in Romanian within presentation files (`presentation.md`, `presentation_interactive.md`, `presentation_summary.md`), **always provide the standard English equivalent in parentheses or alongside it** (e.g., `fir lițat (stranded wire)`, `sertizare (crimping)`, `pasul pinilor (pitch)`, `cădere de tensiune (voltage drop)`, `curbarea straturilor (warping)`, `duză (nozzle)`, `polarizare mecanică (keying)`, `roți de antrenare (extruder gears)`, `miez masiv (solid core)`). This equips students with real-world engineering vocabulary used in international datasheets, CAD software, slicers, and technical documentation.
+- **Direct English Technical Terminology (No Archaic/Forced Romanian Translations)**:
+  - In technical domains (robotics, electronics, hardware, 3D printing, programming), **do NOT use forced, archaic, or unnatural Romanian translations** that students in Moldova have never used or heard (e.g., avoid `cupru cositorit`, `fier galvanat`, `fir lițat`, `miez masiv`, `tub termocontractil`, `pasul pinilor`, `polarizare mecanică`).
+  - **Use standard English terms directly in the text** (e.g., `tinned copper`, `galvanized steel`, `stranded wire`, `solid core wire`, `heat shrink`, `crimping`, `pitch`, `mechanical keying / keying`, `header pins`, `jumper wires`, `breadboard`, `brownout`, `servo`, `nozzle`, `extruder`, `bed leveling`, `warping`).
+  - Keep Romanian sentences conversational, direct, punchy, and clear, integrating standard international engineering and Maker terminology directly in English just as real-world robotics engineers and makers communicate.
 
 ### 8. Lesson Content & Writing Style (Clear, Practical & Age-Appropriate)
 - **Direct & Clear Pedagogical Style**: All lesson `README.md` files must be written in a clear, well-structured, and easy-to-follow instructional format.
