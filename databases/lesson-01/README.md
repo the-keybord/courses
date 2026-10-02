@@ -10,6 +10,8 @@
 - **Durată Totală**: 120 minute (2 ore)
 - **Format**: Demonstrație ghidată de profesor cu scriere sincronă de cod T-SQL în OneCompiler, dezbateri pe anomalii de date și exerciții practice la tastatură.
 - **Mediu de Lucru Practic**: [OneCompiler - SQL Server (T-SQL)](https://onecompiler.com/sqlserver)
+- **Miza Academică & Certificarea Certiport**:
+  - **Nota 10 din Oficiu la BAC la Informatică**: În conformitate cu regulamentele oficiale din Republica Moldova, obținerea a **3 certificate internaționale Certiport ITS** acordă elevului eliberarea automată cu **nota 10 (zece) din oficiu la examenul de Bacalaureat** la disciplina Informatică. Examenul **Certiport ITS: Databases** este unul dintre aceste trei certificate recunoscute.
 - **Aliniere Certiport ITS Databases**:
   - Obiectiv 1.1: Înțelegerea conceptelor fundamentale de baze de date (tabele, rânduri, coloane, RDBMS).
   - Obiectiv 1.2: Identificarea tipurilor de date standard T-SQL (`INT`, `DECIMAL`, `BIT`, `VARCHAR`, `DATE`, `DATETIME`, `TIME`).
@@ -17,9 +19,10 @@
   - Obiectiv 1.4: Recunoașterea redundanței și a dependențelor tranzitive (baza normalizării).
 
 ### Întrebări Esențiale:
-1. De ce fișierele Excel devin ineficiente pentru aplicații mari și cum rezolvă o **Bază de Date Relațională (RDBMS)** securitatea, viteza și integritatea datelor?
-2. Cum alegem corect tipul de date (`Data Type`) pentru fiecare coloană și de ce este critic să cunoaștem termenii tehnici direct în limba engleză?
-3. De ce este obligatoriu ca fiecare rând dintr-un tabel să aibă o cheie primară (**Primary Key**) unică (analogia IDNP) și de ce separăm datele în tabele legate prin chei străine (**Foreign Key**)?
+1. Cum ne asigură stăpânirea bazelor de date și obținerea certificării Certiport ITS Databases succesul profesional și **nota 10 din oficiu la examenul de Bacalaureat**?
+2. De ce fișierele Excel devin ineficiente pentru aplicații mari și cum rezolvă o **Bază de Date Relațională (RDBMS)** securitatea, viteza și integritatea datelor?
+3. Cum alegem corect tipul de date (`Data Type`) pentru fiecare coloană și de ce este critic să cunoaștem termenii tehnici direct în limba engleză?
+4. De ce este obligatoriu ca fiecare rând dintr-un tabel să aibă o cheie primară (**Primary Key**) unică (analogia IDNP) și de ce separăm datele în tabele legate prin chei străine (**Foreign Key**)?
 
 ### 🔗 Resurse & Linkuri Utile
 - **Mediu de Execuție T-SQL**: https://onecompiler.com/sqlserver
@@ -35,6 +38,7 @@
 - [ ] Proiectorul / ecranul central pornit pentru demonstrația live de cod T-SQL.
 
 ### Materiale Didactice & Exemple Pregătite
+- [ ] Prezentarea structurii examenului Certiport ITS și a criteriilor de echivalare a notei 10 la BAC.
 - [ ] Exemplul tabelului `Students` cu duplicate pregătit pentru testul live.
 - [ ] Exemplul anomaliei de actualizare (dirigintele schimbat) pregătit pentru demonstrarea dependenței tranzitive.
 - [ ] Setul de întrebări pentru mini-quiz-ul final pregătit pentru afișare la tablă.
@@ -45,7 +49,7 @@
 
 | Interval | Etapă | Activitate Principală |
 | :---: | :---: | :--- |
-| **00:00 – 00:15** | **1. Viziunea Cursului & Ce este o Bază de Date?** | Scopul certificării Certiport, diferența dintre fișiere text/Excel și RDBMS, ce este limbajul SQL (Structured Query Language). |
+| **00:00 – 00:15** | **1. Miza Cursului: Nota 10 la BAC, Certiport & Ce este un RDBMS?** | Prezentarea oportunității notei 10 din oficiu la BAC (regula celor 3 certificate Certiport), scopul certificării Databases, diferența dintre fișiere text/Excel și RDBMS, ce este limbajul SQL (Structured Query Language). |
 | **00:15 – 00:35** | **2. Anatomia unui Tabel & Tipuri de Date T-SQL** | Tabele, rânduri (records), coloane (fields). Prezentarea tipurilor fundamentale: `INT`, `DECIMAL`, `BIT`, `VARCHAR`, `DATE`, `DATETIME`, `TIME`. |
 | **00:35 – 00:55** | **3. Brainstorming & Crearea Tabelului `Students`** | Elevii propun coloane; simplificarea la 3 coloane (`first_name`, `last_name`, `birth_date`), scrierea comenzilor `CREATE TABLE` și `INSERT INTO` în OneCompiler. |
 | **00:55 – 01:15** | **4. Dilema Duplicatelor, IDNP & Cheia Primară (PK)** | Inserarea a doi studenți cu același nume; dezbaterea unicității (analogia IDNP); adăugarea coloanei `student_id` ca identificator unic. |
@@ -56,19 +60,23 @@
 
 ## 4. Ghid Detaliat Pas cu Pas (Teacher's Master Guide)
 
-### Etapa 1: Viziunea Cursului & Ce este o Bază de Date? (00:00 – 00:15)
+### Etapa 1: Miza Cursului: Nota 10 la BAC, Certiport & Ce este o Bază de Date? (00:00 – 00:15)
 
-Profesorul deschide sesiunea explicând miza acestui curs:
-*"Bine ați venit în lumea bazelor de date! În acest curs nu învățăm doar să scriem comenzi, ci ne pregătim pentru certificarea internațională **Certiport Information Technology Specialist (ITS): Databases**. Fiecare aplicație pe care o folosiți zilnic — YouTube, Instagram, Spotify, jocurile online sau catalogul școlar — funcționează datorită unei baze de date din spate."*
+Profesorul deschide sesiunea explicând miza directă și beneficiile academice majore ale acestui curs:
+
+#### 🎓 Miza Academică Directă: Nota 10 din Oficiu la Bacalaureat
+*"Bine ați venit la cursul de Baze de Date și T-SQL! Dincolo de faptul că bazele de date reprezintă coloana vertebrală a oricărui sistem software din lume, acest curs are un obiectiv pragmatic și strategic pentru parcursul vostru academic:*
+- *În Republica Moldova, elevii care dețin **3 certificate internaționale din suita Certiport Information Technology Specialist (ITS)** beneficiază de **echivalarea automată cu nota 10 (zece) din oficiu la proba de Informatică de la examenul de Bacalaureat**.*
+- *Examenul **Certiport ITS: Databases** este unul dintre aceste trei examene acreditate. Finalizarea cu succes a acestui curs și susținerea examenului vă aduce cu un pas uriaș mai aproape de asigurarea notei maxime la BAC fără stresul probei scrise."*
 
 #### De ce nu folosim un simplu fișier Excel?
 - **Volumul de Date**: Excel încetinește la sute de mii de rânduri; o bază de date gestionează miliarde de înregistrări în fracțiuni de secundă.
-- **Acces Simultan (Concurență)**: Dacă 1.000 de utilizatori încearcă să modifice un fișier Excel în aceeași secundă, fișierul se blochează sau se corupe. Un **RDBMS** (Relational Database Management System) gestionează mii de tranzacții simultane în siguranță.
+- **Acces Simultan (Concurență)**: Dacă 1.000 de utilizatori încearcă să modifice un fișier Excel în aceeași secundă, fișierul se blochează sau se corupe. Un **RDBMS** (Relational Database Management System) gestionează mii de tranzacții simultane în deplină siguranță.
 - **Securitate & Relații**: Bazele de date permit restricții stricte de acces și leagă informațiile între ele prin reguli matematice precise.
 
 #### Ce este SQL și de ce T-SQL?
-- **SQL** înseamnă **Structured Query Language** (Limbaj Structurat de Interogare). Este un limbaj declarativ internațional: noi îi spunem serverului *ce date vrem să obținem*, iar serverul decide cel mai rapid mod de a le găsi.
-- **T-SQL (Transact-SQL)** este dialectul dezvoltat de **Microsoft** pentru motorul de baze de date **Microsoft SQL Server**. Adaugă funcționalități avansate, procesare procedurală și este dialectul oficial testat în examenul Certiport.
+- **SQL** înseamnă **Structured Query Language** (Limbaj Structurat de Interogare). Este un limbaj declarativ standardizat: noi îi specificăm serverului *ce date vrem să obținem*, iar optimizatorul de interogări al serverului determină cel mai rapid plan de execuție.
+- **T-SQL (Transact-SQL)** este dialectul dezvoltat de **Microsoft** pentru motorul **Microsoft SQL Server**. Include extensii procedurale avansate, funcții de procesare și reprezintă dialectul oficial testat în examenul Certiport ITS.
 
 ---
 

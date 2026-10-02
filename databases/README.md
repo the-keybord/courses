@@ -7,6 +7,7 @@ Bine ați venit la cursul de **Baze de Date Relaționale și Programare T-SQL**,
 ## 🎯 Viziunea & Obiectivele Cursului
 
 - **Public Țintă**: **15 – 18 ani** (Liceeni, studenți și candidați pentru certificarea internațională Certiport ITS Databases).
+- **Miza Academică**: **Nota 10 din oficiu la examenul de Bacalaureat la Informatică** (prin cumularea a 3 certificate internaționale din suita Certiport ITS, examenul *Databases* fiind unul dintre ele).
 - **Durată Lecție**: **120 minute** (2 ore per sesiune).
 
 Cursul este conceput pentru tineri care doresc să stăpânească conceptele fundamentale de modelare a datelor, proiectare a schemelor relaționale și interogare avansată în **T-SQL (Transact-SQL / Microsoft SQL Server)**.
@@ -35,7 +36,8 @@ Cursul este conceput pentru tineri care doresc să stăpânească conceptele fun
 
 | Nr. | Cod | Titlu Lecție | Concepte Cheie & Practică OneCompiler | Stare |
 | :---: | :---: | :--- | :--- | :---: |
-| **01** | `DB1.1` | **[Introducere în Baze de Date Relaționale, Tipuri de Date & Chei în T-SQL](lesson-01/README.md)** | Scopul cursului & Certiport, RDBMS vs Excel, tabele/rânduri/coloane, tipuri de date (`INT`, `DECIMAL`, `BIT`, `VARCHAR`, `DATE`, `DATETIME`, `TIME`), crearea tabelului `Students`, dilema duplicatelor și analogia IDNP (`Primary Key`), dependențe tranzitive și separarea în două tabele relaționate prin `Foreign Key` (`Classes` & `Students`). | Finalizat |
+| **01** | `DB1.1` | **[Introducere în Baze de Date Relaționale, Tipuri de Date & Chei în T-SQL](lesson-01/README.md)** | Scopul cursului & Certiport (miza notei 10 la BAC), RDBMS vs Excel, tabele/rânduri/coloane, tipuri de date (`INT`, `DECIMAL`, `BIT`, `VARCHAR`, `DATE`, `DATETIME`, `TIME`), crearea tabelului `Students`, dilema duplicatelor și analogia IDNP (`Primary Key`), dependențe tranzitive și separarea în două tabele relaționate prin `Foreign Key` (`Classes` & `Students`). | Finalizat |
+| **02** | `DB1.2` | **[Sublimbajele SQL (DDL, DML, DQL, DCL), Manipularea Schemelor & Modificarea Datelor](lesson-02/README.md)** | Încălzire cu filtrări (`IS NULL`, `=`, `OR`, `LIKE`, `IN`), taxonomia formală SQL (DDL, DML, DQL, DCL), modificarea structurii tabelelor (`CREATE`, `ALTER TABLE` cu `ADD`, `DROP COLUMN`, `ALTER COLUMN`, `ADD/DROP CONSTRAINT`, `DROP TABLE`), cele 3 metode de inserare (`INSERT INTO VALUES`, `INSERT INTO SELECT`, `SELECT INTO`), modificarea cu `UPDATE` (riscul omitării `WHERE`), ștergerea cu `DELETE` vs `TRUNCATE TABLE`. | Finalizat |
 
 ---
 
