@@ -36,6 +36,12 @@ Welcome to the **Courses Repository**! This repository contains comprehensive cu
 - **Structure**: Free relate format with practical challenges, team projects, and competitive arenas (120 min per lesson)
 - **Master File**: [`robot-factory-evolution/README.md`](robot-factory-evolution/README.md)
 
+### 6. [Databases (T-SQL / Certiport)](databases/README.md)
+- **Target Age Group**: **Teens & Students** (Certiport ITS Databases Preparation)
+- **Domain**: Relational Databases, T-SQL (Transact-SQL / SQL Server), OneCompiler Environment
+- **Structure**: Teacher-led 120-min practical lessons with synchronous coding and end-of-lesson mini-quizzes (single `README.md` per lesson)
+- **Master File**: [`databases/README.md`](databases/README.md)
+
 ---
 
 ## 📋 Repository Guidelines & Agent Rules
