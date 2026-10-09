@@ -54,9 +54,10 @@ Fiecare lecție respectă un flux clar în 8 etape:
 - **Proiect Practic**: Colectarea brelocurilor *Cheese Keyring* din Lecția 01 + Proiectarea unei rigle de 10 cm cu funcție dublă de semn de carte (bază `110 mm x 30 mm x 1.6 mm`, gradații milimetrice/centimetrice, stencils decupate și nume gravat) + Provocarea bonus la finalul lecției: raportorul semicircular ($0^\circ - 180^\circ$).
 - **Director Lecție**: [`lesson-02/`](lesson-02/)
 
-### 🔹 [Lecția 03: Universul Minecraft & Pixel Art în 4 Culori](lesson-03/README.md)
-- **Descriere pe scurt**: Explorăm istoria Minecraft (Markus "Notch" Persson, 2009), conceptele de Voxel, categoriile de obiecte din joc, modul *Minecraft Mode* din Tinkercad, utilizarea tastei `Alt` pentru copiere rapidă, comutarea în vizualizarea Ortografică și alinierea precisă pe grilă.
-- **Proiect Practic**: Ridicarea riglelor 3D din Lecția 02 + Construirea unei palete de 4 culori cu trepte de înălțime pe Z (`2mm`, `3mm`, `4mm`, `5mm`) și realizarea unui Mini-Breloc Minecraft personalizat (Sabie, Târnăcop, Măr de Aur, Poțiune, Smarald etc.).
+### 🔹 [Lecția 03 [3DS2.3]: Magia Imprimării Multicolore & Pixel Art (3 Culori pe Straturi)](lesson-03/README.md)
+- **Cod Lecție**: `3DS2.3`
+- **Descriere pe scurt**: Descoperim fizica fabricației aditive FDM și misterul imprimării fără cerneală lichidă, secretul schimbării de culoare pe straturi (axa Z) și automatizarea filamentelor cu sistemul Bambu Lab AMS lite. În atelierul practic creăm o insignă retro Pixel Art în 3 culori (Negru, Roșu, Alb) folosind cuburi etalon de $1 \times 1\text{ mm}$ cu trepte de înălțime pe Z ($2\text{ mm}$, $3\text{ mm}$, $4\text{ mm}$), duplicare cu `Alt`, vizualizare Ortografică (Flat View), opțiune de pixel gol pentru ață și scalare non-uniformă în Slicer ($XY = 200\%-400\%$, $Z = 75\%$). În timpul orei, imprimanta demonstrativă cu AMS printează live inima demonstrativă!
+- **Proiect Practic**: Ridicarea riglelor/semnelor de carte din Lecția 02 + Modelarea insignei Pixel Art în 3 culori (Inimă, Măr, Ciupercă, Sabie, Poțiune sau design original) + Imprimarea live pe AMS lite a piesei demonstrative.
 - **Director Lecție**: [`lesson-03/`](lesson-03/)
 ### 🔹 Lecția 04: *(În curând)*
 ### 🔹 Lecția 05: *(În curând)*

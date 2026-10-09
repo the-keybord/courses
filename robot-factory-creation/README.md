@@ -32,7 +32,7 @@ Acest curs este poarta de intrare în lumea roboticii educaționale. Cursanții 
 | **02** | *(Urmează)* | *(Urmează)* | *(Urmează)* |
 | **03** | **Platforme de Microcontrolere, Descoperirea BBC Micro:Bit și Primii Pași în MakeCode** | Ecosistemul de platforme (Arduino, Makeblock, CyberBrick, ESP32, Micro:Bit, Pi Pico), deep-dive Micro:Bit (senzori integrați, LED-uri, butoane, radio, BLE), exerciții practice pe simulatorul MakeCode (blocuri Basic, Input, Logic, Loops, Variables, LED). | [Vezi Planul Lecției 03](lesson-03/README.md) |
 | **04** | **Tipuri de Cabluri, Conectori și Programarea Senzorilor Integrați BBC Micro:Bit în MakeCode** | Teoria cablurilor și a conectorilor (tinned copper, izolație silicon vs PVC, stranded vs solid core, AWG, voltage drop, conectori DuPont, JST, XT30), urmată de laborator practic cu plăcile fizice Micro:Bit (6 exerciții de programare cu blocuri de bază pentru senzorii integrați: temperatură, lumină, accelerometru/înclinare, pedometru, busolă și microfon). | [Vezi Planul Lecției 04](lesson-04/README.md) |
-| **05** | *(Urmează)* | *(Urmează)* | *(Urmează)* |
+| **05** | **Metode de Măsurare a Distanței & Percepția Spațială în Robotică** | Teorie comprehensivă despre metodele de detecție a obstacolelor (bumpere mecanice cu microswitch, reflexie optică IR, sonar ultrasonic Time of Flight la 40 kHz, scanere laser LiDAR), experimente demonstrative la catedră privind reflexia pe diverse materiale și evaluare prin mini-quiz Kahoot. | [Vezi Planul Lecției 05](lesson-05/README.md) |
 
 ---
 

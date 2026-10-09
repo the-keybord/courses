@@ -132,26 +132,14 @@ Profesorul solicită elevilor să scrie pe rând următoarele interogări și ex
 
 Profesorul prezintă clasificarea formală a instrucțiunilor SQL. Această taxonomie este un subiect central în certificarea **Certiport ITS Databases**:
 
-```
-                              ┌──────────────────────────────────────────────┐
-                              │            CATEGORIILE LIMBAJULUI SQL        │
-                              └──────────────────────┬───────────────────────┘
-                                                     │
-         ┌────────────────────────┬──────────────────┴───────────────┬────────────────────────┐
-         │                        │                                  │                        │
-         ▼                        ▼                                  ▼                        ▼
- ┌───────────────┐        ┌───────────────┐                  ┌───────────────┐        ┌───────────────┐
- │      DDL      │        │      DML      │                  │      DQL      │        │      DCL      │
- │Data Definition│        │Data Manipulat.│                  │  Data Query   │        │ Data Control  │
- ├───────────────┤        ├───────────────┤                  ├───────────────┤        ├───────────────┤
- │ CREATE        │        │ INSERT        │                  │ SELECT        │        │ GRANT         │
- │ ALTER         │        │ UPDATE        │                  │               │        │ REVOKE        │
- │ DROP          │        │ DELETE        │                  │ (Adesea inclus│        │ DENY          │
- │ TRUNCATE      │        │               │                  │  în DML)      │        │               │
- └───────────────┘        └───────────────┘                  └───────────────┘        └───────────────┘
-```
+| Sublimbaj SQL | Denumire Completă | Rol Principal | Instrucțiuni Cheie T-SQL |
+| :--- | :--- | :--- | :--- |
+| **DDL** | Data Definition Language | Crearea, modificarea și ștergerea structurilor / schemelor | `CREATE`, `ALTER`, `DROP`, `TRUNCATE` |
+| **DML** | Data Manipulation Language | Inserarea, actualizarea și ștergerea datelor (rândurilor) | `INSERT`, `UPDATE`, `DELETE` |
+| **DQL** | Data Query Language | Interogarea și extragerea informațiilor din tabele | `SELECT` *(adesea inclus în DML în Certiport)* |
+| **DCL** | Data Control Language | Gestionarea drepturilor de acces și securității | `GRANT`, `REVOKE`, `DENY` |
 
-#### Descrierea Categoriilor:
+#### Descrierea Detaliată a Categoriilor:
 
 1. **DDL (Data Definition Language)**:
    - **Scop**: Definește, modifică și șterge **structura (schema)** obiectelor din baza de date (tabele, vederi, indexuri, constrângeri).

@@ -1,214 +1,228 @@
-# Lecția 03: Universul Minecraft & Pixel Art în 4 Culori – Mini-Brelocurile Lumii Voxel
+# Lecția 03 [3DS2.3]: Magia Imprimării Multicolore & Pixel Art (3 Culori pe Straturi)
 
 ---
 
-## 📌 Informații Generale despre Lecție
+## 📌 1. Informații Generale & Obiective de Învățare
+
+- **Cod Lecție**: `3DS2.3`
+- **Curs**: 3D School Start (Nivel 2)
+- **Modul**: Modulul 1 – *Laboratorul Creativ*
 - **Grupa de Vârstă**: 10 – 12 ani
-- **Durată Totală**: 120 minute (2 ore pline de explorare digitală și inginerie)
-- **Modulul**: Modulul 1 – *Bazele Modelării 3D și Tehnologiei FDM* (Lecția 3)
-- **Proiect Practic**: Construirea unei palete Pixel Art de 4 culori cu trepte de înălțime de 1mm (`2mm`, `3mm`, `4mm`, `5mm`) și realizarea unui **Mini-Breloc Minecraft** personalizat (Sabie, Târnăcop, Măr de Aur, Sticluță de Poțiune, Smarald etc.).
-- **Flux Imprimare 3D**: 
-  1. *Pornire la începutul Lecției 03 (Etapa 2)*: Imprimanta 3D este pregătită și pornită cu fișierele tablourilor Pixel Art în 3 culori concepute în Lecția 02. Profesorul configurează cele 2 schimbări de strat.
-  2. *Lucru în Lecția 03 (Etapa 6)*: Elevii proiectează Mini-Brelocurile Minecraft în 4 culori (exportate ca fișiere `.STL` pentru a fi imprimate la Lecția 04).
-  3. *Colectare la finalul Lecției 03 (Etapa 8)*: Imprimarea tablourilor Pixel Art din Lecția 02 se încheie, iar elevii își ridică festiv primele lor creații multicolore fizice!
+- **Durată Totală**: 120 minute (2 ore)
+- **Software Modelare**: Tinkercad Classroom
+- **Software Slicing**: Bambu Studio
+- **Hardware & Echipamente**: 
+  - 2 × Imprimante **Bambu Lab A1** (pentru producția riglelor/semnelor de carte din Lecția 02)
+  - 1 × Imprimantă **Bambu Lab A1 cu AMS lite** (stație demonstrativă multicoloră live cu filamentele Negru, Roșu și Alb)
+- **Proiect Practic**: Crearea unui medalion / insignă retro în stil **Pixel Art 2.5D** compus din 3 niveluri de culoare (**Negru**, **Roșu**, **Alb**) pe baza cuburilor de bază $1 \times 1\text{ mm}$ cu trepte de înălțime pe axa Z, prevăzut opțional cu un „pixel gol” pentru prinderea unui fir sau șnur.
+- **Circuitul Imprimării 3D în Laborator**:
+  - *La începutul lecției (Etapa 2)*: Se pornește imprimarea riglelor și semnelor de carte proiectate de elevi în Lecția 02 pe cele două imprimante standard Bambu Lab A1.
+  - *După demonstrația profesorului (Etapa 5/6)*: Profesorul feliază live exemplul demonstrativ (Inima Pixel Art) în Bambu Studio, aplică scalarea inteligentă ($XY = 300\%$, $Z = 75\%$) și schimbările automate de culoare pe straturi prin AMS lite, pornind printul demonstrativ chiar în timp ce copiii lucrează la calculatoare.
+  - *La finalul etapei practice*: Elevii pot admira și atinge modelul demonstrativ proaspăt scos din AMS lite!
+  - *La finalul orei (Etapa 8)*: Se colectează festiv riglele imprimate din Lecția 02.
+
+### ❓ Întrebări Esențiale (Obiective de Învățare)
+1. **De ce o imprimantă 3D FDM nu poate amesteca culorile ca o imprimantă obișnuită 2D pe hârtie?**
+2. **Cum funcționează principiul schimbării de culoare pe straturi pe axa Z (Filament Swap)?**
+3. **Ce este un sistem automat de alimentare cu filament (AMS / AMS lite) și cum execută schimbarea de culori fără pauze manuale complicate?**
+4. **Cum putem construi obiecte complexe Pixel Art în Tinkercad folosind o grilă de $1 \times 1\text{ mm}$ și 3 trepte de înălțime pe Z ($2\text{ mm}$, $3\text{ mm}$, $4\text{ mm}$)?**
+5. **Cum funcționează comanda rapidă `Alt + Drag` și comutarea în vizualizarea Ortografică (Flat View) pentru aliniere fără cusur?**
+6. **De ce aplicăm scalare non-uniformă în Slicer ($XY = 200\%-400\%$ pentru mărime și $Z = 75\%$ pentru viteză și grosime optimă)?**
+
+### 🔗 Resurse & Linkuri Utile
+- **Prezentare Teoretică**: https://docs.google.com/presentation/d/1C2g44mQVQQRq9Y6s29edDAG_EOAIIggRxaQEUuH-pqs/edit?usp=sharing
+- **Joc Kahoot**: https://create.kahoot.it/details/4a8e6778-3900-464b-8113-43fe06bfe4e8
+- **Model**: https://www.tinkercad.com/things/jq7qHRakffe-3ds-23
 
 ---
 
-## ❓ Întrebări Esențiale (Obiectivele de Învățare)
+## 📋 2. Pregătirea Lecției (Checklist Profesor)
 
-Această lecție aprofundează modelarea multicolor și explorează cel mai popular joc din istoria umanității: **Minecraft**. Pe parcursul celor 120 de minute, vom răspunde la 6 întrebări esențiale:
+Înainte de intrarea elevilor în clasă, profesorul efectuează următoarele verificări și configurări:
 
-1. **Care sunt cele mai populare jocuri video din lume construite în stil Pixel Art / Voxel?**
-2. **Ce este Minecraft, cum a apărut în anul 2009 și cum a revoluționat industria jocurilor?**
-3. **Câte obiecte Pixel Art există în Minecraft și cum sunt ele clasificate pe categorii?**
-4. **Cum poți crea Pixel Art direct în jocul Minecraft în modul *Creative* folosind blocuri colorate?**
-5. **Cum putem transforma instantaneu un model 3D din Tinkercad în blocuri Minecraft folosind butonul *Minecraft Mode*?**
-6. **De ce este vitală menținerea alinierei pe grilă (*Snap Grid*) și cum folosim comutarea între *Perspectivă* și *Vizualizare Ortografică* pentru aliniere perfectă?**
+### Conturi Digitale & Software
+- [ ] Deschide panoul **Tinkercad Classroom** pentru grupa curentă; verifică dacă codul clasei și lista de porecle (nicknames) sunt afișate sau printate pentru logare rapidă.
+- [ ] Deschide pe ecranul principal / proiector prezentarea teoretică a lecției și tab-ul cu jocul **Kahoot** (bazat pe `quiz.md`).
+- [ ] Pornește softul **Bambu Studio** pe laptopul profesorului, configurat cu profilul de 0.20 mm Standard pentru Bambu Lab A1.
 
----
+### Echipamente Hardware & Imprimante 3D (Configurația celor 3 Imprimante)
+- [ ] **Imprimantele 1 și 2 (Bambu Lab A1 fără AMS)**:
+  - Curăță plăcile texturate PEI cu alcool izopropilic sau apă caldă.
+  - Încarcă fișierele `.gcode` cu riglele și semnele de carte ale elevilor din Lecția 02, pregătite pentru pornire la minutul 10.
+- [ ] **Imprimanta 3 (Bambu Lab A1 Combo cu AMS lite)**:
+  - Verifică montarea celor 3 bobine de filament PLA în sloturile AMS lite:
+    - Slot 1: **Negru** (Bază & Contur)
+    - Slot 2: **Roșu** (Culoare principală / Umplutură)
+    - Slot 3: **Alb** (Detalii luminoase / Highlight)
+  - Rulează o calibrare rapidă a patului și a extrudorului dacă este necesar.
 
-## 📖 Povestea Tehnologiei și a Universului Minecraft: Ghid Elaborat și Detaliat
-
-### 1. Cele Mai Populare Jocuri Video în Stil Pixel Art și Voxel
-Deși trăim într-o eră a plăcilor grafice ultra-rapide, jocurile cu grafică retro sau din cuburi continuă să domine topurile globale de popularitate:
-- **Minecraft**: Cel mai vândut joc video din toate timpurile (peste 300 de milioane de copii vândute!), bazat pe o lume formată integral din cuburi numite *voxeli*.
-- **Terraria**: Numit adesea „Minecraft 2D”, un joc Pixel Art uriaș de explorare, aventură și construcție.
-- **Stardew Valley**: Un joc fermecător creat de un singur om (Eric Barone), care a cucerit zeci de milioane de jucători prin grafica sa retro caldă și relaxantă.
-- **Undertale & Celeste**: Jocuri indie de aventură cu povești impresionante și grafică pixelată de o expresivitate incredibilă.
-- **Classic Arcade (Super Mario Bros, Zelda, Pac-Man)**: Legendarele jocuri pe 8/16 biți de la care a pornit întreaga cultură pop modernă.
-
----
-
-### 2. Povestea Minecraft: De la un Proiect Independent la un Fenomen Global
-În anul **2009**, un programator suedez pe nume **Markus Persson** (cunoscut online sub porecla **Notch**) a creat în doar un weekend un joc experimental numit *Cave Game*, redenumit ulterior **Minecraft**. 
-
-Inspirația lui Notch a venit din jocuri ca *Infiniminer*. El s-a întrebat: *„Ce-ar fi dacă jucătorul ar fi plasat într-o lume infinită unde absolut orice element – pământ, piatră, lemn, apă, aur – este format dintr-un cub perfect cu latura de 1 metru pe 1 metru?”*.
-
-Jocul nu avea instrucțiuni, grafică complicată sau povești prestabilite. Jucătorii aveau libertate totală să „mineze” (să spargă blocuri) și să „construiască” (*crafting*). Minecraft a devenit o pânză infinită pentru creativitate, unde copiii și adulții din întreaga lume au construit de la mici căsuțe din lemn până la sculpturi gigantice, orașe futuriste și calculatoare funcționale din Redstone!
+### Materiale Didactice Fizice
+- [ ] Pregătește o planșă grafică / mostre fizice cu cele 5 obiecte Pixel Art în 3 culori: ❤️ Inimă, 🍎 Măr, 🍄 Ciupercă, ⚔️ Sabie, 🧪 Sticluță de poțiune.
+- [ ] Pregătește bucăți scurte de ață / șnur colorat pentru a le arăta cum se poate prinde firul prin „pixelul gol”.
+- [ ] Șubler digital și mostre de piese imprimate cu straturi multicolore pentru inspecție tactilă.
 
 ---
 
-### 3. Enciclopedia Obiectelor din Minecraft: Categorii și Obiecte Legendare
-În lumea Minecraft există peste **1000 de obiecte și blocuri diferite**, reprezentate prin pictograme pixelate superbe pe o grilă mică (de regulă 16x16 pixeli). Ele sunt împărțite în mari categorii:
+## ⏱️ 3. Desfășurarea Lecției Pas cu Pas (Tabel Minute-by-Minute)
 
-1. **Unelte & Arme (Tools & Weapons)**:
-   - *Sabia de Diamant (Diamond Sword)*, *Târnăcopul (Pickaxe)*, *Toporul (Ax)*, *Lopata (Shovel)* și *Cazmaua (Hoe)*.
-   - Tradițional făcute din Lemn, Piatră, Fier, Aur, Diamant sau Netherite.
-2. **Armuri & Echipament de Protecție (Armor)**:
-   - Coifuri, armuri de piept (*Chestplate*), pantaloni (*Leggings*) și cizme (*Boots*).
-3. **Consumabile, Mâncare & Poțiuni (Food & Potions)**:
-   - *Mărul de Aur (Golden Apple)*, friptura, pâinea, prăjiturile și sticluțele multicolore de poțiuni (Poțiune de Viteză, Vindecare, Invizibilitate).
-4. **Materiale & Resurse Magice (Resources & Magic Items)**:
-   - *Smaraldul (Emerald)*, Diamantul, Lingoul de Aur, *Ender Pearl* (Perla de Ender), *Eye of Ender*, *Totem of Undying*.
-5. **Redstone & Mecanică (Redstone Components)**:
-   - Praf de Redstone, Torța de Redstone, Repetoare și Comparatoare folosite pentru inginerie electronică virtuală.
+| Minut | Etapă | Activitate Principală & Rolul Profesorului |
+| :---: | :--- | :--- |
+| **00 – 10 min** | **1. Bun venit & Introducere** | Primirea elevilor, crearea atmosferei de laborator retro-pixel, prezentarea temei multicolore. |
+| **10 – 20 min** | **2. Pornirea Imprimării (Lecția 02)** | Lansarea riglelor/semnelor de carte pe Imprimantele 1 și 2. Verificarea primului strat. |
+| **20 – 40 min** | **3. Teorie: Magia Multicolorelor & Pixel Art** | Livrarea prezentării: De ce FDM nu are cerneală, straturile Z, AMS lite, cele 5 modele Pixel Art. |
+| **40 – 50 min** | **4. Pauză & Prezență** | Relaxare 10 minute, hidratare, aerisirea laboratorului și verificarea prezenței. |
+| **50 – 65 min** | **5. Demonstrația Live Tinkercad & Slicing** | Crearea celor 3 cuburi etalon ($1\times1\text{ mm}$ la $Z=2,3,4\text{ mm}$), modelarea inimii, pixelul gol, scalarea în Slicer. |
+| **65 – 95 min** | **6. Lucru Individual & Print Live AMS** | Copiii își modelează propriul Pixel Art. Concomitent, Imprimanta 3 cu AMS imprimă live inima demonstrativă! |
+| **95 – 110 min** | **7. Joc Kahoot (Evaluare Interactivă)** | Sesiune dinamică Kahoot (12 întrebări teoretice rapide din `quiz.md`). |
+| **110 – 120 min** | **8. Colectare Rigle, Inspecție Model & Poză** | Ridicarea riglelor din Lecția 02, atingerea piesei multicolore proaspete din AMS lite și poza de grup. |
 
 ---
 
-### 4. Cum Faci Pixel Art în Modul Creative din Minecraft?
-În Minecraft, modul *Creative* le oferă jucătorilor resurse nelimitate și zbor. Artiștii din joc folosesc blocurile colorate ca pe niște pixeli fizici uriași:
-- **Lână Colorată (Colored Wool)**: Oferă culori vii, cu o textură textilă moale.
-- **Beton Colorat (Concrete)**: Blocul preferat pentru Pixel Art modern, deoarece oferă culori solide, curate și intense, fără modele deranjante.
-- **Argilă Arsă (Terracotta)**: Oferă nuanțe pământii, naturale și vintage.
-- Jucătorii construiesc un perete vertical mare și așează bloc cu bloc urmărind o schiță de pixel art, creând uriașe tablouri 2D sau sculpturi Voxel 3D!
+## 📖 4. Elaborarea Detaliată a Fiecărei Etape
 
 ---
 
-### 5. Supraputerea Secretă din Tinkercad: Butonul *Minecraft Mode*!
-Tinkercad ascunde un instrument incredibil creat special pentru fanii Minecraft:
-- În colțul din dreapta sus al ecranului Tinkercad se află o pictogramă mică cu un **Târnăcop** (lângă butonul cu piese LEGO).
-- Când dai click pe iconița de Târnăcop, **Tinkercad transformă instantaneu orice obiect 3D pe care l-ai proiectat într-o construcție din blocuri Minecraft!**
-- Poți alege din 3 niveluri de detaliu (*1x1*, *2x2* sau *3x3*).
-- Mai mult, poți apăsa butonul **Export** și poți descărca fișierul în format `.schematic` pentru a-ți importa sculptura 3D direct în propria ta lume de Minecraft!
+### Etapa 1: Bun Venit & Introducere (Minutele 00 – 10)
+Profesorul întâmpină călduros elevii și le captează atenția cu o întrebare capcană:
+> *„Cum credeți că imprimă o imprimantă obișnuită de birou o poză colorată? Are cartușe cu cerneală lichidă Cyan, Magenta, Galben și Negru pe care le combină pe hârtie. Dar imprimanta noastră 3D are cerneală lichidă? Nu! Ea topește un fir solid de plastic. Cum putem atunci să creăm un obiect tridimensional cu mai multe culori, fără să pictăm manual cu pensula?”*
+
+Profesorul anunță misiunea zilei: vom descoperi secretul imprimării multicolore pe straturi și vom deveni artiști digitali retro, transformând pixeli simpli de $1 \times 1\text{ mm}$ în insigne tridimensionale de colecție în 3 culori: **Negru**, **Roșu** și **Alb**.
 
 ---
 
-### 6. Tehnici Avansate de Inginerie și Modelare în Tinkercad
-
-#### A. Duplicarea Ultra-Rapidă cu Tasta `Alt` și `Ctrl + D`
-- **Tasta `Alt`**: În loc să tragi un bloc nou din panoul din dreapta pentru fiecare pixel, ții apăsată tasta **`Alt`** de pe tastatură și tragi de un bloc existent. Tinkercad lasă o copie exactă în loc și îți permite să o muti instant unde ai nevoie!
-- **Comanda `Ctrl + D` (Duplicate and Repeat)**: Dacă duplici un bloc și îl muți cu 5mm la dreapta, apăsând repetat `Ctrl + D`, Tinkercad va continua să plaseze automat blocuri la fiecare 5mm pe aceeași linie!
-
-#### B. Importanța Alinierei pe Grilă (*Snap Grid = 1mm*) – Ce se întâmplă la Deplasare?
-Pentru ca un model 3D să poată fi imprimat cu succes, toți pixelii trebuie să se atingă perfect pe laturi fără spații libere:
-- **Ce se întâmplă dacă un pixel este deplasat spre stânga cu 0.5mm?** 
-  - Se creează un gol microscopic sau o suprapunere strâmbă.
-  - La imprimarea 3D, capul de imprimare va depune plastic în aer (*straturi plutitoare*) sau va crea crăpături fragile. Obiectul se va rupe la prima atingere!
-- **Soluția**: Menținem întotdeauna opțiunea **Snap Grid = 1 mm** (sau 5mm) activă și folosim săgețile de pe tastatură pentru mișcări precise pixel cu pixel.
-
-#### C. Vizualizarea Ortografică (Flat View) vs. Perspectivă (Perspective View)
-Pe bara de navigare din stânga ecranului Tinkercad există un buton care comută între două modul de vizualizare a camerei:
-- **Vizualizarea în Perspectivă (Perspective View)**: Simulează modul în care ochiul uman vede lumea (obiectele îndepărtate apar mai mici). Este excelentă pentru a admira modelul 3D final.
-- **Vizualizarea Ortografică (Flat / Orthographic View)**: Elimină distorsiunile optice și aplatizează spațiul. Este **superputerea designerului 3D**! Când privești modelul de sus (*Top View*) în modul ortografic, vezi grila exact ca pe o foaie de matematică, permițându-ți să observi instantaneu dacă vreun pixel a scăpat nealiniat!
+### Etapa 2: Pornirea Imprimării 3D pentru Modelele din Lecția 02 (Minutele 10 – 20)
+1. Elevii se adună în jurul **Imprimantelor 1 și 2 (Bambu Lab A1)**.
+2. Profesorul deschide fișierele de feliere cu riglele și semnele de carte cu gradații milimetrice și decupaje stencils modelate de elevi în lecția precedentă.
+3. Se pornește imprimarea pe ambele mașini.
+4. Elevii observă procesul automat de calibrare a patului și modul în care capul de imprimare depune prima linie de purjare și primul strat uniform.
+5. Profesorul le reamintește: *„În timp ce voi veți învăța și veți crea noile voastre proiecte, imprimantele 1 și 2 vor lucra neobosit, iar la finalul orei fiecare își va lua acasă rigla fizică!”*
 
 ---
 
-## ⏱️ Desfășurarea Lecției Pas cu Pas (Planul de 120 Minute)
+### Etapa 3: Teorie – Magia Imprimării Multicolore & Universul Pixel Art (Minutele 20 – 40)
+Profesorul rulează prezentarea teoretică (ghidată de `presentation.md` / `presentation_interactive.md`):
 
-| Minut | Etapă | Activitate Detaliată & Ghid pentru Profesor |
-| :--- | :--- | :--- |
-| **00 - 10 min** | **1. Bun Venit & Introducere** | Primirea elevilor. Profesorul anunță tema lecției: intrarea în lumea Minecraft, modelarea Pixel Art în 4 culori și crearea unui mini-breloc voxel. |
-| **10 - 20 min** | **2. Pornirea Imprimării 3D (Tablourile din Lecția 02)** | Profesorul încarcă fișierele `.STL` ale tablourilor Pixel Art din Lecția 02. Configurează cele 2 schimbări de strat în slicer (la 2.2mm și 3.2mm) și pornește imprimanta! |
-| **20 - 45 min** | **3. Prezentare: Lumea Minecraft & Trucurile Tinkercad** | Parcurgerea prezentării. Se discută istoria Minecraft (Notch, 2009), categoriile de obiecte, modul *Minecraft Mode*, tasta `Alt`, grila de aliniere și vizualizarea Ortografică. |
-| **45 - 55 min** | **4. Pauză & Prezență** | Pauză de 10 minute pentru hidratare și relaxare. Verificarea și strigarea prezenței. |
-| **55 - 70 min** | **5. Demonstrație Live Tinkercad: Brelocul Minecraft în 4 Culori** | Profesorul arată cum se construiește paleta de 4 culori (`2mm`, `3mm`, `4mm`, `5mm`), cum se folosește tasta `Alt` și cum se atașează inelul de breloc. |
-| **70 - 100 min** | **6. Lucru Individual: Mini-Brelocul Minecraft Personalizat** | Elevii aleg 4 culori (Negru + 3 culori aleatorii la alegere) și creează propriul obiect Minecraft (Sabie, Târnăcop, Măr de Aur, Poțiune, Smarald, etc.) prevăzut cu gaura de breloc. |
-| **100 - 110 min** | **7. Joc Quiz Interactiv** | Joc rapid de fixare a cunoștințelor despre Minecraft, voxeli, tasta `Alt`, modul Ortografic și treptele de 4 culori. |
-| **110 - 120 min** | **8. Colectare Tablouri Lecția 02 & Poză de Grup** | Imprimanta își termină treaba! Elevii își ridică festiv primele lor tablouri Pixel Art multicolore din Lecția 02 și realizăm fotografia de grup! |
+#### 1. De ce Imprimanta 3D FDM nu are cerneală?
+- O imprimantă 2D depune picături microscopice de cerneală lichidă care se absorb în hârtie.
+- Imprimanta FDM (*Fused Deposition Modeling*) împinge un fir solid de plastic printr-o duză încinsă la 210°C. Duza poate topi o singură culoare de plastic în fiecare clipă.
+- Culoarea piesei este dictată strict de bobina de filament montată în acel moment.
 
----
+#### 2. Secretul Schimbării de Culoare pe Axa Z (*Filament Swap by Layer*)
+- Deoarece imprimanta construiește orice obiect strat peste strat (pe verticală, de-a lungul axei Z), putem obține un model multicolor dacă îi ordonăm imprimantei:
+  - *Straturile 1 până la 10* ($0.0 \to 2.0\text{ mm}$): Toarnă plastic **Negru**.
+  - *Straturile 11 până la 15* ($2.0 \to 3.0\text{ mm}$): Schimbă cu plastic **Roșu**.
+  - *Straturile 16 până la 20* ($3.0 \to 4.0\text{ mm}$): Schimbă cu plastic **Alb**.
+- Pentru ca acest truc să funcționeze, noi, în calitate de designeri 3D, trebuie să construim fiecare element colorat la o **înălțime diferită** în spațiul digital!
 
-## 💻 Ghid Detaliat pentru Proiectul Practic: Mini-Brelocul Minecraft în 4 Culori
+#### 3. Cum funcționează sistemul AMS (*Automatic Material System*)?
+- Pe imprimanta clasică, la fiecare schimbare de strat, profesorul trebuia să apese manual pauză, să scoată firul vechi, să introducă firul nou și să curețe duza.
+- Sistemul inteligent **AMS lite** de pe Bambu Lab are 4 motoare independente. El retrage automat filamentul negru, taie capătul, împinge filamentul roșu în capul de printare, curăță duza și continuă imprimarea fără oprire umană!
 
-### Pasul 1: Pregătirea Spațiului și Activarea Modului Ortografic
-1. Intrați pe `www.tinkercad.com`, alăturați-vă clasei virtuale și apăsați **Create > 3D Design**.
-2. Redenumiți proiectul: `Minecraft_Breloc_NumeleTau`.
-3. Setați **Snap Grid = 1 mm** în colțul din dreapta jos.
-4. Apăsați pe butonul **Switch to Flat (Orthographic) view** de pe panoul de navigare din stânga (sau tasta `F5`) pentru o aliniere perfectă pe grilă.
-
----
-
-### Pasul 2: Construirea Paletei de 4 Culori (Trepte de Înălțime 2mm / 3mm / 4mm / 5mm)
-Fiecare elev își construiește în colțul spațiului de lucru paleta de 4 culori:
-1. **Pixelul 1 – Baza / Conturul (Negru)**:
-   - Dimensiuni: `X = 5 mm`, `Y = 5 mm` *(sau 6mm x 6mm)*.
-   - Înălțime pe Z: **`Z = 2 mm`**. Culoare: **Negru**.
-2. **Pixelul 2 – Culoarea Aleatorie A (ex: Albastru / Diamant)**:
-   - Dimensiuni: `X = 5 mm`, `Y = 5 mm`.
-   - Înălțime pe Z: **`Z = 3 mm`** *(cu 1mm mai înalt decât baza)*.
-3. **Pixelul 3 – Culoarea Aleatorie B (ex: Galben / Aur sau Roșu)**:
-   - Dimensiuni: `X = 5 mm`, `Y = 5 mm`.
-   - Înălțime pe Z: **`Z = 4 mm`** *(cu încă 1mm mai înalt)*.
-4. **Pixelul 4 – Culoarea Aleatorie C (ex: Alb / Vârfuri & Străluciri)**:
-   - Dimensiuni: `X = 5 mm`, `Y = 5 mm`.
-   - Înălțime pe Z: **`Z = 5 mm`** *(cel mai înalt punct al modelului)*.
+#### 4. Galeria celor 5 Obiecte Emblematice Pixel Art (Paleta 3 Culori)
+Profesorul prezintă planșa cu cele 5 modele legendare compuse exclusiv din Negru, Roșu și Alb:
+1. ❤️ **Inima Pixelată (Retro Heart)**: Contur negru de bază, umplutură roșie intensă și punct alb de reflexie în colț.
+2. 🍎 **Mărul Clasico-Pixel (Pixel Apple)**: Contur negru, pulpă roșie și strălucire albă.
+3. 🍄 **Ciuperca Magică (Super Mushroom)**: Pălărie roșie cu buline albe și ochi/contur negru.
+4. ⚔️ **Sabia Pixelată (Pixel Sword)**: Gardă și contur negru, lamă roșie energetică și tăiș alb strălucitor.
+5. 🧪 **Sticluța cu Poțiune de Viață (Health Potion)**: Corp de sticlă negru, lichid roșu magic și dop/bule albe de lumină.
 
 ---
 
-### Pasul 3: Alegerea și Proiectarea Obiectului Minecraft
-Elevii își aleg obiectul preferat din universul Minecraft:
-- **⚔️ Sabie de Diamant / Târnăcop**: Mâner din lemn (Culoarea 2), gardă/bază (Negru), lamă de diamant (Culoarea 3) și străluciri pe vârf (Culoarea 4).
-- **🍎 Măr de Aur (Golden Apple)**: Contur negru (`2mm`), corpul mărului aurit (`3mm`), frunzuliță verde (`4mm`) și punct de strălucire alb (`5mm`).
-- **🧪 Sticluță de Poțiune Magică**: Contur sticlă (`2mm`), lichid magic (`3mm`), dop de lemn (`4mm`), bule și strălucire de sticlă (`5mm`).
-- **💎 Smarald / Diamant Minecraft**: Contur exterior (`2mm`), fațete întunecate (`3mm`), fațete luminoase (`4mm`) și reflecție albă pe centru (`5mm`).
-- **🧨 Torta Redstone / Creeper Face**: Design geometric din blocuri pătrate.
+### Etapa 4: Pauză Scurtă & Prezență (Minutele 40 – 50)
+- Elevii fac o pauză de 10 minute pentru relaxarea ochilor și hidratare.
+- Profesorul notează prezența în catalogul digital și aerisește sala de curs.
 
 ---
 
-### Pasul 4: Asamblarea cu Tasta `Alt` și Verificarea Alinierei
-1. Selectați blocul din paletă.
-2. Țineți apăsată tasta **`Alt`** și trageți noul bloc direct pe grilă în poziția dorită.
-3. Comutați camera pe **Top View** (Vedere de sus) în modul **Ortografic** pentru a vă asigura că nu există nicio deplasare greșită a pixelilor.
+### Etapa 5: Demonstrația Profesorului în Tinkercad & Slicing Live (Minutele 50 – 65)
+
+Profesorul partajează ecranul pe proiector și parcurge demonstrația pas cu pas:
+
+#### 1. Crearea Paletei Etalon (Trei Cuburi de $1 \times 1\text{ mm}$ la Înălțimi Diferite)
+1. Trage un **Box (Solid)** din panoul din dreapta pe planul de lucru.
+2. Deschide dimensiunile și setează: `Lungime X = 1 mm`, `Lățime Y = 1 mm`, `Înălțime Z = 2 mm`. Îi atribuie culoarea **Negru** (Baza / Conturul).
+3. Creează al doilea cub: `X = 1 mm`, `Y = 1 mm`, `Înălțime Z = 3 mm`. Îi atribuie culoarea **Roșu** (Culoarea principală).
+4. Creează al treilea cub: `X = 1 mm`, `Y = 1 mm`, `Înălțime Z = 4 mm`. Îi atribuie culoarea **Alb** (Lumina / Highlight-ul).
+5. Așază cele 3 cuburi într-un colț al ecranului – aceasta este **Paleta Magică de Lucru**!
+
+#### 2. Setările Esențiale pentru Precizie Pixelată
+- Setează **Snap Grid = 1.0 mm** în colțul din dreapta jos.
+- Comută camera pe **Top View** (Vedere de sus) și activează **Switch to Flat (Orthographic) view** (tasta `F5`). În modul ortografic nu există perspectivă distorsionată; planul arată exact ca o foaie curată de matematică!
+
+#### 3. Construcția Rapidă prin Comanda `Alt + Drag` & Tehnica Anti-Deformare
+- **⚠️ Capcană Critică de Evitat (Mânerele de Redimensionare vs. Mutarea Corpului)**:
+  - Deoarece lucrăm cu cuburi minuscule de $1 \times 1\text{ mm}$, punctele albe și negre de redimensionare (*resize handles*) sunt foarte aproape de centrul piesei. Dacă un copil agață din greșeală un punct alb/negru în loc să apuce corpul cubului, pixelul se va întinde și deforma (de exemplu la $1.4 \times 0.8\text{ mm}$), stricând ireversibil alinierea grilei!
+  - **Regula de Aur**: Pixelul se apucă pentru mutare sau `Alt + Drag` **exclusiv din centrul feței colorate** (de corp), niciodată de la colțuri sau de punctele albe.
+  - **Alternativa Ultra-Sigură**: Odată selectat cubul, deplasarea se poate face direct cu **săgețile de pe tastatură** (`←`, `↑`, `→`, `↓`), care la `Snap Grid = 1.0 mm` îl mișcă exact din milimetru în milimetru fără riscul de a-l mări sau micșora.
+  - **Reflexul de Salvare**: Dacă un pixel a fost deformat din greșeală, elevul apasă imediat **`Ctrl + Z`** (*Undo*)!
+- Selectează cubul negru de `Z = 2 mm`.
+- Ține apăsată tasta **`Alt`** de pe tastatură și trage de centrul cubului: Tinkercad lasă originalul pe loc și generează instantaneu o copie fidelă!
+- Profesorul conturează forma Inimii Pixelate ❤️ plasând cuburile negre unul lângă altul pe grilă.
+- Selectează cubul roșu de `Z = 3 mm`, ține apăsat **`Alt`** și umple interiorul inimii.
+- Selectează cubul alb de `Z = 4 mm`, ține apăsat **`Alt`** și plasează 2-3 pixeli albi în colțul din stânga-sus pentru a crea reflexia luminii.
+
+#### 4. Opțional: Lăsarea „Pixelului Gol” pentru Ață
+- În colțul superior al conturului negru, profesorul arată cum putem lăsa liber un pătrățel de $1 \times 1\text{ mm}$ (sau cum putem folosi un cub *Hole* de $1 \times 1\text{ mm}$ pentru a perfora un pixel). Prin această deschizătură se va putea lega direct o ață sau un șnur fără a adăuga inele voluminoase.
+
+#### 5. Gruparea și Verificarea din Profil
+- Selectează întregul model (`Ctrl + A`) și apasă **Group (`Ctrl + G`)**.
+- Rotește camera în profil: se văd clar cele **3 trepte de relief** ($2\text{ mm}$, $3\text{ mm}$, $4\text{ mm}$).
+- Exportă fișierul ca `.STL`.
+
+#### 6. Felierea Inteligentă în Bambu Studio (Scalare Non-Uniformă & AMS)
+Profesorul deschide fișierul `.STL` în Bambu Studio pe proiector:
+- Explică: *„Modelul nostru are în Tinkercad doar câțiva milimetri (pentru că am lucrat cu pixeli de 1 mm). În Slicer facem o operațiune de inginerie numită **Scalare Non-Uniformă**:”*
+  - Debifează lacătul de proporții uniforme (*Uniform Scale*).
+  - Scalează axele **X și Y la 300%** (astfel fiecare pixel devine $3 \times 3\text{ mm}$, iar insigna are dimensiunea perfectă de $\approx 40 \times 40\text{ mm}$).
+  - Scalează axa **Z la 75%** (înălțimile devin $1.5\text{ mm}$ negru, $2.25\text{ mm}$ roșu, $3.0\text{ mm}$ alb – făcând piesa subțire, elegantă și foarte rapidă la print!).
+- Pe bara verticală de straturi din Bambu Studio, profesorul asignează sloturile AMS:
+  - Baza ($0 \to 1.5\text{ mm}$): **Slot 1 (Negru)**
+  - Nivelul 2 ($1.5 \to 2.25\text{ mm}$): **Slot 2 (Roșu)**
+  - Vârful ($2.25 \to 3.0\text{ mm}$): **Slot 3 (Alb)**
+- Trimite fișierul către **Imprimanta 3 (Bambu Lab A1 cu AMS lite)** și apasă **Print**!
 
 ---
 
-### Pasul 5: Adăugarea Inelului de Breloc
-Pentru ca obiectul să devină un breloc real purtabil la ghiozdan:
-1. Adăugați un **Cylinder (Solid)** la capătul superior al obiectului (de exemplu la mânerul sabiei sau în colțul superior al mărului).
-2. Dimensiuni cilindru exterior: `8 mm x 8 mm`, Înălțime: `2 mm` (Culoare Negru, pentru a se contopi cu baza).
-3. Adăugați în mijlocul lui un **Cylinder (Hole)** cu dimensiunile: `4 mm x 4 mm`, Înălțime: `5 mm`.
-4. Selectați cilindrul exterior și gaura, apoi apăsați **Group (`Ctrl + G`)**.
+### Etapa 6: Lucru Individual & Spectacolul Imprimării Live cu AMS (Minutele 65 – 95)
+- Elevii încep lucrul individual în conturile lor de Tinkercad.
+- Fiecare își alege unul dintre cele 5 modele de pe planșă (Inimă, Măr, Ciupercă, Sabie, Poțiune) sau creează un personaj original retro în cele 3 culori.
+- **Dinamica Specială a Clasei**:
+  - În timp ce copiii lucrează concentrați, **Imprimanta 3 cu AMS lite lucrează chiar lângă ei**!
+  - În jurul minutului 72, sistemul AMS retrage automat filamentul negru și alimentează filamentul roșu. Copiii văd live cum imprimanta schimbă culoarea fără intervenție umană.
+  - În jurul minutului 82, AMS-ul trece la filamentul alb pentru finisarea ultimelor detalii.
+  - La minutul 88, imprimarea demonstrativă se termină! Profesorul desprinde inima caldă de pe placă și o transmite printre bănci. Fiecare copil o poate pipăi și analiza, înțelegând perfect cum modelul din ecran devine obiect fizic în relief.
+- Profesorul trece pe la fiecare elev, verifică alinierea pe grila de 1 mm, prezența celor 3 trepte Z ($2, 3, 4\text{ mm}$) și opțiunea de pixel gol.
+- Elevii exportă fișierul final `.STL` pentru producția de săptămâna viitoare.
 
 ---
 
-### Pasul 6: Grupare, Verificare Profil Z și Export STL
-1. Priviți modelul din profil (dintr-o parte) și numărați cele **4 trepte evidente de înălțime** (`2mm`, `3mm`, `4mm`, `5mm`).
-2. Selectați toate piesele (`Ctrl + A`) și apăsați **Group (`Ctrl + G`)**.
-3. (Opțional): Apăsați butonul cu **Târnăcop (Minecraft Mode)** în colțul din dreapta sus pentru a admira creația în blocuri Minecraft!
-4. Comutați înapoi în modul 3D Design, apăsați **Export** și descărcați fișierul **.STL**.
+### Etapa 7: Joc Kahoot – Evaluare Interactivă (Minutele 95 – 110)
+- Elevii își deschid un tab nou de browser, intră pe `kahoot.it` și introduc PIN-ul generat de profesor.
+- Se joacă setul complet de 12 întrebări teoretice din `quiz.md`.
+- Întrebările verifică exclusiv principiile teoretice învățate (lipsa cernelii în FDM, schimbarea de culoare pe axa Z, rolul sistemului AMS lite, grila ortografică, logica scalării).
+- După fiecare întrebare, profesorul citește explicația pedagogică și felicită elevii pentru răspunsurile corecte.
 
 ---
 
-## 🖨️ Ghidul Profesorului pentru Slicing (Configurarea celor 3 Schimbări de Strat)
-
-În softul de Slicing (PrusaSlicer, Bambu Studio sau Cura):
-1. Încărcați modelele `.STL` ale elevilor pe placa virtuală.
-2. Setați **Layer Height = 0.2 mm**.
-3. Adăugați cele 3 pauze/schimbări de culoare (**M600 / Color Change**):
-   - Schimbarea 1 la **`Z = 2.2 mm`**: Introducerea Culorii 2 (ex: Albastru / Diamant).
-   - Schimbarea 2 la **`Z = 3.2 mm`**: Introducerea Culorii 3 (ex: Galben / Aur).
-   - Schimbarea 3 la **`Z = 4.2 mm`**: Introducerea Culorii 4 (ex: Alb / Vârfuri).
-4. Trimiteți fișierul G-code către imprimantă.
+### Etapa 8: Colectarea Riglelor din Lecția 02, Concluzii & Poză de Grup (Minutele 110 – 120)
+1. Imprimantele 1 și 2 au finalizat lotul de rigle și semne de carte din Lecția 02.
+2. Fiecare elev își ridică festiv rigla fizică personalizată, o testează cu un creion pe hârtie și își admiră numele gravat.
+3. Se organizează birourile de lucru și se închid laptopurile.
+4. Elevii țin în mâini riglele și piesa demonstrativă AMS pentru **fotografia oficială de grup**.
 
 ---
 
-## 🧠 Joc Quiz Interactiv (Fixarea Cunoștințelor)
+## 🔬 Recapitulare Tehnică pentru Mentor (Cheat Sheet)
 
-1. **Cine a creat jocul Minecraft în anul 2009?**
-   - *Răspuns*: Markus „Notch” Persson.
-2. **Ce este un Voxel?**
-   - *Răspuns*: Un pixel 3D (Volume Pixel) – un cub cu volum.
-3. **Ce face tasta `Alt` când o ții apăsată în Tinkercad și tragi de un obiect?**
-   - *Răspuns*: Creează instantaneu o copie a acelui obiect.
-4. **De ce folosim Vizualizarea Ortografică (Flat View) când construim Pixel Art?**
-   - *Răspuns*: Pentru că elimină distorsiunile optice și ne permite să vedem grila perfect de sus, observând dacă vreun pixel s-a deplasat greșit.
-5. **Ce se întâmplă dacă un pixel se deplasează greșit în stânga fără să atingă vecinul?**
-   - *Răspuns*: Se creează un spațiu liber, iar la imprimare plasticul va cădea în aer sau obiectul se va rupe la final.
+```text
+[Paletă Tinkercad 1x1mm]
+- Bază/Contur Negru : 1 mm x 1 mm x Z=2.0 mm
+- Corp Principal Roșu: 1 mm x 1 mm x Z=3.0 mm
+- Highlight/Alb     : 1 mm x 1 mm x Z=4.0 mm
 
----
-
-## 🏆 Rezultatul Final și Încheierea Lecției
-- **Proiect Ridicat la Finalul Lecției 03**: Elevii își ridică festiv tablourile Pixel Art în 3 culori (concepute în Lecția 02), proaspăt imprimate pe parcursul celor 120 de minute!
-- **Proiect Proiectat în Lecția 03**: Fiecare elev a creat un Mini-Breloc Minecraft personalizat în 4 culori cu trepte de înălțime pe Z.
-- **Competențe Dobândite**: Istoria Minecraft și a graficii Voxel, utilizarea tastei `Alt`, stăpânirea vizualizării Ortografice, alinierea precisă pe grilă și proiectarea 3D pe 4 niveluri de culoare.
-- **Pregătire Lecția 04**: Fișierele sunt salvate și pregătite pe slicer pentru imprimarea din Lecția 04!
+[Setări Slicing în Bambu Studio]
+- Scalare XY: 200% - 400% (Non-uniform scale)
+- Scalare Z : 75% (Grosime finală 3.0 mm, straturi 0.20 mm)
+- Schimbare Culoare 1 (Negru -> Roșu): la Z = 1.6 mm
+- Schimbare Culoare 2 (Roșu -> Alb)  : la Z = 2.4 mm
+```

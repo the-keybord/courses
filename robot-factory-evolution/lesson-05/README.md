@@ -17,8 +17,8 @@
 3. Cum rutăm corect fasciculele de cabluri pregătite pentru driver și switch, astfel încât să evităm agățarea lor în roți și scurtcircuitele accidentale?
 
 ### 🔗 Resurse & Linkuri Utile
-- **Prezentare**: https://canva.com/
-- **Kahoot**: https://kahoot.com/
+- **Prezentare**: https://docs.google.com/presentation/d/1wlhf3V2S7Ge0c7ZFjSYCpImMkx02XzM74zfQTLsI56g/edit?usp=sharing
+- **Kahoot**: https://create.kahoot.it/details/118376b5-18a6-4a30-ac4b-fb8f5b56c1d8
 
 ---
 

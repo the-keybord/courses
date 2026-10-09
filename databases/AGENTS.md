@@ -49,3 +49,10 @@ Unlike younger kids' courses in the repository, this course uses a streamlined, 
 
 - **Course Narrative Language**: Written in formal, clear, and grammatically impeccable **Romanian**.
 - **Direct English Technical Terminology**: Use standard international database and T-SQL terms directly in English (e.g., `Primary Key`, `Foreign Key`, `Data Type`, `Constraint`, `Query`, `Join`, `Table`, `Schema`, `View`, `Null / Not Null`, `Clause`, `Aggregate Function`, `Transaction`, `Index`, `Trigger`, `Stored Procedure`, `OneCompiler`). Do NOT use forced or archaic Romanian translations.
+
+---
+
+## 5. Strict Prohibition of ASCII Art & Pseudo-Diagrams
+
+- **No ASCII Art Diagrams or Box Drawings**: Absolutely NO ASCII art drawings, box-drawing characters (`┌─┐`, `│`, `▼`), ASCII tree maps, or pseudo-tables inside code blocks across any database lesson documents.
+- **Literal Prose & Markdown Tables**: Present all architectural relationships, taxonomy breakdowns, and structural comparisons purely through clean, standard GitHub Markdown tables, structured bulleted lists, and precise didactic prose.
