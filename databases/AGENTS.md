@@ -42,13 +42,12 @@ Unlike younger kids' courses in the repository, this course uses a streamlined, 
      - Section 3: Planul de Desfășurare (Timeline 120 min).
      - Section 4: Ghid Didactic Pas cu Pas (Teacher's Master Guide with deep didactic theory, OneCompiler live scripts, error breakdowns).
      - Section 5: Mini-Quiz Certiport ITS (8–10 multiple choice questions with answers and pedagogical explanations).
-  2. **`student.md` (Student Compendium & Study Notes)**: High-yield reference guide and study companion for students:
-     - Section 1: Rezumatul Lecției (Core Notes & mental models).
-     - Section 2: Dicționar de Termeni Tehnici (New words learned & standard English database terms).
-     - Section 3: Ghid Sintactic & Exemple Practice T-SQL (Clean, runnable code blocks for OneCompiler).
-     - Section 4: Explicații Aprofundate (Didactic "Under the Hood" deep dives, relational logic).
-     - Section 5: Întrebări Frecvente & Capcane la Examenul Certiport (Common gotchas, exam traps).
-     - Section 6: Mini-Exerciții Autonome de Consolidare (Self-study practice with collapsible solutions).
+  2. **`student.md` (Quick Review Compendium / Fișă Recapitulativă)**: Short, high-yield summary guide (approx. 60–80 lines) for students to quickly review what was learned:
+     - Section 1: Ce am învățat astăzi (Quick Review – bullet points of core takeaways).
+     - Section 2: Termeni Noi (Dicționar Rapid – compact table with technical terms, brief meaning, and practical context).
+     - Section 3: Comparații sau Tipuri de Date Cheie (Compact tables/lists where applicable).
+     - Section 4: Exemple Cheie de Cod T-SQL (Essential, clean code blocks for OneCompiler).
+     - Section 5: Reguli de Aur & De Reținut (Key gotchas, exam traps, and syntax rules).
 
 ---
 
