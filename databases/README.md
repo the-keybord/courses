@@ -27,18 +27,19 @@ Cursul este conceput pentru tineri care doresc să stăpânească conceptele fun
 4. **Metodologie Sincronă Ghidată (Teacher-Led)**:
    - Durata fiecărei lecții este de **120 minute** (2 ore).
    - Elevii lucrează în timp real, sincron cu profesorul: fiecare concept teoretic este însoțit imediat de un exemplu practic executat la tastatură.
-5. **Format Minimal & Eficient (Doar `README.md` per Lecție)**:
-   - Fiecare lecție conține un singur document master (`README.md`) ce servește drept ghid complet pentru profesor (timeline detaliat, explicații didactice pas cu pas, blocuri de cod T-SQL gata de rulat în OneCompiler și o secțiune finală de mini-quiz de verificare).
+5. **Pachetul Didactic per Lecție (`README.md` & `student.md`)**:
+   - **`README.md` (Ghidul Profesorului)**: Ghid complet pentru predare (timeline detaliat, scenarii de live coding, teorie aprofundată, blocuri de cod T-SQL gata de rulat în OneCompiler și un mini-quiz Certiport cu explicații pedagogice).
+   - **`student.md` (Compendiu Elev)**: Ghid de sinteză și studiu individual pentru elevi (note de curs, glosar de termeni tehnici în engleză, exemple T-SQL comentate, explicații „sub capotă”, capcane de examen Certiport și exerciții autonome cu soluții).
 
 ---
 
 ## 🗺️ Harta Cursului & Catalogul Lecțiilor
 
-| Nr. | Cod | Titlu Lecție | Concepte Cheie & Practică OneCompiler | Stare |
+| Nr. | Cod | Titlu Lecție & Materiale | Concepte Cheie & Practică OneCompiler | Stare |
 | :---: | :---: | :--- | :--- | :---: |
-| **01** | `DB1.1` | **[Introducere în Baze de Date Relaționale, Tipuri de Date & Chei în T-SQL](lesson-01/README.md)** | Scopul cursului & Certiport (miza notei 10 la BAC), RDBMS vs Excel, tabele/rânduri/coloane, tipuri de date (`INT`, `DECIMAL`, `BIT`, `VARCHAR`, `DATE`, `DATETIME`, `TIME`), crearea tabelului `Students`, dilema duplicatelor și analogia IDNP (`Primary Key`), dependențe tranzitive și separarea în două tabele relaționate prin `Foreign Key` (`Classes` & `Students`). | Finalizat |
-| **02** | `DB1.2` | **[Sublimbajele SQL (DDL, DML, DQL, DCL), Manipularea Schemelor & Modificarea Datelor](lesson-02/README.md)** | Încălzire cu filtrări (`IS NULL`, `=`, `OR`, `LIKE`, `IN`), taxonomia formală SQL (DDL, DML, DQL, DCL), modificarea structurii tabelelor (`CREATE`, `ALTER TABLE` cu `ADD`, `DROP COLUMN`, `ALTER COLUMN`, `ADD/DROP CONSTRAINT`, `DROP TABLE`), cele 3 metode de inserare (`INSERT INTO VALUES`, `INSERT INTO SELECT`, `SELECT INTO`), modificarea cu `UPDATE` (riscul omitării `WHERE`), ștergerea cu `DELETE` vs `TRUNCATE TABLE`. | Finalizat |
-| **03** | `DB1.3` | **[Interogarea Datelor cu SELECT, Operatori de Comparare, Predicate Avansate & Logica Booleană (AND, OR, NOT)](lesson-03/README.md)** | Anatomia `SELECT` și DQL, tabelul `Contacts`, operatori de comparare (`=`, `<>`, `<`, `>`, `<=`, `>=`), predicate de interval (`BETWEEN`, `NOT BETWEEN`), tratarea `NULL` (`IS NULL`, `IS NOT NULL`, logica tri-valentă), `LIKE` (`%`, `_`), `IN` / `NOT IN`, logica booleană pe tabelul `Cats` (valori discrete, precedența `AND` > `OR`, paranteze, contradicții logice și exercițiul interactiv *Guess the Output*). | Finalizat |
+| **01** | `DB1.1` | **Introducere în Baze de Date Relaționale, Tipuri de Date & Chei în T-SQL**<br>📖 [Ghid Profesor (README)](lesson-01/README.md) \| 📝 [Compendiu Elev (student.md)](lesson-01/student.md) | Scopul cursului & Certiport (miza notei 10 la BAC), RDBMS vs Excel, tabele/rânduri/coloane, tipuri de date (`INT`, `DECIMAL`, `BIT`, `VARCHAR`, `DATE`, `DATETIME`, `TIME`), crearea tabelului `Students`, dilema duplicatelor și analogia IDNP (`Primary Key`), dependențe tranzitive și separarea în două tabele relaționate prin `Foreign Key` (`Classes` & `Students`). | Finalizat |
+| **02** | `DB1.2` | **Sublimbajele SQL (DDL, DML, DQL, DCL), Manipularea Schemelor & Modificarea Datelor**<br>📖 [Ghid Profesor (README)](lesson-02/README.md) \| 📝 [Compendiu Elev (student.md)](lesson-02/student.md) | Încălzire cu filtrări (`IS NULL`, `=`, `OR`, `LIKE`, `IN`), taxonomia formală SQL (DDL, DML, DQL, DCL), modificarea structurii tabelelor (`CREATE`, `ALTER TABLE` cu `ADD`, `DROP COLUMN`, `ALTER COLUMN`, `ADD/DROP CONSTRAINT`, `DROP TABLE`), cele 3 metode de inserare (`INSERT INTO VALUES`, `INSERT INTO SELECT`, `SELECT INTO`), modificarea cu `UPDATE` (riscul omitării `WHERE`), ștergerea cu `DELETE` vs `TRUNCATE TABLE`. | Finalizat |
+| **03** | `DB1.3` | **Interogarea Datelor cu SELECT, Operatori de Comparare, Predicate Avansate & Logica Booleană (AND, OR, NOT)**<br>📖 [Ghid Profesor (README)](lesson-03/README.md) \| 📝 [Compendiu Elev (student.md)](lesson-03/student.md) | Anatomia `SELECT` și DQL, tabelul `Contacts`, operatori de comparare (`=`, `<>`, `<`, `>`, `<=`, `>=`), predicate de interval (`BETWEEN`, `NOT BETWEEN`), tratarea `NULL` (`IS NULL`, `IS NOT NULL`, logica tri-valentă), `LIKE` (`%`, `_`), `IN` / `NOT IN`, logica booleană pe tabelul `Cats` (valori discrete, precedența `AND` > `OR`, paranteze, contradicții logice și exercițiul interactiv *Guess the Output*). | Finalizat |
 
 ---
 

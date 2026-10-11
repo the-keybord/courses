@@ -31,17 +31,24 @@ This file complements the global repository [`AGENTS.md`](../AGENTS.md) with str
 
 ---
 
-## 3. Single-File Lesson Policy (Only `README.md`)
+## 3. Lesson File Structure Policy (`README.md` & `student.md`)
 
-Unlike younger kids' courses in the repository, this course uses a streamlined, single-source-of-truth structure:
-- **No Derivative Files**: Do **NOT** generate `presentation.md`, `presentation_interactive.md`, `presentation_summary.md`, or `risks.md`.
-- **Sole Master Document**: Each lesson folder (`lesson-01/`, `lesson-02/`, etc.) contains **ONLY one file: `README.md`**.
-- **Teacher's Comprehensive Guide Structure**: The `README.md` file serves as the complete all-in-one guide for the teacher, structured as follows:
-  1. **Section 1: Informații Generale & Obiective Certiport** (Metadata, mapped Certiport syllabus objectives, essential technical questions, and OneCompiler link).
-  2. **Section 2: Pregătirea Lecției (Checklist Profesor)** (Environment setup, pre-tested T-SQL schemas, data verification).
-  3. **Section 3: Planul de Desfășurare (Timeline 120 min)** (Precise operational schedule per stage).
-  4. **Section 4: Ghid Didactic Pas cu Pas (Teacher's Master Guide)** (Deep didactic theory, live T-SQL code blocks formatted for OneCompiler, syntax breakdowns, and common runtime errors).
-  5. **Section 5: Mini-Quiz Certiport ITS (Verificare Teoretică)** (8–10 Certiport-style multiple choice questions with correct answers marked and comprehensive pedagogical explanations directly at the end of `README.md`).
+Unlike younger kids' courses in the repository, this course uses a streamlined, professional two-file structure per lesson:
+- **No Derivative Presentation/Risk Files**: Do **NOT** generate `presentation.md`, `presentation_interactive.md`, `presentation_summary.md`, or `risks.md`.
+- **Standard Lesson Bundle**: Each lesson folder (`lesson-01/`, `lesson-02/`, etc.) contains **EXACTLY two files**:
+  1. **`README.md` (Teacher's Master Guide)**: Complete all-in-one guide for the instructor:
+     - Section 1: Informații Generale & Obiective Certiport (Metadata, syllabus alignment, essential questions, OneCompiler link).
+     - Section 2: Pregătirea Lecției (Checklist Profesor).
+     - Section 3: Planul de Desfășurare (Timeline 120 min).
+     - Section 4: Ghid Didactic Pas cu Pas (Teacher's Master Guide with deep didactic theory, OneCompiler live scripts, error breakdowns).
+     - Section 5: Mini-Quiz Certiport ITS (8–10 multiple choice questions with answers and pedagogical explanations).
+  2. **`student.md` (Student Compendium & Study Notes)**: High-yield reference guide and study companion for students:
+     - Section 1: Rezumatul Lecției (Core Notes & mental models).
+     - Section 2: Dicționar de Termeni Tehnici (New words learned & standard English database terms).
+     - Section 3: Ghid Sintactic & Exemple Practice T-SQL (Clean, runnable code blocks for OneCompiler).
+     - Section 4: Explicații Aprofundate (Didactic "Under the Hood" deep dives, relational logic).
+     - Section 5: Întrebări Frecvente & Capcane la Examenul Certiport (Common gotchas, exam traps).
+     - Section 6: Mini-Exerciții Autonome de Consolidare (Self-study practice with collapsible solutions).
 
 ---
 
