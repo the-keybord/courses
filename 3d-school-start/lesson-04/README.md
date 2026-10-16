@@ -28,9 +28,9 @@
 5. **Cum obținem o textură pipăibilă folosind aceeași culoare la înălțimi diferite?**
 
 ### 🔗 Resurse & Linkuri Utile
-- **Prezentare**: <URL>
-- **Kahoot**: <URL>
-- **Alte Materiale**: <URL>
+- **Prezentare**: https://docs.google.com/presentation/d/1zsjqczE26WJqTSzH1vE6vstVc3d18QCN88sIgcsBz0g/edit?usp=sharing
+- **Kahoot**: https://create.kahoot.it/details/94e74d8e-6263-40ec-ac16-38a830713e85
+- **Alte Materiale**: Modelele de Pixel Art, sunt in prezentare, ultimul slide
 
 ---
 
