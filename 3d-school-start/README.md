@@ -59,7 +59,13 @@ Fiecare lecție respectă un flux clar în 8 etape:
 - **Descriere pe scurt**: Descoperim fizica fabricației aditive FDM și misterul imprimării fără cerneală lichidă, secretul schimbării de culoare pe straturi (axa Z) și automatizarea filamentelor cu sistemul Bambu Lab AMS lite. În atelierul practic creăm o insignă retro Pixel Art în 3 culori (Negru, Roșu, Alb) folosind cuburi etalon de $1 \times 1\text{ mm}$ cu trepte de înălțime pe Z ($2\text{ mm}$, $3\text{ mm}$, $4\text{ mm}$), duplicare cu `Alt`, vizualizare Ortografică (Flat View), opțiune de pixel gol pentru ață și scalare non-uniformă în Slicer ($XY = 200\%-400\%$, $Z = 75\%$). În timpul orei, imprimanta demonstrativă cu AMS printează live inima demonstrativă!
 - **Proiect Practic**: Ridicarea riglelor/semnelor de carte din Lecția 02 + Modelarea insignei Pixel Art în 3 culori (Inimă, Măr, Ciupercă, Sabie, Poțiune sau design original) + Imprimarea live pe AMS lite a piesei demonstrative.
 - **Director Lecție**: [`lesson-03/`](lesson-03/)
-### 🔹 Lecția 04: *(În curând)*
+
+### 🔹 [Lecția 04 [3DS2.4]: Pixel Art Legendar – Paleta de 4 Culori (Negru, Albastru, Galben, Alb)](lesson-04/README.md)
+- **Cod Lecție**: `3DS2.4`
+- **Descriere pe scurt**: Explorăm jocurile legendare cu grafică Pixel Art (Mario, Tetris, Sonic), Minecraft, Terraria și alte exemple din jocuri și din lumea reală. Aflăm că un model trebuie adaptat pentru imprimanta 3D: nu putem păstra toate nuanțele, deci înlocuim sau combinăm culori (dithering) și creăm textură folosind aceeași culoare la înălțimi diferite.
+- **Proiect Practic**: Pixel Art 2.5D în 4 culori (Negru, Albastru, Galben, Alb, în această ordine de jos în sus), inspirat din galeria de idei sau creat original, cu print demonstrativ live pe AMS lite.
+- **Director Lecție**: [`lesson-04/`](lesson-04/)
+
 ### 🔹 Lecția 05: *(În curând)*
 ### 🔹 Lecția 06: *(În curând)*
 ### 🔹 Lecția 07: *(În curând)*

@@ -61,7 +61,7 @@ Unlike younger kids' courses in the repository, this course uses a streamlined, 
      - Section 2: Pregătirea Lecției (Checklist Profesor).
      - Section 3: Planul de Desfășurare (Timeline 120 min).
      - Section 4: Ghid Didactic Pas cu Pas (Teacher's Master Guide with syntax writing patterns, OneCompiler live scripts, error breakdowns).
-     - Section 5: Mini-Quiz Certiport ITS (8–10 multiple choice questions with answers and pedagogical explanations).
+     - Section 5: Mini-Quiz Certiport ITS (8–10 multiple choice questions with answers and pedagogical explanations; also accompanied by `quiz.xlsx` in the lesson directory ready for Kahoot import).
   2. **`student.md` (Quick Review Compendium / Fișă Recapitulativă)**: Short, high-yield summary guide (approx. 60–80 lines) for students to quickly review what was learned:
      - Section 1: Ce am învățat astăzi (Quick Review – bullet points of core takeaways).
      - Section 2: Termeni Noi (Dicționar Rapid – compact table with technical terms, brief meaning, and practical context).

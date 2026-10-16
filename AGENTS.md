@@ -21,7 +21,7 @@ This file contains instructions and guidelines for AI agents working in this rep
   2. `presentation.md`: Clearly structured slide-by-slide blueprint (typically 8–12 fun and engaging slides), including Canva AI Master Prompt, slide content, speaker notes, image placeholders for real photos, and a single text-only practical briefing slide.
   3. `presentation_interactive.md`: Interactive reading slide-by-slide blueprint formatted specifically with **3–4 clearly separated, numbered sentences per slide** designed for students to take turns reading out loud from the board, accompanied by teacher guidance notes and Canva Master Prompt.
   4. `presentation_summary.md`: Continuous narrative prompt for autonomous AI presentation engines (Gamma, Canva AI, Tome) with strict header directives upfront, rich continuous narrative text without inline image prompts, and 100% theoretical focus.
-  5. `quiz.md`: Complete interactive Kahoot quiz file containing 10–15 questions, 4 options (strictly 1–3 words each), balanced answer lengths, and pedagogical explanations.
+  5. `quiz.md` & `quiz.xlsx`: Complete interactive Kahoot quiz file containing 10–15 questions, 4 options (strictly 1–3 words each), balanced answer lengths, and pedagogical explanations, accompanied by a ready-to-import Kahoot spreadsheet (`quiz.xlsx`).
   6. `risks.md`: Complete pedagogical & technical pre-mortem risk analysis (potential bottlenecks, boredom/frustration triggers, technical failure points, teacher safeguards, and quick verification checklist).
 
 ### 3. Course Master File & Single Source of Truth (SSOT)
@@ -110,8 +110,18 @@ Every lesson plan must be structured cleanly and logically without splitting con
      - Interactive Kahoot quiz (Step 7) — concise operational instructions, platform link, and explicit reference pointing to `quiz.md` (the full question bank, choices, and explanations reside in `quiz.md`).
      - Wrap-up, clean-up, and group activities.
 
-### 11. Interactive Kahoot Quizzes Standards (`quiz.md`)
+### 11. Interactive Kahoot Quizzes Standards (`quiz.md` & `quiz.xlsx`)
 - **Dedicated File (`quiz.md`)**: All quiz questions, answer choices, correct markings, and pedagogical explanations must reside in a separate, dedicated `quiz.md` file within each lesson directory. Quizzes are **never** embedded directly in `README.md` (which links/refers to `quiz.md`) or in presentation files (to prevent spoilers).
+- **Mandatory Kahoot Import Spreadsheet (`quiz.xlsx`)**:
+  - Whenever a quiz is generated (in `quiz.md` or as part of any lesson materials), an accompanying **`.xlsx` spreadsheet ready to be directly imported into Kahoot** (named `quiz.xlsx`) must always be created alongside it.
+  - **Kahoot Spreadsheet Structure & Columns**:
+    - Column A: **Question** (character limit: 120 chars).
+    - Column B: **Answer 1** (character limit: 75 chars).
+    - Column C: **Answer 2** (character limit: 75 chars).
+    - Column D: **Answer 3** (character limit: 75 chars).
+    - Column E: **Answer 4** (character limit: 75 chars).
+    - Column F: **Time limit (sec)** (standard: `20` or `30` seconds).
+    - Column G: **Correct answer(s)** (number of the correct option: `1`, `2`, `3`, or `4`; or comma-separated if multiple: `1, 2`).
 - **Document Title & Code**: Starts with `# Quiz Kahoot: Lecția XX [<Cod>] – Titlu Lecție`, followed by concise metadata (Cod Lecție, Număr întrebări, Platformă recomandată: Kahoot).
 - **Strictly 100% Theoretical Focus (Zero Project Questions)**: Questions directly test and reinforce **EXCLUSIVELY** the theoretical concepts, history, technology, and science taught in the presentation. **Never include questions about the practical modeling project, specific CAD buttons, or project geometries in the quiz.**
 - **Question Volume**: Typically **10 to 15 questions** per lesson.
