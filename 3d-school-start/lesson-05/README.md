@@ -94,28 +94,35 @@ Profesorul deschide sesiunea într-o atmosferă plină de curiozitate și voie b
 
 ---
 
-### Etapa 3: Teorie – Istoria Medaliilor & Secretele Aurului Olimpic (Minutele 20 – 40)
-Profesorul parcurge prezentarea într-un dialog viu, invitând copiii să descopere secretele ascunse ale istoriei:
+### Etapa 3: Teorie – Istoria Medaliilor, Decorațiuni & Secrete de Design (Minutele 20 – 40)
+Profesorul parcurge prezentarea într-un dialog viu, invitând copiii să descopere secretele ascunse ale istoriei și arta decorării:
 
-1. **Jocurile Olimpice Antice (Grecia, 776 î.Hr.) – Fără Medalii de Aur!**:
-   - În Grecia antică, la Olympia, campionii nu primeau medalii de metal și nici bani.
-   - Cel mai mare premiu era o simplă **cunună din ramuri de măslin sălbatic** (`kotinos`), tăiată dintr-un copac sacru cu o foarfecă de aur de către un băiat ai cărui părinți erau în viață.
-   - De ce măslinul? Pentru că măslinul era simbolul păcii, al înțelepciunii și al protecției zeiței Atena. Gloria și respectul comunității valorau mai mult decât orice comoară.
-2. **Roma Antică & Renașterea – Nașterea Medalioanelor**:
-   - Vechii romani au fost primii care au bătut monede mari din bronz și argint (`medallions`) pentru a răsplăti comandanții curajoși și gladiatorii victorioși.
-   - În timpul Renașterii italiene (anul 1438), marele artist **Pisanello** a inventat medalia modernă ca operă de artă: a creat discuri de bronz turnate cu portretul unei persoane dragi pe o parte și o scenă simbolică pe verso. Medalia devenise un dar nobil de recunoștință!
-3. **Atena 1896: De ce Nu Exista Aurul la Primele Jocuri Olimpice Moderne?**:
-   - Când Pierre de Coubertin a relansat Jocurile Olimpice la Atena în 1896, învingătorii pe primul loc au primit o medalie de **Argint** și o cunună de măslin!
-   - Locul 2 a primit o medalie de **Bronz** și o ramură de laur.
-   - Locul 3 nu a primit nicio medalie!
-   - De ce nu s-a dat aur? Organizatorii considerau că aurul pur este mult prea ostentativ și că argintul este mai distins și nobil.
-4. **St. Louis 1904: Nașterea Trio-ului Legendar (Aur, Argint, Bronz)**:
-   - Abia la Jocurile Olimpice din 1904 de la St. Louis (SUA) s-a stabilit regula de fier pe care o știe toată planeta: **Locul 1 = Aur, Locul 2 = Argint, Locul 3 = Bronz**.
-   - Această alegere s-a inspirat din mitologia greacă (Hesiod vorbea despre *Epoca de Aur*, *Epoca de Argint* și *Epoca de Bronz* a omenirii) și din proprietățile metalelor: aurul nu ruginește niciodată și strălucește veșnic, argintul este luminos și valoros, iar bronzul este aliajul istoric al armurilor rezistente.
-5. **Anatomia unei Medalii & Misterul Panglicii de Gât (Roma 1960)**:
-   - Știați că până în 1960, medaliile se prindeau cu ac pe piept, ca niște broșe?
-   - La Jocurile Olimpice de la Roma din 1960, organizatorii au creat pentru prima dată o **panglică textilă circulară** care se punea în jurul gâtului sportivilor. Gestul a devenit legendar!
-   - Părțile unei medalii: **Baza circulară**, **Bordura de protecție**, **Crenguțele de laur/măslin** (simbolul victoriei nepieritoare), **Aversul** (fața cu simbolul principal), **Reversul** (spatele cu mesajul dedicat) și **Urechiușa de prindere**.
+1. **Istoria Antică: De la Măslinul Sacru la Renaștere**:
+   - În Grecia antică (Olympia, 776 î.Hr.), campionii olimpici nu primeau aur, ci o **cunună sacră din ramuri de măslin sălbatic** (`kotinos`), tăiată dintr-un copac sacru cu o foarfecă de aur. Măslinul simboliza pacea și înțelepciunea zeiței Atena.
+   - Vechii romani au fost primii care au bătut discuri mari din metal (`medallions`) pentru a răsplăti comandanții și gladiatorii victorioși.
+   - În anul 1438, artistul italian **Pisanello** a inventat medalia modernă ca operă de artă, dăruită oamenilor dragi și învățaților.
+2. **Aurul Olimpic & Misterul Panglicii de Gât**:
+   - La primele Jocuri Olimpice moderne (Atena 1896), învingătorii primeau medalii de **argint**, deoarece aurul era considerat prea ostentativ!
+   - Trio-ul legendar **Aur, Argint și Bronz** s-a stabilit oficial abia în 1904 la St. Louis (SUA), inspirat din cele trei mari epoci mitologice.
+   - Până în 1960, medaliile se prindeau cu ac pe piept, ca o broșă militară! La Jocurile Olimpice de la Roma din 1960 s-a inventat superba **panglică textilă de gât**, devenind cel mai emoționant moment al premierii.
+3. **Anatomia unei Medalii: Piesele Constructive**:
+   - **Baza circulară**: Discul solid de 3 mm grosime care susține toată compoziția.
+   - **Bordura de protecție**: Inelul circular înălțat de pe margine care acționează ca un scut împotriva zgârieturilor.
+   - **Urechiușa tehnică**: Puntea solidă din partea de sus prevăzută cu o fantă pentru trecerea panglicii textile de gât.
+   - **Aversul și Reversul**: Fața principală cu simbolul și titlul de onoare, respectiv spatele cu anul sau o semnătură secretă.
+4. **Decorațiuni Clasice & Simboluri**:
+   - **Cununa de lauri (dafin)**: Simbolul milenar al victoriei nepieritoare și al gloriei.
+   - **Steluțe și raze de soare**: Simbolul campionilor și al energiei victoriei.
+   - **Borduri decorative**: Margine simplă, bordură zimțată (ca la monedele prețioase) sau șirag de puncte.
+   - **Emblema centrală**: O cupă de campion, o inimă caldă, o coroană regală, o cască de gamer sau o lăbuță simpatică de motan.
+5. **Inspirație Reală & Campioni de Suflet**:
+   - La Paris 2024, medaliile olimpice au conținut o bucățică autentică din Turnul Eiffel, iar la Beijing 2008 un inel din piatră de jad!
+   - Medalia noastră recompensează eroii de zi cu zi: mama (*„Locul 1 la dragoste și clătite”*), tata (*„Super-Eroul familiei”*), cel mai bun prieten (*„Partenerul de gaming #1”*) sau chiar animalul de companie (*„Cel mai pufos motan din galaxie”*).
+6. **Secrete de Modelare Tridimensională în Tinkercad**:
+   - **Regula reliefului de 1.5 mm**: Baza are 3.0 – 3.2 mm, iar detaliile au 4.6 mm, prinzând strălucirea filamentului Silk Gold.
+   - **Multiplicarea rapidă cu `Ctrl + D`**: Duplicarea circulară a frunzelor de laur prin rotire de 15°.
+   - **Litere mari și lizibile**: Maxim 3–4 cuvinte scurte, cu linii groase de peste 1.5 mm, fără a pluti în aer.
+   - **Urechiușă rezistentă**: Fantă de minim 12 x 3 mm și pereți de 2.5 mm grosime.
 
 ---
 

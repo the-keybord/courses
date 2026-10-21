@@ -1,79 +1,79 @@
-# Prezentare Interactivă: Lecția 05 [3DS2.5] – Medalia de Aur & Secretele Gloriei
+# Prezentare Interactivă: Lecția 05 [3DS2.5] – Medalia de Aur: Istorie, Decorațiuni & Design
 
 ---
 
 ## 🎨 Canva AI Master Prompt
 
 ```text
-Create a modern, warm, and highly engaging 16:9 interactive presentation for kids aged 10-12 at "3D School Start".
-Topic: "The History of Medals, Olympic Traditions and Creating Gold Awards for Loved Ones".
-Visual Aesthetic: Dark slate navy background (#0F172A), gleaming metallic gold highlights (#F59E0B, #FCD34D), silver (#E2E8F0), bronze (#D97706) and deep laurel wreath green (#15803D). Clean classical cards, embossed textures, friendly layout, modern rounded fonts (Outfit/Inter).
+Create a modern, inspiring, and hands-on 16:9 interactive presentation for kids aged 10-12 at "3D School Start".
+Topic: "The Art of Medals: History, Decorative Elements, Real-Life Inspiration and 3D Modeling Secrets".
+Visual Aesthetic: Dark slate navy background (#0F172A), radiant metallic gold accents (#F59E0B, #FCD34D), silver (#E2E8F0), bronze (#D97706) and deep laurel green (#15803D). Classical coin frames, laurel wreath graphics, 3D embossed card layouts, and friendly typography (Outfit/Inter).
 Each slide contains exactly 3 or 4 short, clear, relaxed numbered sentences designed for kids to take turns reading out loud from the screen.
-Strict Rule: Exactly 6 interactive slides. Pure theoretical and historical focus (zero practical CAD steps).
+Strict Rule: Exactly 6 interactive slides. First 2 slides cover the full history, followed by anatomy, decorations, creative inspiration, and 3D design tips.
 ```
 
 ---
 
-## Slide 1: Grecia Antică: De ce Nu se Dădea Aur?
+## Slide 1: Istoria Antică: De la Măslinul Sălbatic la Renaștere
 
-1. La primele Jocuri Olimpice din Grecia antică, învingătorii nu primeau medalii de aur și nici monede de argint.
-2. Cel mai mare premiu era o cunună sacră împletită din ramuri de măslin sălbatic, tăiată cu o foarfecă de aur.
-3. Măslinul era considerat pomul înțelepciunii și al păcii, oferit grecilor de zeița protectoare Atena.
-4. Pentru vechii atleți, respectul oamenilor și gloria eternă valorau mult mai mult decât orice munte de bani!
+1. La primele Jocuri Olimpice din Grecia antică, învingătorii nu primeau aur, ci o cunună sacră împletită din ramuri de măslin sălbatic tăiată cu o foarfecă de aur.
+2. Vechii romani au fost primii care au bătut discuri mari din metal, numite medalioane, pentru a răsplăti comandanții militari și gladiatorii curajoși.
+3. În timpul Renașterii italiene din 1438, artistul Pisanello a inventat medalia modernă ca operă de artă, dăruită prietenilor, învățaților și poeților.
+4. Astfel, medalia a devenit cel mai frumos simbol prin care arăți cuiva respect, dragoste și recunoștință!
 
-> 🧑‍🏫 **Ghid Profesor**: *Întrebați copiii de ce cred că o simplă crenguță verde de copac era mai prețuită în vechime decât un sac plin cu galbeni de aur.*
-
----
-
-## Slide 2: Roma Antică & Renașterea: Primele Medalioane
-
-1. Vechii romani au fost primii care au bătut discuri mari din metal pentru a răsplăti soldații viteji și conducătorii curajoși.
-2. În timpul Renașterii italiene, artistul Pisanello a transformat medalia într-o adevărată operă de artă turnată în bronz.
-3. Aceste medalii aveau două fețe: pe față era desenat portretul persoanei, iar pe spate o scenă simbolică plină de înțeles.
-4. Medalia a devenit cel mai nobil cadou prin care oamenii își arătau recunoștința și dragostea față de prieteni și învățați!
-
-> 🧑‍🏫 **Ghid Profesor**: *Întrebați copiii dacă au primit vreodată o diplomă sau o insignă și cum s-au simțit în acel moment de mândrie.*
+> 🧑‍🏫 **Ghid Profesor**: *Întrebați copiii de ce cred că o cunună de măslin sau o medalie oferită din suflet are mai multă valoare decât o simplă sumă de bani.*
 
 ---
 
-## Slide 3: Atena 1896: Misterul Medaliei de Argint
+## Slide 2: Aurul Olimpic & Misterul Panglicii de Gât
 
-1. Când Jocurile Olimpice moderne au renăscut la Atena în anul 1896, marele învingător a primit o medalie de argint!
-2. Sportivul clasat pe locul al doilea a primit o medalie de bronz, în timp ce locul al treilea nu a primit absolut nimic.
-3. Organizatorii vremii considerau că aurul este un metal mult prea lăudăros și că argintul reprezintă eleganța și modestia adevărată.
-4. Pe medalia de argint era gravat chipul măreț al lui Zeus și zeița victoriei, zburând deasupra lumii!
+1. Când Jocurile Olimpice moderne au renăscut la Atena în anul 1896, campionii au primit medalii de argint, deoarece aurul era considerat mult prea lăudăros.
+2. Trio-ul legendar Aur, Argint și Bronz a apărut abia la Jocurile Olimpice din 1904 din orașul St. Louis, inspirat din cele trei mari epoci mitologice.
+3. Până în anul 1960, medaliile nu aveau panglică și se prindeau cu ac de siguranță pe piept, exact ca o broșă sau o insignă militară!
+4. La Jocurile Olimpice de la Roma din 1960 s-a inventat superba panglică textilă de gât, transformând premierea în cel mai emoționant spectacol al lumii!
 
-> 🧑‍🏫 **Ghid Profesor**: *Întrebați elevii cum ar fi dacă astăzi la Jocurile Olimpice campionul ar primi argint în loc de aur.*
-
----
-
-## Slide 4: St. Louis 1904: Aur, Argint și Bronz
-
-1. Clasamentul olimpic modern pe care îl cunoaștem cu toții s-a născut abia în anul 1904, la Jocurile din orașul american St. Louis.
-2. Aurul a fost ales pentru locul întâi deoarece este un metal rar, care nu ruginește și nu își pierde strălucirea niciodată.
-3. Argintul a devenit simbolul locului al doilea datorită purității sale, iar bronzul a fost ales pentru forță și rezistență.
-4. Aceste trei metale simbolizează cele trei mari epoci legendare ale omenirii povestite de vechii poeți greci!
-
-> 🧑‍🏫 **Ghid Profesor**: *Întrebați elevii de ce aurul a rămas cel mai iubit metal din lume de-a lungul a mii de ani de istorie.*
+> 🧑‍🏫 **Ghid Profesor**: *Arătați-le copiilor o panglică textilă și lăsați-i să-și imagineze cum este să fii pe podium cu imnul național cântat în fața a zeci de mii de spectatori.*
 
 ---
 
-## Slide 5: Anatomia Medaliei & Panglica de Gât
+## Slide 3: Anatomia Medaliei: Din ce este Compusă?
 
-1. Până la Jocurile Olimpice de la Roma din anul 1960, medaliile nu aveau panglică și se prindeau cu ac pe piept, ca o broșă.
-2. Italienii au inventat superba panglică textilă de gât, transformând momentul premierii într-un spectacol urmărit de toată planeta.
-3. Frunzele de dafin și de măslin de pe marginea medaliei reprezintă cununa victoriei care nu se veștejește niciodată.
-4. Bordura înaltă din jurul medaliei are rolul de a proteja gravura fină și literele împotriva zgârieturilor!
+1. O medalie clasică are o **bază solidă**, care susține toată compoziția și se așază perfect plată pe patul imprimantei 3D.
+2. Pe margine se află o **bordură circulară înălțată**, care are rolul de a proteja desenele din interior împotriva loviturilor și zgârieturilor.
+3. În partea de sus este integrată **urechiușa tehnică**, o fantă rezistentă prin care trece panglica textilă pentru a fi purtată la gât.
+4. Medalia are două părți: **aversul** (fața principală cu simbolul și titlul) și **reversul** (spatele cu anul sau o mică gravură secretă)!
 
-> 🧑‍🏫 **Ghid Profesor**: *Arătați-le copiilor mostra de panglică textilă și lăsați-i să simtă cum se așază o medalie la gât.*
+> 🧑‍🏫 **Ghid Profesor**: *Invitați un elev să indice pe tabla interactivă unde se află bordura, aversul și urechiușa de prindere.*
 
 ---
 
-## Slide 6: Eroii de Zi cu Zi: Cui Îi Dăruim Medalia?
+## Slide 4: Decorațiuni & Simboluri: Ce Putem Desena?
 
-1. Cei mai mari campioni din viața noastră nu apar mereu pe ecranele televizoarelor și nu aleargă pe stadioane gigantice.
-2. Mama care te îmbrățișează când ești trist sau tata care repară orice jucărie stricată merită din plin o medalie de aur pur.
-3. Prietenul care împarte pachetul cu tine la școală sau pisica ce toarce la picioarele tale sunt campioni în fiecare zi.
-4. Astăzi devenim creatori de onoare: sculptăm o medalie aurie strălucitoare pentru cineva pe care îl iubim din tot sufletul!
+1. **Cununa de laur sau măslin**: Frunzele așezate în cerc pe margine sunt simbolul victoriei nepieritoare și al păcii.
+2. **Steluțe și raze de soare**: Steluțele în relief sau liniile radiale creează senzația unei explozii de lumină și energie.
+3. **Borduri speciale**: Putem alege o margine simplă netedă, o bordură zimțată ca la monede sau un șirag de puncte elegante.
+4. **Elementul central**: O cupă de campion, o cifră mare „1”, o inimă caldă, o coroană regală sau chiar o lăbuță simpatică de motan!
 
-> 🧑‍🏫 **Ghid Profesor**: *Provocați copiii să rostească cu voce tare cui vor să-i dedice medalia pe care o vor crea astăzi.*
+> 🧑‍🏫 **Ghid Profesor**: *Întrebați copiii care este simbolul lor preferat pentru centrul medaliei: o stea, o inimă sau o cupă?*
+
+---
+
+## Slide 5: Inspirație Reală: Campioni de Suflet & Titluri Amuzante
+
+1. Medaliile reale spun povești uimitoare: la Paris 2024 medaliile aveau în centru o bucată din Turnul Eiffel, iar la Beijing 2008 un inel din piatră de jad!
+2. Medalia noastră poate celebra campionii adevărați din familie: *„Locul 1 pentru mama”*, *„Super-Eroul familiei (Tata)”* sau *„Cea mai simpatică soră”*.
+3. Putem acorda medalii și cu un pretext foarte amuzant: *„Campion mondial la mâncat clătite”*, *„Maestrul somnului până la prânz”* sau *„Partenerul de gaming #1”*.
+4. Chiar și animalele noastre de companie merită aur: *„Cel mai pufos motan din univers”* sau *„Campionul sprintului după minge”*!
+
+> 🧑‍🏫 **Ghid Profesor**: *Provocați fiecare copil să spună cel mai amuzant sau dulce titlu pe care vrea să-l scrie pe medalia sa.*
+
+---
+
+## Slide 6: Secrete de Modelare în Tinkercad
+
+1. **Jocul de înălțimi**: Baza medaliei are o înălțime de 3 mm, iar bordura, frunzele și textul se ridică cu 1.5 mm mai sus pentru a prinde lumina și a fi palpabile.
+2. **Magia cercului cu `Ctrl + D`**: Duplicăm o frunzuliță, o rotim ușor cu câteva grade, iar Tinkercad va completa automat întreaga cunună circulară!
+3. **Litere mari și clare**: Folosim cuvinte scurte cu linii groase de cel puțin 1.5 mm, pentru ca duza imprimantei să le deseneze perfect și neted.
+4. **Urechiușă solidă**: Lăsăm un orificiu lat de cel puțin 12 mm pentru panglică și pereți groși de 2.5 mm, astfel încât medalia să nu se rupă niciodată la gât!
+
+> 🧑‍🏫 **Ghid Profesor**: *Reamintiți copiilor regula de aur: verificați din profil ca toate literele să stea lipite de baza medaliei și să nu plutească în aer!*
