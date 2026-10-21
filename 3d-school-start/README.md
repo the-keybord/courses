@@ -12,7 +12,7 @@ Bine ați venit la cursul **3D School Start**! Acest curs este creat special pen
   - **Imprimante 3D**: Folosim imprimante de ultimă generație **Bambu Lab A1** (și ocazional **A2L** sau **A1 Combo** cu AMS lite).
   - **Soft de Feliere (Slicing)**: **Bambu Studio** pentru aranjarea plăcilor, calibrarea straturilor și lansarea printurilor.
   - **Soft de Modelare**: **Tinkercad Classroom**.
-- **Circuitul Imprimării 3D**: Obiectele modelate la lecția $N$ sunt imprimate și colectate de elevi la începutul lecției $N+1$ (modelele restante din Lecția 00 se colectează/imprimă la Lecția 01, iar brelocurile de cașcaval modelate la Lecția 01 se colectează la începutul Lecției 02).
+- **Circuitul Imprimării 3D**: Obiectele modelate la lecția N sunt imprimate și colectate de elevi la sfârșitul lecției N + 1 (insignele Pixel Art modelate la Lecția 04 se imprimă și se colectează la Lecția 05, iar medaliile de aur modelate la Lecția 05 se imprimă și se colectează la Lecția 06).
 
 ---
 
@@ -51,12 +51,12 @@ Fiecare lecție respectă un flux clar în 8 etape:
 ### 🔹 [Lecția 02 [3DS2.2]: Ingineria Preciziei în CAD – Rigla Personalizată & Semnul de Carte](lesson-02/README.md)
 - **Cod Lecție**: `3DS2.2`
 - **Descriere pe scurt**: Explorăm istoria și rolul modelării CAD (Sketchpad 1963, Pierre Bézier, Renault), importanța critică a toleranțelor și a preciziei milimetrice în inginerie, instrumentele fizice de măsurare (șubler digital, micrometru, raportor) și controlul exact al dimensiunilor în Tinkercad (`Ruler Tool`, cote numerice directe, `Snap Grid` și multiplicare cu `Ctrl + D`).
-- **Proiect Practic**: Colectarea brelocurilor *Cheese Keyring* din Lecția 01 + Proiectarea unei rigle de 10 cm cu funcție dublă de semn de carte (bază `110 mm x 30 mm x 1.6 mm`, gradații milimetrice/centimetrice, stencils decupate și nume gravat) + Provocarea bonus la finalul lecției: raportorul semicircular ($0^\circ - 180^\circ$).
+- **Proiect Practic**: Colectarea brelocurilor *Cheese Keyring* din Lecția 01 + Proiectarea unei rigle de 10 cm cu funcție dublă de semn de carte (bază `110 mm x 30 mm x 1.6 mm`, gradații milimetrice/centimetrice, stencils decupate și nume gravat) + Provocarea bonus la finalul lecției: raportorul semicircular (0° – 180°).
 - **Director Lecție**: [`lesson-02/`](lesson-02/)
 
 ### 🔹 [Lecția 03 [3DS2.3]: Magia Imprimării Multicolore & Pixel Art (3 Culori pe Straturi)](lesson-03/README.md)
 - **Cod Lecție**: `3DS2.3`
-- **Descriere pe scurt**: Descoperim fizica fabricației aditive FDM și misterul imprimării fără cerneală lichidă, secretul schimbării de culoare pe straturi (axa Z) și automatizarea filamentelor cu sistemul Bambu Lab AMS lite. În atelierul practic creăm o insignă retro Pixel Art în 3 culori (Negru, Roșu, Alb) folosind cuburi etalon de $1 \times 1\text{ mm}$ cu trepte de înălțime pe Z ($2\text{ mm}$, $3\text{ mm}$, $4\text{ mm}$), duplicare cu `Alt`, vizualizare Ortografică (Flat View), opțiune de pixel gol pentru ață și scalare non-uniformă în Slicer ($XY = 200\%-400\%$, $Z = 75\%$). În timpul orei, imprimanta demonstrativă cu AMS printează live inima demonstrativă!
+- **Descriere pe scurt**: Descoperim fizica fabricației aditive FDM și misterul imprimării fără cerneală lichidă, secretul schimbării de culoare pe straturi (axa Z) și automatizarea filamentelor cu sistemul Bambu Lab AMS lite. În atelierul practic creăm o insignă retro Pixel Art în 3 culori (Negru, Roșu, Alb) folosind cuburi etalon de 1 x 1 mm cu trepte de înălțime pe Z (2 mm, 3 mm, 4 mm), duplicare cu `Alt`, vizualizare Ortografică (Flat View), opțiune de pixel gol pentru ață și scalare non-uniformă în Slicer (XY = 200% – 400%, Z = 75%). În timpul orei, imprimanta demonstrativă cu AMS printează live inima demonstrativă!
 - **Proiect Practic**: Ridicarea riglelor/semnelor de carte din Lecția 02 + Modelarea insignei Pixel Art în 3 culori (Inimă, Măr, Ciupercă, Sabie, Poțiune sau design original) + Imprimarea live pe AMS lite a piesei demonstrative.
 - **Director Lecție**: [`lesson-03/`](lesson-03/)
 

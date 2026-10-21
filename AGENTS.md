@@ -163,6 +163,14 @@ Every lesson plan must be structured cleanly and logically without splitting con
   - When analyzing lessons or when requested, a dedicated risk analysis file (`risks.md`) can be created to evaluate potential classroom failure points, pacing bottlenecks, frustration risks, and boredom triggers, accompanied by actionable safeguards and teacher quick checklists.
   - **Review-Only Policy (Zero Automatic Tweaks)**: The risk file (`risks.md`) is strictly for human instructor/author review and analysis. Agents must **NEVER** automatically apply suggestions or tweak the core lesson bundle files (`README.md`, `presentation.md`, `presentation_summary.md`, `quiz.md`) based on the risks file. The course author will analyze the risks and implement any changes solely at their own discretion.
 
+### 15. Plain Markdown Formatting: Prohibition of LaTeX Math Delimiters (`$`) & Clean Escaping
+- **Strict Prohibition of LaTeX Math Delimiters (`$ ... $` or `$$ ... $$`) for Dimensions and Text**:
+  - Never use LaTeX math delimiters (`$`) for standard dimensions, measurements, tolerances, angles, or course variables (e.g., strictly avoid `$60 \times 60\text{ mm}$`, `$10\text{ – }15\text{ mm}$`, `$1.5\text{ – }2\text{ mm}$`, `$15^\circ$`, `$N$`, `$N-1$`).
+  - In Markdown renderers (GitHub, VS Code, web viewers), unrendered LaTeX delimiters produce messy raw output (such as `\text{...}`, unparsed backslashes, or broken italics).
+  - Always write measurements, dimensions, angles, and lesson indexes as **clean, plain literal text**: e.g., `60 x 60 mm`, `10 – 15 mm`, `1.5 – 2 mm`, `15°`, `Lecția N`, `Lecția N - 1`.
+- **Proper Escaping of Literal Dollar Symbols (`\$`)**:
+  - When a literal dollar sign is used in text (such as currency values `$50`, variable names, or syntax examples outside code blocks), it must be properly escaped with a backslash (`\$`) or enclosed inside backtick code spans (e.g. `` `$price` ``) to prevent markdown engines from erroneously entering math mode across paragraphs.
+
 ---
 
 ## Additional Rules

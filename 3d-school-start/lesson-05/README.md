@@ -14,13 +14,13 @@
 - **Hardware & Echipamente**:
   - Imprimante **Bambu Lab A1** (la începutul orei se lansează la imprimat insignele Pixel Art în 4 culori modelate în Lecția 04, care vor rula pe durata orei și vor fi colectate de elevi la final, în Etapa 8)
   - Filamente speciale: **PLA Silk Gold (Auriu Mătăsos / Strălucitor)** prezentat astăzi, pregătit pentru imprimarea medaliilor pentru lecția viitoare
-  - Panglici textile colorate / tricolore (lățime $10\text{ – }15\text{ mm}$) gata pregătite pentru montarea pe medaliile imprimate
-- **Proiect Practic**: Proiectarea unei **Medalii de Aur Personalizate** cu diametrul de $6\text{ cm} \times 6\text{ cm}$ ($60 \times 60\text{ mm}$), prevăzută cu o urechiușă tehnică solidă pentru panglică, bordură circulară reliefată, crenguțe clasice de laur/măslin și decorațiuni pe două fețe, acordată cu un pretext amuzant și călduros pentru o persoană dragă (ex: *„Cel mai bun prieten”*, *„Cea mai bună soră”*, *„Locul 1 pentru mama”*, *„Cel mai cuminte pisic”*, *„Campion la mâncat clătite”*).
+  - Panglici textile colorate / tricolore (lățime 10 – 15 mm) gata pregătite pentru montarea pe medaliile imprimate
+- **Proiect Practic**: Proiectarea unei **Medalii de Aur Personalizate** cu diametrul de 6 cm x 6 cm (60 x 60 mm), prevăzută cu o urechiușă tehnică solidă pentru panglică, bordură circulară reliefată, crenguțe clasice de laur/măslin și decorațiuni pe două fețe, acordată cu un pretext amuzant și călduros pentru o persoană dragă (ex: *„Cel mai bun prieten”*, *„Cea mai bună soră”*, *„Locul 1 pentru mama”*, *„Cel mai cuminte pisic”*, *„Campion la mâncat clătite”*).
 - **Noutatea Zilei**:
   - Descoperim istoria fascinantă a medaliilor: de la cununa antică de măslin (`kotinos`) la primele medalioane romane și capodoperele Renașterii.
   - Aflăm de ce la primele Jocuri Olimpice moderne (1896) câștigătorii primeau medalii de **argint**, nu de aur, și cum s-a născut clasamentul legendar Aur-Argint-Bronz.
   - Înțelegem anatomia unei medalii clasice: bordură, crenguțe de dafin (simbolul victoriei), avers, revers și urechiușa pentru panglica de gât.
-  - Învățăm secretele modelării în relief ($1.5\text{ – }2\text{ mm}$) și cum pregătim piese care vor străluci spectaculos în filament auriu Silk PLA!
+  - Învățăm secretele modelării în relief (1.5 – 2 mm) și cum pregătim piese care vor străluci spectaculos în filament auriu Silk PLA!
 
 ### ❓ Întrebări Esențiale (Ce descoperim azi?)
 1. **Unde și când au apărut primele medalii și de ce vechii campioni olimpici greci primeau o simplă crenguță de măslin și nu aur?**
@@ -62,7 +62,7 @@
 | **10 – 20 min** | **2. Pregătirea & Pornirea Imprimării 3D** | Verificarea plăcilor și **lansarea la imprimat a insignelor Pixel Art în 4 culori** (din Lecția 04) care vor rula pe durata orei. Prezentarea filamentului auriu Silk PLA. |
 | **20 – 40 min** | **3. Teorie: Istoria Medaliilor & Secretele Aurului Olimpic** | De la cununa de măslin din Grecia antică la monedele de onoare romane, capodoperele Renașterii, misterul argintului de la 1896 și trio-ul Aur-Argint-Bronz (St. Louis 1904). |
 | **40 – 50 min** | **4. Pauză & Prezență** | 10 minute de relaxare, mișcare și hidratare. Notarea prezenței în catalog. |
-| **50 – 65 min** | **5. Demonstrația Profesorului în Tinkercad** | Construirea pas cu pas a medaliei de $60 \times 60\text{ mm}$: cilindrul de bază (3 mm), bordura reliefată, urechiușa tehnică pentru panglică, crenguțele de dafin și textul amuzant. |
+| **50 – 65 min** | **5. Demonstrația Profesorului în Tinkercad** | Construirea pas cu pas a medaliei de 60 x 60 mm: cilindrul de bază (3 mm), bordura reliefată, urechiușa tehnică pentru panglică, crenguțele de dafin și textul amuzant. |
 | **65 – 100 min** | **6. Atelier Practic: Medalia pentru Oameni Dragi** | Fiecare elev alege un destinatar și un titlu amuzant, modelează propria medalie de aur, personalizează aversul și reversul și verifică rezistența urechiușei. |
 | **100 – 112 min** | **7. Joc Kahoot: Legendele Medaliilor** | 12 întrebări amuzante și antrenante (din `quiz.md`) despre istoria medaliilor și tradiția olimpică. |
 | **112 – 120 min** | **8. Colectarea Insignelor Imprimate & Poză de Grup** | Imprimantele au finalizat insignele Pixel Art! Copiii le ridică răcite de pe plăci, își aleg culoarea panglicii pentru medalia de aur și fac poza festivă de grup! |
@@ -145,8 +145,8 @@ Parametri Tehnici Esențiali:
 ```
 
 Profesorul insistă pe 3 reguli de inginerie 3D:
-- **Regula Urechiușei**: Fanta pentru panglică trebuie să aibă cel puțin $10\text{ – }12\text{ mm}$ lățime, iar pereții din jurul ei trebuie să fie de minim $2.5\text{ mm}$ ca să nu se rupă când punem medalia la gât.
-- **Regula Textului**: Literele trebuie să aibă linii suficient de groase (minim 1.5–2 mm) pentru ca duza de 0.4 mm a imprimantei să le poată desena frumos.
+- **Regula Urechiușei**: Fanta pentru panglică trebuie să aibă cel puțin 10 – 12 mm lățime, iar pereții din jurul ei trebuie să fie de minim 2.5 mm ca să nu se rupă când punem medalia la gât.
+- **Regula Textului**: Literele trebuie să aibă linii suficient de groase (minim 1.5 – 2 mm) pentru ca duza de 0.4 mm a imprimantei să le poată desena frumos.
 - **Gruparea Finală**: Toate elementele se selectează și se unesc cu butonul **Group (`Ctrl + G`)** într-un singur corp solid.
 
 ---
@@ -164,7 +164,7 @@ Elevii aleg pentru cine creează medalia de aur:
 - **Animalul de companie**: *„Cel mai pufos motan”*, *„Campion mondial la tors”*, *„Cel mai rapid cățel”*.
 
 #### 2. Etapele de Construcție Pas cu Pas
-1. **Baza circulară**: Dimensiune exactă $60\text{ mm} \times 60\text{ mm} \times 3.2\text{ mm}$.
+1. **Baza circulară**: Dimensiune exactă 60 mm x 60 mm x 3.2 mm.
 2. **Urechiușa superioară**: Aliniată perfect pe axa centrală cu instrumentul `Align (L)`.
 3. **Decorațiunile clasice**: Cununa de frunze pe margine și steluțe decorative.
 4. **Centrul medaliei**: Trofeul, steaua, inima sau cifra 1.
