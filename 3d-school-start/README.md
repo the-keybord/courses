@@ -66,7 +66,12 @@ Fiecare lecție respectă un flux clar în 8 etape:
 - **Proiect Practic**: Pixel Art 2.5D în 4 culori (Negru, Albastru, Galben, Alb, în această ordine de jos în sus), inspirat din galeria de idei sau creat original, cu print demonstrativ live pe AMS lite.
 - **Director Lecție**: [`lesson-04/`](lesson-04/)
 
-### 🔹 Lecția 05: *(În curând)*
+### 🔹 [Lecția 05 [3DS2.5]: Medalia de Aur – Istoria Gloriei, Simbolism Olimpic & Medalia pentru Oameni Dragi](lesson-05/README.md)
+- **Cod Lecție**: `3DS2.5`
+- **Descriere pe scurt**: Descoperim istoria și secretele medaliilor din antichitate până astăzi: de la cununa sacră de măslin (`kotinos`) din Grecia antică la primele medalioane de onoare romane, capodoperele Renașterii turnate de Pisanello, de ce primele Jocuri Olimpice moderne (1896) acordau argint și nu aur, nașterea trio-ului Aur-Argint-Bronz (St. Louis 1904) și invenția panglicii de gât (Roma 1960). În atelierul practic sculptăm o medalie clasică de aur ($6 \times 6\text{ cm}$) cu bordură reliefată, crenguțe de dafin, urechiușă tehnică pentru panglică și un titlu amuzant și călduros dedicat unui om drag din viața noastră, pregătită pentru imprimare cu filament strălucitor Silk Gold PLA.
+- **Proiect Practic**: Colectarea insignelor Pixel Art din Lecția 04 + Proiectarea medaliei de aur de $60\text{ mm}$ cu decorațiuni și urechiușă pentru panglică textilă de gât + pregătire pentru print în filament Silk Gold PLA.
+- **Director Lecție**: [`lesson-05/`](lesson-05/)
+
 ### 🔹 Lecția 06: *(În curând)*
 ### 🔹 Lecția 07: *(În curând)*
 ### 🔹 Lecția 08: *(În curând)*
