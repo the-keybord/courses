@@ -12,8 +12,8 @@
 - **Software Modelare**: Tinkercad Classroom
 - **Software Slicing**: Bambu Studio
 - **Hardware & Echipamente**:
-  - Imprimante **Bambu Lab A1** (pentru colectarea insignelor Pixel Art în 4 culori din Lecția 04 și pregătirea plăcilor curente)
-  - Filamente speciale: **PLA Silk Gold (Auriu Mătăsos / Strălucitor)** pentru imprimarea lotului de medalii
+  - Imprimante **Bambu Lab A1** (la începutul orei se lansează la imprimat insignele Pixel Art în 4 culori modelate în Lecția 04, care vor rula pe durata orei și vor fi colectate de elevi la final, în Etapa 8)
+  - Filamente speciale: **PLA Silk Gold (Auriu Mătăsos / Strălucitor)** prezentat astăzi, pregătit pentru imprimarea medaliilor pentru lecția viitoare
   - Panglici textile colorate / tricolore (lățime $10\text{ – }15\text{ mm}$) gata pregătite pentru montarea pe medaliile imprimate
 - **Proiect Practic**: Proiectarea unei **Medalii de Aur Personalizate** cu diametrul de $6\text{ cm} \times 6\text{ cm}$ ($60 \times 60\text{ mm}$), prevăzută cu o urechiușă tehnică solidă pentru panglică, bordură circulară reliefată, crenguțe clasice de laur/măslin și decorațiuni pe două fețe, acordată cu un pretext amuzant și călduros pentru o persoană dragă (ex: *„Cel mai bun prieten”*, *„Cea mai bună soră”*, *„Locul 1 pentru mama”*, *„Cel mai cuminte pisic”*, *„Campion la mâncat clătite”*).
 - **Noutatea Zilei**:
@@ -43,11 +43,11 @@
 ### Conturi & Software
 - [ ] Deschide **Tinkercad Classroom** cu codul clasei activ și linkul de conectare pregătit pe ecran.
 - [ ] Deschide pe proiector prezentarea teoretică despre istoria medaliilor și tab-ul cu jocul **Kahoot** (din `quiz.md`).
-- [ ] Configurează **Bambu Studio** cu profilul de 0.20 mm Standard și materialul selectat: *Bambu PLA Silk Gold*.
+- [ ] Configurează în **Bambu Studio** plăcile cu fișierele insignelor Pixel Art în 4 culori modelate în Lecția 04, gata pentru lansarea imprimării la Etapa 2.
 
 ### Imprimante 3D & Echipamente
-- [ ] **Colectarea printurilor**: Insignele Pixel Art în 4 culori modelate în Lecția 04 sunt scoase de pe plăci, curățate și aranjate pe masa demonstrativă.
-- [ ] **Bobina de aur**: O rolă de filament **Silk Gold PLA (sau PLA Auriu)** este încărcată în imprimanta demonstrativă Bambu Lab A1 pentru ca elevii să vadă strălucirea metalică a plasticului mătăsos.
+- [ ] **Pregătirea plăcilor de imprimare**: Plăcile PEI sunt curate și degresate pe imprimantele Bambu Lab A1, pregătite pentru pornirea lotului de insigne Pixel Art.
+- [ ] **Bobina de aur**: O rolă demonstrativă de filament **Silk Gold PLA (sau PLA Auriu)** este pregătită pentru a le arăta elevilor luciul metalic în care le vor fi tipărite medaliile la sesiunea următoare.
 - [ ] **Materiale fizice pregătite**:
   - 1–2 medalii reale (sportive sau de colecție) cu panglică pentru ca elevii să le poată atinge și analiza grosimea și relieful.
   - Mostre de panglici textile colorate (lățime 10–15 mm) pe care copiii le vor alege pentru medaliile lor.
@@ -58,14 +58,14 @@
 
 | Minut | Etapă | Ce facem? (Pe scurt) |
 | :---: | :--- | :--- |
-| **00 – 10 min** | **1. Colectarea Pieselor & Mini-Mister** | Ridicarea insignelor Pixel Art în 4 culori din Lecția 04. Mini-mister: profesorul scoate dintr-o cutie o medalie grea cu panglică și întreabă clasa cine merită o astfel de distincție. |
-| **10 – 20 min** | **2. Pregătirea & Pornirea Imprimării** | Verificarea plăcilor din laborator și lansarea lotului de piese curente. Prezentarea bobinei de filament auriu Silk PLA. |
+| **00 – 10 min** | **1. Bun venit & Mini-Misterul Gloriei** | Primirea elevilor. Mini-mister: profesorul scoate dintr-o cutie o medalie grea cu panglică și provoacă o discuție despre cine merită premiat în viața reală. |
+| **10 – 20 min** | **2. Pregătirea & Pornirea Imprimării 3D** | Verificarea plăcilor și **lansarea la imprimat a insignelor Pixel Art în 4 culori** (din Lecția 04) care vor rula pe durata orei. Prezentarea filamentului auriu Silk PLA. |
 | **20 – 40 min** | **3. Teorie: Istoria Medaliilor & Secretele Aurului Olimpic** | De la cununa de măslin din Grecia antică la monedele de onoare romane, capodoperele Renașterii, misterul argintului de la 1896 și trio-ul Aur-Argint-Bronz (St. Louis 1904). |
 | **40 – 50 min** | **4. Pauză & Prezență** | 10 minute de relaxare, mișcare și hidratare. Notarea prezenței în catalog. |
 | **50 – 65 min** | **5. Demonstrația Profesorului în Tinkercad** | Construirea pas cu pas a medaliei de $60 \times 60\text{ mm}$: cilindrul de bază (3 mm), bordura reliefată, urechiușa tehnică pentru panglică, crenguțele de dafin și textul amuzant. |
 | **65 – 100 min** | **6. Atelier Practic: Medalia pentru Oameni Dragi** | Fiecare elev alege un destinatar și un titlu amuzant, modelează propria medalie de aur, personalizează aversul și reversul și verifică rezistența urechiușei. |
 | **100 – 112 min** | **7. Joc Kahoot: Legendele Medaliilor** | 12 întrebări amuzante și antrenante (din `quiz.md`) despre istoria medaliilor și tradiția olimpică. |
-| **112 – 120 min** | **8. Concluzii, Pregătirea pentru Print & Poză de Grup** | Centralizarea fișierelor pentru printul în filament auriu, alegerea culorilor de panglici textile și poza de final cu insignele Pixel Art. |
+| **112 – 120 min** | **8. Colectarea Insignelor Imprimate & Poză de Grup** | Imprimantele au finalizat insignele Pixel Art! Copiii le ridică răcite de pe plăci, își aleg culoarea panglicii pentru medalia de aur și fac poza festivă de grup! |
 
 ---
 
@@ -73,9 +73,9 @@
 
 ---
 
-### Etapa 1: Colectarea Pieselor & Mini-Misterul Gloriei (Minutele 00 – 10)
-Profesorul deschide sesiunea într-o atmosferă plină de entuziasm:
-- Elevii își ridică creațiile Pixel Art în 4 culori modelate în lecția trecută (Lecția 04), le admiră straturile și texturile.
+### Etapa 1: Bun Venit & Mini-Misterul Gloriei (Minutele 00 – 10)
+Profesorul deschide sesiunea într-o atmosferă plină de curiozitate și voie bună:
+- Elevii sunt primiți călduros în laborator și se așază la computere.
 - Profesorul aduce în fața clasei o cutie elegantă sau un săculeț catifelat și scoate o medalie strălucitoare cu panglică de gât.
 - Întrebare deschisă: *„Cine primește de obicei medalii? Doar sportivii care aleargă 100 de metri în 9 secunde sau militarii? Ce-ar fi dacă am putea premia oamenii care ne fac viața frumoasă în fiecare zi: mama care face cele mai bune clătite din lume, cel mai bun prieten care te ajută la teme, sau pisicul care toarce când ești obosit?”*
 - Copiii zâmbesc și încep deja să se gândească la cine va fi campionul lor de suflet!
@@ -83,10 +83,14 @@ Profesorul deschide sesiunea într-o atmosferă plină de entuziasm:
 ---
 
 ### Etapa 2: Pregătirea & Pornirea Imprimării 3D (Minutele 10 – 20)
-- Profesorul și elevii inspectează imprimantele Bambu Lab A1 din laborator.
-- Profesorul prezintă bobina specială de **Bambu PLA Silk Gold (Auriu Mătăsos)**:
+- Profesorul deschide Bambu Studio pe computerele conectate la imprimantele Bambu Lab A1 din laborator.
+- Pe ecran sunt aranjate plăcile cu **insignele Pixel Art în 4 culori modelate de elevi în Lecția 04**.
+- Profesorul lansează imprimarea:
+  - Elevii urmăresc începerea primului strat (First Layer Inspection) și văd cum imprimantele pornesc producția pieselor lor, care vor crește strat cu strat pe toată durata lecției (aproximativ 80–90 minute de printare).
+  - Profesorul le explică: *„Insignele voastre multicolore se imprimă chiar acum! Până terminăm noi medaliile de aur, imprimantele vor finaliza insignele, iar la sfârșitul orei fiecare își va lua piesa acasă!”*.
+- În paralel, profesorul le prezintă bobina specială de **Bambu PLA Silk Gold (Auriu Mătăsos)**:
   - Le explică de ce acest plastic strălucește ca metalul: conține polimeri speciali care reflectă lumina mult mai puternic decât PLA-ul obișnuit.
-  - Le arată că modelele proiectate astăzi vor fi trimise la printat în această culoare nobilă, iar data viitoare vor fi echipate cu panglici textile adevărate!
+  - Le arată că medaliile pe care le proiectează astăzi vor fi imprimate în această culoare aurie regală pentru sesiunea viitoare, când vor fi accesorizate cu panglici textile adevărate!
 
 ---
 
@@ -183,8 +187,15 @@ Profesorul monitorizează activ clasa:
 
 ---
 
-### Etapa 8: Concluzii, Pregătirea pentru Print & Poză de Grup (Minutele 112 – 120)
-- Profesorul trece pe la fiecare ecran și verifică modelul finalizat în Tinkercad.
-- Copiii își aleg culoarea panglicii textile pe care o vor primi la următoarea întâlnire (roșu, albastru, tricolor sau auriu).
-- Modelele sunt salvate și pregătite pentru feliere în **Bambu Studio** cu filament **Silk Gold PLA**.
-- Toată clasa face poza de grup la panou, ținând insignele Pixel Art obținute astăzi și sărbătorind noul titlu de *Designeri de Medalii Olimpice*!
+### Etapa 8: Finalizarea Imprimării, Colectarea Insignelor & Poză de Grup (Minutele 112 – 120)
+1. **Finalizarea Imprimării 3D**:
+   - Imprimantele Bambu Lab A1 emit semnalul sonor de finalizare: lotul de insigne Pixel Art în 4 culori (lansat la Etapa 2) este gata!
+   - Profesorul verifică răcirea plăcilor PEI la sub 35°C pentru desprindere sigură și ușoară.
+2. **Colectarea Pieselor Proaspăt Imprimate**:
+   - Copiii se apropie entuziasmați de imprimante și își desprind propriile creații Pixel Art.
+   - Își examinează uimiți rezultatul: cele 4 culori pe straturi, textura plăcută la atingere și finisajul neted!
+3. **Pregătirea Medaliilor de Aur pentru Sesiunea Viitoare**:
+   - Elevii își salvează proiectul finalizat de medalie în Tinkercad Classroom.
+   - Fiecare își alege culoarea panglicii textile (roșu regal, albastru olimpic sau tricolor) pe care o va monta pe medalia sa de aur la lecția următoare.
+4. **Fotografia Oficială de Grup**:
+   - Întreaga clasă se adună la panou cu zâmbete largi, ținând în mână insignele Pixel Art obținute la această oră, bucuroși de noul statut de creatori de medalii olimpice!

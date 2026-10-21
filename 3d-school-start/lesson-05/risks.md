@@ -62,10 +62,11 @@ Acest document reprezintă o analiză critică dedicată profesorului pentru **L
 
 ## ✅ 4. Quick Verification Checklist pentru Profesor
 
-- [ ] **Min 10**: Insignele Pixel Art din Lecția 04 sunt distribuite cu succes; copiii sunt încântați.
+- [ ] **Min 10**: Mini-misterul cu medalia a stârnit curiozitatea clasei; discuția despre campioni este antrenantă.
+- [ ] **Min 20**: Plăcile cu insignele Pixel Art din Lecția 04 sunt lansate la imprimare pe imprimantele Bambu Lab A1.
 - [ ] **Min 35**: Prezentarea s-a încheiat; copiii au înțeles de ce măslinul și aurul simbolizează victoria eternă.
 - [ ] **Min 55**: Fiecare elev a creat baza cilindrică de $60 \times 60 \times 3.2\text{ mm}$ și urechiușa pentru panglică.
 - [ ] **Min 80**: Fanta urechiușei este verificată (minim 12 mm lățime) și nu există elemente plutitoare.
 - [ ] **Min 95**: Modelele sunt grupate complet (`Ctrl + G`), colorate simbolic în auriu și inspectate din toate unghiurile.
 - [ ] **Min 110**: Kahoot-ul a fixat noțiunile teoretice (argintul din 1896, aurul din 1904, panglica din 1960).
-- [ ] **Min 120**: Modelele sunt salvate în Tinkercad Classroom, culorile panglicilor sunt notate, iar poza de grup este realizată!
+- [ ] **Min 120**: Imprimantele au terminat printarea: insignele Pixel Art răcite sunt colectate de elevi, culorile panglicilor pentru medalia de aur sunt alese, iar poza de grup este realizată!
