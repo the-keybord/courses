@@ -30,9 +30,9 @@
 5. **Cum construim în Tinkercad o medalie de 60 mm cu orificiu rezistent pentru panglică și text clar în relief, fără ca literele să se piardă la imprimare?**
 
 ### 🔗 Resurse & Linkuri Utile
-- **Prezentare**: https://docs.google.com/presentation/d/1example_medals_olympics_3ds2_5/edit?usp=sharing
-- **Kahoot**: https://create.kahoot.it/details/medals-olympics-history-3ds2-5
-- **Alte Materiale**: Mostre fizice de medalii sportive, panglici textile și mostre de filament auriu Silk PLA
+- **Prezentare**: https://docs.google.com/presentation/d/13oNM2npiV24_BbgOW8oNBFg-ozjCqv686YaHTI2wqGU/edit?usp=sharing
+- **Kahoot**: https://create.kahoot.it/details/00388953-6e73-4850-8eff-da32f2992646
+- **Alte Materiale**: https://www.tinkercad.com/things/7aGkCVYjZxt-3ds-25
 
 ---
 
