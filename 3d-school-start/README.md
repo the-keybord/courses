@@ -68,11 +68,15 @@ Fiecare lecție respectă un flux clar în 8 etape:
 
 ### 🔹 [Lecția 05 [3DS2.5]: Medalia de Aur – Istoria Gloriei, Simbolism Olimpic & Medalia pentru Oameni Dragi](lesson-05/README.md)
 - **Cod Lecție**: `3DS2.5`
-- **Descriere pe scurt**: Descoperim istoria și secretele medaliilor din antichitate până astăzi: de la cununa sacră de măslin (`kotinos`) din Grecia antică la primele medalioane de onoare romane, capodoperele Renașterii turnate de Pisanello, de ce primele Jocuri Olimpice moderne (1896) acordau argint și nu aur, nașterea trio-ului Aur-Argint-Bronz (St. Louis 1904) și invenția panglicii de gât (Roma 1960). În atelierul practic sculptăm o medalie clasică de aur ($6 \times 6\text{ cm}$) cu bordură reliefată, crenguțe de dafin, urechiușă tehnică pentru panglică și un titlu amuzant și călduros dedicat unui om drag din viața noastră, pregătită pentru imprimare cu filament strălucitor Silk Gold PLA.
-- **Proiect Practic**: Lansarea la imprimat a insignelor Pixel Art în 4 culori din Lecția 04 (Etapa 2) și colectarea lor la sfârșitul orei (Etapa 8) + Proiectarea medaliei de aur de $60\text{ mm}$ cu decorațiuni și urechiușă pentru panglică textilă de gât + pregătire pentru print în filament Silk Gold PLA.
+- **Descriere pe scurt**: Descoperim istoria și secretele medaliilor din antichitate până astăzi: de la cununa sacră de măslin (`kotinos`) din Grecia antică la primele medalioane de onoare romane, capodoperele Renașterii turnate de Pisanello, de ce primele Jocuri Olimpice moderne (1896) acordau argint și nu aur, nașterea trio-ului Aur-Argint-Bronz (St. Louis 1904) și invenția panglicii de gât (Roma 1960). În atelierul practic sculptăm o medalie clasică de aur (6 x 6 cm) cu bordură reliefată, crenguțe de dafin, urechiușă tehnică pentru panglică și un titlu amuzant și călduros dedicat unui om drag din viața noastră, pregătită pentru imprimare cu filament strălucitor Silk Gold PLA.
+- **Proiect Practic**: Lansarea la imprimat a insignelor Pixel Art în 4 culori din Lecția 04 (Etapa 2) și colectarea lor la sfârșitul orei (Etapa 8) + Proiectarea medaliei de aur de 60 mm cu decorațiuni și urechiușă pentru panglică textilă de gât + pregătire pentru print în filament Silk Gold PLA.
 - **Director Lecție**: [`lesson-05/`](lesson-05/)
 
-### 🔹 Lecția 06: *(În curând)*
+### 🔹 [Lecția 06 [3DS2.6]: Istoria Banilor, Moneda de 1 Ban & Provocarea Monedei de 1.000.000 Lei](lesson-06/README.md)
+- **Cod Lecție**: `3DS2.6`
+- **Descriere pe scurt**: Punem la imprimat medaliile de aur din Lecția 05 și pregătim panglicile textile de gât, apoi pornim într-o călătorie fascinantă prin lumea banilor: cum au apărut banii și monedele (de la troc și sare la primele monede din Lidia și bancnotele din China), care au fost banii în Moldova din istorie până în prezent (groșii lui Petru I Mușat din 1377, talerii olandezi cu leu, leul moldovenesc din 1993 și monedele bimetalice din 2018), unde se află în Chișinău monumentul rotativ al monedei de 1 ban (str. Petru Rareș) și care sunt componentele și dimensiunile unei monede (pastilă, avers, revers, câmp, relief, bordură înălțată, cant neted vs zimțat).
+- **Proiect Practic**: Imprimarea medaliilor de aur din Lecția 05, montarea panglicilor și colectarea lor la finalul orei + Modelarea în Tinkercad a propriei versiuni mărite a **Monedei de 1 Ban** (50 x 50 mm) + Provocarea creativă: proiectarea propriului design al **Monedei de 1.000.000 Lei**!
+- **Director Lecție**: [`lesson-06/`](lesson-06/)
 ### 🔹 Lecția 07: *(În curând)*
 ### 🔹 Lecția 08: *(În curând)*
 ### 🔹 Lecția 09: *(În curând)*

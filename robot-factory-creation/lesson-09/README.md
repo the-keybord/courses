@@ -29,7 +29,7 @@
 ### Software & Conturi Digitale
 - [ ] Conturile educaționale Onshape ale elevilor verificate și link-ul oficial către documentul-șablon Onshape testat: https://cad.onshape.com/documents/7be0796cc70fc67d13c12171/w/daa64e1d67ab4e8d5c3ffcdb/e/689e4891d119c9f2d1b8c3d7?renderMode=0&uiState=6ae323232283d821422cf10a
 - [ ] Proiectorul conectat și prezentarea teoretică încărcată pe ecranul mare.
-- [ ] Chestionarul de sortare a aptitudinilor și tabelul cu cele **30 de Nuanțe Oficiale de Alianță (Hue Alliances + Coduri HEX)** pregătite pentru alegerea numelui de alianță și a numelui individual al fiecărui robot.
+- [ ] Chestionarul de sortare a aptitudinilor (`materials/skills_survey.md`) și tabelul cu cele **30 de Nuanțe Oficiale de Alianță (Hue Alliances + Coduri HEX)** pregătite pentru alegerea numelui de alianță și a numelui individual al fiecărui robot.
 - [ ] Quiz-ul Kahoot de 10 întrebări teoretice deschis într-un tab separat pentru runda finală de evaluare.
 
 ### Hardware & Materiale Fizice pentru Clasă

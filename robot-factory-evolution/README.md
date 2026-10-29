@@ -61,10 +61,16 @@ Fiecare lecție din cadrul **Robot Factory: Evolution** este concepută ca o exp
 | **06** | **Senzori Optici de Podea, Navigație pe Linie & Asamblarea Tracțiunii Funcționale RF 2.0** | Fizica reflexiei IR (TCRT5000), contrast optic alb vs negru, senzori de culoare RGB (TCS34725), algoritmi de Line Follower (Bang-Bang vs Proporțional) și rezolvarea labirinturilor (Regula Mâinii Stângi), urmată de montarea plăcii ESP32 pe șasiu, cablarea completă a semnalelor de control la driverul TB6612FNG și rularea primului firmware de diagnostic al tracțiunii pe banc (fără roți). | [Vezi Planul Lecției 06](lesson-06/README.md) |
 | **07** | *În curând: Navigație Inerțială – Fuziune Senzorială cu IMU BNO055* | Comunicare I2C cu senzorul cu 9 axe, citirea unghiului de girație (Yaw) și execuția virajelor precise la 90° și 180°. | *(Urmează)* |
 | **08** | *În curând: Identitate de Echipă & Strategia Alianțelor Orbit Odyssey* | Structurarea echipelor, stabilirea rolurilor de colaborare, designul grafic și specificațiile accesoriilor de misiune. | *(Urmează)* |
-| **09** | *În curând: Modelare CAD în Fusion 360 – Mecanisme Active de Manipulare* | Proiectarea parametrică a cupelor, graiferelor și clemelor de prindere adaptate pe servomotoare; toleranțe de montaj. | *(Urmează)* |
+| **09** | **Formarea Alianțelor Cromatice (`roboRangers`), Testarea Izolată a Senzorilor (IR & Ultrasonic) și Pianul Wireless BLE în `RBFesp`** | Recapitularea arhitecturii `RBFesp`, sondajul de competențe în 20 de întrebări, formarea alianțelor cromatice (30 de nuanțe cu coduri `#HEX`), asumarea rolurilor (`Forge`, `Cyber`, `Vanguard`), botezul roboților (`BLUETOOTH_NAME`), conectarea și programarea pe rând a senzorului IR de linie și a senzorului ultrasonic `HC-SR04`, încheiată cu construirea unui Pian Muzical Wireless din buzzer folosind `event.isPressed()`. | [Vezi Planul Lecției 09](lesson-09/README.md) |
 | **10** | *În curând: Fuziunea Sistemelor – Arhitectura Software Mixtă (Autonom + Teleoperat)* | Comutarea stărilor de operare prin comenzi BLE, execuția rutinelor autonome și preluarea controlului manual. | *(Urmează)* |
 | **11** | *În curând: Testare Integrată în Arena Orbit Odyssey & Calibrare în Buclă Închisă* | Optimizarea parametrilor de viteză și reacție, simularea meciurilor de calificare și depanarea defecțiunilor de teren. | *(Urmează)* |
 | **12** | *În curând: Competiția Finală Orbit Odyssey – Meciuri Oficiale & Evaluare Tehnică* | Desfășurarea turneului tehnic: probe de traseu autonom, colectare teleoperată contracronometru și acordarea punctajelor. | *(Urmează)* |
+
+---
+
+## 📂 Materiale Auxiliare de Curs (`materials/`)
+
+- [**Sondajul de Competențe, Strategia de Grupare & Generatorul Google Forms (`roboRangers` – `RBF2`)**](materials/skills_survey.md): Chestionarul oficial de 20 de afirmații (Hardware/CAD, Firmware C++/BLE, Strategie), nomenclatorul celor 30 de Alianțe Cromatice (cu coduri `#HEX`), metodologia în 4 pași de formare a echipelor și scriptul Google Apps Script pentru generarea automată a formularului în Google Forms.
 
 ---
 
