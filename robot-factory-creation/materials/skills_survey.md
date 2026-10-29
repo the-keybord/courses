@@ -81,6 +81,12 @@ Citește cu atenție fiecare dintre cele **20 de afirmații** de mai jos. Noteaz
 3. **Cu ce 1–2 colegi din grupă crezi că ai face o echipă de neînvins?**  
    *Coleg 1:* ________________________ &nbsp;&nbsp;&nbsp;&nbsp; *Coleg 2:* ________________________
 
+4. **Ce nume unic alegi pentru propriul tău robot individual?** *(Fiecare pilot își botează propriul robot!)*  
+   *Numele Robotului Meu:* ________________________________________
+
+5. **Ce Alianță Cromatică (Hue Alliance) din lista celor 30 de culori ți-ar plăcea să reprezinte echipa voastră?** *(ex: SkyBlue Alliance, Scarlet Alliance, Yellow Alliance, Mint Alliance)*  
+   *Alianța Cromatică Preferată:* __________________________________ &nbsp;&nbsp; *Cod HEX:* `#__________`
+
 ---
 
 ## 🧑‍🏫 Ghid de Evaluare & Interpretare (Pentru Profesor)

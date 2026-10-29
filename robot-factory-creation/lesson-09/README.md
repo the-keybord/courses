@@ -20,16 +20,16 @@
 ### 🔗 Resurse & Linkuri Utile
 - **Prezentare**: https://canva.com/
 - **Kahoot**: https://kahoot.com/
-- **Spațiu de Lucru Onshape (Template Shared)**: https://cad.onshape.com/
+- **Document Șablon Onshape (Mini Tricycle RC Car - Copy to Workspace)**: https://cad.onshape.com/documents/7be0796cc70fc67d13c12171/w/daa64e1d67ab4e8d5c3ffcdb/e/689e4891d119c9f2d1b8c3d7?renderMode=0&uiState=6ae323232283d821422cf10a
 
 ---
 
 ## 2. Pregătirea Lecției (Checklist Profesor)
 
 ### Software & Conturi Digitale
-- [ ] Conturile educaționale Onshape ale elevilor verificate sau link-ul public către documentul-șablon „RC Trike Starter Assembly” testat în mod incognito.
+- [ ] Conturile educaționale Onshape ale elevilor verificate și link-ul oficial către documentul-șablon Onshape testat: https://cad.onshape.com/documents/7be0796cc70fc67d13c12171/w/daa64e1d67ab4e8d5c3ffcdb/e/689e4891d119c9f2d1b8c3d7?renderMode=0&uiState=6ae323232283d821422cf10a
 - [ ] Proiectorul conectat și prezentarea teoretică încărcată pe ecranul mare.
-- [ ] Chestionarul de sortare a aptitudinilor pregătit (tipărit pe foi A4 sau deschis ca formular online pe computerele elevilor).
+- [ ] Chestionarul de sortare a aptitudinilor și tabelul cu cele **30 de Nuanțe Oficiale de Alianță (Hue Alliances + Coduri HEX)** pregătite pentru alegerea numelui de alianță și a numelui individual al fiecărui robot.
 - [ ] Quiz-ul Kahoot de 10 întrebări teoretice deschis într-un tab separat pentru runda finală de evaluare.
 
 ### Hardware & Materiale Fizice pentru Clasă
@@ -86,22 +86,24 @@ Asigurați-vă că documentul conține toate componentele necesare triciclului:
 3. Setați permisiunile la:  
    - **`Can view`** (Doar vizualizare).
    - Asigurați-vă că opțiunea **`Allow copy`** (Permite copierea documentului) este bifată activ!
-4. Copiați link-ul generat (`Copy link to clipboard`) și distribuiți-l elevilor (pe tabla digitală, Google Classroom sau portalul clasei).
+4. Copiați link-ul oficial al documentului Master și distribuiți-l elevilor (pe tabla digitală, Google Classroom sau portalul clasei):
+   - **Link Oficial Document Onshape**: https://cad.onshape.com/documents/7be0796cc70fc67d13c12171/w/daa64e1d67ab4e8d5c3ffcdb/e/689e4891d119c9f2d1b8c3d7?renderMode=0&uiState=6ae323232283d821422cf10a
 
-#### Etapa D: Procedura de Duplicare Pas-cu-Pas pentru Elevi („Make a Copy to Edit”)
+#### Etapa D: Procedura de Duplicare Pas-cu-Pas pentru Elevi („Copy to Own Workspace”)
 Mentorul proiectează ecranul pe proiector și ghidează elevii prin cei 3 pași obligatorii de la începutul laboratorului:
-1. **Deschiderea Link-ului**: Elevul deschide link-ul primit în browserul Chrome (fiind deja logat în contul său Onshape educațional).
-2. **Duplicarea Documentului**:
-   - În bara superioară a interfeței, elevul va vedea o bandă albastră cu mesajul: *„View only”*.
-   - Elevul dă click pe meniul documentului din stânga sus (lângă logo-ul Onshape) sau pe butonul **`Make a copy to edit`** (ori `Copy workspace`).
-3. **Redenumirea Fișierului Personal**:
-   - În fereastra apărută, elevul introduce numele oficial al proiectului său după șablonul:  
-     `NumeAlianță_PrenumeElev_RC_Trike_V1` (ex: `TitanDynamics_Alex_RC_Trike_V1`).
-   - Apasă butonul albastru **`OK`**.
-4. **Validarea de Către Mentor & Accesarea Tab-ului `Assembly 1`**:
-   - În câteva secunde, Onshape deschide noul document privat al elevului. Mesajul *„View only”* dispare, iar bara de unelte (inclusiv comanda `Fastened Mate`) devine activă.
-   - Elevii verifică în bara inferioară de tab-uri că sunt poziționați pe **`Assembly 1`** (nu în `Part Studio 1`). În `Assembly 1`, toate piesele digitale ale triciclului sunt deja aranjate pe masa de lucru virtuală.
-   - Mentorul face un tur rapid vizual prin clasă pentru a confirma că toți elevii au în colțul din stânga-sus propriul nume și că nimeni nu a rămas pe documentul Master în mod pasiv. De acum, fiecare elev construiește în spațiul său independent!
+1. **Deschiderea Link-ului Oficial**: Elevul accesează link-ul documentului Onshape (fiind deja logat în contul său Onshape):  
+   https://cad.onshape.com/documents/7be0796cc70fc67d13c12171/w/daa64e1d67ab4e8d5c3ffcdb/e/689e4891d119c9f2d1b8c3d7?renderMode=0&uiState=6ae323232283d821422cf10a
+2. **Copierea Documentului în Propriul Workspace (`Make a copy to edit` / `Copy workspace`)**:
+   - În bara superioară a interfeței, elevul va vedea mențiunea *„View only”*.
+   - Elevul apasă pe butonul **`Make a copy to edit`** (sau din meniul din stânga-sus alege **`Copy workspace`**) pentru a salva o copie independentă în propriul său cont Onshape.
+3. **Redenumirea Fișierului Personal (Alianța Cromatică + Prenume + Numele Robotului)**:
+   - În fereastra apărută, elevul introduce numele proiectului său incluzând **Alianța Cromatică**, **Prenumele său** și **Numele propriului robot**:  
+     `CuloareAlianță_PrenumeElev_NumeRobot_RC_Trike` (ex: `ScarletAlliance_Alex_Viper_RC_Trike` sau `SkyBlue_Maria_Nova_RC_Trike`).
+   - Apasă butonul albastru **`OK`** / **`Create copy`**.
+4. **Validarea de Către Mentor & Asamblarea cu Mate Tools în `Assembly 1`**:
+   - În câteva secunde, Onshape deschide copia privată din workspace-ul elevului, iar bara de unelte cu instrumentele **Mate** (`Fastened Mate`, `Revolute Mate` etc.) devine complet activă.
+   - Elevii verifică în bara inferioară de tab-uri că sunt poziționați pe **`Assembly 1`**, unde toate piesele digitale ale mini-triciclului RC sunt pregătite pentru asamblare folosind uneltele **Mate**.
+   - Mentorul face un tur rapid vizual prin clasă pentru a confirma că toți elevii lucrează în propria lor copie și că nimeni nu a rămas în modul pasiv *View only*.
 
 ---
 
@@ -110,10 +112,10 @@ Mentorul proiectează ecranul pe proiector și ghidează elevii prin cei 3 pași
 | Interval | Etapă | Activitate Principală |
 | :---: | :---: | :--- |
 | **00:00 – 00:15** | **1. Moment Festiv & Trecerea la Etapa CAD** | Celebrăm parcurgerea cu succes a primelor 8 lecții de circuite, senzori și microcontrolere. Prezentăm misiunea noii etape: devenim ingineri de design 3D și ne construim propriul vehicul mecatronic. |
-| **00:15 – 00:35** | **2. Testul de Sortare & Formarea Alianțelor** | Elevii completează chestionarul de 20 de întrebări. Identificăm profilurile dominante (Forge, Cyber, Vanguard). Se formează alianțele de 2–3 membri și se alege numele de echipă. |
+| **00:15 – 00:35** | **2. Testul de Sortare, Botezarea Roboților & Alianțele Cromatice (Hue Alliances)** | Elevii completează chestionarul de 20 de întrebări, își asumă rolurile (Forge, Cyber, Vanguard), **își aleg un nume unic pentru propriul lor robot individual**, și aleg pentru echipă un **nume oficial de Alianță bazat strict pe o culoare/nuanță (Hue Alliance)** din catalogul celor 30 de culori cu cod `#HEX`. |
 | **00:35 – 00:50** | **3. Prezentare Teoretică: CAD & Onshape** | Conceptele fundamentale de CAD în cloud: spațiul tridimensional (axele X, Y, Z), Part Studio vs Assembly, de ce blocăm prima piesă (Fix) și cum funcționează magneții mecanici (Fastened Mates). |
-| **00:50 – 01:40** | **4. Laborator Practic Onshape: Asamblarea Triciclului RC** | Elevii deschid proiectul-șablon în Onshape și montează pas cu pas: șasiul triciclu, servomotorul frontal de direcție, roțile frontale cu rubber bands, motorul N20 cu reductor, roata mare posterioară de tracțiune (cu rubber band), placa dedicată 2.4 GHz, suportul de baterie și șuruburile M3/M2. |
-| **01:40 – 01:50** | **5. Lansarea Identității de Echipă roboRangers** | Alianțele aleg paleta de culori a vehiculului în Onshape (Edit Appearance) și realizează prima captură de ecran izometrică curată pentru viitorul profil web de echipă. |
+| **00:50 – 01:40** | **4. Laborator Practic Onshape: Copierea în Workspace & Asamblarea Triciclului RC cu Mate Tools** | Elevii accesează link-ul oficial Onshape, copiază documentul în propriul workspace și asamblează mini-triciclul RC folosind uneltele Mate: șasiul triciclu, servomotorul frontal de direcție, roțile frontale cu rubber bands, motorul N20 cu reductor, roata mare posterioară de tracțiune, placa 2.4 GHz, suportul de baterie și șuruburile M3/M2. |
+| **01:40 – 01:50** | **5. Aplicarea Codului HEX al Alianței pe Robot (`Edit Appearance`)** | Fiecare elev introduce codul `#HEX` exact al Alianței sale Cromatice în Onshape (`Edit Appearance`) pentru a vopsi șasiul/jantele robotului său în culoarea oficială a alianței și realizează captura izometrică (`Shift + 7`). |
 | **01:50 – 01:58** | **6. Quiz Kahoot Interactiv** | Concurs de 10 întrebări axat strict pe teoria CAD, orientarea în spațiul 3D, concepte de toleranță și rolurile dintr-o echipă de inginerie (conform `quiz.md`). |
 | **01:58 – 02:00** | **7. Încheiere & Salvare Proiect** | Verificarea salvării documentelor în Onshape, curățarea bancurilor de lucru și preview-ul lecției următoare. |
 
@@ -128,7 +130,7 @@ Profesorul subliniază că mulți copii de vârsta lor doar consumă jocuri vide
 
 Acum începe **Faza a Doua a Cursului**: trecerea de la bancul de cabluri la biroul de proiectare industrială. Pentru ca un robot să fie fiabil, rapid și rezistent în arenă, el nu poate fi legat cu bandă adezivă sau coliere de plastic improvizate. Are nevoie de un șasiu optimizat, modelat milimetric pe calculator și fabricat prin printare 3D din polimeri tehnici.
 
-### Pasul 2: Testul de Sortare a Abilităților & Lansarea Alianțelor roboRangers (20 min)
+### Pasul 2: Testul de Sortare, Numele Individual al Robotului & Alianțele Cromatice (Hue Alliances) (20 min)
 Fiecare elev primește fișa de aptitudini (sau accesează formularul digital). Chestionarul conține 20 de afirmații calibrate pe o scală de la 1 la 5, grupate în 4 domenii:
 - **Secțiunea I**: Mecanică, scule, dezasamblare și gândire spațială.
 - **Secțiunea II**: Algoritmi, cod logic, automatizări și depanare erori.
@@ -142,9 +144,54 @@ După calcularea scorurilor (în maxim 5 minute), profesorul prezintă cele trei
 
 Elevii sunt grupați în **Alianțe de 2–3 membri**. În echipele de 3 (Trio), fiecare membru preia oficial unul dintre cele trei roluri. În echipele de 2 (Duo), rolurile fuzionează: un membru preia segmentul de Hardware complet (Forge + conexiuni fizice), iar celălalt preia segmentul de Software și Strategie (Cyber + Vanguard).
 
-Profesorul reamintește regula de aur: **Fiecare membru își construiește și își asamblează propriul robot individual!** Alianța funcționează ca o echipă de Formula 1: toți piloții au propria mașină pe circuit, dar colaborează la boxe, își împărtășesc soluțiile tehnice și concurează sub același steag.
+#### Regula Dublă de Identitate: Numele Propriului Robot + Numele Cromatic al Alianței (Hue Alliance)
+Profesorul explică regula oficială de botezare a flotei și a echipelor:
+1. **Fiecare Robot are Propriul Său Nume (Ales de Proprietarul Său)**:
+   - Deoarece **fiecare elev își construiește și își pilotează propriul robot individual**, fiecare cursant își alege un **nume unic pentru mașina sa** (de exemplu: *Viper*, *Thunderbolt*, *Phantom*, *Apex-01*, *Nova*, *Hyperion*, *Blitz*, *Raptor*).
+2. **Numele Alianței este STRICT o Culoare / Nuanță Oficială (`Hue Alliance`)**:
+   - Pentru ca alianțele să fie recunoscute instantaneu în arenă și pe tabela de marcaj (exact ca diviziile cromatice din competițiile internaționale de robotică), **numele Alianței trebuie să fie obligatoriu o culoare sau o nuanță precisă**: de exemplu **`SkyBlue Alliance`**, **`Scarlet Alliance`**, **`Yellow Alliance`** sau **`Mint Alliance`**.
+   - Fiecare nuanță vine însoțită de un **cod digital `#HEX`** (format din 6 caractere hexazecimale, ex: `#FF2400`). Acest cod `#HEX` permite membrilor alianței să aplice **exact aceeași nuanță matematică** pe șasiul 3D al roboților lor în Onshape (`Edit Appearance`), pe logo-ul din Canva și pe pagina web a echipei!
 
-Alianțele nou formate au la dispoziție 5 minute pentru a-și stabili un nume de cod oficial (ex: *Titan Dynamics*, *Vortex Mechanics*, *CyberPulsar*, *AeroStrike*) și a-și nota rolurile asumate.
+#### 🎨 Catalogul Oficial al celor 30 de Alianțe Cromatice (30 Hue Alliances & HEX Codes)
+Profesorul proiectează pe ecran tabelul celor 30 de nuanțe oficiale, iar fiecare alianță își revendică o culoare unică (nicio culoare nu se poate repeta între două alianțe din aceeași grupă):
+
+| Nr. | Nume Oficial Alianță (Hue Alliance) | Nuanța în Română | Cod Culoare `HEX` | Mostră Vizuală (RGB) |
+| :---: | :--- | :--- | :---: | :--- |
+| **01** | **SkyBlue Alliance** | Albastru Senin (Cer de Vară) | `#87CEEB` | `RGB(135, 206, 235)` — Albastru deschis aerodinamic |
+| **02** | **Scarlet Alliance** | Roșu Stacojiu Intens | `#FF2400` | `RGB(255, 36, 0)` — Roșu aprins de curse |
+| **03** | **Yellow Alliance** | Galben Solar / Auriu | `#FFD700` | `RGB(255, 215, 0)` — Galben strălucitor de mare vizibilitate |
+| **04** | **Mint Alliance** | Verde Mentă Proaspăt | `#3EB489` | `RGB(62, 180, 137)` — Verde-mentă modern |
+| **05** | **Cobalt Alliance** | Albastru Cobalt Regal | `#0047AB` | `RGB(0, 71, 171)` — Albastru tehnic profund |
+| **06** | **Crimson Alliance** | Roșu Carmin Profund | `#DC143C` | `RGB(220, 20, 60)` — Roșu rubiniu nobil |
+| **07** | **Emerald Alliance** | Verde Smarald | `#50C878` | `RGB(80, 200, 120)` — Verde cristalin intens |
+| **08** | **Amber Alliance** | Portocaliu Chihlimbar | `#FFBF00` | `RGB(255, 191, 0)` — Galben-portocaliu industrial |
+| **09** | **Cyan Alliance** | Cyan Electric | `#00E5FF` | `RGB(0, 229, 255)` — Albastru-turcoaz laser |
+| **10** | **Magenta Alliance** | Magenta Neon | `#FF00FF` | `RGB(255, 0, 255)` — Roz-purpuriu electric |
+| **11** | **Violet Alliance** | Violet Electric | `#8F00FF` | `RGB(143, 0, 255)` — Violet spectral intens |
+| **12** | **Coral Alliance** | Portocaliu Coral | `#FF7F50` | `RGB(255, 127, 80)` — Portocaliu-roz cald |
+| **13** | **Teal Alliance** | Albastru Petrol (Teal) | `#008080` | `RGB(0, 128, 128)` — Culoare oceanică profundă |
+| **14** | **Indigo Alliance** | Indigo Nocturn | `#4B0082` | `RGB(75, 0, 130)` — Albastru-violet cosmic |
+| **15** | **Lime Alliance** | Verde Lime Neon | `#32CD32` | `RGB(50, 205, 50)` — Verde energic fosforescent |
+| **16** | **Tangerine Alliance** | Portocaliu Mandarină | `#F28500` | `RGB(242, 133, 0)` — Portocaliu dinamic |
+| **17** | **Ruby Alliance** | Roșu Rubin | `#E0115F` | `RGB(224, 17, 95)` — Roșu-ciclamen prețios |
+| **18** | **Sapphire Alliance** | Albastru Safir | `#0F52BA` | `RGB(15, 82, 186)` — Albastru metalic intens |
+| **19** | **Jade Alliance** | Verde Jad Imperial | `#00A86B` | `RGB(0, 168, 107)` — Verde mineral dens |
+| **20** | **Amethyst Alliance** | Mov Ametist | `#9966CC` | `RGB(153, 102, 204)` — Mov-liliachiu satinat |
+| **21** | **Turquoise Alliance** | Turcoaz Marin | `#40E0D0` | `RGB(64, 224, 208)` — Acvamarin luminos |
+| **22** | **Chartreuse Alliance** | Verde-Gălbui Volt | `#7FFF00` | `RGB(127, 255, 0)` — Galben-verde sportiv |
+| **23** | **Maroon Alliance** | Vișiniu Bordeaux | `#800000` | `RGB(128, 0, 0)` — Roșu închis imperial |
+| **24** | **Navy Alliance** | Bleumarin Amiral | `#000080` | `RGB(0, 0, 128)` — Albastru marin clasic |
+| **25** | **Olive Alliance** | Verde Măsliniu Tactic | `#808000` | `RGB(128, 128, 0)` — Verde militar camuflaj |
+| **26** | **Peach Alliance** | Piersică Pastel | `#FFCBA4` | `RGB(255, 203, 164)` — Portocaliu-crem luminos |
+| **27** | **Lavender Alliance** | Mov Lavandă | `#B57EDC` | `RGB(181, 126, 220)` — Violet deschis pastelat |
+| **28** | **Slate Alliance** | Gri-Albăstrui Ardezie | `#708090` | `RGB(112, 128, 144)` — Gri oțel industrial |
+| **29** | **Silver Alliance** | Argintiu Metalizat | `#C0C0C0` | `RGB(192, 192, 192)` — Gri titan cromat |
+| **30** | **Obsidian Alliance** | Negru Obsidian Mat | `#1B1B1B` | `RGB(27, 27, 27)` — Negru carbon stealth |
+
+Alianțele au la dispoziție 5 minute pentru:
+1. A-și alege **nuanța oficială a alianței** din tabel (și a-și nota codul `#HEX`);
+2. A stabili **numele individual al robotului fiecărui membru**;
+3. A-și nota rolurile asumate (`Forge Ranger`, `Cyber Ranger`, `Vanguard Ranger`).
 
 ### Pasul 3: Prezentarea Teoretică Onshape & Magia Conexiunilor 3D (15 min)
 Profesorul proiectează ecranul Onshape și introduce conceptele esențiale:
@@ -156,8 +203,11 @@ Profesorul proiectează ecranul Onshape și introduce conceptele esențiale:
 - **Conceptul de Fix (Ancorare)**: Într-un spațiu 3D virtual, fără gravitație, dacă tragi de un șurub poți mișca din greșeală întreaga mașină. Prima regulă a inginerului este să ancoreze șasiul principal (`Right Click` -> `Fix`), transformându-l în piatra de temelie a vehiculului.
 - **Fastened Mates vs. Mutare Liberă**: Profesorul demonstrează pe proiector de ce mutarea liberă cu mouse-ul este o capcană: privind dintr-un unghi o piesă pare așezată pe gaură, dar dacă rotești camera, piesa plutește în aer la un metru distanță. Conexiunea **Fastened Mate** (`M`) folosește puncte matematice numite *Mate Connectors* care se atrag magnetic și blochează cele două suprafețe într-o îmbinare rigidă perfectă.
 
-### Pasul 4: Laboratorul Practic – Asamblarea Digitală a Triciclului RC (50 min)
-Fiecare elev deschide documentul-șablon pe propriul calculator. Lucrul se desfășoară individual, dar cu suport reciproc în cadrul alianței (ghidat de detaliile din `materials/onshape_mini_rc_car_lab_guide.md`):
+### Pasul 4: Laboratorul Practic – Copierea în Workspace & Asamblarea Triciclului RC cu Mate Tools (50 min)
+Fiecare elev deschide pe propriul calculator link-ul oficial al documentului Onshape:
+- **Link Document Onshape**: https://cad.onshape.com/documents/7be0796cc70fc67d13c12171/w/daa64e1d67ab4e8d5c3ffcdb/e/689e4891d119c9f2d1b8c3d7?renderMode=0&uiState=6ae323232283d821422cf10a
+
+Elevul copiază documentul în propriul său workspace (`Make a copy to edit` / `Copy workspace`), îl redenumește cu **Culoarea Alianței + Prenumele Său + Numele Robotului Său** (ex: `ScarletAlliance_Alex_Viper_RC_Trike`) și asamblează mini-triciclul RC folosind uneltele **Mate** (ghidat de detaliile din `materials/onshape_mini_rc_car_lab_guide.md`):
 
 1. **Verificarea Tab-ului `Assembly 1` & Testul de Navigare (3 minute)**:
    - Elevii se asigură că sunt poziționați pe tab-ul **`Assembly 1`** de pe bara inferioară. Aici toate componentele sunt deja așezate aerisit pe masa de lucru 3D.
@@ -195,15 +245,15 @@ Fiecare elev deschide documentul-șablon pe propriul calculator. Lucrul se desf�
 
 *Rolul profesorului și al consultanților de alianță*: Forge Ranger-ul din fiecare echipă ajută colegii care au inversat o axă sau au uitat să ancoreze șasiul. Profesorul intervine doar când o problemă persistă.
 
-### Pasul 5: Lansarea Identității de Echipă & randare roboRangers (10 min)
-După finalizarea asamblării mecanice, elevii adaugă personalitate robotului:
-- Fiecare membru dă click-dreapta pe componentele printate din lista din stânga și selectează `Edit Appearance`.
-- Se aplică paleta cromatică adoptată de alianță (de exemplu: șasiu negru mat cu jante portocalii neon sau caroserie albastră cu accente argintii).
-- Elevii apasă comanda `Shift + 7` (vedere izometrică curată), apasă tasta `K` pentru a ascunde conectorii de asamblare și realizează o captură de ecran (screenshot) la rezoluție mare. Această imagine va constitui prima fotografie oficială pentru profilul flotei pe platforma web roboRangers.
+### Pasul 5: Vopsirea Robotului cu Codul `#HEX` al Alianței & Randare roboRangers (10 min)
+După finalizarea asamblării mecanice cu uneltele Mate, fiecare elev aplică culoarea oficială a Alianței sale Cromatice direct pe robotul său:
+- Fiecare membru dă click-dreapta pe șasiul sau jantele printate 3D și selectează `Edit Appearance`.
+- În câmpul de cod **`HEX`** din fereastra de culoare Onshape, elevul introduce exact codul hexazecimal ales din tabelul celor 30 de Alianțe Cromatice (ex: `#87CEEB` pentru *SkyBlue Alliance*, `#FF2400` pentru *Scarlet Alliance*, `#FFD700` pentru *Yellow Alliance* sau `#3EB489` pentru *Mint Alliance*). Astfel, toți roboții dintr-o alianță vor purta matematic exact aceeași nuanță oficială!
+- Elevii apasă comanda `Shift + 7` (vedere izometrică curată), apasă tasta `K` pentru a ascunde conectorii de asamblare și realizează o captură de ecran (screenshot) la rezoluție mare cu robotul lor botezat, gata pentru profilul flotei pe platforma web roboRangers.
 
 ### Pasul 6: Quiz Kahoot Interactiv (8 min)
 Se lansează quiz-ul de 10 întrebări de pe platforma Kahoot. Întrebările testează exclusiv conceptele teoretice: rolul unui Digital Twin, diferența dintre Part Studio și Assembly, funcția Fastened Mate, importanța centrului de greutate și mecanica rolurilor dintr-o echipă de inginerie. Profesorul afișează explicația pedagogică după fiecare întrebare pentru a consolida termenii tehnici.
 *(Toate întrebările, variantele de răspuns ultra-scurte și explicațiile se regăsesc în fișierul dedicat `quiz.md`.)*
 
 ### Pasul 7: Concluzii & Salvare Proiect (2 min)
-Profesorul verifică dacă toți elevii au denumit documentul Onshape conform formatului cerut (ex: `Nume_Alianță_Prenume_Robot_V1`). Se reamintește că în lecția următoare alianțele vor învăța să creeze propria piesă parametrică de la zero (schiță 2D cotată și extrudare) pentru a adăuga un accesoriu mecanic personalizat pe mașină. Bancurile de lucru sunt ordonate, iar calculatoarele lăsate pregătite.
+Profesorul verifică dacă toți elevii au denumit documentul Onshape conform formatului cerut (`CuloareAlianță_Prenume_NumeRobot_RC_Trike`) și că fiecare robot are numele său propriu înregistrat în tabelul clasei. Se reamintește că în lecția următoare alianțele vor învăța să creeze propria piesă parametrică de la zero (schiță 2D cotată și extrudare) pentru a adăuga un accesoriu mecanic personalizat pe mașină. Bancurile de lucru sunt ordonate, iar calculatoarele lăsate pregătite.

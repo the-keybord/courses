@@ -79,15 +79,15 @@ Prezentarea se concentrează exclusiv pe conceptele teoretice de CAD: conceptul 
 
 ---
 
-### Slide 5: Alianțele roboRangers: Forța Echipei de Curse
-- **Titlu**: Sistemul Alianțelor: Cum Funcționează un Garaj de Formula 1
-- **Subtitlu**: 1 Robot Per Elev și Sprijin Reciproc Între Membrii Echipei
+### Slide 5: Alianțele Cromatice roboRangers: Flota și Codul `#HEX`
+- **Titlu**: Sistemul Alianțelor: 1 Robot Botezat Per Elev și Alianțele Cromatice
+- **Subtitlu**: Numele Individual al Robotului și Culoarea Oficială a Echipei (`Hue Alliance`)
 - **Propoziții de Citit la Tablă**:
-  1. În cursul nostru, fiecare elev construiește și programează **propriul său robot fizic individual**, devenind pilotul titular al mașinii sale.
-  2. Elevii se unesc în **Alianțe de 2–3 ingineri**, împărtășind aceeași identitate vizuală, stindard comun și culori oficiale de garaj.
+  1. În cursul nostru, fiecare elev construiește, programează și **își botează cu un nume unic propriul său robot individual**, devenind pilotul titular al mașinii sale.
+  2. Elevii se unesc în **Alianțe de 2–3 ingineri** care poartă strict numele unei culori sau nuanțe oficiale (**Hue Alliance**, precum *SkyBlue Alliance*, *Scarlet Alliance*, *Yellow Alliance* sau *Mint Alliance*), definită printr-un cod `#HEX` exact.
   3. Echipa are trei specialiști fundamentali: **Forge Ranger** pe mecanică și CAD, **Cyber Ranger** pe software și circuite, și **Vanguard Ranger** pe brand, web și tactică.
   4. Când un membru întâmpină o problemă tehnică la robotul său, primul pas este să ceară consultanță colegului de alianță specializat pe acel domeniu.
 - **Elemente Vizuale**:
-  - [Placeholder Imagine: Trei insigne stilizate futuriste pentru cele trei divizii (Forge, Cyber, Vanguard) reprezentate pe fundalul unei arene de competiție mecatronică cu roboți mobili]
+  - [Placeholder Imagine: Trei insigne stilizate futuriste pentru cele trei divizii (Forge, Cyber, Vanguard) reprezentate alături de o paletă de culori cu coduri HEX pe fundalul unei arene mecatronice]
 - **Ghid Profesor (Speaker Notes)**:
-  *Încheiați sesiunea de lectură întrebând elevii: „Ce super-putere aduceți voi în alianța voastră începând de astăzi?”*
+  *Încheiați sesiunea de lectură întrebând elevii: „Ce nume îi dați robotului vostru și ce nuanță oficială din cele 30 de culori alege alianța voastră?”*

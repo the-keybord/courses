@@ -122,19 +122,20 @@ Fără ton copilăresc sau elemente de desene animate; tratează elevii ca pe ad
 
 ---
 
-## Slide 8: Filosofia Alianțelor roboRangers
+## Slide 8: Filosofia Alianțelor Cromatice roboRangers (Hue Alliances)
 
-- **Titlu**: Nimeni Nu Construiește Singur: Forța Alianțelor de Inginerie
+- **Titlu**: 1 Robot Botezat Per Elev & Alianțele Cromatice Oficiale
 - **Conținut**:
-  - **Regula Fundamentală**: **1 Robot Per Elev!** Fiecare membru își asamblează, cablează și pilotează propria mașină individuală.
-  - **Conceptul de Alianță (2–3 membri)**:
-    - Alianța este un garaj de Formula 1: toți membrii au aceeași identitate, culori de echipă și stindard comun, dar concurează cu o flotă de mașini.
+  - **Regula Fundamentală**: **1 Robot Per Elev!** Fiecare membru își construiește, cablează, programează și **își botează cu un nume unic propriul său robot** (ex: *Viper*, *Thunderbolt*, *Nova*).
+  - **Numele Alianței = Strict o Culoare / Nuanță (`Hue Alliance`)**:
+    - Fiecare alianță (2–3 membri) își alege numele dintr-o listă oficială de **30 de nuanțe cromatice** (ex: *SkyBlue Alliance* `#87CEEB`, *Scarlet Alliance* `#FF2400`, *Yellow Alliance* `#FFD700`, *Mint Alliance* `#3EB489`).
+    - Codul `#HEX` al alianței se folosește direct în Onshape (`Edit Appearance`) și în Canva pentru ca toată flota să poarte matematic aceeași culoare!
   - **Ghidare Reciprocă (Peer-Consulting)**:
     - Când întâmpini un blocaj tehnic, primul apel este către expertul alianței tale pe acel domeniu, înainte de a chema profesorul.
 - **Note Vorbitor (Teacher Notes)**:
-  - Insistați pe faptul că alianța nu înseamnă „unul muncește și doi privesc”. Fiecare elev are un mouse în mână și o mașină pe banc.
-  - Alianța înseamnă consultanță reciprocă, strategie comună și punctaje cumulate în clasamentul general.
-- **Placeholder Imagine**: [Placeholder Imagine: Trei adolescenți concentrându-se împreună în jurul unui laptop într-un laborator de robotică, discutând pe marginea unui model 3D de vehicul, cu instrumente și imprimante 3D în fundal]
+  - Insistați pe diferența dintre numele robotului (ales liber de proprietar) și numele alianței (strict o culoare/nuanță din catalogul celor 30 de Hue Alliances cu cod `#HEX`).
+  - Alianța înseamnă consultanță reciprocă, culoare comună și punctaje cumulate în clasamentul general.
+- **Placeholder Imagine**: [Placeholder Imagine: Trei adolescenți concentrându-se împreună în jurul unui laptop într-un laborator de robotică, discutând pe marginea unui model 3D de vehicul vopsit într-o nuanță vibrantă, cu coduri cromatice HEX afișate pe ecran]
 
 ---
 

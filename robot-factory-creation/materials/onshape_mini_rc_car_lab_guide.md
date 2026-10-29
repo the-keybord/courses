@@ -11,18 +11,19 @@ Acest ghid este manualul practic pas-cu-pas pentru prima sesiune de CAD în **On
 
 ---
 
-## 🚀 Pasul 0: Cum Duplici Documentul Șablon („Make a copy to edit”)
+## 🚀 Pasul 0: Cum Copiezi Documentul Șablon în Propriul Workspace („Make a copy to edit”)
 
-Înainte de a atinge orice piesă, fiecare elev trebuie să își creeze propriul document de lucru independent:
-1. **Deschide link-ul primit de la profesor** în browserul Google Chrome (asigură-te că ești logat în contul tău Onshape).
+Înainte de a atinge orice piesă, fiecare elev trebuie să își copieze documentul oficial în propriul său workspace Onshape:
+1. **Deschide link-ul oficial al proiectului Onshape** în browserul Google Chrome (asigură-te că ești logat în contul tău Onshape):  
+   https://cad.onshape.com/documents/7be0796cc70fc67d13c12171/w/daa64e1d67ab4e8d5c3ffcdb/e/689e4891d119c9f2d1b8c3d7?renderMode=0&uiState=6ae323232283d821422cf10a
 2. Pe ecran va apărea o bară albastră cu mențiunea *„View only”*. Nu te speria, este normal!
-3. Dă click pe butonul albastru **`Make a copy to edit`** din colțul stânga-sus (sau mergi la meniul Document -> *Copy workspace*).
-4. Redenumește documentul tău astfel:  
-   `NumeAlianță_PrenumeleTău_RC_Trike_V1` (de exemplu: `TitanDynamics_Alex_RC_Trike_V1`).
-5. Apasă **OK**. Acum ai propria ta copie salvată în cloud!
+3. Dă click pe butonul albastru **`Make a copy to edit`** din colțul stânga-sus (sau mergi la meniul Document -> **`Copy workspace`**).
+4. Redenumește documentul tău folosind **Culoarea Alianței + Prenumele Tău + Numele Robotului Tău**:  
+   `CuloareAlianță_PrenumeleTău_NumeRobot_RC_Trike` (de exemplu: `ScarletAlliance_Alex_Viper_RC_Trike` sau `SkyBlue_Maria_Nova_RC_Trike`).
+5. Apasă **OK** / **Create copy**. Acum ai propria ta copie salvată în workspace-ul tău din cloud!
 6. **Verifică Tab-ul Activ (`Assembly 1`)**:
    - Privește bara inferioară a ecranului: asigură-te că ești pe tab-ul **`Assembly 1`** (nu în `Part Studio 1`, unde se află doar geometriile sursă ale pieselor).
-   - În `Assembly 1`, toate componentele triciclului sunt deja așezate pe masa de lucru virtuală, gata de asamblat.
+   - În `Assembly 1`, toate componentele mini-triciclului RC sunt deja așezate pe masa de lucru virtuală, gata de asamblat folosind uneltele **Mate** (`Fastened Mate`).
    - 💡 *Sfat rapid*: Dacă din greșeală ștergi o piesă de pe ecran, apasă butonul **`Insert`** (`Alt + I`) din stânga-sus a barei de unelte, dă click pe piesa respectivă din `Part Studio 1`, plaseaz-o înapoi pe scenă și apasă bifa verde (`✔`).
 
 ---
@@ -147,6 +148,6 @@ Toate componentele se regăsesc deja modelate și pregătite în documentul-șab
 
 ## 🏆 Provocare Suplimentară pentru Echipele Rapide (Bonus roboRanger)
 
-Echipele care termină asamblarea de bază înainte de expirarea timpului pot trece la personalizarea vehiculului:
-1. **Color Coding (Personalizarea Cromatică)**: Dă click-dreapta pe piese în lista din stânga, alege **`Edit Appearance`** și colorează șasiul sau jantele în culorile oficiale alese de alianța ta.
-2. **Foto Oficială de Prezentare**: Folosește tasta **Shift + 7** pentru vederea izometrică, ascunde conectorii apăsând tasta **`K`** (Hide mate connectors) și fă o captură de ecran curată (screenshot) pentru profilul alianței pe platforma web roboRangers!
+Echipele care termină asamblarea de bază înainte de expirarea timpului pot trece la personalizarea vehiculului cu nuanța oficială a alianței:
+1. **Color Coding cu Codul `#HEX` al Alianței**: Dă click-dreapta pe șasiul sau jantele printate 3D în lista din stânga, alege **`Edit Appearance`** și introdu în căsuța **HEX** codul oficial al Alianței tale Cromatice (ex: `#87CEEB` pentru *SkyBlue Alliance*, `#FF2400` pentru *Scarlet Alliance*, `#FFD700` pentru *Yellow Alliance* sau `#3EB489` pentru *Mint Alliance*).
+2. **Foto Oficială de Prezentare**: Folosește tasta **Shift + 7** pentru vederea izometrică, ascunde conectorii apăsând tasta **`K`** (Hide mate connectors) și fă o captură de ecran curată (screenshot) cu robotul tău pentru profilul alianței pe platforma web roboRangers!
