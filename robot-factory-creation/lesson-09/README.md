@@ -155,38 +155,38 @@ Profesorul explică regula oficială de botezare a flotei și a echipelor:
 #### 🎨 Catalogul Oficial al celor 30 de Alianțe Cromatice (30 Hue Alliances & HEX Codes)
 Profesorul proiectează pe ecran tabelul celor 30 de nuanțe oficiale, iar fiecare alianță își revendică o culoare unică (nicio culoare nu se poate repeta între două alianțe din aceeași grupă):
 
-| Nr. | Nume Oficial Alianță (Hue Alliance) | Nuanța în Română | Cod Culoare `HEX` | Mostră Vizuală (RGB) |
-| :---: | :--- | :--- | :---: | :--- |
-| **01** | **SkyBlue Alliance** | Albastru Senin (Cer de Vară) | `#87CEEB` | `RGB(135, 206, 235)` — Albastru deschis aerodinamic |
-| **02** | **Scarlet Alliance** | Roșu Stacojiu Intens | `#FF2400` | `RGB(255, 36, 0)` — Roșu aprins de curse |
-| **03** | **Yellow Alliance** | Galben Solar / Auriu | `#FFD700` | `RGB(255, 215, 0)` — Galben strălucitor de mare vizibilitate |
-| **04** | **Mint Alliance** | Verde Mentă Proaspăt | `#3EB489` | `RGB(62, 180, 137)` — Verde-mentă modern |
-| **05** | **Cobalt Alliance** | Albastru Cobalt Regal | `#0047AB` | `RGB(0, 71, 171)` — Albastru tehnic profund |
-| **06** | **Crimson Alliance** | Roșu Carmin Profund | `#DC143C` | `RGB(220, 20, 60)` — Roșu rubiniu nobil |
-| **07** | **Emerald Alliance** | Verde Smarald | `#50C878` | `RGB(80, 200, 120)` — Verde cristalin intens |
-| **08** | **Amber Alliance** | Portocaliu Chihlimbar | `#FFBF00` | `RGB(255, 191, 0)` — Galben-portocaliu industrial |
-| **09** | **Cyan Alliance** | Cyan Electric | `#00E5FF` | `RGB(0, 229, 255)` — Albastru-turcoaz laser |
-| **10** | **Magenta Alliance** | Magenta Neon | `#FF00FF` | `RGB(255, 0, 255)` — Roz-purpuriu electric |
-| **11** | **Violet Alliance** | Violet Electric | `#8F00FF` | `RGB(143, 0, 255)` — Violet spectral intens |
-| **12** | **Coral Alliance** | Portocaliu Coral | `#FF7F50` | `RGB(255, 127, 80)` — Portocaliu-roz cald |
-| **13** | **Teal Alliance** | Albastru Petrol (Teal) | `#008080` | `RGB(0, 128, 128)` — Culoare oceanică profundă |
-| **14** | **Indigo Alliance** | Indigo Nocturn | `#4B0082` | `RGB(75, 0, 130)` — Albastru-violet cosmic |
-| **15** | **Lime Alliance** | Verde Lime Neon | `#32CD32` | `RGB(50, 205, 50)` — Verde energic fosforescent |
-| **16** | **Tangerine Alliance** | Portocaliu Mandarină | `#F28500` | `RGB(242, 133, 0)` — Portocaliu dinamic |
-| **17** | **Ruby Alliance** | Roșu Rubin | `#E0115F` | `RGB(224, 17, 95)` — Roșu-ciclamen prețios |
-| **18** | **Sapphire Alliance** | Albastru Safir | `#0F52BA` | `RGB(15, 82, 186)` — Albastru metalic intens |
-| **19** | **Jade Alliance** | Verde Jad Imperial | `#00A86B` | `RGB(0, 168, 107)` — Verde mineral dens |
-| **20** | **Amethyst Alliance** | Mov Ametist | `#9966CC` | `RGB(153, 102, 204)` — Mov-liliachiu satinat |
-| **21** | **Turquoise Alliance** | Turcoaz Marin | `#40E0D0` | `RGB(64, 224, 208)` — Acvamarin luminos |
-| **22** | **Chartreuse Alliance** | Verde-Gălbui Volt | `#7FFF00` | `RGB(127, 255, 0)` — Galben-verde sportiv |
-| **23** | **Maroon Alliance** | Vișiniu Bordeaux | `#800000` | `RGB(128, 0, 0)` — Roșu închis imperial |
-| **24** | **Navy Alliance** | Bleumarin Amiral | `#000080` | `RGB(0, 0, 128)` — Albastru marin clasic |
-| **25** | **Olive Alliance** | Verde Măsliniu Tactic | `#808000` | `RGB(128, 128, 0)` — Verde militar camuflaj |
-| **26** | **Peach Alliance** | Piersică Pastel | `#FFCBA4` | `RGB(255, 203, 164)` — Portocaliu-crem luminos |
-| **27** | **Lavender Alliance** | Mov Lavandă | `#B57EDC` | `RGB(181, 126, 220)` — Violet deschis pastelat |
-| **28** | **Slate Alliance** | Gri-Albăstrui Ardezie | `#708090` | `RGB(112, 128, 144)` — Gri oțel industrial |
-| **29** | **Silver Alliance** | Argintiu Metalizat | `#C0C0C0` | `RGB(192, 192, 192)` — Gri titan cromat |
-| **30** | **Obsidian Alliance** | Negru Obsidian Mat | `#1B1B1B` | `RGB(27, 27, 27)` — Negru carbon stealth |
+| Nr. | Nume Oficial Alianță (Hue Alliance) | Nuanța în Română | Mostră Culoare | Cod `HEX` | Descriere Vizuală (RGB) |
+| :---: | :--- | :--- | :---: | :---: | :--- |
+| **01** | **SkyBlue Alliance** | Albastru Senin (Cer de Vară) | <span style="display:inline-block;width:64px;height:20px;background-color:#87CEEB;border:1px solid #555;border-radius:4px;vertical-align:middle;"></span> ![#87CEEB](https://placehold.co/18x18/87CEEB/87CEEB.png) | `#87CEEB` | `RGB(135, 206, 235)` — Albastru deschis aerodinamic |
+| **02** | **Scarlet Alliance** | Roșu Stacojiu Intens | <span style="display:inline-block;width:64px;height:20px;background-color:#FF2400;border:1px solid #555;border-radius:4px;vertical-align:middle;"></span> ![#FF2400](https://placehold.co/18x18/FF2400/FF2400.png) | `#FF2400` | `RGB(255, 36, 0)` — Roșu aprins de curse |
+| **03** | **Yellow Alliance** | Galben Solar / Auriu | <span style="display:inline-block;width:64px;height:20px;background-color:#FFD700;border:1px solid #555;border-radius:4px;vertical-align:middle;"></span> ![#FFD700](https://placehold.co/18x18/FFD700/FFD700.png) | `#FFD700` | `RGB(255, 215, 0)` — Galben strălucitor de mare vizibilitate |
+| **04** | **Mint Alliance** | Verde Mentă Proaspăt | <span style="display:inline-block;width:64px;height:20px;background-color:#3EB489;border:1px solid #555;border-radius:4px;vertical-align:middle;"></span> ![#3EB489](https://placehold.co/18x18/3EB489/3EB489.png) | `#3EB489` | `RGB(62, 180, 137)` — Verde-mentă modern |
+| **05** | **Cobalt Alliance** | Albastru Cobalt Regal | <span style="display:inline-block;width:64px;height:20px;background-color:#0047AB;border:1px solid #555;border-radius:4px;vertical-align:middle;"></span> ![#0047AB](https://placehold.co/18x18/0047AB/0047AB.png) | `#0047AB` | `RGB(0, 71, 171)` — Albastru tehnic profund |
+| **06** | **Crimson Alliance** | Roșu Carmin Profund | <span style="display:inline-block;width:64px;height:20px;background-color:#DC143C;border:1px solid #555;border-radius:4px;vertical-align:middle;"></span> ![#DC143C](https://placehold.co/18x18/DC143C/DC143C.png) | `#DC143C` | `RGB(220, 20, 60)` — Roșu rubiniu nobil |
+| **07** | **Emerald Alliance** | Verde Smarald | <span style="display:inline-block;width:64px;height:20px;background-color:#50C878;border:1px solid #555;border-radius:4px;vertical-align:middle;"></span> ![#50C878](https://placehold.co/18x18/50C878/50C878.png) | `#50C878` | `RGB(80, 200, 120)` — Verde cristalin intens |
+| **08** | **Amber Alliance** | Portocaliu Chihlimbar | <span style="display:inline-block;width:64px;height:20px;background-color:#FFBF00;border:1px solid #555;border-radius:4px;vertical-align:middle;"></span> ![#FFBF00](https://placehold.co/18x18/FFBF00/FFBF00.png) | `#FFBF00` | `RGB(255, 191, 0)` — Galben-portocaliu industrial |
+| **09** | **Cyan Alliance** | Cyan Electric | <span style="display:inline-block;width:64px;height:20px;background-color:#00E5FF;border:1px solid #555;border-radius:4px;vertical-align:middle;"></span> ![#00E5FF](https://placehold.co/18x18/00E5FF/00E5FF.png) | `#00E5FF` | `RGB(0, 229, 255)` — Albastru-turcoaz laser |
+| **10** | **Magenta Alliance** | Magenta Neon | <span style="display:inline-block;width:64px;height:20px;background-color:#FF00FF;border:1px solid #555;border-radius:4px;vertical-align:middle;"></span> ![#FF00FF](https://placehold.co/18x18/FF00FF/FF00FF.png) | `#FF00FF` | `RGB(255, 0, 255)` — Roz-purpuriu electric |
+| **11** | **Violet Alliance** | Violet Electric | <span style="display:inline-block;width:64px;height:20px;background-color:#8F00FF;border:1px solid #555;border-radius:4px;vertical-align:middle;"></span> ![#8F00FF](https://placehold.co/18x18/8F00FF/8F00FF.png) | `#8F00FF` | `RGB(143, 0, 255)` — Violet spectral intens |
+| **12** | **Coral Alliance** | Portocaliu Coral | <span style="display:inline-block;width:64px;height:20px;background-color:#FF7F50;border:1px solid #555;border-radius:4px;vertical-align:middle;"></span> ![#FF7F50](https://placehold.co/18x18/FF7F50/FF7F50.png) | `#FF7F50` | `RGB(255, 127, 80)` — Portocaliu-roz cald |
+| **13** | **Teal Alliance** | Albastru Petrol (Teal) | <span style="display:inline-block;width:64px;height:20px;background-color:#008080;border:1px solid #555;border-radius:4px;vertical-align:middle;"></span> ![#008080](https://placehold.co/18x18/008080/008080.png) | `#008080` | `RGB(0, 128, 128)` — Culoare oceanică profundă |
+| **14** | **Indigo Alliance** | Indigo Nocturn | <span style="display:inline-block;width:64px;height:20px;background-color:#4B0082;border:1px solid #555;border-radius:4px;vertical-align:middle;"></span> ![#4B0082](https://placehold.co/18x18/4B0082/4B0082.png) | `#4B0082` | `RGB(75, 0, 130)` — Albastru-violet cosmic |
+| **15** | **Lime Alliance** | Verde Lime Neon | <span style="display:inline-block;width:64px;height:20px;background-color:#32CD32;border:1px solid #555;border-radius:4px;vertical-align:middle;"></span> ![#32CD32](https://placehold.co/18x18/32CD32/32CD32.png) | `#32CD32` | `RGB(50, 205, 50)` — Verde energic fosforescent |
+| **16** | **Tangerine Alliance** | Portocaliu Mandarină | <span style="display:inline-block;width:64px;height:20px;background-color:#F28500;border:1px solid #555;border-radius:4px;vertical-align:middle;"></span> ![#F28500](https://placehold.co/18x18/F28500/F28500.png) | `#F28500` | `RGB(242, 133, 0)` — Portocaliu dinamic |
+| **17** | **Ruby Alliance** | Roșu Rubin | <span style="display:inline-block;width:64px;height:20px;background-color:#E0115F;border:1px solid #555;border-radius:4px;vertical-align:middle;"></span> ![#E0115F](https://placehold.co/18x18/E0115F/E0115F.png) | `#E0115F` | `RGB(224, 17, 95)` — Roșu-ciclamen prețios |
+| **18** | **Sapphire Alliance** | Albastru Safir | <span style="display:inline-block;width:64px;height:20px;background-color:#0F52BA;border:1px solid #555;border-radius:4px;vertical-align:middle;"></span> ![#0F52BA](https://placehold.co/18x18/0F52BA/0F52BA.png) | `#0F52BA` | `RGB(15, 82, 186)` — Albastru metalic intens |
+| **19** | **Jade Alliance** | Verde Jad Imperial | <span style="display:inline-block;width:64px;height:20px;background-color:#00A86B;border:1px solid #555;border-radius:4px;vertical-align:middle;"></span> ![#00A86B](https://placehold.co/18x18/00A86B/00A86B.png) | `#00A86B` | `RGB(0, 168, 107)` — Verde mineral dens |
+| **20** | **Amethyst Alliance** | Mov Ametist | <span style="display:inline-block;width:64px;height:20px;background-color:#9966CC;border:1px solid #555;border-radius:4px;vertical-align:middle;"></span> ![#9966CC](https://placehold.co/18x18/9966CC/9966CC.png) | `#9966CC` | `RGB(153, 102, 204)` — Mov-liliachiu satinat |
+| **21** | **Turquoise Alliance** | Turcoaz Marin | <span style="display:inline-block;width:64px;height:20px;background-color:#40E0D0;border:1px solid #555;border-radius:4px;vertical-align:middle;"></span> ![#40E0D0](https://placehold.co/18x18/40E0D0/40E0D0.png) | `#40E0D0` | `RGB(64, 224, 208)` — Acvamarin luminos |
+| **22** | **Chartreuse Alliance** | Verde-Gălbui Volt | <span style="display:inline-block;width:64px;height:20px;background-color:#7FFF00;border:1px solid #555;border-radius:4px;vertical-align:middle;"></span> ![#7FFF00](https://placehold.co/18x18/7FFF00/7FFF00.png) | `#7FFF00` | `RGB(127, 255, 0)` — Galben-verde sportiv |
+| **23** | **Maroon Alliance** | Vișiniu Bordeaux | <span style="display:inline-block;width:64px;height:20px;background-color:#800000;border:1px solid #555;border-radius:4px;vertical-align:middle;"></span> ![#800000](https://placehold.co/18x18/800000/800000.png) | `#800000` | `RGB(128, 0, 0)` — Roșu închis imperial |
+| **24** | **Navy Alliance** | Bleumarin Amiral | <span style="display:inline-block;width:64px;height:20px;background-color:#000080;border:1px solid #555;border-radius:4px;vertical-align:middle;"></span> ![#000080](https://placehold.co/18x18/000080/000080.png) | `#000080` | `RGB(0, 0, 128)` — Albastru marin clasic |
+| **25** | **Olive Alliance** | Verde Măsliniu Tactic | <span style="display:inline-block;width:64px;height:20px;background-color:#808000;border:1px solid #555;border-radius:4px;vertical-align:middle;"></span> ![#808000](https://placehold.co/18x18/808000/808000.png) | `#808000` | `RGB(128, 128, 0)` — Verde militar camuflaj |
+| **26** | **Peach Alliance** | Piersică Pastel | <span style="display:inline-block;width:64px;height:20px;background-color:#FFCBA4;border:1px solid #555;border-radius:4px;vertical-align:middle;"></span> ![#FFCBA4](https://placehold.co/18x18/FFCBA4/FFCBA4.png) | `#FFCBA4` | `RGB(255, 203, 164)` — Portocaliu-crem luminos |
+| **27** | **Lavender Alliance** | Mov Lavandă | <span style="display:inline-block;width:64px;height:20px;background-color:#B57EDC;border:1px solid #555;border-radius:4px;vertical-align:middle;"></span> ![#B57EDC](https://placehold.co/18x18/B57EDC/B57EDC.png) | `#B57EDC` | `RGB(181, 126, 220)` — Violet deschis pastelat |
+| **28** | **Slate Alliance** | Gri-Albăstrui Ardezie | <span style="display:inline-block;width:64px;height:20px;background-color:#708090;border:1px solid #555;border-radius:4px;vertical-align:middle;"></span> ![#708090](https://placehold.co/18x18/708090/708090.png) | `#708090` | `RGB(112, 128, 144)` — Gri oțel industrial |
+| **29** | **Silver Alliance** | Argintiu Metalizat | <span style="display:inline-block;width:64px;height:20px;background-color:#C0C0C0;border:1px solid #555;border-radius:4px;vertical-align:middle;"></span> ![#C0C0C0](https://placehold.co/18x18/C0C0C0/C0C0C0.png) | `#C0C0C0` | `RGB(192, 192, 192)` — Gri titan cromat |
+| **30** | **Obsidian Alliance** | Negru Obsidian Mat | <span style="display:inline-block;width:64px;height:20px;background-color:#1B1B1B;border:1px solid #555;border-radius:4px;vertical-align:middle;"></span> ![#1B1B1B](https://placehold.co/18x18/1B1B1B/1B1B1B.png) | `#1B1B1B` | `RGB(27, 27, 27)` — Negru carbon stealth |
 
 Alianțele au la dispoziție 5 minute pentru:
 1. A-și alege **nuanța oficială a alianței** din tabel (și a-și nota codul `#HEX`);
