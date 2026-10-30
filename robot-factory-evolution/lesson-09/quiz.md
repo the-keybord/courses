@@ -52,7 +52,7 @@ Ce rol are pinul `TRIG` la senzorul ultrasonic `HC-SR04`?
 - A) Lansează ultrasunetul *(Corect)*
 - B) Ascultă ecoul
 - C) Măsoară lumina
-- D)Cântă o notă
+- D) Cântă o notă
 > **Explicație**: Pinul `TRIG` (Trigger) primește un impuls scurt de 10 microsecunde pentru a lansa unda ultrasonică în aer.
 
 ---

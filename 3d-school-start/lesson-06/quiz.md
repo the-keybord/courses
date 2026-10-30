@@ -16,7 +16,7 @@ Cum se numea schimbul direct de produse înainte de apariția banilor?
 - A) Troc *(Corect)*
 - B) Slicing
 - C) Credit
-- D)Seif
+- D) Seif
 > **Explicație**: Trocul (barter) era schimbul direct de mărfuri — de exemplu, un sac de grâu dat la schimb pe oale de lut.
 
 ---

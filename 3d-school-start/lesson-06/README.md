@@ -32,9 +32,9 @@
 5. **Cum putem reproduce în Tinkercad moneda de 1 ban la scară mărită și cum ar arăta o monedă imaginară de 1.000.000 de lei?**
 
 ### 🔗 Resurse & Linkuri Utile
-- **Prezentare**: https://docs.google.com/presentation/
-- **Kahoot**: https://create.kahoot.it/
-- **Alte Materiale**: https://www.tinkercad.com/
+- **Prezentare**: https://docs.google.com/presentation/d/1n2Vlnrp2o7uIDzwKdl6t2FJ5l6r22XXoGOh-H3TGq9A/edit?usp=sharing
+- **Kahoot**: https://create.kahoot.it/details/3324ff37-5be7-4209-8b87-811f09ff384a
+- **Alte Materiale**: https://www.tinkercad.com/things/6wODlHkC9hG-3ds-26
 
 ---
 
