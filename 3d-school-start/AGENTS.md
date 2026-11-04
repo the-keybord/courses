@@ -25,10 +25,8 @@ This file complements the global repository [`AGENTS.md`](../AGENTS.md) with rul
 ## Specific Lesson Guidelines & Workflow
 1. **The Mandatory Lesson Bundle**: Every lesson directory (`lesson-XX/`) must contain:
    - `README.md`: Complete teacher's master plan (120 min), including the timeline, live demo guide, student workflow, and wrap-up (referencing `quiz.md` for Step 7).
-   - `presentation.md`: Slide-by-slide blueprint (8–12 fun, engaging slides) with Canva Master Prompt, speaker notes, image placeholders, and 1 text-only practical briefing slide.
-   - `presentation_interactive.md`: Interactive reading slide-by-slide blueprint formatted with 3–4 numbered sentences per slide for students to take turns reading out loud from the screen/board, accompanied by teacher guidance notes and Canva Master Prompt.
-   - `presentation_summary.md`: Continuous narrative prompt for AI slide generators with header directives and pure didactic text without inline image prompts.
-   - `quiz.md`: Complete interactive Kahoot quiz file containing 10–15 questions, 4 options, balanced answer lengths, and pedagogical explanations.
+   - `presentation_interactive.md`: Interactive reading slide-by-slide blueprint (typically 4–5 concise slides) formatted with 3–4 numbered sentences per slide for students to take turns reading out loud, accompanied by teacher guidance notes and Gemini AI Pro Master Prompt. *(Note: `presentation.md` and `presentation_summary.md` are discontinued).*
+   - `quiz.md` & `quiz.xlsx`: Complete interactive Kahoot quiz file containing 10–15 questions, 4 options, balanced answer lengths, pedagogical explanations, and .xlsx spreadsheet.
    - `risks.md`: Complete pedagogical & technical pre-mortem risk analysis (potential bottlenecks, boredom/frustration triggers, technical failure points, teacher safeguards, and quick verification checklist).
 2. **Essential Questions**: Each lesson must have **3 or more essential questions** defining the session's core objectives.
 3. **Standard 8-Step Lesson Flow (120 min)**: Unless explicitly specified as an exception, every lesson follows this roadmap:
@@ -57,11 +55,12 @@ This file complements the global repository [`AGENTS.md`](../AGENTS.md) with rul
    - 10 to 15 questions, exactly 4 answer options (`A, B, C, D`), balanced lengths, immediate pedagogical explanation for each question.
    - **Ultra-Short Answers (Max 1–3 Words)**: Each answer option must contain **strictly up to 1–3 words** for rapid reading during fast Kahoot rounds.
    - **100% Pure Theoretical Focus**: Strictly tests theoretical concepts from the presentation (zero questions about the practical CAD project).
-8. **Presentation Rules (`presentation.md`, `presentation_interactive.md`, `presentation_summary.md`)**:
+8. **Presentation Rules (`presentation_interactive.md`)**:
    - Strictly 100% theoretical & conceptual (history, mechanics, physics, materials, safety).
    - **Zero Practical Project Content**: Never include practical modeling steps, project instructions, or project checklists in presentations. The practical project workflow belongs strictly in `README.md`.
-   - For AI generators (`presentation_summary.md`), narrative text covers pure theory with abstract style visuals (2D cartoon / flat vector) and a mature color palette.
-   - For interactive lecture (`presentation_interactive.md`), format with 3–4 numbered sentences per slide for students to read out loud.
+   - **Concise Scope (4–5 Slides)**: Keep theoretical delivery focused and punchy without overwhelming students.
+   - **Interactive Reading**: Exactly 3–4 numbered sentences per slide for students to read out loud, plus teacher guidance notes.
+   - **Gemini AI Pro Master Prompt**: Every presentation starts with a prompt designed for Gemini AI Pro, explicitly instructing the AI **never to shorten or omit any content** and to organize slides exactly as provided.
 9. **Risks Files Policy (`risks.md`)**:
    - Risk analysis and pre-mortem documents are strictly for **human review and analysis**.
    - Agents must never automatically apply tweaks or modify lesson bundle documents based on `risks.md`; all adjustments are made at the sole discretion of the author.

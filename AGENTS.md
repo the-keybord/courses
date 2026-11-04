@@ -18,18 +18,16 @@ This file contains instructions and guidelines for AI agents working in this rep
 - **Separate Lesson Directories**: Within a course directory, each lesson has its own dedicated folder (e.g., `lesson-00/`, `lesson-01/`, `lesson-02/`).
 - **The Mandatory Lesson Bundle**: Every lesson directory across all courses must contain these core files:
   1. `README.md`: Complete teacher's master document (operational timeline, deep narrative theory, step-by-step demo guide, student workflow, and wrap-up; references `quiz.md` for the quiz step).
-  2. `presentation.md`: Clearly structured slide-by-slide blueprint (typically 8–12 fun and engaging slides), including Canva AI Master Prompt, slide content, speaker notes, image placeholders for real photos, and a single text-only practical briefing slide.
-  3. `presentation_interactive.md`: Interactive reading slide-by-slide blueprint formatted specifically with **3–4 clearly separated, numbered sentences per slide** designed for students to take turns reading out loud from the board, accompanied by teacher guidance notes and Canva Master Prompt.
-  4. `presentation_summary.md`: Continuous narrative prompt for autonomous AI presentation engines (Gamma, Canva AI, Tome) with strict header directives upfront, rich continuous narrative text without inline image prompts, and 100% theoretical focus.
-  5. `quiz.md` & `quiz.xlsx`: Complete interactive Kahoot quiz file containing 10–15 questions, 4 options (strictly 1–3 words each), balanced answer lengths, and pedagogical explanations, accompanied by a ready-to-import Kahoot spreadsheet (`quiz.xlsx`).
-  6. `risks.md`: Complete pedagogical & technical pre-mortem risk analysis (potential bottlenecks, boredom/frustration triggers, technical failure points, teacher safeguards, and quick verification checklist).
+  2. `presentation_interactive.md`: Interactive reading slide-by-slide blueprint formatted specifically with **3–4 clearly separated, numbered sentences per slide** (typically 4–6 concise slides) designed for students to take turns reading out loud from the board, accompanied by teacher guidance notes and a dedicated **Gemini AI Pro Master Prompt** configured with strict directives to never shorten or omit text. *(Note: `presentation.md` and `presentation_summary.md` are discontinued).*
+  3. `quiz.md` & `quiz.xlsx`: Complete interactive Kahoot quiz file containing 10–15 questions, 4 options (strictly 1–3 words each), balanced answer lengths, and pedagogical explanations, accompanied by a ready-to-import Kahoot spreadsheet (`quiz.xlsx`).
+  4. `risks.md`: Complete pedagogical & technical pre-mortem risk analysis (potential bottlenecks, boredom/frustration triggers, technical failure points, teacher safeguards, and quick verification checklist).
 
 ### 3. Course Master File & Single Source of Truth (SSOT)
 - **Course Master Hub**: Each course directory contains **one master file** (`README.md`) serving as the course hub (vision, target age, prerequisites, learning objectives, and lesson overviews).
 - **Lesson `README.md` as Definitive Source of Truth**:
   - Within each lesson folder, `README.md` is the primary, authoritative master document for that entire lesson.
   - Any manual edits made by the instructor/maintainer in `README.md` represent **official, authoritative changes**.
-  - All derivative files (`presentation.md`, `presentation_interactive.md`, `presentation_summary.md`, and `quiz.md`) derive strictly from `README.md` and must be updated to maintain total consistency with it.
+  - All derivative files (`presentation_interactive.md` and `quiz.md`) derive strictly from `README.md` and must be updated to maintain total consistency with it.
 
 ### 4. Course & Lesson Identification Codes
 - **Standardized Identification System**: Every course and individual lesson uses a precise identifier code across all document titles and metadata.
@@ -132,23 +130,15 @@ Every lesson plan must be structured cleanly and logically without splitting con
 - **Length Balancing (Anti-Longest Answer Bias)**: **Never make the correct answer the longest choice!** Keep options balanced in length.
 - **Pedagogical Explanations**: The context, explanation, and reinforcement belong strictly in the explanation block (`> **Explicație**: ...`), displayed by the teacher after the question ends.
 
-### 12. Presentation Blueprint Specification (`presentation.md` & `presentation_interactive.md`)
-- **Role & Scope**: Slide-by-slide blueprint for manually creating or refining a fun, engaging slide deck (typically **6–10 slides**, ~15–20 min presentation time).
-- **100% Pure Theoretical Focus (Strict Separation from Practical Project)**: Presentations focus **exclusively on theoretical knowledge, history, physics, mechanics, and concepts**. Never include slides describing the practical CAD project, modeling steps, or project instructions. The practical project belongs solely in `README.md` (live demo and student workflow).
-- **Canva AI Master Prompt Block**: Begins with a copy-paste ready prompt specifying format (16:9), target audience (e.g., `Copii 10–12 ani`), visual style (slate/navy/teal, modern cards), and placeholders `[Placeholder Imagine: ...]`.
-- **Interactive Reading Variant (`presentation_interactive.md`)**: Formatted specifically with **3–4 clearly separated, numbered sentences per slide** designed for students to read out loud from the board, accompanied by teacher guidance notes.
-
-### 13. Presentation Narrative Summary Specification (`presentation_summary.md`)
-- **Role & Scope**: Continuous, unformatted narrative prompt designed for autonomous AI slide engines (Gamma, Canva AI, Tome).
-- **Header Directive Block (Upfront)**:
-  - **Target Audience & Scope**: Age group (`10–12 ani`) and educational objectives.
-  - **Strict Grounding Directive**: AI must use **EXCLUSIVELY** provided text (zero hallucinations).
-  - **Strict Step-by-Step Sequence**: AI must follow the chronological narrative order without shuffling or skipping.
-  - **Visual & Image Requirements**: Abstract vector/flat 2D style, mature slate/navy/teal palette.
-- **100% Theoretical Narrative (Zero Practical Steps)**:
-  - Rich, uninterrupted didactic text covering theoretical concepts, history, and context.
-  - Contains **NO practical project steps, checklists, or modeling tutorials**.
-  - Free from slide dividers, schedule tables, or Kahoot quizzes.
+### 12. Interactive Presentation Specification (`presentation_interactive.md`)
+- **Sole Official Presentation Document**: To eliminate duplicate maintenance overhead and keep presentations dynamic, `presentation_interactive.md` is the **only presentation format** maintained in the lesson bundle (`presentation.md` and `presentation_summary.md` are discontinued).
+- **Concise Scope**: Typically **4 to 5 concise slides** (maximum 6), focusing strictly on core concepts without overwhelming kids.
+- **Interactive Reading Structure**: Formatted specifically with **3–4 clearly separated, numbered sentences per slide** designed for students to take turns reading out loud from the screen/board, accompanied by actionable teacher guidance notes.
+- **100% Pure Theoretical Focus**: Presentations focus **exclusively on theoretical knowledge, history, physics, mechanics, and concepts**. Never include practical CAD project steps, modeling instructions, or checklists in presentations (those belong solely in `README.md`).
+- **Gemini AI Pro Master Prompt Block**: Begins with a copy-paste ready prompt calibrated specifically for **Gemini AI Pro**, with explicit, strict directives:
+  - **Zero Shortening Directive**: Instructs the AI **never to shorten, summarize, merge, or omit** any information, facts, or sentences from the provided text.
+  - **Strict Structure**: Organizes information exactly as specified in the prompt slide by slide, preserving the exact numbered sentences and teacher guidance notes.
+  - **Visual Directives**: 16:9 widescreen format, modern cards, high contrast, clean typography, and age-appropriate mature color palette.
 
 ### 14. Critical Review Filter & Anti-Boredom Quality Standard
 - **Mandatory Critical Filter**: Everything created or updated in this repository (curricula, lesson plans, challenges, demos, and presentations) must be rigorously analyzed through a critical, pre-mortem lens to identify what might fail, cause friction, or fall flat in a real classroom setting.
