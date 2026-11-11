@@ -1,26 +1,25 @@
-# Prezentare Interactivă: Lecția 08 [3DS2.8] – Istoria Animalelor de Companie, Identificarea & Tehnologia NFC
+# Prezentare Interactivă: Lecția 08 [3DS2.8] – Medalionul Inteligent cu Cip NFC pentru Animale & Obiecte
 
 ---
 
 ## 🤖 Prompt Master Gemini AI Pro
 
 ```text
-Ești un designer expert de prezentări educaționale interactive pentru copii de 10–12 ani la academia de tehnologie și imprimare 3D „3D School Start”.
-Sarcina ta este să transformi textul didactic de mai jos într-o prezentare modernă 16:9, cu impact vizual maxim și organizare impecabilă.
+Ești un designer expert de prezentări educaționale interactive, prietenoase și vesele pentru copii de 10–12 ani la academia „3D School Start”.
+Sarcina ta este să transformi textul de mai jos într-o prezentare modernă 16:9, relaxată, colorată și plină de energie pozitivă.
 
 DIRECTIVE CRITICE PENTRU GEMINI AI PRO:
 1. DIRECTIVA OBLIGATORIE DE NON-SCURTARE (ZERO-SHORTENING):
-   - NU rezuma, NU scurta, NU condensa și NU omite NICIO propoziție, dată istorică, nume sau detaliu tehnic din conținutul de mai jos!
-   - Fiecare slide trebuie să conțină TEXTUL INTEGRAL al celor 3–4 fraze numerotate, exact așa cum sunt formulate.
+   - NU rezuma, NU scurta și NU omite NICIO propoziție sau idee din conținutul de mai jos!
+   - Fiecare slide trebuie să conțină TEXTUL INTEGRAL al celor 3 fraze numerotate, exact așa cum sunt formulate.
 
 2. ORGANIZAREA STRICTĂ PE SLIDE-URI:
-   - Organizează informația EXACT pe cele 5 slide-uri specificate mai jos, fără a le comasa și fără a adăuga slide-uri suplimentare.
-   - Păstrează structura interactivă de lectură cu voce tare: exact 3–4 enunțuri numerotate per slide (pentru ca elevii să citească pe rând de la tablă), urmate de caseta specială „Ghid Profesor”.
+   - Organizează informația EXACT pe cele 4 slide-uri specificate mai jos, fără a adăuga alte slide-uri.
+   - Păstrează cele 3 enunțuri scurte numerotate per slide pentru ca elevii să citească pe rând cu voce tare, urmate de caseta „Ghid Profesor”.
 
 3. STIL VIZUAL & LAYOUT (16:9 Widescreen):
-   - Fundal modern Dark Slate Navy (#0F172A), cu accente calde și tehnologice (chihlimbar #F59E0B, cyan electric #06B6D4, verde smarald #10B981 și portocaliu coral #FB7185).
-   - Carduri grafice rotunjite pentru fiecare dintre enunțurile numerotate, asigurând contrast cromatic ridicat și tipografie clară, lizibilă de la distanță (stil Inter / Outfit).
-   - Spațiu generos dedicat pentru ilustrații vectoriale sau fotografii istorice reale. Fără formule LaTeX.
+   - Fundal prietenos Dark Slate (#0F172A) cu accente vesele și calde (portocaliu coral #FB7185, galben ambră #F59E0B, cyan #06B6D4, verde mentă #10B981).
+   - Carduri rotunjite aerisite, ilustrații simpatice cu căței, pisici, zgărzi colorate, medalioane în formă de lăbuță/os/inimă și un telefon care atinge un breloc NFC. Fără formule LaTeX.
 
 ---
 CONȚINUTUL DIDACTIC AL PREZENTĂRII:
@@ -28,55 +27,40 @@ CONȚINUTUL DIDACTIC AL PREZENTĂRII:
 
 ---
 
-## Slide 1: Primele Animale de Companie din Istorie
+## Slide 1: Primii Prieteni Necuvântători & Primele Nume
 
-1. Primul animal domesticit de om din istorie a fost **câinele**, acum **15.000 – 30.000 de ani**, când lupii mai blânzi s-au apropiat de taberele vânătorilor pentru hrană și au oferit în schimb pază.
-2. Cea mai veche dovadă a iubirii față de un animal este un mormânt de acum 14.200 de ani din Germania (**Bonn-Oberkassel**), unde oamenii preistorici au îngrijit un cățel bolnav și l-au îngropat alături de ei.
-3. **Pisica** a fost domesticită acum aproximativ **9.500 – 10.000 de ani**, când oamenii au început să facă agricultură și aveau nevoie de un vânător agil care să apere grânele de șoareci.
-4. În **Egiptul Antic**, pisicile erau atât de prețuite și respectate încât erau asociate cu zeița **Bastet** și erau protejate prin lege!
+1. Primul animal care a devenit prietenul omului a fost **câinele** (acum peste 15.000 de ani), urmat de **pisică**, care apăra proviziile de șoareci.
+2. Acum peste 4.000 de ani, în **Egiptul Antic**, oamenii își iubeau atât de mult animalele încât le puneau nume drăguțe (precum *„Pisicuța”*) și le făceau primele **zgărzi** din piele!
+3. Iar în **Roma Antică**, unul dintre cele mai populare nume de câine era **Fido**, care înseamnă *„Credinciosul”* — un nume pe care îl auzim și astăzi!
 
-> 🧑‍🏫 **Ghid Profesor**: *Întrebați elevii: de ce credeți că oamenii preistorici aveau mai mare nevoie de un câine decât de o pisică în timpul vânătorii?*
-
----
-
-## Slide 2: Când au Primit Animalele Primele Nume?
-
-1. Cele mai vechi dovezi scrise ale numelor date animalelor provin din hieroglifele din **Egiptul Antic**, de acum peste 4.000 de ani.
-2. Cel mai vechi câine cu nume cunoscut din istorie se numea **Abuwtiyuw** (cca. 2280 î.Hr.), un câine de vânătoare al curții regale care a primit o înmormântare de onoare la ordinul faraonului.
-3. Pisica prințului egiptean Thutmose (cca. 1380 î.Hr.) purta numele afectuos **Ta-Miu**, care înseamnă „Pisicuța”, și a avut propriul ei sarcofag pictat.
-4. În **Roma Antică**, cetățenii își botezau câinii după viteză sau loialitate — de exemplu **Fido** (din latină *fidus* = „credincios”), nume folosit pentru câini până astăzi!
-
-> 🧑‍🏫 **Ghid Profesor**: *Rugați câțiva elevi să spună ce nume poartă animalele lor de acasă și de ce au ales acel nume.*
+> 🧑‍🏫 **Ghid Profesor**: *Întrebați copiii: ce nume are animăluțul vostru de acasă sau ce nume amuzant i-ați pune dacă ați avea unul?*
 
 ---
 
-## Slide 3: De ce Poartă Zgardă și Cum Sunt Identificate?
+## Slide 2: Zgarda, Microcipul și Pașaportul de Animal
 
-1. Primele zgărzi din piele și bronz au apărut în Egipt și Roma Antică: aveau gravat numele stăpânului pentru returnare, iar câinii de pază purtau **zgărzi cu țepi de fier** pentru a-și apăra gâtul de lupi.
-2. Astăzi, rolul principal al zgărzii este prinderea lesei în siguranță și purtarea **medalionului extern (`Pet Tag`)**, pe care orice trecător poate citi pe loc numele și telefonul stăpânului.
-3. Pentru identificarea oficială permanentă, medicul veterinar implantează nedureros sub piele un **microcip RFID** minuscul, de mărimea unui **bob de orez** (~12 x 2 mm).
-4. Microcipul nu are baterie și conține un **cod unic din 15 cifre**, care poate fi citit cu un scanner special în clinici și adăposturi de animale!
+1. Zgarda nu este doar un accesoriu simpatic de plimbare: încă din vechime, pe ea se prindea un medalion cu numele stăpânului pentru ca animalul rătăcit să se întoarcă acasă.
+2. Astăzi, animalele au chiar și un **microcip** minuscul cât un bob de orez pus de veterinar, plus un **Pașaport oficial** cu vaccinuri ca să poată călători cu avionul peste graniță!
+3. Dar un trecător de pe stradă nu are aparat de veterinar la el, așa că **medalionul de la zgardă** rămâne cel mai rapid mod de a ajuta un prieten pierdut.
 
-> 🧑‍🏫 **Ghid Profesor**: *Subliniați diferența practică: un trecător de pe stradă nu are un scanner veterinar la el, deci medalionul de la zgardă rămâne esențial!*
-
----
-
-## Slide 4: Pașaportul de Animal și Călătoriile Internaționale
-
-1. La fel ca oamenii, câinii, pisicile și dihorii au nevoie de un **Pașaport pentru Animale de Companie (`Pet Passport`)** oficial pentru a putea călători cu avionul sau mașina peste granițe.
-2. Pașaportul conține fotografia animalului, datele de contact ale proprietarului și codul unic din 15 cifre al **microcipului**.
-3. Documentul include și carnetul de sănătate cu toate vaccinările obligatorii, cel mai important fiind **vaccinul antirabic** (împotriva turbării).
-4. Fără microcip și pașaport veterinar valabil la zi, niciun animal de companie nu poate trece controlul de frontieră!
-
-> 🧑‍🏫 **Ghid Profesor**: *Întrebați elevii dacă au călătorit vreodată cu animalul lor de companie în altă țară și cum a decurs controlul.*
+> 🧑‍🏫 **Ghid Profesor**: *Glumiți puțin cu elevii: v-ați imaginat vreodată un cățel la aeroport prezentând pașaportul cu poză?*
 
 ---
 
-## Slide 5: Magia Tehnologiei NFC (`Near Field Communication`)
+## Slide 3: Cum Arată un Medalion (`Pet Tag`) Super Cool?
 
-1. **NFC** înseamnă *Near Field Communication* și este o tehnologie radio wireless care transmite date la o distanță foarte mică, **sub 4 cm** (la fel ca plata contactless cu cardul bancar).
-2. Un sticker rotund **NFC** nu are nicio baterie în interior: când apropii telefonul, antena acestuia trimite un câmp electromagnetic minuscul care alimentează cipul pentru o clipă și îi citește mesajul!
-3. Spre deosebire de microcipul veterinar care necesită scanner special, un tag NFC poate fi citit instantaneu de **orice smartphone obișnuit**, afișând pe loc un mesaj de salvare cu telefonul stăpânului.
-4. **Regula de aur a siguranței**: pe un tag NFC public scriem doar numele animalului (sau al ghiozdanului) și telefonul unui părinte — **nu scriem niciodată adresa exactă de acasă**!
+1. Un medalion de zgardă poate avea forme super simpatice: o **urmă de lăbuță**, un **os de cățel**, o **inimioară**, o **steluță** sau un **disc colorat**!
+2. Ca să arate frumos și să iasă în evidență, pe el scriem **numele** sau **prima literă** mare în relief, combinând culori vesele și contrastante.
+3. Iar dacă nu ai un animal de companie acasă, același medalion devine cel mai tare **breloc anti-pierdere** pentru ghiozdan, chei sau bicicletă!
 
-> 🧑‍🏫 **Ghid Profesor**: *Arătați din nou pe scurt cum apropierea telefonului de spatele brelocului declanșează citirea instantanee fără cameră și fără baterii!*
+> 🧑‍🏫 **Ghid Profesor**: *Întrebați elevii: ce formă și ce culori ar alege pentru medalionul lor ca să arate cel mai tare?*
+
+---
+
+## Slide 4: Magia Cipului NFC — Și Noi Vom Face Asta Azi!
+
+1. **NFC** este o tehnologie magică fără baterie: când atingi brelocul cu telefonul, acesta citește instantaneu mesajul salvat pe un mic sticker rotund!
+2. Pe cip putem scrie un mesaj prietenos de ajutor: *„Acesta este Rex! Dacă l-ați găsit, vă rog să sunați la numărul...”*.
+3. **Și ghiciți ce? Noi tot vom face asta astăzi!** Vom modela un breloc în formă de lăbuță și îi vom pune pe spate un cip NFC pe care îl vom programa chiar noi!
+
+> 🧑‍🏫 **Ghid Profesor**: *Regula de aur a siguranței: pe cip scriem doar numele și telefonul unui părinte — niciodată adresa exactă de acasă!*

@@ -37,10 +37,9 @@
 5. **Cum proiectăm în Tinkercad un breloc în formă de labă cu lăcaș tehnic calibrat pentru un sticker NFC de 25 mm?**
 
 ### 🔗 Resurse & Linkuri Utile
-- **Prezentare**: https://docs.google.com/presentation/d/placeholder-pet-tag-nfc-3ds28/edit?usp=sharing
-- **Kahoot**: https://create.kahoot.it/details/placeholder-pet-tag-nfc-3ds28
-- **Alte Materiale**: https://www.tinkercad.com/things/placeholder-pet-tag-nfc-3ds28
-
+- **Prezentare**: https://docs.google.com/presentation/d/1xUnPwjtqX8fhQ_-68-dFK1fdnCaS-j3Y7xwURAFcMfo/edit?usp=sharing
+- **Kahoot**: https://create.kahoot.it/details/60346022-871b-4176-a524-d71d7c32e5c7
+- **Alte Materiale**:
 ---
 
 ## 📋 2. Pregătirea Lecției (Checklist Profesor)
@@ -72,7 +71,7 @@
 | **40 – 50 min** | **4. Pauză & Prezență** | 10 minute de mișcare, hidratare și discuții despre animalele de companie ale elevilor. Notarea prezenței. |
 | **50 – 65 min** | **5. Demonstrația Profesorului (Tinkercad + Scriere Live în NFC Tools)** | Construirea pas cu pas a brelocului în formă de lăbuță (`45 x 45 mm`), crearea lăcașului de `26 mm` pe spate pentru stickerul NFC, textul/inițiala în relief + demonstrație live de programare a mesajului în **NFC Tools**. |
 | **65 – 100 min** | **6. Atelier Practic: Proiectarea Brelocului „Paw Tag” & Testare NFC** | Elevii își modelează propriul tag pentru animal sau obiect personal; pe rând, vin la catedră pentru a testa scrierea și scanarea mesajului pe brelocul demo cu telefonul profesorului. |
-| **100 – 110 min** | **7. Joc Kahoot: Animale de Companie, Identificare & Tehnologia NFC** | 12 întrebări interactive (din `quiz.md`) pentru fixarea noțiunilor istorice și tehnice despre identificarea animalelor și comunicația NFC. |
+| **100 – 110 min** | **7. Joc Kahoot: Animale de Companie, Identificare & Tehnologia NFC** | 10 întrebări interactive (din `quiz.md`) pentru fixarea noțiunilor istorice și tehnice despre identificarea animalelor și comunicația NFC. |
 | **110 – 120 min** | **8. Colectarea Puzzle-urilor din Lecția 07, Stickerul NFC & Poză de Grup** | Ridicăm și testăm îmbinarea celor 16 piese ale tablourilor puzzle de pe imprimante, fiecare elev primește stickerul său NFC și facem fotografia oficială! |
 
 ---
@@ -100,42 +99,31 @@
 
 ---
 
-### Etapa 3: Teorie – Primele Animale, Primele Nume, Zgarda, Pașaportul & NFC (Minutele 20 – 40)
+### Etapa 3: Teorie – Primele Animale, Zgarda, Medalionul Cool & Magia NFC (Minutele 20 – 40)
 
-Profesorul parcurge cele 5 slide-uri din `presentation_interactive.md` (invitând elevii să citească pe rând enunțurile numerotate de pe tablă) și completează discuția cu informațiile esențiale:
+Profesorul parcurge cele 4 slide-uri scurte și vesele din `presentation_interactive.md` (invitând elevii să citească pe rând de pe tablă) și întreține o discuție caldă, relaxată:
 
-#### 1. Care au fost primele animale de companie din istorie?
-- **Câinele (*Canis lupus familiaris*) — Primul prieten al omului**:
-  - Câinii au fost primele animale domesticite de oameni, cu **15.000 – 30.000 de ani în urmă** (în Epoca de Piatră), pornind de la lupi mai blânzi care se apropiau de taberele vânătorilor pentru resturi de hrană și ofereau în schimb pază împotriva prădătorilor.
-  - Cea mai emoționantă dovadă veche a legăturii de prietenie este mormântul din **Bonn-Oberkassel** (Germania, vechi de circa 14.200 de ani): arheologii au descoperit că oamenii preistorici au îngrijit timp de săptămâni întregi un cățeluș grav bolnav și, după ce a murit, l-au îngropat alături de ei!
-- **Pisica (*Felis catus*) — Paznicul grânarelor**:
-  - Pisicile au fost domesticite acum aproximativ **9.500 – 10.000 de ani**, odată cu apariția agriculturii (oamenii aveau nevoie de cineva care să prindă șoarecii din depozitele de cereale). În insula Cipru a fost găsit un mormânt vechi de 9.500 de ani în care un om a fost înmormântat împreună cu pisica sa!
-  - În **Egiptul Antic** (acum ~4.000 de ani), pisicile erau atât de iubite și respectate încât erau asociate cu zeița Bastet și protejate prin lege.
+#### 1. Primii prieteni necuvântători & primele nume (Teorie scurtă și bună)
+- **Câinele și Pisica**: Primul animal care a devenit prietenul omului a fost **câinele** (acum peste 15.000 de ani, ajutând la pază și vânătoare), urmat de **pisică** (acum ~10.000 de ani, campioană la prins șoareci în depozitele de grâne).
+- **Primele nume din istorie**: Acum peste 4.000 de ani, în **Egiptul Antic**, oamenii își iubeau atât de mult animalele încât le dădeau nume drăguțe (precum *„Pisicuța”*) și le confecționau primele **zgărzi** din piele. Iar în **Roma Antică**, cel mai celebru nume de câine era **Fido** (care înseamnă *„Credinciosul”* în latină — nume folosit până azi!).
 
-#### 2. Când au început animalele să primească nume proprii?
-- **Egiptul Antic (acum peste 4.000 de ani)** ne oferă primele nume scrise în hieroglife:
-  - Cel mai vechi câine cu nume cunoscut din istorie se numea **Abuwtiyuw** (cca. 2280 î.Hr.), un câine de vânătoare al curții regale care a primit o înmormântare de onoare la ordinul faraonului.
-  - Faraonul Intef al II-lea și-a sculptat pe o stelă de piatră numele celor 5 câini favoriți (printre care *Beha* / Antilopa și *Pehetes* / Negruța).
-  - Pisica prințului egiptean Thutmose (cca. 1380 î.Hr.) se numea **Ta-Miu** („Pisicuța”) și avea propriul ei sarcofag pictat.
-- **Grecia și Roma Antică**:
-  - Cetățenii romani își botezau câinii după viteză sau caracter: *Celer* (Rapidul), *Lupa* (Lupoaica) și celebrul **Fido** (care provine din cuvântul latin *fidus* = „loial / credincios”, nume folosit pentru câini până în ziua de azi!).
+#### 2. De ce poartă zgardă, Pașaportul de Animal & Microcipul
+- **Zgarda și Medalionul**: Încă din vechime, oamenii prindeau de zgardă o mică plăcuță cu numele stăpânului pentru ca animalul pierdut să poată fi adus acasă.
+- **Identificarea modernă**:
+  - **Microcipul veterinar**: O capsulă minusculă cât un **bob de orez** pusă nedureros sub piele, care poate fi citită cu un scanner la clinică;
+  - **Pașaportul de animal (`Pet Passport`)**: Documentul oficial cu poză, datele stăpânului și vaccinurile la zi, necesar atunci când un cățel sau o pisică călătorește cu avionul sau mașina peste graniță!
+- **De ce rămâne medalionul esențial?** Un trecător obișnuit de pe stradă nu are un scanner veterinar la el — primul lucru pe care îl vede este **medalionul de la zgardă**!
 
-#### 3. De ce poartă animalele zgardă și cum sunt identificate?
-- **Istoria Zgărzii (`Collar`)**:
-  - Primele zgărzi din piele și bronz au apărut acum peste 4.000 de ani în Egipt și Mesopotamia, având gravat numele câinelui sau al stăpânului.
-  - În Roma Antică se foloseau zgărzi cu țepi de fier (*melium*) pentru a proteja gâtul câinilor de pază de mușcăturile lupilor, dar și medalioane de bronz pe care scria: *„Prinde-mă dacă am fugit și adu-mă înapoi la stăpânul meu pentru o recompensă!”*.
-- **Cele 3 Metode Moderne de Identificare**:
-  1. **Medalionul extern (`Pet Tag`)**: Plăcuța prinsă la zgardă — este cea mai rapidă metodă, pentru că orice trecător vede pe loc numele și telefonul fără a merge la clinică.
-  2. **Microcipul subcutanat (`RFID Microchip`)**: Un cilindru minuscul din sticlă biocompatibilă, de dimensiunea unui **bob de orez** (~12 x 2 mm), implantat nedureros sub piele de medicul veterinar. Nu are baterie și conține un **cod numeric unic din 15 cifre**, citit cu un scanner special de veterinari și adăposturi.
-  3. **Pașaportul pentru Animale (`Pet Passport`)**: Documentul oficial de călătorie internațională (atât în Republica Moldova, cât și în UE). Conține codul microcipului, datele proprietarului și dovada vaccinului obligatoriu **antirabic** (împotriva turbării) și a deparazitărilor — fără el, un animal nu poate trece frontiera cu avionul sau mașina!
+#### 3. Cum arată un Medalion (`Pet Tag`) super cool?
+- Profesorul discută cu elevii despre designul și estetica medalioanelor moderne:
+  - **Forme simpatice**: Urmă de **lăbuță**, **os de cățel**, **inimioară**, **steluță** sau un **disc colorat** cu colțuri rotunjite (ca să nu zgârie animalul sau ghiozdanul).
+  - **Cum îl facem să arate frumos și clar**: Culori vii și contrastante (de exemplu lăbuță albastră cu litere albe, sau neagră cu nume auriu), numele animalului sau **prima literă mare** în relief pe față.
+  - **Pentru cei fără animale**: Același design arată super tare și ca **breloc inteligent anti-pierdere** pentru ghiozdan, chei sau bicicletă!
 
-#### 4. Cum funcționează tehnologia NFC (Near Field Communication)?
-- **Ce este NFC?** O tehnologie de comunicare radio wireless la distanță foarte scurtă (**sub 4 cm**), pe frecvența de **13.56 MHz** (aceeași tehnologie folosită la cardurile bancare contactless și la cartelele de acces!).
-- **Magia Inducției Electromagnetice (Zero Baterii!)**:
-  - Un sticker rotund **NFC** este un dispozitiv complet **pasiv** — nu are nicio baterie în interior și poate rezista zeci de ani!
-  - Când apropii telefonul, antena smartphone-ului creează un câmp electromagnetic minuscul care alimentează cipul din sticker pentru o fracțiune de secundă, suficient cât acesta să trimită mesajul salvat direct pe ecranul telefonului!
-- **Regula de Aur a Siguranței Digitale (Privacy)**:
-  - Profesorul subliniază clar: pe un tag NFC pe care îl poate scana oricine pe stradă **NU scriem niciodată adresa exactă de acasă**! Scriem doar numele animalului (sau al obiectului) și un număr de telefon al unui părinte!
+#### 4. Magia Cipului NFC — Și Noi Vom Face Asta Azi!
+- **Cum funcționează NFC?** Este o tehnologie wireless fără baterie: când atingi brelocul cu telefonul, antena telefonului trimite o mică undă care trezește cipul pentru o secundă și citește mesajul!
+- **Misiunea noastră**: **Noi tot vom face asta astăzi!** Vom modela în Tinkercad brelocul în formă de lăbuță și îi vom pune pe spate un **sticker rotund NFC** pe care vom scrie chiar noi mesajul de ajutor (*„Acesta este Rex, dacă l-ați găsit...”*).
+- **Regula de aur a siguranței**: Pe un tag NFC pe care îl poate scana oricine nu scriem niciodată adresa exactă de acasă — punem doar numele și telefonul unui părinte!
 
 ---
 
@@ -194,7 +182,7 @@ Profesorul proiectează sau arată grupului pas cu pas cum se scrie informația 
 
 ### Etapa 7: Joc Kahoot – Animale de Companie, Identificare & Tehnologia NFC (Minutele 100 – 110)
 - Elevii intră pe platforma **Kahoot** folosind codul PIN afișat pe proiector.
-- Se parcurg cele 12 întrebări teoretice din fișierul `quiz.md`, consolidând istoria domesticirii câinilor și pisicilor, primele nume din Egiptul Antic, rolul zgărzilor, microcipul RFID, pașaportul veterinar și principiile fără baterie ale tehnologiei NFC.
+- Se parcurg cele 10 întrebări teoretice din fișierul `quiz.md`, consolidând istoria domesticirii câinilor și pisicilor, primele nume din Egiptul Antic, rolul zgărzilor, microcipul RFID, pașaportul veterinar și principiile fără baterie ale tehnologiei NFC.
 
 ---
 
