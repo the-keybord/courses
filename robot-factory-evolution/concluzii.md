@@ -1,36 +1,48 @@
-# Raport pentru Părinți: Ce au învățat și realizat copiii la Robot Factory: Evolution
+# Raport de Activitate: Robot Factory: Evolution (Nivelul 2)
 
-Dragi părinți,  
-Acest document este creat special pentru dumneavoastră, pentru a vă arăta cum evoluează copiii dumneavoastră (11–15 ani) în cadrul sezonului avansat **Robot Factory: Evolution** (Nivelul 2). 
-
-Principiul nostru de bază este **„1 Robot Per Cursant”**: fiecare copil lucrează la propriul său banc de lucru, își asamblează, cablează și programează propriul robot individual (**RF 2.0**) și face parte dintr-o alianță de echipă pentru competiția de explorare spațială *Orbit Odyssey*.
+Acest document prezintă activitățile parcurse și lucrările practice realizate de elevi (11–15 ani) în cadrul cursului avansat **Robot Factory: Evolution**. Fiecare cursant lucrează individual la propriul post de lucru, reconstruind, cablând și programând propriul robot (**RF 2.0**).
 
 ---
 
-### 🔹 La lecțiile 1 și 2, copiii au:
-- **Descoperit ce înseamnă maturizarea inginerească a unui produs**: Au analizat defecțiunile apărute la roboții din anul trecut (fire slăbite de trepidații, conectori săriți sau căderi de curent) și au înțeles cum inginerii din lumea reală îmbunătățesc o mașinărie pas cu pas.
-- **Învățat despre baterii și siguranță electrică**: Au descoperit cum funcționează acumulatorii reîncărcabili Li-Ion 18650, de ce legarea a două baterii în serie le dublează voltajul (ajungând la 7.4V pentru motoare puternice) și cum se protejează circuitele împotriva supraîncălzirii.
-- **Ce au realizat practic**: Au inventariat trusa tehnică proprie și au proiectat în softul 3D profesional Autodesk Fusion 360 un suport dublu de baterii ranforsat, perfect adaptat noului șasiu.
+### 🔹 Lecția 1: Diagnoza hardware și planul de reconstrucție RF 2.0
+- S-a realizat cunoașterea și organizarea grupei, împreună cu analiza experiențelor din sezonul precedent.
+- Au fost analizate defecțiunile tehnice apărute la prima versiune a robotului (conexiuni slăbite de vibrații, conectori desprinși, căderi de tensiune / *brownouts*).
+- A fost stabilită arhitectura tehnică pentru reconstrucția robotului **RF 2.0** și tranziția la controlul prin Bluetooth Low Energy (BLE).
 
 ---
 
-### 🔹 La lecțiile 3 și 4, copiii au:
-- **Făcut cunoștință cu noul „creier” al robotului**: Au explorat microcontrolerul puternic **ESP32**, care are două nuclee de procesare, antenă Wi-Fi și Bluetooth Low Energy (BLE) integrat direct pe cip.
-- **Descoperit secretele cablurilor din industria robotică**: Au înțeles de ce firele casante de casă se rup la vibrații și de ce în robotică folosim conductori multifilari din cupru cositorit cu izolație din silicon flexibil, rezistent la căldură mare.
-- **Ce au realizat practic**: Au mânuit pentru prima dată letconul de lipit pentru a monta întrerupătorul general de alimentare, au învățat tehnica industrială de sertizare a pinilor cu cleștele profesional și au confecționat cu mâinile lor întregul fascicul principal de cabluri al robotului.
+### 🔹 Lecția 2: Arhitectura acumulatorilor și proiectare 3D în Fusion 360
+- Au studiat parametrii electrici ai acumulatorilor reîncărcabili **Li-Ion 18650** (tensiune nominală, capacitate, *C-rating*) și conectarea a două celule în serie (configurație `2S`, 7.4V).
+- Au analizat metodele de protecție electrică și stabilizare a tensiunii de alimentare.
+- **Realizat practic**: Au proiectat în **Autodesk Fusion 360** suportul mecanic 3D pentru acumulatorii 18650, prevăzut cu fante de fixare pentru șuruburi M3.
 
 ---
 
-### 🔹 La lecțiile 5 și 6, copiii au:
-- **Înțeles cum „vede” un robot drumul**: Au descoperit senzorii optici de podea care emit lumină infraroșie invizibilă ochiului uman și măsoară reflexia acesteia pe suprafețele albe și negre.
-- **Învățat algoritmii de navigație autonomă**: Cum ia un robot decizii într-o fracțiune de secundă pentru a urmări o linie trasată pe jos sau cum poate găsi ieșirea dintr-un labirint aplicând regula simplă a „mâinii stângi”.
-- **Ce au realizat practic**: Au montat placa electronică și motoarele pe noul șasiu, au cablat semnalele către driverul de putere TB6612FNG și au încărcat primul cod scris în C++ în mediul Arduino IDE, testând funcționarea motoarelor pe bancul de lucru.
+### 🔹 Lecțiile 3 și 4: Microcontrolerul ESP32, conectori și realizarea cablajului (Crimping & Soldering)
+- Au studiat arhitectura microcontrolerului **ESP32** (procesor dual-core, Wi-Fi, BLE integrat, pini GPIO, semnale PWM) și rolul driverului de motoare **TB6612FNG**.
+- Au învățat clasificarea cablurilor și a conectorilor electrici (*stranded wire* vs *solid core wire*, *tinned copper*, izolație silicon vs PVC, standardul AWG, conectori DuPont și JST).
+- **Realizat practic**: Au lipit cu letconul întrerupătorul general de alimentare, au izolat conexiunile cu *heat shrink*, au realizat *crimping*-ul pinilor DuPont/JST și au asamblat fasciculul central de cabluri al robotului.
 
 ---
 
-### 🔹 La lecțiile 9 și 10, copiii au:
-- **Format alianțe cromatice de elită (`roboRangers`)**: Au completat un sondaj tehnic de aptitudini și și-au asumat roluri bine definite în echipă (`Forge` pentru mecanică, `Cyber` pentru cod, `Vanguard` pentru strategie și pilotaj), alegându-și o culoare unică de recunoaștere.
-- **Făcut pasul către viitorul proiectării 3D în Cloud (Onshape)**: Au renunțat la softurile vechi și greoaie instalate pe calculator pentru a lucra în Onshape — platforma modernă de modelare 3D în browser (unde elevii pot colabora live pe proiecte, la fel ca în Google Docs).
-- **Ce au realizat practic**:
-  - Au botezat robotul pe Bluetooth și au programat un **pian muzical wireless** (robotul cântă note muzicale declanșate de butoanele virtuale ale gamepad-ului de pe telefonul mobil);
-  - Au asamblat pe calculator **geamănul digital 3D (Digital Twin)** complet al robotului RF 2.0 în Onshape, folosind șuruburi și piulițe metrice reale M3 și conectori magnetici inteligenți.
+### 🔹 Lecțiile 5 și 6: Metode de măsurare a distanței, senzori optici și asamblarea tracțiunii
+- Au studiat metodele de detecție a distanței și funcționarea senzorilor optici în infraroșu (**TCRT5000**) și de culoare RGB pentru urmărirea liniei (*Line Follower*) și parcurgerea labirinturilor.
+- **Realizat practic**:
+  - Au asamblat structura mecanică a șasiului 3D, au fixat motoarele TT, suportul driverului și întrerupătorul de alimentare;
+  - Au montat placa ESP32 și placa de extensie, au conectat cablajul la driverul **TB6612FNG** și au rulat în **Arduino IDE** programul C++ de diagnostic și testare a motoarelor pe bancul de lucru.
+
+---
+
+### 🔹 Lecțiile 7 și 8: Arhitectura de control wireless BLE (`RBFesp`) și teleoperare
+- Au studiat comunicarea wireless prin **Bluetooth Low Energy (BLE)** între microcontrolerul ESP32 și interfața Web Bluetooth din browser.
+- Au parcurs structura modulară a proiectului C++ **`RBFesp`** (`RBFesp.ino`, `RemoteCore.h`, `ButtonHandler.h`), gestionarea evenimentelor de la butoane (`onButton`, `event.isPressed()`) și afișarea datelor în consola wireless (`monitor.println()`).
+- **Realizat practic**: Au încărcat firmware-ul `RBFesp` pe robot, s-au conectat prin Bluetooth de pe telefon/calculator și au configurat comenzile de control și teleoperare ale robotului.
+
+---
+
+### 🔹 Lecțiile 9 și 10: Formarea echipelor, programarea senzorilor și asamblarea 3D în Onshape
+- Au completat sondajul tehnic de competențe și au format echipele de lucru (`roboRangers`), împărțind rolurile tehnice (mecanică/CAD, programare C++, strategie și pilotaj).
+- Au trecut la utilizarea platformei Cloud CAD **Onshape**, învățând diferența dintre modelarea pieselor (*Part Studio*) și asamblarea mecanică (*Assembly*).
+- **Realizat practic**:
+  - Au conectat și programat individual în C++ senzorul IR de linie, senzorul ultrasonic **HC-SR04** și modulul *buzzer* pasiv, realizând un pian wireless acționat prin Bluetooth;
+  - Au realizat asamblarea digitală 3D completă a robotului RF 2.0 în **Onshape**, utilizând constrângeri mecanice (*Fastened Mate*) și șuruburi/piulițe metrice standardizate M3 din biblioteca *Standard content*.
