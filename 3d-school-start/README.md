@@ -87,7 +87,18 @@ Fiecare lecție respectă un flux clar în 8 etape:
 - **Descriere pe scurt**: Punem la imprimat tablourile puzzle 4x4 din Lecția 07 pe Bambu Lab A1, apoi descoperim povestea primelor animale de companie (câinele acum 15.000–30.000 de ani și pisica acum ~10.000 de ani), când au început să primească nume proprii (câinele regal *Abuwtiyuw* și pisica *Ta-Miu* în Egiptul Antic, romanul *Fido*), de ce poartă zgardă și cum sunt identificate oficial astăzi (medalionul *Pet Tag*, microcipul RFID de 15 cifre și Pașaportul de animal cu vaccinul antirabic). Învățăm cum funcționează tehnologia wireless fără baterie **NFC (Near Field Communication)** și regula de siguranță a datelor personale. În atelierul practic modelăm în Tinkercad un breloc în formă de urmă de labă (`45 x 45 x 3.2 mm`) cu numele sau inițiala în relief și lăcaș posterior calibrat (`26 x 26 x 0.7 mm`) pentru lipirea unui sticker rotund NFC de `25 mm`, apoi programăm live mesajul de salvare cu aplicația **NFC Tools**!
 - **Proiect Practic**: Imprimarea și testarea tablourilor puzzle 3D din Lecția 07 + Proiectarea brelocului „Paw Tag” pentru animalul de companie sau ca tag anti-pierdere pentru ghiozdan/chei + Exersarea scrierii și scanării mesajului pe cipul NFC!
 - **Director Lecție**: [`lesson-08/`](lesson-08/)
-### 🔹 Lecția 09: *(În curând)*
+
+---
+
+## 🧸 Modulul 2: Fabrica de jucării
+
+### 🔹 [Lecția 09 [3DS2.9]: Fabrica de Jucării – Lumea Fidget Toys & Secretele Rotației Tri-Spinner 3D](lesson-09/README.md)
+- **Cod Lecție**: `3DS2.9`
+- **Descriere pe scurt**: Punem la imprimat brelocurile Pet Tag NFC din Lecția 08 pe Bambu Lab A1, apoi facem primii pași în fascinantul Modul 2 (*Fabrica de jucării*). Descoperim ce este un fidget toy, rolul său psihologic pentru concentrare și eliberarea energiei cinetice, obiectele de calmare din antichitate (worry stones, titirezi) și fenomenul viral mondial al spinnerelor din 2017. Învățăm despre forța de frecare (friction) și secretul ingineresc al jocului mecanic (clearance de 0.6 mm) care permite rotirea pieselor din plastic fără blocare. În atelierul practic proiectăm un **Tri-Spinner Pocket 100% imprimat 3D** (anvergură compactă de 65 mm), echilibrat la 120°, dotat cu un ax de rotație de 7.4 mm pe orificiu de 8.0 mm, două capace ergonomice de deget cu adâncitură dish și lăcașuri inteligente pentru **3 monede de 1 Leu din Republica Moldova** pe brațe, prevăzute cu orificii de evacuare din spate (push-through hole de 12 mm) pentru introducere și scoatere instantanee a monedelor!
+- **Proiect Practic**: Colectarea brelocurilor NFC din Lecția 08 + Proiectarea în Tinkercad a primului Fidget Tri-Spinner Pocket 100% 3D printat (fără rulment metalic), echilibrat la 120°, dotat cu greutăți din monede de 1 Leu ușor de scos și sistem complet de ax și capace de deget.
+- **Director Lecție**: [`lesson-09/`](lesson-09/)
+
+### 🔹 Lecția 10: *(În curând)*
 
 ---
 
