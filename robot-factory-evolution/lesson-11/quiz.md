@@ -1,98 +1,107 @@
-# Quiz Kahoot: Lecția 11 [RBF2.11] – Controlul în Buclă Închisă: Senzori Optici IR și Navigația Autonomă
+# Quiz Kahoot: Lecția 11 [RBF2.11] – Validarea Tracțiunii & Viziunea Artificială ESP32-CAM
 
 - **Cod Lecție**: RBF2.11
-- **Număr Întrebări**: 10 întrebări
-- **Format**: 4 opțiuni de răspuns per întrebare (A, B, C, D)
-- **Lungime Opțiuni**: Ultra-scurte (strict 1–3 cuvinte per opțiune)
-- **Timp Recomandat**: 20 secunde per întrebare
-- **Platformă Recomandată**: Kahoot (import direct prin `quiz.xlsx`)
+- **Număr Întrebări**: 10
+- **Platformă Recomandată**: Kahoot!
+- **Format Răspunsuri**: 4 variante per întrebare, ultra-scurte (1–3 cuvinte), lungimi strict echilibrate.
+- **Focalizare**: 100% Teorie inginerească (mecanica conectorilor, polaritate electrică, senzori optici, PSRAM, protocoale radio și FPV). Fără întrebări despre pași de asamblare sau butoane de software.
 
 ---
 
-### Întrebarea 1: Ce caracterizează un sistem de control în buclă închisă (Closed-Loop)?
-- A) Comenzi fără verificare
-- B) Feedback de la senzori *(Corect)*
-- C) Doar control manual
-- D) Funcționare fără baterie
-> **Explicație**: Bucla închisă citește continuu senzorii pentru a compara starea reală cu ținta dorită și corectează deviațiile în timp real.
+### Întrebarea 1
+De ce un pin sertizat trebuie să facă un „click” mecanic în carcasă?
+- A) Pentru blocare mecanică *(Corect)*
+- B) Pentru răcirea firului
+- C) Pentru design estetic
+- D) Pentru semnal sonor
+> **Explicație**: Clapeta elastică din interiorul carcasei de plastic blochează contactul metalic; fără acest declic, vibrațiile motoarelor determină retragerea firului și apariția deconectărilor.
 
 ---
 
-### Întrebarea 2: La ce lungime de undă funcționează de regulă LED-ul emițător al senzorului TCRT5000?
-- A) 400 nanometri
-- B) 550 nanometri
-- C) 940 nanometri *(Corect)*
-- D) 1500 nanometri
-> **Explicație**: Lungimea de undă de 940 nm se află în spectrul infraroșu apropiat, fiind complet invizibilă pentru ochiul uman.
+### Întrebarea 2
+Ce se întâmplă la alimentarea unui driver de motoare cu polaritatea inversată?
+- A) Se inversează motoarele
+- B) Ardere termică instantanee *(Corect)*
+- C) Viteza se dublează
+- D) Crește tensiunea bateriei
+> **Explicație**: Inversarea cablului pozitiv cu cel negativ provoacă un scurtcircuit direct prin joncțiunile interne ale tranzistoarelor MOSFET, distrugând cipul prin supraîncălzire extremă.
 
 ---
 
-### Întrebarea 3: De ce banda neagră provoacă o scădere drastică a luminii reflectate în senzor?
-- A) Absorbție prin carbon *(Corect)*
-- B) Răcire instantanee suprafață
-- C) Emisie unde ultrasunete
-- D) Polarizare magnetică inversă
-> **Explicație**: Pigmentul de carbon din banda izolatoare neagră absoarbe aproape integral radiația infraroșie în loc să o reflecte.
+### Întrebarea 3
+Ce componentă reprezintă modulul OV2640 de pe placa ESP32-CAM?
+- A) Senzor optic foto-video *(Corect)*
+- B) Regulator de tensiune
+- C) Antenă radio externă
+- D) Driver de motoare
+> **Explicație**: OV2640 este un senzor optic miniatural de 2 Megapixeli, capabil să captureze imagini color și să livreze cadre video digitale către procesor prin magistrala DVP.
 
 ---
 
-### Întrebarea 4: Ce rol îndeplinește pragul critic de decizie (Threshold) în programul C++?
-- A) Mărește frecvența Wi-Fi
-- B) Diferențiază albul de negru *(Corect)*
-- C) Oprește alimentarea bateriei
-- D) Inversează sensul acelor
-> **Explicație**: Threshold reprezintă valoarea numerică de referință; dacă citirea este peste prag, robotul detectează linia neagră.
+### Întrebarea 4
+De ce modulul ESP32-CAM este echipat cu memorie externă PSRAM de 8 MB?
+- A) Pentru stocare temporară *(Corect)*
+- B) Pentru alimentare suplimentară
+- C) Pentru amplificare sunet
+- D) Pentru protecție scurtcircuit
+> **Explicație**: Memoria internă a procesorului este mult prea mică pentru imagini de mari dimensiuni; memoria PSRAM acționează ca un rezervor uriaș de cadre video (Frame Buffer).
 
 ---
 
-### Întrebarea 5: Care este rezoluția nativă a convertorului analog-digital (ADC) pe ESP32?
-- A) 8 biți
-- B) 10 biți
-- C) 12 biți *(Corect)*
-- D) 16 biți
-> **Explicație**: Un ADC pe 12 biți împarte tensiunea de intrare de 0–3.3V în 4096 de trepte distincte de măsurare (valori de la 0 la 4095).
+### Întrebarea 5
+Ce tehnologie fără fir oferă lățimea de bandă necesară pentru streaming video?
+- A) Wi-Fi de mare viteză *(Corect)*
+- B) Bluetooth Low Energy
+- C) Raze laser infraroșu
+- D) Semnale audio buzzer
+> **Explicație**: Transmisia unui flux video continuu cere zeci de Megabiți pe secundă (Mbps), debit furnizat exclusiv de standardele rețelelor fără fir Wi-Fi.
 
 ---
 
-### Întrebarea 6: De ce este obligatorie calibrarea senzorilor optici la începerea fiecărei curse?
-- A) Variații iluminare ambientală *(Corect)*
-- B) Pierderea memoriei flash
-- C) Descărcarea bruscă Li-Ion
-- D) Schimbarea pinilor GPIO
-> **Explicație**: Lumina soarelui, neoanele din sală și culoarea podelei creează niveluri diferite de zgomot optic care necesită reajustarea pragului.
+### Întrebarea 6
+De ce protocolul Bluetooth Low Energy (BLE) nu este utilizat pentru video?
+- A) Viteză de date mică *(Corect)*
+- B) Consum de curent uriaș
+- C) Undele sale dăunează
+- D) Necesită fire metalice
+> **Explicație**: BLE este conceput pentru pachete scurte de date de control și telemetrie cu un consum minuscul de energie, neavând debitul necesar pentru streaming video.
 
 ---
 
-### Întrebarea 7: Ce dezavantaj major prezintă algoritmul simplist de tip Bang-Bang?
-- A) Viteză zero absolută
-- B) Oscilații violente traiectorie *(Corect)*
-- C) Arderea imediată a motorului
-- D) Lipsa driverului TB6612
-> **Explicație**: Corecția brutală (oprire completă a unui motor și accelerare maximă a celuilalt) provoacă o serpuire sacadată pe traseu.
+### Întrebarea 7
+Ce rol are LED-ul de mare putere conectat la pinul GPIO 4?
+- A) Iluminare pe întuneric *(Corect)*
+- B) Semnalizare eroare cod
+- C) Răcire pentru procesor
+- D) Măsurare de distanță
+> **Explicație**: LED-ul alb conectat la GPIO 4 funcționează ca un far de mare putere, oferind lumină suplimentară pentru camera video în misiunile de explorare nocturnă.
 
 ---
 
-### Întrebarea 8: Cum rezolvă controlul proporțional (P-Controller) problema oscilațiilor pe linie?
-- A) Ajustare graduală PWM *(Corect)*
-- B) Oprește ambii senzori
-- C) Declanșează buzzerul continuu
-- D) Trece pe telecomandă
-> **Explicație**: Controlul proporțional calculează diferența fină de viteză dintre roți în funcție de mărimea erorii de poziționare.
+### Întrebarea 8
+Ce semnifică prescurtarea FPV în pilotajul roboților și al dronelor?
+- A) First-Person View *(Corect)*
+- B) Fast Processing Velocity
+- C) Final Power Voltage
+- D) Frequency Pulse Value
+> **Explicație**: FPV (First-Person View) înseamnă vizualizarea mediului exact din perspectiva camerei instalate pe robot, permițând pilotajul realist dintr-o cabină virtuală.
 
 ---
 
-### Întrebarea 9: Ce acțiune întreprinde un robot performant la detectarea stării de linie pierdută (Line Lost)?
-- A) Rotație spre ultima direcție *(Corect)*
-- B) Accelerare drept înainte
-- C) Resetare totală microcontroler
-- D) Deconectare de la BLE
-> **Explicație**: Robotul utilizează o variabilă de memorie pentru a roti pe loc în direcția în care a văzut ultima dată linia neagră.
+### Întrebarea 9
+Ce format de compresie de imagine comprimă cadrele video ale camerei?
+- A) Formatul comprimat MJPEG *(Corect)*
+- B) Fișiere text TXT
+- C) Unde sonore MP3
+- D) Tabel tabelar CSV
+> **Explicație**: Streaming-ul video pe microcontrolere utilizează Motion JPEG (MJPEG), comprimând fiecare cadru individual ca o imagine JPEG transmisă rapid prin protocolul HTTP.
 
 ---
 
-### Întrebarea 10: Ce semnalează citirea concomitentă a valorii de negru pe ambii senzori frontali?
-- A) Bandă de sosire *(Corect)*
-- B) Baterie complet descărcată
-- C) Scurtcircuit pe masă
-- D) Derapaj necontrolat spate
-> **Explicație**: O linie neagră transversală perpendiculară pe traseu este recunoscută de ambii senzori simultan ca punct de finiș sau intersecție.
+### Întrebarea 10
+Ce tensiune de alimentare stabilizată este recomandată pe pinul de intrare al camerei?
+- A) Tensiune continuă 5.0V *(Corect)*
+- B) Tensiune înaltă 230V
+- C) Tensiune minusculă 0.5V
+- D) Tensiune continuă 48V
+> **Explicație**: Modulul ESP32-CAM dispune de propriul regulator intern LDO și funcționează optim când primește o șină curată și stabilă de 5.0V din sursa robotului.

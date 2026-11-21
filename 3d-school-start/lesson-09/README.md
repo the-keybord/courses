@@ -42,8 +42,8 @@
 
 ### 🔗 Resurse & Linkuri Utile
 - **Prezentare**: https://docs.google.com/presentation/d/1sTg-fqV61d4rfmyCfJK-2DQHJiQgN1DM4Kc7Sef5JZU/edit?usp=sharing
-- **Kahoot**: 
-- **Alte Materiale**: 
+- **Kahoot**: https://create.kahoot.it/details/730e0ac2-8226-4ecb-a278-27686d065962
+- **Alte Materiale**: https://www.tinkercad.com/things/dfcy5poKKl0-3ds-29-spinner
 ---
 
 ## 📋 2. Pregătirea Lecției (Checklist Profesor)

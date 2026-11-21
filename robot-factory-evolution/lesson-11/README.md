@@ -1,43 +1,51 @@
-# Lecția 11 [RBF2.11]: Controlul în Buclă Închisă: Calibrarea Senzorilor Optici IR, Algoritmul Line Follower & Navigația pe Circuitul Orbital
+# Lecția 11 [RBF2.11]: Validarea Tracțiunii în Arenă (Racing & Sumo) și Revoluția Viziunii Artificiale: Programarea Modulului ESP32-CAM & Streaming Video Live
 
 ---
 
 ## 1. Informații Generale & Întrebări Esențiale
 
 - **Cod Lecție**: RBF2.11
-- **Modul**: Robotică Autonomă, Percepție Senzorială & Algoritmică de Control C++
+- **Modul**: Diagnostic Mecatronic, Dinamica Tracțiunii & Viziune Artificială în Timp Real
 - **Vârsta Țintă**: 11 – 15 ani (Nivelul 2 – Evolution)
 - **Durată Totală**: 120 minute (2 ore)
-- **Format**: Sesiune avansată de laborator mecatronic dedicată tranziției de la controlul manual teleoperat prin BLE la primul sistem de navigație complet autonom în buclă închisă (Closed-Loop Control). Elevii aprofundează fizica senzorilor optici în infraroșu (fototranzistori TCRT5000), înțelegând cum reflexia luminii pe suprafețe albe și absorbția pe banda neagră generează variații de tensiune măsurabile de convertorul analog-digital (ADC) al plăcii ESP32. Mentorul demonstrează cum zgomotul optic ambiental impune o procedură riguroasă de calibrare a pragului critic (threshold) folosind consola wireless din browser (BLE monitor). În a doua parte, cursanții implementează în C++ arhitectura algoritmului de urmărire a liniei (Line Follower): de la abordarea simplistă reactivă (Bang-Bang) la controlul proporțional diferențial prin semnale PWM pe driverul TB6612FNG, integrând o stare de siguranță pentru recuperarea traiectoriei în caz de pierdere a liniei (Line Lost Recovery). Lecția se încheie cu prima probă oficială de calificare pentru arena Orbit Odyssey: parcurgerea autonomă contra-cronometru a unui circuit orbital cu linii curbe și intersecții.
+- **Format**: Sesiune dinamică de laborator mecatronic împărțită în două etape majore: validarea practică a flotei de roboți RF 2.0 reparați și inițierea într-una dintre cele mai avansate ramuri ale roboticii moderne — viziunea artificială (Computer Vision). Lecția debutează cu un scurt debriefing de inginerie aplicată (Root Cause Analysis): mentorul prezintă cauzele defecțiunilor din sesiunea anterioară (pini sertizați neblocați mecanic în carcase, cablaje inversate și distrugerea semiconductorilor prin polaritate inversată). Urmează marea probă a focului pe bancul de lucru și în arenă: elevii își pornesc mașinile, calibrează comenzile Bluetooth Low Energy (BLE) în interfața web `RBFesp` și concurează într-un turneu palpitant de viteză (Sprint Racing) și luptă tactică (Robot Sumo Arena). În a doua parte a orei, laboratorul trece la nivelul următor: fiecare elev scoate din cutia antistatică modulul inteligent **ESP32-CAM**, studiază arhitectura senzorului optic OV2640 de 2 Megapixeli și rolul critic al memoriei **PSRAM de 8 MB**. Elevii configurează și încarcă în C++ firmware-ul de streaming video (`CameraWebServer`), conectează camera prin Wi-Fi la stația de lucru și recepționează primul flux video live direct în browser. Sesiunea se încheie cu analiza conceptului de **FPV Space Rover** (First-Person View) și pregătirea viitoarei integrări a camerei pe șasiul fizic.
 
 ### Întrebări Esențiale:
-1. Care este diferența fundamentală dintre un sistem în buclă deschisă (Open-Loop) și un sistem în buclă închisă (Closed-Loop) în controlul unui robot mobil?
-2. Cum funcționează o pereche optică în infraroșu (LED emițător la 940 nm + fototranzistor) și de ce suprafețele negre absorb lumina în loc să o reflecte?
-3. De ce este obligatorie calibrarea dinamică a pragului senzorial (threshold) la începutul fiecărei misiuni pe o suprafață nouă de concurs?
-4. De ce algoritmul clasic de tip Bang-Bang produce oscilații violente (serpuire) și cum elimină controlul proporțional (P-Controller) aceste vibrații prin ajustarea fină a semnalelor PWM?
-5. Ce strategie algoritmică poate aplica un robot autonom atunci când pierde complet contactul cu linia neagră într-un viraj strâns?
+1. De ce un pin sertizat (crimp terminal) trebuie împins până când se aude un „click” mecanic clar în clapeta de plastic a carcasei conectorului?
+2. Ce se întâmplă la nivelul tranzistoarelor MOSFET interne atunci când un driver de motoare precum TB6612FNG este alimentat cu polaritatea inversată (VCC și GND inversate)?
+3. De ce protocolul Bluetooth Low Energy (BLE) este excelent pentru controlul agil al motoarelor prin joystick, dar complet nepotrivit pentru transmiterea unui flux video în direct?
+4. De ce modulul ESP32-CAM necesită o memorie externă specială de tip PSRAM (8 MB) pentru a putea transmite imagini video fără a bloca procesorul?
+5. Cum transformă o cameră video fără fir FPV (First-Person View) un robot terestru într-o sondă de explorare planetară ghidată de la distanță din cabina virtuală?
 
 ### 🔗 Resurse & Linkuri Utile
+- **Exemplul Oficial Espressif CameraWebServer**: https://github.com/espressif/arduino-esp32/tree/master/libraries/ESP32/examples/Camera/CameraWebServer
+- **Ghid Tehnic Documentație AI-Thinker ESP32-CAM**: https://docs.ai-thinker.com/esp32-cam
+- **Interfața Web Bluetooth Controller (`RBFesp`)**: https://github.com/the-keybord/espwasd
 - **Prezentare**: https://canva.com/
 - **Kahoot**: https://kahoot.com/
-- **ESP32 Arduino Core Documentation**: https://docs.espressif.com/projects/arduino-esp32/
-- **Interfața Web Bluetooth BLE Monitor**: https://rbfesp.local/
 
 ---
 
 ## 2. Pregătirea Lecției (Checklist Profesor)
 
 ### Software & Configurare Digitală
-- [ ] Mediul Arduino IDE instalat pe stațiile de lucru cu pachetul de plăci ESP32 și bibliotecile firmware-ului `RBFesp` actualizate.
-- [ ] Schița demonstrativă de calibrare a senzorilor IR pregătită pe ecranul profesorului (`IR_Calibration_Diagnostic.ino`).
-- [ ] Prezentarea teoretică încărcată pe videoproiector conform `presentation_interactive.md`.
-- [ ] Quiz-ul Kahoot de 10 întrebări teoretice deschis în tab separat (conform `quiz.md`).
+- [ ] Mediul Arduino IDE instalat pe toate calculatoarele elevilor cu pachetul de plăci `esp32 by Espressif Systems` (versiunea 2.0.x sau 3.x) instalat și funcțional.
+- [ ] Schița demonstrativă `CameraWebServer` verificată în prealabil pe calculatorul catedrei (`File > Examples > ESP32 > Camera > CameraWebServer`).
+- [ ] În fișierul de configurare `camera_pins.h`, profesorul se asigură că este activată linia `#define CAMERA_MODEL_AI_THINKER` și comentate toate celelalte modele.
+- [ ] Rețeaua Wi-Fi din laborator verificată (SSID și parolă clare afișate la tablă, frecvență 2.4 GHz activă) SAU schița pregătită pentru configurare în mod autonom `WiFi.softAP()` în cazul în care routerul sălii filtrează traficul între dispozitive locale.
+- [ ] Prezentarea interactivă încărcată pe videoproiector conform `presentation_interactive.md`.
+- [ ] Quiz-ul Kahoot de 10 întrebări deschis într-un tab separat (conform `quiz.md`).
 
 ### Hardware & Materiale Fizice pentru Clasă
-- [ ] Roboții fizici RF 2.0 complet asamblați ai elevilor (cu placa ESP32, driverul TB6612FNG, acumulatorii 2S 18650 și bara frontală de senzori IR montată).
-- [ ] Mostre de trasee orbitale de test la fiecare banc: foi albe A3 sau fâșii de plastic alb mat prevăzute cu linii negre trasate cu bandă izolatoare neagră de 19 mm lățime.
-- [ ] Pista centrală master de competiție "Orbit Odyssey Track" întinsă pe podeaua laboratorului (circuit în buclă închisă cu viraje largi, o curbă strânsă în ac de păr și o zonă de start/stop marcată cu linie neagră dublă).
-- [ ] Cabluri USB de programare și șurubelnițe de precizie pentru ajustarea înălțimii fizice a senzorilor IR (distanță recomandată: 5–10 mm deasupra solului).
+- [ ] Toți roboții RF 2.0 reparați, cu noile drivere TB6612FNG montate, conexiunile sertizate verificate la tracțiune și acumulatorii 18650 încărcați la capacitate maximă (minim 7.8V – 8.2V pe pachetul 2S).
+- [ ] Un driver TB6612FNG ars păstrat la catedră, alături de o lupă sau o cameră documentară, pentru a le arăta elevilor la microscop/ecran efectul „fumului magic” și urmele de supraîncălzire ale siliciului.
+- [ ] Un conector DuPont dezasamblat cu lamelă vizibilă pentru demonstrarea mecanismului de zăvorâre mecanică (latch).
+- [ ] Kiturile ESP32-CAM pentru fiecare elev (modulul AI-Thinker cu senzor OV2640 montat pe conectorul FPC cu bandă aurie).
+- [ ] Plăcile de extensie cu mufă micro-USB **ESP32-CAM-MB** (sau cabluri FTDI / USB-Serial cu fire de conectare și jumper pentru GPIO 0).
+- [ ] Cabluri de date micro-USB scurte și solide (cu 4 fire: alimentare + linii de date D+/D-).
+- [ ] Arena de concurs marcată pe podea:
+  - Pentru Racing: o pistă de sprint marcată cu două linii de bandă adezivă la distanță de 4–5 metri, cu jaloane sau obstacole de slalom la mijloc;
+  - Pentru Sumo: un cerc cu diametrul de 1.0 – 1.2 metri trasat cu bandă albă sau neagră pe o suprafață plană, netedă.
 
 ---
 
@@ -45,120 +53,183 @@
 
 | Interval | Etapă | Activitate Principală |
 | :---: | :--- | :--- |
-| **00:00 – 00:15** | **1. Deschiderea Misiunii & Briefing Tehnic** | Trecerea în revistă a geamănului digital Onshape din Lecția 10. Lansarea provocării: trecerea de la telecomanda manuală BLE la inteligența autonomă pe circuitul orbital. |
-| **00:15 – 00:35** | **2. Teorie Inginerească: Percepția Optică IR & Bucla Închisă** | Prezentarea interactivă: fizica radiației la 940 nm, absorbție vs reflexie, conversia ADC, citirea zgomotului ambiental și matematica algoritmului proporțional. |
-| **00:35 – 00:55** | **3. Laborator C++: Calibrarea Pragului Senzorial prin BLE** | Elevii încarcă schița de diagnoză, plasează robotul pe alb și pe negru, citesc valorile brute ADC în BLE monitor și calculează pragul optim de decizie (Threshold). |
-| **00:55 – 01:30** | **4. Programare Algoritmică: Dezvoltarea Line Follower-ului** | Implementarea logicii de control diferențial pe motoarele TT: stările de viraj stânga/dreapta, avans sincron, algoritm de căutare a liniei pierdute și oprire la linia dublă. |
-| **01:30 – 01:45** | **5. Sesiune de Tuning pe Banc & Reglarea Coeficienților PWM** | Teste pe pistele individuale A3: reglarea vitezei de bază (Base Speed) și a diferenței de virare pentru a elimina serpuirea excesivă pe viraje line. |
-| **01:45 – 01:55** | **6. Marea Provocare: Calificările Orbit Odyssey Time-Trial** | Concurs autonom pe circuitul master: fiecare robot parcurge 2 tururi complete fără intervenție umană; cronometrare oficială și punctaj pentru acuratețe. |
-| **01:55 – 02:00** | **7. Quiz Kahoot & Debriefing de Echipă** | Evaluare teoretică de 10 întrebări axate strict pe teoria senzorilor și controlul în buclă închisă (conform `quiz.md`), urmată de analiza performanțelor alianțelor. |
+| **00:00 – 00:15** | **1. Post-Mortem Mecatronic & „Lecția Fumului Magic”** | Analiza tehnică a defecțiunilor: mecanismul de declic al pinilor sertizați, greșelile de pinout, distrugerea tranzistoarelor la polaritate inversată și protocolul de inspecție la rece. |
+| **00:15 – 00:45** | **2. Validarea Flotei & Turneul de Arenă (Racing / Sumo)** | Pornirea roboților reparați, conectarea prin BLE în browser (`RBFesp`), verificarea răspunsului motoarelor pe banc și disputarea competiției de viteză și luptă Sumo. |
+| **00:45 – 01:05** | **3. Unboxing & Teoria Viziunii Artificiale (ESP32-CAM)** | Scoaterea din ambalaj a modulului ESP32-CAM: analiza senzorului OV2640, rolul memoriei PSRAM de 8 MB, LED-ul Flash și comparația între lățimea de bandă BLE vs. Wi-Fi. |
+| **01:05 – 01:40** | **4. Laborator C++: Încărcarea `CameraWebServer` & Live Streaming** | Deschidere Arduino IDE, configurare `CAMERA_MODEL_AI_THINKER`, setare Wi-Fi/SoftAP, upload firmware pe placă, deschiderea adresei IP pe laptop și streaming video în browser. |
+| **01:40 – 01:50** | **5. Arhitectura FPV Space Rover: Integrarea pe Robotul RF 2.0** | Planificarea transformării robotului în sondă marțiană teleoperată: cerințele de alimentare curată la 5.0V, amplasarea mecanică frontală și pregătirea modelării suportului 3D în Onshape. |
+| **01:50 – 02:00** | **6. Quiz Kahoot & Debriefing de Echipă** | Evaluare teoretică Kahoot de 10 întrebări axate strict pe hardware, conectori, viziune digitală, Wi-Fi și memorie PSRAM (conform `quiz.md`). |
 
 ---
 
 ## 4. Ghid Detaliat Pas cu Pas (Teacher's Master Guide)
 
-### Pasul 1: Deschiderea Misiunii & Briefing Tehnic (15 min)
-Profesorul deschide sesiunea aducând în fața clasei un robot RF 2.0 pornit, conectat prin BLE la ecranul mare:
-*"În Lecția 10 ați asamblat complet geamănul digital în Onshape, demonstrând că stăpâniți mecanica fiecărui șurub M3. Până acum, însă, robotul vostru a fost un simplu executant orb: mergea înainte doar când apăsați un buton pe telefon. În misiunile spațiale reale, o sondă de explorare aflată pe Lună sau pe Marte nu poate fi condusă cu joystick-ul din cauza întârzierii semnalului radio de câteva minute. Robotul trebuie să aibă propriii ochi și propriul creier. Astăzi construim primul sistem de navigație autonomă în buclă închisă."*
+### Pasul 1: Post-Mortem Mecatronic & „Lecția Fumului Magic” (15 min)
+Profesorul adună elevii în jurul mesei demonstrative, așezând în fața lor două piese: un driver TB6612FNG complet nou și unul ars în laboratorul precedent, alături de o lupă:
 
-Profesorul definește cele două concepte fundamentale:
-- **Buclă Deschisă (Open-Loop)**: Trimitem comanda "mergi înainte cu 50% viteză timp de 3 secunde", fără să verificăm dacă roțile patinează, dacă traseul e drept sau dacă în față se află o prăpastie.
-- **Buclă Închisă (Closed-Loop)**: Robotul citește continuu senzorii optici, compară starea reală cu traiectoria dorită și ajustează instantaneu turația fiecărui motor pentru a anula eroarea.
+*"Data trecută ne-am propus să ajungem la senzorii optici, dar laboratorul ne-a dat o lecție de inginerie veritabilă. În marile companii spațiale precum NASA sau SpaceX, rachetele și roboții nu funcționează perfect din prima încercare. Când ceva cedează, inginerii nu caută vinovați, ci fac o procedură numită **Root Cause Analysis (RCA)** — investigarea cauzei rădăcină. Haideți să înțelegem ce s-a întâmplat săptămâna trecută și cum am reparat fiecare mașină."*
 
----
+Profesorul explică cele trei capcane clasice în care a căzut laboratorul:
 
-### Pasul 2: Teorie Inginerească: Percepția Optică IR & Bucla Închisă (20 min)
-Se parcurge prezentarea conform `presentation_interactive.md`. Elevii citesc cu voce tare slide-urile teoretice, iar profesorul desenează la tablă fluxul optic:
+1. **Misterul Conectorilor Fără Click (Crimp Pins Nezăvorâți)**:
+   - Un conector DuPont sau JST este compus din două elemente: contactul metalic sertizat pe fir și carcasa neagră din plastic.
+   - În interiorul carcasei de plastic există o clapetă elastică minusculă. Când introducem pinul metalic în orientarea corectă, fanta lui trebuie să sară peste clapetă producând un **„click” mecanic audibil**.
+   - Dacă pinul este împins doar pe jumătate sau inversat la 180°, el pare că stă la locul lui, dar la prima vibrație produsă de motoarele TT el se retrage în interior. Firul iese afară, atinge alt pin vecin sau lasă circuitul fără alimentare.
+   - **Regula de Aur**: La fiecare cablu montat se aplică **Tug-Test** (o tragere ușoară și fermă de fir; dacă firul alunecă afară, pinul nu a fost zăvorât!).
 
-**1. Anatomia Senzorului TCRT5000:**
-- Modulul frontal conține două componente optice alăturate: un LED emițător de lumină infraroșie (cu lungimea de undă invizibilă de 940 nm) și un fototranzistor receptor acoperit cu un filtru negru (pentru a bloca lumina vizibilă).
-- Când robotul se află deasupra unei foi albe, particulele de lumină infraroșie sunt reflectate puternic înapoi către fototranzistor. Fototranzistorul se deschide, permițând trecerea curentului, iar tensiunea citită de pinul ADC scade spre 0V.
-- Când robotul ajunge deasupra benzii negre, pigmentul de carbon din bandă absoarbe aproape integral radiația de 940 nm. Fototranzistorul rămâne blocat, iar pinul ADC citește o tensiune ridicată (apropiată de 3.3V).
+2. **Decalarea Pinilor (Pinout Mismatch)**:
+   - Placa de extensie a ESP32-ului are zeci de pini alăturați. Decalarea cu doar un singur pas (de exemplu introducerea unui fir de semnal în pinul vecin de masă GND) paralizează comanda motorului.
 
-**2. Conversia Analog-Digitală (ADC pe ESP32) & Calculul Pragului (Threshold):**
-Convertorul ADC de pe ESP32 transformă tensiunea citită într-un număr întreg între 0 și 4095 (pe o rezoluție de 12 biți):
-- Valoarea tipică pe alb: aproximativ 400 – 900.
-- Valoarea tipică pe negru: aproximativ 3200 – 3900.
-- Pragul critic de decizie matematică (Threshold) se calculează ca media aritmetică a celor două valori:
-  `Threshold = (Valoare_Alb + Valoare_Negru) / 2`
-Dacă citirea curentă este mai mare decât Threshold, robotul decide că se află pe linie neagră; dacă este mai mică, decide că se află pe fundal alb.
+3. **Inversarea Polarității & „Fumul Magic” al Driverului TB6612FNG**:
+   - Tranzistoarele MOSFET din interiorul punții H sunt proiectate să conducă curentul masiv de tracțiune într-o singură direcție.
+   - Când inversăm din greșeală firul roșu de alimentare pozitivă (7.4V din baterie) cu firul negru de masă (GND), diodele interne de protecție intră în scurtcircuit direct.
+   - În câteva fracțiuni de secundă, siliciul microscopului se supraîncălzește la peste 200°C, capsula de plastic a cipului se fisurează, iar componenta eliberează ceea ce inginerii numesc în glumă *„The Magic Smoke”* (fumul fără de care circuitele electronice nu mai funcționează niciodată).
+   - **Protocolul Preventiv**: Înainte de a apăsa comutatorul ON/OFF, se face o inspecție la rece a cablului roșu (pozitiv) și a cablului negru (negativ/masă).
 
 ---
 
-### Pasul 3: Laborator C++: Calibrarea Pragului Senzorial prin BLE (20 min)
-Elevii deschid Arduino IDE și încarcă schița simplificată de diagnoză senzorială:
+### Pasul 2: Validarea Flotei & Turneul de Arenă (Racing / Sumo) (30 min)
+
+Profesorul anunță că toți roboții au fost reparați cu succes, cablajele au fost blocate cu fermitate, iar driverele arse au fost înlocuite cu componente noi. Este momentul ca elevii să testeze agilitatea mașinilor în condiții reale de solicitare.
+
+#### Procedura de Punere în Funcțiune pe Banc:
+1. Elevul așază robotul pe banc fără ca roțile să atingă blatul de lucru (pe un suport de lemn sau cutie).
+2. Se pornește comutatorul general de alimentare. Se verifică aprinderea LED-urilor de stare: LED-ul roșu pe placa ESP32 și LED-urile driverului.
+3. Se deschide browserul Google Chrome pe telefon sau laptop la adresa interfeței de control Bluetooth (`index.html`).
+4. Elevul apasă `Connect BLE`, își selectează robotul după numele unic stabilit în Lecția 09 (ex. `SkyBlue_Viper`, `Mint_Bolt`) și verifică funcționarea axelor de tracțiune:
+   - Joystick înainte: ambele roți se rotesc sincron înainte;
+   - Joystick stânga/dreapta: rotație diferențială (una înainte, cealaltă înapoi pentru pivotare pe loc).
+
+#### Marea Arenă: Formatul Competiției:
+Profesorul organizează clasa pe două divizii:
+
+- **Proba A: Sprint Drag Racing & Slalom (15 min)**:
+  - Pe un culoar drept de 4 metri, fiecare elev își plasează robotul la linia de START.
+  - La semnalul mentorului, mașina trebuie să accelereze pe linie dreaptă, să ocolească două jaloane și să treacă linia de STOP fără coliziuni cu pereții.
+  - Se cronometrează timpul fiecărei curse; se testează stabilitatea conexiunii radio și precizia direcției.
+- **Proba B: Robot Sumo Battle (15 min)**:
+  - Doi roboți din alianțe diferite sunt așezați spate în spate în interiorul cercului alb marcat pe podea (DoHyō).
+  - La comanda „GO!”, piloții au voie să execute manevre exclusiv prin telecomanda BLE.
+  - Scopul este împingerea fizică a adversarului în afara liniei albe folosind bara de protecție a șasiului RF 2.0.
+  - Câștigă robotul cu cel mai bun echilibru mecanic, aderență a cauciucurilor și abilitate a pilotului.
+
+Această etapă descarcă tensiunea acumulată după eșecurile tehnice anterioare, demonstrează că efortul de reparare a dat roade și confirmă că șasiul RF 2.0 este o platformă extrem de robustă!
+
+---
+
+### Pasul 3: Unboxing & Teoria Viziunii Artificiale (ESP32-CAM) (20 min)
+
+După încheierea turneului, elevii parchează roboții și primesc la fiecare post de lucru o cutie nouă: kitul **ESP32-CAM**.
+
+Profesorul proiectează slide-urile din `presentation_interactive.md` și ghidează analiza piesei:
+
+#### 1. Anatomia Modulului AI-Thinker ESP32-CAM:
+- **Cipul ESP32-S**: Inima plăcii, conținând procesorul Tensilica Xtensa Dual-Core la 240 MHz, modulul radio Wi-Fi 802.11 b/g/n și Bluetooth clasic + BLE.
+- **Senzorul Optic Omnivision OV2640**:
+  - Un senzor foto-video miniatural capabil de captură color la o rezoluție nativă de 2 Megapixeli (până la 1600 x 1200 pixeli în imagini statice).
+  - Este conectat la placă printr-un conector FPC cu 24 de pini și o bandă aurie flexibilă. *Atenție*: banda nu trebuie îndoită forțat sau smulsă!
+- **Secretul Strategic: Memoria PSRAM de 8 MB**:
+  - Profesorul pune o întrebare cheie: *„De ce credeți că o placă ESP32 normală nu poate rula streaming video, deși are același procesor la 240 MHz?”*
+  - Răspuns: Memoria RAM internă standard a unui ESP32 are doar ~520 KB. Un singur cadru video de înaltă rezoluție, înainte de compresie, ocupă sute de kilobyți. Dacă am încerca să transmitem un flux video la 15–20 de cadre pe secundă, memoria internă s-ar epuiza instantaneu, iar procesorul ar intra în Crash (*Out of Memory*).
+  - Modulul ESP32-CAM integrează un cip extern de **PSRAM (Pseudo-Static RAM) de 8 Megabiți**. Această memorie acționează ca un rezervor uriaș de stocare temporară a imaginilor (Frame Buffer), permițând compresia continuă în format **MJPEG** (Motion JPEG).
+- **LED-ul Flash de Mare Putere (GPIO 4)**:
+  - Un LED alb rece extrem de luminos conectat direct la pinul `GPIO 4`. În întuneric, el acționează ca un far de explorare veritabil.
+
+#### 2. Wi-Fi vs Bluetooth Low Energy (Bătălia Lățimii de Bandă):
+Profesorul desenează la tablă o comparație clară între cele două tehnologii fără fir:
+- **Bluetooth Low Energy (BLE)**:
+  - *Lățime de bandă mică*: ~1 până la 2 Megabiți pe secundă (Mbps).
+  - *Consum energetic*: Extrem de scăzut (zeci de miliamperi).
+  - *Rol*: Ideal pentru trimiterea pachetelor scurte de control (ex. „Mergi înainte cu viteza 200” ocupă doar 5 octeți).
+- **Wi-Fi (802.11 b/g/n)**:
+  - *Lățime de bandă mare*: 54 până la 150 Mbps.
+  - *Consum energetic*: Ridicat (vârfuri de 300–500 mA la emisie).
+  - *Rol*: Autostrada de date masivă necesară pentru transmiterea a mii de pachete TCP/IP care compun fluxul video continuu.
+
+---
+
+### Pasul 4: Laborator C++: Încărcarea `CameraWebServer` & Live Streaming (35 min)
+
+Elevii deschid mediul Arduino IDE și pregătesc configurarea firmware-ului oficial de streaming:
+
+#### 1. Deschiderea Exemplului Oficial:
+- Din meniul de sus: `File` -> `Examples` -> `ESP32` -> `Camera` -> `CameraWebServer`.
+- Schița deschide automat mai multe tab-uri: `CameraWebServer.ino`, `camera_pins.h`, `camera_index.h` și `app_httpd.cpp`.
+
+#### 2. Configurarea Modelului de Cameră în `CameraWebServer.ino`:
+În tab-ul principal `CameraWebServer.ino`, elevii identifică blocul de definire a camerelor și activează linia corespunzătoare modulului AI-Thinker:
 
 ```cpp
-// Diagnostic & Calibrare Senzori IR - Robot Factory Evolution
-#define PIN_IR_LEFT   34
-#define PIN_IR_RIGHT  35
-
-void setup() {
-  Serial.begin(115200);
-  pinMode(PIN_IR_LEFT, INPUT);
-  pinMode(PIN_IR_RIGHT, INPUT);
-}
-
-void loop() {
-  int rawLeft = analogRead(PIN_IR_LEFT);
-  int rawRight = analogRead(PIN_IR_RIGHT);
-
-  Serial.print("IR_S: ");
-  Serial.print(rawLeft);
-  Serial.print(" | IR_D: ");
-  Serial.println(rawRight);
-
-  delay(150);
-}
+// ===================
+// Select camera model
+// ===================
+//#define CAMERA_MODEL_WROVER_KIT // Has PSRAM
+//#define CAMERA_MODEL_ESP_EYE // Has PSRAM
+//#define CAMERA_MODEL_ESP32S3_EYE // Has PSRAM
+//#define CAMERA_MODEL_M5STACK_PSRAM // Has PSRAM
+//#define CAMERA_MODEL_M5STACK_V2_PSRAM // M5Camera version B Has PSRAM
+//#define CAMERA_MODEL_M5STACK_WIDE // Has PSRAM
+//#define CAMERA_MODEL_M5STACK_ESP32CAM // No PSRAM
+//#define CAMERA_MODEL_M5STACK_UNITCAM // No PSRAM
+#define CAMERA_MODEL_AI_THINKER // Has PSRAM
 ```
 
-**Protocolul de Calibrare pe Banc:**
-1. Elevul plasează robotul astfel încât ambii senzori să fie deasupra suprafeței albe. Notează valorile din monitorul serial: de exemplu `rawLeft = 650`, `rawRight = 700`.
-2. Deplasează robotul astfel încât senzorii să fie complet pe banda neagră. Notează valorile: de exemplu `rawLeft = 3600`, `rawRight = 3550`.
-3. Elevul calculează pragul propriului robot:
-   `Threshold_Stanga = (650 + 3600) / 2 = 2125`
-   `Threshold_Dreapta = (700 + 3550) / 2 = 2125`
-4. Această valoare de aproximativ `2100` devine constanta de referință în programul principal.
+Toate celelalte linii cu `#define CAMERA_MODEL_...` trebuie să rămână comentate (să aibă `//` în față)!
+
+#### 3. Configurarea Rețelei Wi-Fi:
+La liniile imediat următoare, elevii introduc credențialele rețelei locale:
+
+```cpp
+const char* ssid = "Nume_WiFi_Laborator";
+const char* password = "Parola_WiFi";
+```
+
+*(Notă pentru profesor: Dacă routerul laboratorului blochează comunicarea directă între IP-uri, camera poate fi configurată ca punct de acces independent prin comanda `WiFi.softAP("ESP32_Cam_Elev", "12345678");`, iar laptopul se conectează direct la rețeaua camerei).*
+
+#### 4. Setarea Parametrilor Plăcii în Arduino IDE:
+- **Board**: `AI Thinker ESP32-CAM` (sau `ESP32 Wrover Module`).
+- **CPU Frequency**: `240MHz (WiFi/BT)`.
+- **Flash Frequency**: `80MHz`.
+- **Flash Mode**: `QIO`.
+- **Partition Scheme**: `Huge APP (3MB No OTA/1MB SPIFFS)`.
+- **PSRAM**: `Enabled` (esențial pentru activarea memoriei externe!).
+- **Port**: Selectați portul COM asociat plăcii de programare.
+
+#### 5. Procedura de Flashing (Încărcarea Codului):
+- **Dacă se folosește placa de bază ESP32-CAM-MB**: Elevul conectează cablul micro-USB, apasă butonul `Upload` (săgeata spre dreapta) din Arduino IDE. Programatorul automat introduce modulul în bootloader fără alte acțiuni.
+- **Dacă se folosește cablu FTDI**: Elevul conectează jumperul între pinul `GPIO 0` și `GND`, apasă `Upload`, iar la apariția textului `Connecting.....` apasă scurt butonul `RST/Reset` de pe spatele camerei. Imediat ce scrierea ajunge la 100%, jumperul de pe GPIO 0 se deconectează, iar butonul Reset se apasă din nou pentru pornirea programului normal.
+
+#### 6. Vizualizarea Fluxului Video în Browser:
+1. Elevul deschide **Serial Monitor** în Arduino IDE la viteza de **115200 baud**.
+2. Apasă o dată butonul fizic `Reset` de pe modul.
+3. Pe monitorul serial apare confirmarea conexiunii și adresa IP alocată de router:
+   ```text
+   WiFi connected
+   Camera Ready! Use 'http://192.168.1.145' to connect
+   ```
+4. Elevul copiază adresa IP (ex: `http://192.168.1.145`) și o deschide într-un tab nou din Google Chrome.
+5. Se încarcă panoul de control complet al camerei!
+6. În partea de jos a meniului din stânga, elevul apasă butonul albastru **`Start Stream`**!
+7. **Moment de WOW în clasă**: Pe ecranul laptopului apare instantaneu imaginea video fluidă transmisă prin unde radio din mâna elevului!
+8. Elevii testează modificarea rezoluțiilor: comută de la `QVGA (320x240)` la `VGA (640x480)` și `SVGA (800x600)`, observă modificarea numărului de cadre pe secundă (FPS) și testează butoanele de rotire a imaginii (`V-Flip` și `H-Mirror`).
 
 ---
 
-### Pasul 4: Programare Algoritmică: Dezvoltarea Line Follower-ului (35 min)
-Profesorul explică la tablă mașina de stări a algoritmului de urmărire cu 2 senzori montați de o parte și de alta a liniei negre (la distanță de 22 mm între ei, astfel încât banda neagră de 19 mm să poată sta perfect între ei):
+### Pasul 5: Arhitectura FPV Space Rover: Integrarea pe Robotul RF 2.0 (10 min)
 
-**Logica celor 4 Stări Fundamentale:**
-1. **Drum Drept (Ambii senzori pe ALB)**:
-   - Banda neagră este centrată între senzori.
-   - Acțiune: Ambele motoare rulează înainte cu viteza de croazieră (`BaseSpeed = 160`).
-2. **Deviație spre Dreapta (Senzorul STÂNG atinge banda NEAGRĂ)**:
-   - Robotul a alunecat spre dreapta, linia este la stânga.
-   - Acțiune: Viraj corector stânga (reducem motorul stâng la `60` sau îl oprim, accelerăm motorul drept la `200`).
-3. **Deviație spre Stânga (Senzorul DREPT atinge banda NEAGRĂ)**:
-   - Robotul a alunecat spre stânga, linia este la dreapta.
-   - Acțiune: Viraj corector dreapta (accelerăm motorul stâng la `200`, reducem motorul drept la `60`).
-4. **Punct de Control / Stop (Ambii senzori pe NEGRU)**:
-   - Robotul a întâlnit o linie transversală perpendiculară (linia de sosire a orbitei).
-   - Acțiune: Oprire completă și alertă acustică prin buzzer.
+În ultimele 10 minute ale părții practice, profesorul aduce în fața clasei un robot RF 2.0 cu un modul ESP32-CAM așezat simbolic deasupra carcasei frontale:
 
-Elevii integrează această logică în schița principală C++ folosind funcțiile modulare ale driverului TB6612FNG (`setMotors(speedLeft, speedRight)`).
+*"Până acum, robotul vostru a fost condus ca o mașinuță teleghidată din parc: îl priveați de sus și îi dădeați comenzi. Astăzi ați văzut că un cip minuscul de câțiva centimetri poate transmite video HD în direct prin aer. Gândiți-vă cum este condus roverul Perseverance pe suprafața planetei Marte: nimeni nu stă pe o stâncă lângă el cu o telecomandă. Oamenii de la NASA stau în centrul de control din Pasadena, California, privesc ecranele gigantice cu fluxul camerelor video și ghidează mașina prin cratere.*
+
+*Aceasta este misiunea noastră supremă: **FPV Space Rover (First-Person View)**! În lecțiile următoare vom modela în Onshape un suport 3D elegant care să fixeze această cameră în vârful robotului, cu o înclinație optimă de 15 grade spre sol. Vom alimenta camera direct din bateria de 7.4V prin convertorul stabilizat la 5.0V, iar voi veți putea pilota robotul dintr-o altă încăpere, privind exclusiv ecranul laptopului!"*
+
+Profesorul subliniază regula energetică esențială: camera nu va fi alimentată niciodată din pinul de 3.3V al plăcii principale (care ar produce un *brownout* instantaneu), ci exclusiv de pe linia de mare putere de 5.0V!
 
 ---
 
-### Pasul 5: Sesiune de Tuning pe Banc & Reglarea Coeficienților PWM (15 min)
-Elevii testează robotul pe traseele A3 de pe banc:
-- **Problema Șerpuirii Excesive (Oscilație Armonică)**: Dacă la viraj diferența de viteză dintre motoare este prea brutală (de exemplu `0` pe stânga și `255` pe dreapta), robotul se smucește violent și iese de pe pistă.
-- **Soluția**: Elevii reduc viteza de virare (de exemplu `110` și `180`) până când mișcarea devine fluidă și continuă, fără șocuri mecanice.
+### Pasul 6: Quiz Kahoot & Debriefing de Echipă (10 min)
 
----
-
-### Pasul 6: Marea Provocare: Calificările Orbit Odyssey Time-Trial (10 min)
-Roboții sunt aduși la pista master întinsă pe podea:
-- Fiecare cursant așază robotul la linia de start.
-- La semnalul profesorului, se pornește comutatorul de alimentare fără telecomandă.
-- Robotul parcurge autonom traseul orbital cu viraje line și curba strânsă în ac de păr.
-- La detectarea liniei duble de finiș (ambii senzori pe negru), robotul se oprește automat și emite un semnal sonor victorios.
-- Mentorul notează timpul oficial și numărul de corecții manuale necesare (un parcurs curat fără nicio atingere este considerat parcurs perfect de 100 de puncte).
-
----
-
-### Pasul 7: Quiz Kahoot & Debriefing de Echipă (5 min)
-Elevii finalizează sesiunea cu testul Kahoot de 10 întrebări teoretice (conform `quiz.md`). Se verifică înțelegerea conceptelor cheie: buclă închisă, fototranzistor, lungime de undă IR, rezoluție ADC pe 12 biți, calculul pragului și controlul diferențial al vitezei.
+Elevii scot telefoanele sau deschid un tab nou pe laptop și se conectează la jocul Kahoot:
+- Quiz-ul conține 10 întrebări axate strict pe teoria mecatronică parcursă astăzi (conform detaliilor din `quiz.md`).
+- La finalul fiecărei întrebări, profesorul valorifică explicația pedagogică pentru a întări diferențele dintre BLE și Wi-Fi, importanța memoriei PSRAM și protecția împotriva scurtcircuitelor.
+- Elevii deconectează cablurile USB, așază modulele ESP32-CAM în cutiile antistatice și depozitează roboții în standul oficial al laboratorului.
