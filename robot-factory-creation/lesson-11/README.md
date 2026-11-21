@@ -1,44 +1,58 @@
-# Lecția 11 [RBF1.11]: De la Pixel la Plastic: Felierea în Bambu Studio, Printarea 3D a Pieselor Custom, Asamblarea Mecanică și RoboRangers Agility Cup
+# Lecția 11 [RBF1.11]: Ghidul Inginerec al Elementelor de Fixare (Fasteners), Asamblarea Mecanică a Triciclului RC și Marea Competiție Agility Cup
 
 ---
 
 ## 1. Informații Generale & Întrebări Esențiale
 
 - **Cod Lecție**: RBF1.11
-- **Modul**: Fabricație Digitală, Asamblare Mecanică & Validare Dinamică
+- **Modul**: Inginerie Mecanică, Metode de Asamblare 3D & Dinamică RC
 - **Vârsta Țintă**: 11 – 14 ani (Nivelul 1 – Începători / Intermediari)
 - **Durată Totală**: 120 minute (2 ore)
-- **Format**: Sesiune aplicată de tranziție de la spațiul virtual CAD la realitatea fizică de laborator. În prima parte, elevii exportă geometria pieselor modelate în Lecția 10 (biela de direcție Steering Tie-Rod și bara de protecție frontală Front Bumper) din Onshape în format industrial modern 3MF, descoperind software-ul de feliere Bambu Studio. Mentorul explică fenomenele fizice ale fabricației aditive FDM: anizotropia mecanică a pieselor (de ce rezistența la forfecare depinde de orientarea straturilor), tiparele de umplere (infill Gyroid pentru absorbția șocurilor vs Grid casant) și optimizarea pereților perimetrici. În a doua parte, cursanții trec la bancul de lucru fizic: montează biela printată pe fuzetele frontale și brațul servomotorului cu șuruburi metrice M2/M3, centrează unghiul neutru de 90° al servomotorului, montează bumperul personalizat cu numele robotului și echipează roțile cu benzi de cauciuc (rubber bands) pentru aderență. Sesiunea culminează cu un Kahoot teoretic și marea competiție RoboRangers Agility Cup (traseu cronometrat de îndemânare și slalom).
+- **Format**: Sesiune aplicată de laborator mecatronic dedicată materializării complete a proiectului de triciclu RC. Toate piesele structurale (șasiul principal, roțile, bielele de virare și barele frontale de protecție modelate în Onshape) sunt deja printate 3D pe imprimantele laboratorului. Înainte de montajul fizic, mentorul livrează un masterclass practic despre cele **4 mari metode de îmbinare mecanică (fasteners) în printarea 3D**:
+  1. Înșurubare directă în plastic prin deformare mecanică (*Self-Tapping* pe alezaj de 2.8 mm pentru șurub M3);
+  2. Gaură de trecere largă (*Through-Hole* de 3.2 mm) cu piuliță hexagonală pe partea opusă;
+  3. Piuliță pătrată captivă (*Captive Square Nut* standard DIN 562) glisată într-un buzunar intern al piesei 3D — soluție ingenioasă utilizată într-un punct critic al triciclului nostru;
+  4. Inserții filetate de alamă la cald (*Heat-Set Threaded Inserts*) montate cu letconul.
+  După înțelegerea avantajelor și dezavantajelor fiecărei soluții, elevii trec la asamblarea completă a bolidului mecanic: glisează piulița pătrată în buzunarul secret al șasiului, montează servomotorul și calibrează unghiul neutru de 90°, montează biela de direcție (*tie-rod*) pe fuzete, fixează motorul N20 cu reductor, echipează roțile cu pneuri elastice de cauciuc (*rubber bands*) și conectează placa radio 2.4 GHz. Sesiunea culminează cu teste de viraj pe banc și turneul oficial de viteză și manevrabilitate: **RoboRangers Agility Cup**!
 
 ### Întrebări Esențiale:
-1. De ce o piesă printată 3D nu are aceeași rezistență mecanică în toate direcțiile (fenomenul de anizotropie) și cum influențează orientarea pe patul de printare rezistența bielei de direcție?
-2. Ce rol are un software de feliere (slicer) precum Bambu Studio și cum transformă el un volum 3D vectorial într-un cod de instrucțiuni de mișcare (G-code) pentru duza imprimantei?
-3. De ce este modelul de infill Gyroid superior modelului Grid atunci când fabricăm o bară de protecție frontală (bumper) expusă la coliziuni repetate?
-4. Cum funcționează centrarea mecanică a unui servomotor (servo horn centering la 90°) înainte de fixarea definitivă a timoneriei de direcție?
-5. De ce roțile din plastic neted au nevoie de benzi de cauciuc (rubber bands) și cum influențează coeficientul de frecare tracțiunea și controlul virajului pe podea?
+1. De ce înșurubarea directă a unui șurub de metal într-o gaură de plastic de 2.8 mm nu este recomandată pentru piese care trebuie demontate des?
+2. Care este marele avantaj al unei piulițe captive pătrate (square nut) ascunse în interiorul piesei 3D comparativ cu o piuliță hexagonală obișnuită?
+3. Cum funcționează inserțiile filetate de alamă (heat-set inserts) și de ce zimții exteriori (*knurling*) oferă o rezistență uriașă la smulgere după răcirea plasticului?
+4. De ce trebuie să centrăm electric servomotorul de viraj la unghiul de 90° înainte de a strânge șurubul brațului oscilant (*servo horn*)?
+5. Ce rol au benzile elastice de cauciuc (*rubber bands*) montate pe jantele printate 3D și cum îmbunătățesc ele accelerația și controlul în viraje?
 
 ### 🔗 Resurse & Linkuri Utile
+- **Ghidul Tehnic de Asamblare Onshape Mini RC Car**: [`materials/onshape_mini_rc_car_lab_guide.md`](file:///c:/Users/keybord/Desktop/projects/Courses/robot-factory-creation/materials/onshape_mini_rc_car_lab_guide.md)
 - **Prezentare**: https://canva.com/
 - **Kahoot**: https://kahoot.com/
-- **Bambu Studio Official Guide**: https://bambulab.com/en/download/studio
 
 ---
 
 ## 2. Pregătirea Lecției (Checklist Profesor)
 
 ### Software & Echipamente Digitale
-- [ ] Bambu Studio instalat și configurat pe stațiile elevilor sau pe laptopul de catedră cu profilurile imprimantelor din clasă (Bambu Lab A1 / A1 Combo / A2L).
-- [ ] Proiectul Onshape al profesorului pregătit cu piesele Lecției 10 gata pentru demonstrația live de export.
-- [ ] Prezentarea teoretică deschisă pe videoproiector conform `presentation_interactive.md`.
-- [ ] Quiz-ul Kahoot de 10 întrebări teoretice pregătit într-un tab separat (conform `quiz.md`).
+- [ ] Proiectul Onshape al mașinuței RC deschis pe ecranul profesorului pentru referință vizuală 3D a modului în care piesele se îmbină.
+- [ ] Prezentarea teoretică interactivă încărcată pe videoproiector conform `presentation_interactive.md`.
+- [ ] Quiz-ul Kahoot de 10 întrebări deschis într-un tab separat (conform `quiz.md`).
 
 ### Hardware & Materiale Fizice pentru Clasă
-- [ ] Șasiurile fizice ale triciclurilor RC (cu motorul N20, roțile din spate, servomotorul frontal, placa de control 2.4 GHz și suportul de baterie deja fixate).
-- [ ] Un set complet de biele de direcție și bumpere frontale pre-printate 3D din filament PLA în culorile alianțelor (pentru a garanta că toți elevii au piese fizice gata de montaj chiar dacă printarea din timpul orei este în curs pe imprimantele din laborator).
-- [ ] Tavă magnetică de feronerie la fiecare banc: șuruburi metrice M2 x 8 mm, M2.5 sau M3 x 10 mm pentru pivotare, șurubelnițe de precizie, piulițe metrice.
-- [ ] Benzi elastice late de cauciuc (rubber bands) pentru jantele roților.
-- [ ] Baterii Li-Ion încărcate și telecomenzi radio 2.4 GHz împerecheate (paired remotes) cu etichetele fiecărui elev.
-- [ ] 6 jaloane / conuri de cauciuc sau obstacole printate 3D pentru amenajarea pistei de concurs RoboRangers Agility Cup pe podeaua clasei.
+- [ ] Toate componentele printate 3D ale triciclului RC pregătite pe cutii individuale de echipă (șasiu principal, roți din spate, fuzete frontale, roată frontală, biela de direcție *Steering Tie-Rod* și bumperul frontal *Front Bumper*).
+- [ ] Mostre demonstrative pentru cele 4 metode de fixare expuse pe masa catedrei:
+  - 1 mostră de gaură de 2.8 mm cu șurub M3 înșurubat direct în plastic;
+  - 1 mostră de două plăcuțe strânse cu șurub M3 și piuliță hexagonală clasică la exterior;
+  - 1 mostră de piesă secționată 3D cu buzunar intern pentru piuliță pătrată DIN 562;
+  - 1 mostră de piesă cu inserție de alamă (*heat-set insert*) presată la cald.
+- [ ] Un letcon încălzit la 210°C la catedră (folosit exclusiv de profesor pentru o scurtă demonstrație de presare a unei inserții de alamă).
+- [ ] Cutie compartimentată de feronerie mecanică la fiecare banc:
+  - Șuruburi metrice M3 cu cap cilindric hexagonal: lungimi de 8 mm, 10 mm și 14 mm;
+  - Șuruburi metrice M2 x 8 mm pentru montajul servomotorului și al pivoților fuzetelor;
+  - Piulițe pătrate subțiri M3 (DIN 562) pentru lăcașul captiv din șasiu;
+  - Piulițe hexagonale standard M3;
+  - Șurubelnițe de precizie (hexagonale de 2.0 mm / 2.5 mm și cruce PH0).
+- [ ] Seturi de componente electronice testate: motor N20 cu reductor metalic, servomotor micro (SG90), receptor radio 2.4 GHz, telecomenzi cu 4 butoane și baterii 1S Li-Ion complet încărcate.
+- [ ] Benzi elastice de cauciuc late (*rubber bands*) pentru acoperirea jantelor printate 3D.
+- [ ] Pista de concurs RoboRangers Agility Cup amenajată pe podea cu 6 jaloane de cauciuc sau obstacole printate 3D.
 
 ---
 
@@ -46,120 +60,107 @@
 
 | Interval | Etapă | Activitate Principală |
 | :---: | :--- | :--- |
-| **00:00 – 00:15** | **1. Deschiderea & Inspectarea Pieselor Digitale** | Verificarea proiectelor Onshape din Lecția 10. Prezentarea misiunii zilei: materializarea pieselor 3D în plastic real și asamblarea completă a bolidului mecanic. |
-| **00:15 – 00:35** | **2. Teorie Inginerească: Bambu Studio & Secretele Felierii** | Prezentarea interactivă la proiector: anizotropia straturilor, orientarea pieselor pe pat, infill Gyroid vs Grid, pereți solizi (wall loops) și multi-color print cu AMS. |
-| **00:35 – 00:55** | **3. Laborator CAM: Export Onshape & Feliere în Bambu Studio** | Elevii exportă fișierele 3MF din Onshape, le importă în Bambu Studio, aleg nuanțele alianței, configurează parametrii structurali și analizează previzualizarea straturilor (preview slider). |
-| **00:55 – 01:30** | **4. Atelier Mecanic: Asamblarea Fizică a Direcției & Bumperului** | Elevii primesc kitul fizic: montarea bielei de virare pe fuzete și servo horn cu șuruburi metrice, centrarea electrică la 90°, montarea bumperului și aplicarea benzilor de cauciuc pe roți. |
-| **01:30 – 01:45** | **5. Teste pe Banc & Pit Stop Calibrare** | Alimentarea receptorului 2.4 GHz, testarea telecomenzii, ajustarea mecanică a unghiului de fugă și a jocurilor din articulații pentru a asigura deplasare dreaptă fără blocaje. |
-| **01:45 – 01:55** | **6. Marea Provocare: RoboRangers Agility Cup** | Cursă cronometrată pe circuitul cu jaloane din sală: slalom printre obstacole, întoarcere la 180° și frânare de precizie în perimetrul de finiș. |
-| **01:55 – 02:00** | **7. Quiz Kahoot & Încheiere** | Evaluare interactivă de 10 întrebări axate strict pe teoria inginerească (conform `quiz.md`) și strângerea uneltelor la banc. |
+| **00:00 – 00:15** | **1. Deschiderea Misiunii & Inspectarea Pieselor Fizice** | Primirea elevilor la posturi, predarea pieselor printate 3D din Onshape și anunțarea obiectivului: transformarea pieselor statice într-un bolid mecanic gata de cursă. |
+| **00:15 – 00:35** | **2. Teorie Inginerească: Cele 4 Metode de Fixare (Fasteners)** | Prezentarea interactivă la ecran: înșurubarea directă în plastic (2.8 mm), piulița clasică traversantă, secretul piuliței pătrate captive și inserțiile de alamă la cald. |
+| **00:35 – 01:20** | **3. Atelier Mecanic: Asamblarea Pas cu Pas a Triciclului RC** | Glisarea piuliței pătrate în fanta șasiului, centrarea electrică a servomotorului la 90°, montarea timoneriei de virare, montarea motorului N20, echiparea pneurilor și fixarea bumperului. |
+| **01:20 – 01:35** | **4. Pit Stop: Calibrare pe Banc & Reglarea Unghiurilor** | Pornirea alimentării 1S, împerecherea telecomenzii 2.4 GHz, verificarea cursei servomotorului, reglarea mecanică a bielei pentru mers drept și eliminarea frecărilor. |
+| **01:35 – 01:50** | **5. Marea Provocare: Turneul RoboRangers Agility Cup** | Competiție cronometrată pe traseul de slalom: probă de viteză, viraje strânse printre jaloane, întoarcere la 180° și frânare controlată la linia de finiș. |
+| **01:50 – 02:00** | **6. Quiz Kahoot & Concluzii Inginerești** | Sesiune interactivă de 10 întrebări teoretice despre proprietățile elementelor de fixare, toleranțe și cinematica de viraj (conform `quiz.md`). |
 
 ---
 
 ## 4. Ghid Detaliat Pas cu Pas (Teacher's Master Guide)
 
-### Pasul 1: Deschiderea & Inspectarea Pieselor Digitale (15 min)
-Profesorul deschide sesiunea așezând pe masa de catedră un șasiu fizic de triciclu RC fără bielă și fără bumper, alături de o piesă fizică printată 3D în culori vii. 
+### Pasul 1: Deschiderea Misiunii & Inspectarea Pieselor Fizice (15 min)
+Profesorul deschide sesiunea invitând elevii să își așeze pe masă piesele printate 3D:
+*"În orele trecute ați desenat schițe, ați pus cote milimetrice în Onshape și ați creat geamănul digital al mașinii voastre. Astăzi piesele au ieșit de pe patul încins al imprimantelor Bambu Lab: sunt reci, solide și au culorile alianței voastre. Înainte de a lua șurubelnița în mână, trebuie să învățăm o regulă de bază din industria aerospațială și auto: cum îmbinăm piesele din plastic astfel încât mașina să nu se dezmembreze la primul impact cu peretele!"*
 
-Profesorul lansează provocarea:
-*"Până acum, mașina voastră a existat în două lumi separate: componentele electronice fizice care se învârteau pe banc în Lecția 08 și modelul 3D din Onshape în care ați rezolvat virajul în Lecția 10. Astăzi unim cele două lumi. Trecem de la pixel la plastic. Vom învăța cum gândește un inginer de producție când trimite o piesă către imprimantele Bambu Lab și vom asambla mașinuța completă pentru a concura pe pista de testare."*
-
-Elevii deschid computerele, accesează spațiul Onshape din Lecția 10 și localizează cele două piese modelate de ei:
-1. `Steering Tie-Rod` (biela de virare cu 3 ochiuri de pivotare).
-2. `Front Bumper` (bara frontală de protecție cu numele robotului).
-
----
-
-### Pasul 2: Teorie Inginerească: Bambu Studio & Secretele Felierii (20 min)
-Se rulează prezentarea interactivă la ecran conform `presentation_interactive.md`. Elevii citesc pe rând propozițiile numerotate, iar profesorul ancorează conceptele prin demonstrații practice.
-
-**1. Ce este un Slicer și de ce nu putem trimite direct fișierul CAD la imprimantă?**
-O imprimantă 3D nu înțelege concepte geometrice abstracte precum "cilindru" sau "spline". Ea înțelege doar mișcări pe coordonate carteziene (X, Y, Z), viteze de avans și temperaturi ale duzei (nozzle). Slicer-ul (Bambu Studio) acționează ca un translator: taie volumul 3D în felii orizontale microscopice (de obicei de 0.20 mm grosime) și generează fișierul de instrucțiuni G-code.
-
-**2. Anizotropia și Orientarea Straturilor:**
-Profesorul arată clasei o bucată de lemn sau un biscuit stratificat:
-- Dacă forța acționează paralel cu straturile, piesa se poate desprinde ușor de-a lungul îmbinării dintre firele de plastic (delaminare).
-- Dacă forța acționează perpendicular pe straturi, piesa este extrem de rezistentă.
-- Pentru biela de direcție, piesa trebuie orientată obligatoriu perfect plată pe patul de printare. În această poziție, fiecare fir de plastic este continuu de la ochiul stâng la ochiul drept, oferind rezistență maximă la tracțiune și compresiune atunci când servomotorul brachează roțile.
-
-**3. Infill Gyroid vs Infill Grid:**
-Profesorul explică de ce barele de protecție (bumperele) nu sunt printate 100% solide (ar fi prea grele și rigide) și nici cu infill simplu Grid:
-- Infill-ul Grid are linii care se intersectează pe același plan, fiind rigid pe verticală, dar casant la impact frontal.
-- Infill-ul Gyroid este o structură ondulată tridimensională inspirată din natură (suprafețe minime periodice). El distribuie șocul mecanic în toate direcțiile, funcționând ca o zonă controlată de deformare (crumple zone), exact ca bara de protecție a unei mașini reale.
+Elevii verifică vizual calitatea fiecărei piese:
+- Șasiul principal printat 3D;
+- Roțile din spate cu profil de jantă;
+- Fuzetele de virare și roata din față;
+- Biela de direcție (*Steering Tie-Rod*) modelată în Lecția 10;
+- Bara frontală de protecție (*Front Bumper*) personalizată cu numele robotului.
 
 ---
 
-### Pasul 3: Laborator CAM: Export Onshape & Feliere în Bambu Studio (20 min)
-Profesorul demonstrează fluxul de lucru pe ecranul mare, iar elevii execută sincron pe calculatoarele lor:
+### Pasul 2: Teorie Inginerească: Cele 4 Metode de Fixare (Fasteners) în Printarea 3D (20 min)
 
-1. **Exportul din Onshape**:
-   - În tab-ul Part Studio sau Assembly, click dreapta pe piesa `Steering Tie-Rod` din arborele de piese din stânga.
-   - Selectați `Export...`.
-   - În fereastra de export, alegeți setările optime:
-     - Format: `3MF` (format modern care păstrează unitățile de măsură și orientarea fără erori de scalare).
-     - Units: `Millimeter`.
-     - Resolution: `Fine`.
-   - Salvați fișierul pe desktop sau în folderul personal de descărcări.
-   - Repetați aceeași procedură pentru piesa `Front Bumper`.
+Profesorul proiectează slide-urile din `presentation_interactive.md` și arată mostrele reale de la catedră:
 
-2. **Importul și Felierea în Bambu Studio**:
-   - Deschideți programul **Bambu Studio**.
-   - Trageți fișierele `.3mf` pe suprafața patului virtual de printare.
-   - Utilizați comanda `Auto-Orient` sau verificați vizual ca biela să stea culcată pe fața mare.
-   - În panoul din stânga (Global Settings):
-     - Preset calitate: `0.20mm Standard`.
-     - Infill Density: `20%`.
-     - Infill Pattern: `Gyroid`.
-     - Wall loops: setați la `3` (pentru a asigura pereți groși în jurul găurilor de șurub).
-   - Apăsați butonul verde din colțul din dreapta-sus: `Slice plate`.
-   - Explorați glisorul vertical de straturi (Layer slider) pentru a privi interiorul piesei și structura Gyroid generată.
+#### 1. Înșurubare Directă în Plastic (*Direct Self-Tapping* – Gaură de 2.8 mm pentru M3):
+- **Cum funcționează**: Se printează o gaură cilindrică cu diametrul de 2.8 mm. Șurubul metric M3 (care are diametrul exterior de 3.0 mm) pătrunde forțat în gaură, iar spirele dure de oțel taie un canal elicoidal în plasticul mai moale.
+- **Unde o folosim**: Pentru piese statice, carcase ușoare, cleme sau capace de baterie care se închid o singură dată și nu sunt supuse la vibrații intense.
+- **De ce este limitată**: Dacă o deșurubăm de 3–4 ori, plasticul se macină, spirele se distrug, iar șurubul se va învârti în gol (*stripped thread*). De asemenea, dacă forțăm strângerea pe un perete subțire, piesa se poate despica de-a lungul straturilor de printare.
+
+#### 2. Gaură de Trecere cu Piuliță Hexagonală pe Partea Opusă (*Through-Hole & Nut*):
+- **Cum funcționează**: Gaura are diametrul de 3.2 – 3.4 mm, permițând șurubului M3 să treacă lejer prin ea. Pe partea opusă se strânge o piuliță hexagonală clasică de oțel.
+- **Unde o folosim**: La îmbinări de mare rezistență mecanică unde avem acces liber pe ambele părți ale piesei.
+- **Avantaj uriaș**: Forța se exercită metal-pe-metal; poți demonta și remonta piesa de 100 de ori fără nicio uzură.
+- **Dezavantaj**: Necesită două unelte (șurubelniță + cheie/clește) și ocupă mult spațiu la exterior.
+
+#### 3. Piuliță Pătrată Captivă în Fanta 3D (*Captive Square Nut Slot* – Soluția Triciclului Nostru!):
+- **Cum funcționează**: În interiorul volumului 3D se proiectează un buzunar lateral dimensionat după conturul unei piulițe pătrate subțiri (standard **DIN 562 M3**). Piulița se glisează lateral în fantă, pereții de plastic o blochează automat împotriva rotirii, iar șurubul intră perpendicular prin gaura de ghidaj.
+- **Secretul Inginerec**: Fața plană a piuliței pătrate oferă o suprafață de contact mult mai mare decât colțurile ascuțite ale unei piulițe hexagonale. Piesa din plastic acționează ca o cheie fixă invizibilă, permițând strângerea fermă a șurubului cu o singură unealtă, chiar și în zone adânci din interiorul șasiului!
+
+#### 4. Inserții Filetate de Alamă la Cald (*Heat-Set Threaded Inserts*):
+- **Cum funcționează**: O bucșă de alamă cu filet interior și zimți exteriori înclinați (*knurling*) este așezată deasupra unei găuri de 4.0 mm și presată ușor cu vârful cald al letconului la 200–220°C. Căldura topește plasticul din jur, inserția coboară la nivelul suprafeței, iar când plasticul se răcește în câteva secunde, el se solidifică printre zimții de alamă.
+- **Unde o folosim**: În prototiparea profesională și produsele robotice comerciale de înaltă precizie. Oferă o rezistență masivă la smulgere (*pull-out*) și rotație (*torque*).
 
 ---
 
-### Pasul 4: Atelier Mecanic: Asamblarea Fizică a Direcției & Bumperului (35 min)
-Elevii își aduc șasiul triciclului pe bancul de lucru și primesc piesele printate (biela de virare și bumperul corespunzător alianței lor).
+### Pasul 3: Atelier Mecanic: Asamblarea Pas cu Pas a Triciclului RC (45 min)
 
-**Etapa 1: Centrarea Servomotorului (Servo Horn Centering)**
-> [!IMPORTANT]
-> Înainte de a fixa biela cu șuruburi, servomotorul trebuie centrat electric. Dacă brațul este montat strâmb pe caneluri, mașina va vira puternic într-o singură direcție și va bloca motorul.
-1. Porniți comutatorul de alimentare al receptorului 2.4 GHz timp de 3 secunde fără a atinge volanul/butoanele de viraj de pe telecomandă. Servomotorul va sări automat în poziția neutră de 90°.
-2. Opriți alimentarea.
-3. Așezați brațul de plastic alb al servomotorului (servo horn) astfel încât să stea orientat perfect înainte, perpendicular pe carcasă.
-4. Strângeți șurubelul central de fixare pe axul canelat.
+Elevii trec la stațiile de lucru și urmează protocolul mecanic ghidat pas cu pas de profesor:
 
-**Etapa 2: Montarea Bielei de Direcție (Steering Tie-Rod)**
-1. Așezați biela peste cele 3 puncte de conexiune: pivotul fuzetei stângi, brațul servomotorului și pivotul fuzetei drepte.
-2. Introduceți șuruburile metrice M2 de sus în jos.
-3. Înșurubați ușor până când capul șurubului atinge plasticul, apoi deșurubați o jumătate de tură: biela trebuie să poată glisa liber stânga-dreapta fără forțare și fără joc excesiv.
+#### Etapa A: Inserarea Piuliței Pătrate Captive
+1. Elevul identifică fanta laterală din șasiul frontal al triciclului.
+2. Glisează piulița pătrată DIN 562 M3 în buzunarul intern până când gaura filetată a piuliței se aliniază perfect cu orificiul vertical de ghidaj.
+3. Se verifică alinierea privind prin orificiu: filetul de oțel trebuie să fie vizibil în centru.
 
-**Etapa 3: Fixarea Bumperului Frontal & a Pneurilor de Cauciuc**
-1. Montați bara frontală de protecție pe botul șasiului folosind cele două șuruburi M3 prevăzute în proiect.
-2. Luați benzile elastice de cauciuc (rubber bands) și aplicați-le pe șanțul exterior al celor două roți frontale și al roții mari posterioare de tracțiune.
+#### Etapa B: Centrarea Servomotorului & Montajul Direcției
+1. **Centrarea Electrică la 90°**: Înainte de a monta brațul oscilant (*servo horn*), elevul conectează servomotorul la placa de control, pornește alimentarea și lasă servomotorul să se așeze automat în poziția neutră de 90°.
+2. Se montează brațul servomotorului perpendicular la 90° față de axul corpului și se asigură cu șurubul central mic.
+3. Se montează servomotorul pe șasiul frontal folosind două șuruburi M2.
+4. Se conectează biela de virare (*Steering Tie-Rod*) între fuzetele stânga/dreapta și brațul servomotorului cu șuruburi metrice M2.5 sau M3, verificând ca brațele de viraj să pivoteze liber, fără forțare sau frecare mecanică excesivă.
 
----
+#### Etapa C: Montajul Tracțiunii & Echiparea Pneurilor de Cauciuc
+1. Motorul N20 cu reductor metalic se glisează în suportul posterior al șasiului și se fixează ferm.
+2. Roata de tracțiune din spate se montează pe axul în formă de D al motorului N20.
+3. **Pneurile Elastice**: Elevii montează câte o bandă elastică lată de cauciuc (*rubber band*) pe canalul fiecărei roți. Profesorul explică: roata de plastic dur are un coeficient de frecare foarte mic pe parchet sau gresie și ar patina în gol; cauciucul elastic mărește aderența (*grip*) și transmite integral cuplul motorului către sol.
 
-### Pasul 5: Teste pe Banc & Pit Stop Calibrare (15 min)
-Elevii așază mașina cu roțile suspendate în aer pentru primul test dinamic:
-1. Porniți telecomanda și receptorul.
-2. Apăsați butonul de viraj stânga: verificați dacă ambele roți din față virează sincron spre stânga.
-3. Apăsați butonul de viraj dreapta: verificați dacă roțile virează sincron spre dreapta.
-4. Eliberați butoanele: roțile trebuie să revină perfect paralele cu șasiul. Dacă deviază, ajustați mecanic poziția bielei sau rearanjați servo horn-ul pe canelura alăturată.
-5. Testați motorul spate N20: asigurați-vă că roata mare se învârte în sensul corect de mers înainte.
+#### Etapa D: Montajul Bumperului Frontal & Fixarea Electronicii
+1. Bara de protecție frontală (*Front Bumper*) printată 3D se montează pe botul șasiului folosind șurubul care se strânge direct în **piulița pătrată captivă** instalată la Etapa A. Strângerea se face lin, demonstrând eficiența piuliței captive: nu se învârte în gol și blochează ferm bumperul!
+2. Placa de recepție radio 2.4 GHz se montează în fanta dedicată cu bandă dublu-adezivă.
+3. Se conectează bateria 1S Li-Ion și se organizează cablurile pentru a nu atinge roțile în mișcare.
 
 ---
 
-### Pasul 6: Marea Provocare: RoboRangers Agility Cup (10 min)
-Profesorul amenajează pe podeaua laboratorului un circuit de slalom marcat cu 4 conuri distanțate la 80 cm, o zonă de întoarcere în ac de păr și o casetă de garare finală (Stop Box).
+### Pasul 4: Pit Stop: Calibrare pe Banc & Reglarea Unghiurilor (15 min)
 
-**Regulamentul Competiției:**
-- Fiecare cursant are la dispoziție 2 manșe cronometrate.
-- Traseu: Start -> Slalom printre cele 4 conuri -> Ocolirea jalonului roșu la 180° -> Accelerare pe linia dreaptă -> Frânare completă în interiorul casetei de oprire.
-- Penalizări: Răsturnarea unui jalon adaugă +2 secunde la timpul final. Atingerea peretelui cu bumperul fără oprirea mașinii nu este penalizată (validând robustețea bumperului proiectat).
-- Cronometrul este afișat pe ecranul mare, iar timpii sunt notați în clasamentul alianțelor.
+1. **Testul de Banc (Fără contact cu solul)**: Elevul ține triciclul în mână și acționează telecomanda:
+   - Apăsarea butonului Înainte $\to$ roata din spate accelerează ferm;
+   - Butoanele Stânga / Dreapta $\to$ roata frontală brachează sincron la unghiuri egale.
+2. **Ajustarea Mecanică de Finisaj**:
+   - Dacă mașina tinde să tragă într-o parte pe linie dreaptă, elevul ajustează ușor poziția brațului servomotorului pe caneluri sau strânge/slăbește cu un sfert de tură șuruburile bielei de direcție.
 
 ---
 
-### Pasul 7: Quiz Kahoot & Încheiere (5 min)
-Elevii scanează codul QR de pe videoproiector și participă la testul de 10 întrebări teoretice (conform `quiz.md`). Întrebările validează exclusiv conceptele inginerești studiate (anizotropie, infill Gyroid, rolul slicer-ului, centrarea servomotoarelor, coeficientul de frecare).
+### Pasul 5: Marea Provocare: Turneul RoboRangers Agility Cup (15 min)
 
-La final, elevii opresc alimentarea receptoarelor, depozitează telecomenzile în cutiile alianței și curăță bancurile de lucru. Mașinile complet funcționale rămân în flota de laborator gata pentru marea arenă finală.
+Profesorul deschide pista oficială de concurs:
+- **Traseul**: O pistă de slalom cu 4 jaloane așezate la distanță de 80 cm, o zonă de întoarcere în ac de păr la 180° și o zonă marcată de parcare/frânare la finiș.
+- **Regulament**:
+  - Fiecare pilot are dreptul la 2 manșe cronometrate.
+  - Lovirea sau răsturnarea unui jalon adaugă o penalizare de 2 secunde.
+  - Câștigă mașina care parcurge circuitul în cel mai scurt timp, demonstrând o geometrie de viraj stabilă și o aderență impecabilă a pneurilor de cauciuc.
+- **Atmosferă**: Echipele își susțin colegii de alianță cu entuziasm, analizând în timp real modul în care biela modelată de ei răspunde la manevrele rapide de eschivă.
+
+---
+
+### Pasul 6: Quiz Kahoot & Concluzii Inginerești (10 min)
+
+Elevii se așază la locurile lor și deschid Kahoot:
+- Se rulează cele 10 întrebări teoretice din `quiz.md`.
+- Profesorul sintetizează concluziile zilei: *„Astăzi ați parcurs tot drumul unui produs industrial real: de la schița din calculator, la piesele ieșite din imprimantă, alegerea inteligentă a elementelor de fixare și asamblarea unui mecanism complet funcțional. Știți exact când să folosiți o piuliță pătrată, când să apelați la inserții calde și cum cauciucul transformă puterea unui motor în viteză pură pe circuit!”*
+- Elevii deconectează bateriile, așază telecomenzile în stand și își depozitează mașinuțele în cutiile de echipă.

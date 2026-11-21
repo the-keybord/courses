@@ -1,49 +1,56 @@
 # Analiza Pre-Mortem a Riscurilor Pedagogice & Tehnice: Lecția 11 [RBF1.11]
 
-Acest document reprezintă un instrument critic de analiză preventivă a riscurilor pentru instructorul cursului **Robot Factory: Creation**, evaluând potențialele blocaje mecanice, întârzieri de fabricație și surse de frustrare pentru elevii de 11–14 ani în timpul Lecției 11.
+Acest document reprezintă instrumentul de analiză preventivă a riscurilor pentru instructorul cursului **Robot Factory: Creation**, identificând potențialele blocaje mecanice, erori de montaj al elementelor de fixare și dinamica de clasă pentru elevii de 11–14 ani în cadrul Lecției 11.
 
 ---
 
-## 1. Riscuri Tehnice & Puncte Critice de Fabricație
+## 1. Riscuri Tehnice & Puncte Critice Mecanice
 
-### Risc 1: Blocajul Timpului de Imprimare (Imprimantele nu pot printa pentru 12 elevi simultan)
-- **Descriere**: O sesiune de printare pentru 12 perechi de biele și bumpere durează între 2 și 3 ore pe 2–3 imprimante Bambu Lab. Dacă elevii ar aștepta ca piesele lor să se printeze în timpul celor 120 de minute ale orei, peste 70% din clasă ar fi inactivă.
-- **Soluție / Safeguard Pedagogic**: 
-  - Profesorul pre-printează în avans un set complet de biele și bumpere în culorile alianțelor înainte de oră.
-  - În timpul orei, elevii parcurg complet procesul CAM în Bambu Studio (export Onshape 3MF, orientare, setare infill Gyroid, feliere), lansează 1–2 plăci demonstrative pe imprimantele din clasă pentru a vedea procesul fizic, dar primesc imediat piesele gata pre-fabricate pentru a începe montajul mecanic fără timpi morți.
-
-### Risc 2: Ruperea Ochiurilor Bielei la Strângerea Șuruburilor
-- **Descriere**: La vârsta de 11–14 ani, elevii au tendința de a strânge șuruburile cu forță maximă. Plasticul PLA printat la 3 mm grosime poate crăpa dacă șurubul este forțat după atingerea capătului de filet, sau dacă biela este strânsă atât de tare încât nu mai poate pivota pe fuzete.
+### Risc 1: Forțarea Excesivă a Șuruburilor în Găurile de Plastic („Stripped Thread”)
+- **Descriere**: La înșurubarea directă a șuruburilor metrice M3 în găurile de 2.8 mm, elevii au tendința de a strânge cu toată forța șurubelnița. Plasticul PLA se forfecează instantaneu, iar șurubul începe să se rotească în gol, distrugând filetul.
 - **Soluție / Safeguard Pedagogic**:
-  - Regula "Finger-Tight & Half Turn Back": mentorul demonstrează la ecran cum se strânge șurubul până la contact, urmat de o rotire inversă de 180° pentru a asigura rotirea liberă a articulației.
-  - La catedră se țin 5 biele de rezervă gata printate pentru înlocuire instantanee în caz de fisurare.
+  - Mentorul demonstrează regula celor „Două Degete”: șurubelnița se rotește ținând doar degetul mare și arătătorul pe mâner; în momentul în care capul șurubului a atins suprafața piesei și se simte o opoziție fermă, strângerea se oprește imediat.
+  - În caz de forfecare accidentală, mentorul are la îndemână câteva șuruburi cu pas mai mare sau o picătură de adeziv cianoacrilat pentru remediere rapidă pe banc.
 
-### Risc 3: Nepotrivirea Toleranțelor la Găurile Șuruburilor (Gaură prea strâmtă / prea largă)
-- **Descriere**: În funcție de contracția termică a filamentului PLA, găurile de 2.2 mm sau 3.2 mm pot ieși mai strâmte cu 0.2 mm, blocând șurubul.
+### Risc 2: Alunecarea și Căderea Piuliței Pătrate din Fanta Șasiului
+- **Descriere**: Fanta șasiului permite glisarea laterală a piuliței DIN 562 M3. Dacă elevul înclină mașina înainte de a introduce șurubul prin gaura de ghidaj, piulița alunecă afară pe masă sau pe podea.
 - **Soluție / Safeguard Pedagogic**:
-  - Profesorul are pe masa de lucru o mică trusă cu un alezor manual sau o spirală subțire de 2.5 mm / 3.2 mm pentru lărgirea rapidă a orificiilor dacă un elev întâmpină rezistență mecanică excesivă.
+  - Profesorul instruiește elevii să țină degetul pe fanta laterală sau să folosească o mică bucățică de bandă adezivă de mascare peste fantă pentru a ține piulița captivă până când șurubul a prins primele 2 spire de filet.
+
+### Risc 3: Montarea Brațului Servomotorului Fără Centrare Electrică la 90°
+- **Descriere**: Dacă brațul oscilant de plastic (*servo horn*) este fixat pe axul zimțat înainte ca servomotorul să fie pornit și adus în poziția neutră de 90°, unghiul de viraj al triciclului va fi asimetric: mașina va vira puternic spre stânga și aproape deloc spre dreapta.
+- **Soluție / Safeguard Pedagogic**:
+  - Pasul de centrare electrică este obligatoriu și se execută la comun, sub comanda directă a profesorului, înainte de a atinge vreo șurubelniță pentru direcție.
+
+### Risc 4: Frecare Mecanică Excesivă pe Biela de Virare (Blocarea Servomotorului)
+- **Descriere**: Dacă șuruburile care fixează biela de virare pe fuzete sunt strânse până la refuz, plasticul se blochează rigid, servomotorul nu mai are forța să miște mecanismul, intră în suprasarcină (*stall*) și consumă rapid bateria.
+- **Soluție / Safeguard Pedagogic**:
+  - Șuruburile de pivotare ale bielei se strâng până la capăt, apoi se desfac cu un sfert de tură (90° în sens invers) pentru a lăsa o mică libertate de rotație lină.
+  - Testul cu degetul: fuzetele trebuie să poată fi mișcate stânga-dreapta ușor, fără nicio rezistență sesizabilă.
 
 ---
 
 ## 2. Riscuri Pedagogice & Dinamica Clasei
 
-### Risc 4: Asimetria Virajului și Frustrarea "Mașina Trage Doar spre Stânga"
-- **Descriere**: Elevii sar peste pasul de centrare electrică a servomotorului la 90°, montând biela când servo-ul se află la un unghi extrem. Când pornesc mașina, aceasta virează violent într-o singură parte și nu răspunde la comanda opusă.
+### Risc 5: Pierderea Șuruburilor Mici M2 și a Piulițelor Pătrate pe Podea
+- **Descriere**: Șuruburile M2 x 8 mm și piulițele pătrate sunt foarte mici. Dacă se rostogolesc de pe masă, elevii își pierd timpul căutându-le pe jos în loc să asambleze.
 - **Soluție / Safeguard Pedagogic**:
-  - Checkpoint obligatoriu cu profesorul sau liderul Forge Ranger înainte de înșurubarea definitivă: servomotorul este pornit scurt la curent pentru a se auto-centra, iar poziția perpendiculară a brațului este validată vizual.
+  - Fiecare banc este dotat obligatoriu cu o tavă magnetică sau un capac de cutie compartimentat în care se țin exclusiv piesele mici de feronerie.
+  - Regula de lucru: nicio piesă metalică nu se așază direct pe blatul liber al mesei.
 
-### Risc 5: Plictiseală în Timpul Așteptării la Pista de Slalom
-- **Descriere**: Dacă la traseul de slalom concurează câte o singură mașină, restul de 10–12 elevi își pot pierde concentrarea și pot începe să ruleze mașinile necontrolat prin sală.
+### Risc 6: Frustrarea la Cursele de Slalom din Agility Cup
+- **Descriere**: Dacă o mașină iese de pe traseu din cauza vitezei sau a unui reflex întârziat pe telecomandă, pilotul poate deveni frustrat.
 - **Soluție / Safeguard Pedagogic**:
-  - Împărțirea rolurilor active la pistă: în timp ce un elev pilotează mașina, coechipierul din alianță este Comisar de Traseu (rearanjează jaloanele atinse), iar un membru dintr-o altă alianță acționează cronometrul oficial la videoproiector.
-  - Organizarea a două mini-zone: Zona de Antrenament Liber (paddock / teste pe cerc mic) și Zona de Cursă Oficială Cronometrată.
+  - Competiția include 1 tur de antrenament gratuit pentru fiecare cursant înainte de manșele oficiale cronometrate.
+  - Se acordă premii și aprecieri nu doar pentru cel mai rapid timp, ci și pentru „Cel mai curat viraj fără atingere de jalon” și „Cea mai bună manevră de redresare”.
 
 ---
 
 ## 3. Lista Rapidă de Verificare pentru Profesor (Quick Verification Checklist)
 
-- [ ] Un stoc de 12–15 biele de direcție și bumpere pre-printate există pe masa de catedră înainte de intrarea elevilor în clasă.
-- [ ] Cel puțin o imprimantă Bambu Lab A1 este gata cu filament PLA încărcat pentru demonstrația live de feliere și start print.
-- [ ] Bateriile Li-Ion ale triciclurilor sunt verificate cu multimetrul / încărcate la peste 3.8V pentru a preveni încetinirea motoarelor.
-- [ ] Bateriile telecomenzilor radio 2.4 GHz sunt funcționale și nu există confuzie între telecomenzile împerecheate ale colegilor (etichete cu nume pe fiecare transmițător).
-- [ ] Pista de slalom este delimitată cu bandă adezivă pe podea înainte de minutul 90 al lecției.
+- [ ] Toate componentele printate 3D ale triciclului sunt sortate pe cutii de echipă.
+- [ ] Piulițele pătrate DIN 562 M3 sunt verificate fizic pentru a intra lejer în fantele șasiului fără a fi forțate cu ciocanul.
+- [ ] Bateriile 1S Li-Ion sunt încărcate complet (peste 4.0V).
+- [ ] Telecomenzile radio 2.4 GHz sunt împerecheate și etichetate cu numele fiecărui elev.
+- [ ] Mostrele tactile pentru cele 4 metode de fixare (fasteners) sunt aranjate pe catedră alături de o lupă.
+- [ ] Jaloanele de cauciuc pentru traseul Agility Cup sunt pregătite pe podeaua sălii.
