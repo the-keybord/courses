@@ -219,5 +219,7 @@ def generate_all_quizzes(root_dir=None):
     return generated
 
 if __name__ == '__main__':
-    results = generate_all_quizzes()
+    import sys
+    target = sys.argv[1] if len(sys.argv) > 1 else None
+    results = generate_all_quizzes(target)
     print(f"Successfully generated {len(results)} Kahoot spreadsheet files.")
