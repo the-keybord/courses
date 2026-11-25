@@ -98,7 +98,11 @@ Fiecare lecție respectă un flux clar în 8 etape:
 - **Proiect Practic**: Colectarea brelocurilor NFC din Lecția 08 + Proiectarea în Tinkercad a primului Fidget Tri-Spinner Pocket 100% 3D printat (fără rulment metalic), echilibrat la 120°, dotat cu greutăți din monede de 1 Leu ușor de scos și sistem complet de ax și capace de deget.
 - **Director Lecție**: [`lesson-09/`](lesson-09/)
 
-### 🔹 Lecția 10: *(În curând)*
+### 🔹 [Lecția 10 [3DS2.10]: Fabrica de Jucării – Secretele Rotițelor Dințate, Raportul de Transmisie 1:2 & Brelocul Mecanic Dual-Gear](lesson-10/README.md)
+- **Cod Lecție**: `3DS2.10`
+- **Descriere pe scurt**: Colectăm spinnerele 3D din Lecția 09 pe Bambu Lab A1 și facem pasul către cinematica mecanismelor cu roți dințate. Descoperim istoria angrenajelor de la Mecanismul din Antikythera până la ceasurile elvețiene și cutiile de viteze auto, regula contra-rotației (sens orar vs sens anti-orar) și fenomenul de multiplicare a vitezei prin raportul de transmisie 1:2 (roata mare de 24 dinți forțează roata mică de 12 dinți să facă 2 rotații complete). Învățăm despre jocul mecanic dintre dinți (backlash) și toleranțele FDM. În atelierul practic folosim o metodologie inginerească accesibilă: modelăm la Scara 2:1 în Tinkercad doar cu numere întregi (grilă de 1 mm, joc de 1 mm între ax și roată), iar mentorul scalează proiectul la 50% în Bambu Studio pentru a obține o toleranță fizică ideală de 0.5 mm pe brelocul mecanic de buzunar (Dual-Gear Fidget Keychain) cu șasiu minimalist și ureche de prindere!
+- **Proiect Practic**: Colectarea spinnerelor printate din Lecția 09 + Punerea la imprimat a modelelor pe Bambu Lab A1 + Proiectarea completă în Tinkercad la Scara 2:1 a brelocului mecanic cu două roți dințate în raport 1:2, șasiu ergonomic cu ureche de prindere și scalare 50% în Bambu Studio.
+- **Director Lecție**: [`lesson-10/`](lesson-10/)
 
 ---
 
