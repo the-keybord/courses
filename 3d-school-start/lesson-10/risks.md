@@ -6,62 +6,60 @@ Acest document reprezintă instrumentul de analiză preventivă a riscurilor pen
 
 ## 1. Riscuri Tehnice & Puncte Critice de Modelare 3D
 
-### Risc 1: Poziționarea Incorectă a Distanței Dintre Axele Șasiului la Scara 2:1
-- **Descriere**: La Scara 2:1, distanța teoretică dintre centrele celor două roți dințate este de 60 mm (rază primitivă roată mică 20 mm + rază primitivă roată mare 40 mm). Pentru o rotire lină, adăugăm 1 mm de joc funcțional (backlash), rezultând o distanță exactă de **61 mm**. Dacă elevul așază axele „din ochi”:
-  - Prea aproape (sub 60 mm) $\to$ dinții se strivesc reciproc și mecanismul se blochează complet la prima rotație;
-  - Prea departe (peste 63 mm) $\to$ vârfurile dinților nu se ating deloc, iar roata motoare se învârte în gol fără să antreneze roata mică.
+### Risc 1: Frustrarea Legată de Testarea în Tinkercad Sim Lab (Eroarea de Coliziune a Formelor Procedurale)
+- **Descriere**: În Tinkercad, copiii sunt obișnuiți să apese pe butonul de fizică *Sim Lab* (pictograma măr) pentru a testa mișcarea pieselor. Însă formele generate prin scripturi (`Parametric Gear nonInvolute circular tooth profile`) nu au o plasă de coliziune concavă fidelă în simulator. Motorul de fizică tratează interiorul roții ca o masă solidă convexă, ignorând orificiul central de 6 mm. Când simularea pornește, axul de 5 mm și roata sunt detectate ca fiind suprapuse în același volum solid, ceea ce face ca roata să se blocheze violent sau să fie aruncată în aer! Elevii pot intra în panică, crezând că au greșit modelul 3D.
 - **Soluție / Safeguard Pedagogic**:
-  - Profesorul impune utilizarea uneltei Riglă (*Ruler* / tasta `R`) în modul de vizualizare de sus (*Top View* – tasta `5` ortogonal).
-  - Elevii setează Snap Grid pe **1.0 mm** (fără fracțiuni zecimale) și plasează primul ax la cota X = 0 mm, iar al doilea ax la cota exactă **X = 61 mm**.
-  - La verificare, profesorul măsoară pe ecranul elevului distanța dintre centrele axelor cilindrice.
+  - Profesorul avertizează clasa în avans la Pasul 3 și Pasul 5: *„Nu vă speriați dacă Sim Lab nu rotește roțile! Simulatorul are o limită de calcul pe formele procedurale și nu «vede» gaura din roată. În realitate, pe imprimanta Bambu Lab A1, orificiul este perfect gol, iar jucăria se va învârti impecabil!”*.
+  - Se explică diferența esențială dintre simulatoare software și prototiparea fizică din lumea reală.
 
-### Risc 2: Modul (Pitch) Diferit pe Cele Două Roți Dințate
-- **Descriere**: În generatorul `Metric Gear`, parametrul `Pitch` stabilește pasul și mărimea fizică a fiecărui dinte. Dacă elevul modifică din greșeală pitch-ul pe roata mare (de ex. `Pitch = 4`), lăsând roata mică pe valoarea `Pitch = 3`, dinții vor avea dimensiuni complet diferite și nu se vor întrepătrunde niciodată.
+### Risc 2: Dezaxarea Celor Două Baze Cilindrice la Construcția Șasiului Sandwich
+- **Descriere**: Dacă elevul încearcă să așeze cutia de legătură sau axele „din ochi”, fără să alinieze cilindrii de bază pe centrele roților folosind unealta *Align* (tasta `L`), distanța dintre axe nu va corespunde distanței optime de angrenare:
+  - Dacă axele sunt prea apropiate $\to$ dinții se strivesc și se blochează;
+  - Dacă axele sunt prea depărtate $\to$ dinții nu se ating deloc.
 - **Soluție / Safeguard Pedagogic**:
-  - Regula de aur scrisă mare pe tablă: *„Pitch-ul trebuie să fie identic pe ambele roți: Pitch = 3!”*.
-  - Elevii sunt ghidați să genereze ambele roți păstrând valoarea implicită `Pitch = 3` și modificând exclusiv numărul de dinți (`12` dinți pentru roata mică, `24` dinți pentru roata mare).
+  - Metoda vizuală demonstrată: cilindrul portocaliu de 22 x 22 mm este centrat exact sub orificiul roții mari, iar al doilea cilindru sub roata mică.
+  - Cutia de legătură de 22 mm lățime unește tangent cei doi cilindri, formând capsula perfect centrată pe axele roților.
 
-### Risc 3: Axul Vertical Fără Toleranță (Nesetat la 9 mm la Scara 2:1)
-- **Descriere**: Gaura din centrul fiecărei roți dințate este calibrată la 10 mm la scara 2:1. Dacă elevul generează un cilindru standard de 10 mm (sau lasă dimensiunea implicită de 20 mm) pentru axele șasiului, la printarea FDM roata se va suda fizic pe ax sau nu va putea fi introdusă niciodată.
+### Risc 3: Modul (Pitch) Diferit pe Cele Două Roți Dințate
+- **Descriere**: În generatorul `Parametric Gear`, parametrul `pitch` stabilește mărimea dintelui. Dacă elevul modifică din greșeală pitch-ul pe una dintre roți (de exemplu `pitch = 5`), lăsând cealaltă roată pe `pitch = 4`, dinții vor avea dimensiuni incompatibile și mecanismul nu se va roti.
 - **Soluție / Safeguard Pedagogic**:
-  - Regula toleranței la Scara 2:1: `10 mm - 1 mm = 9 mm`.
-  - Elevii redimensionează ambele axe cilindrice la exact `9 x 9 mm` (înălțime 13 mm) și le verifică înainte de gruparea finală cu baza șasiului.
+  - Regula de aur proiectată pe ecran: *„Pitch = 4 pe ambele roți!”*.
+  - Elevii modifică doar numărul de dinți (`# of teeth`: 13 și 21, sau 12 și 24), păstrând toți ceilalți parametri identici.
 
-### Risc 4: Omiterea Scalării la 50% în Bambu Studio
-- **Descriere**: Modelele realizate în clasă sunt proiectate la Scara 2:1 pentru a permite copiilor să lucreze doar cu numere întregi pe grila de 1 mm. Dacă profesorul/mentorul uită să aplice scalarea uniformă la **50%** în Bambu Studio la pregătirea plăcii de print, brelocul va fi printat la dimensiune dublă (136 mm lungime în loc de 68 mm), consumând filament dublu și timp de print excesiv.
+### Risc 4: Omiterea Scalării la 70% în Bambu Studio
+- **Descriere**: În Tinkercad modelăm la dimensiuni confortabile (orificiu de 6 mm, ax de 5 mm, lățime capsulă 22 mm). Dacă profesorul uită să aplice scalarea uniformă la **70%** la feliere, brelocul va fi printat la dimensiune mare, consumând filament în plus și ocupând mult spațiu pe platoul imprimantei.
 - **Soluție / Safeguard Pedagogic**:
-  - Pasul de scalare la 50% este inclus explicit în procedura profesorului din `README.md`.
-  - În Bambu Studio: Selectare completă (`Ctrl + A`) $\to$ Instrumentul *Scale* (tasta `S`) $\to$ bifat *Uniform Scale* $\to$ introducere valoare `50%`.
-  - Scalarea la 50% reduce automat toleranța de 1 mm la toleranța fizică ideală FDM de **0.5 mm**, garantând o rotire lină fără joc excesiv.
+  - Pasul de scalare este inclus în checklist-ul de printare: Selectare totală (`Ctrl + A`) $\to$ Scale (`S`) $\to$ Uniform Scale $\to$ **70%**.
+  - La 70%, toleranța de 1 mm din Tinkercad se reduce la aproximativ **0.7 mm fizic**, oferind o rotire silențioasă fără gripare mecanică.
 
-### Risc 5: Urechea de Breloc Prea Subțire (Rupere în Buzunar)
-- **Descriere**: Elevii ar putea avea tendința de a micșora inelul pentru chei. La Scara 2:1, peretele inelului trebuie să fie suficient de gros pentru ca, după scalarea la 50%, să rămână rezistent mecanic.
+### Risc 5: Înălțimea Incorectă a Axelor pe Placa Inferioară
+- **Descriere**: Dacă axul este făcut prea scurt (de exemplu 6 mm, egal cu înălțimea roții), el nu va ajunge să intre în orificiul plăcii superioare, iar carcasă sandwich nu se va putea închide. Dacă este prea lung (peste 15 mm), va ieși inestetic în afară.
 - **Soluție / Safeguard Pedagogic**:
-  - Dimensiunile impuse la Scara 2:1: cilindru plin de 20 x 20 mm, găurit cu un cilindru Hole de 10 x 10 mm (grosime perete de 5 mm la Scara 2:1, care devine 2.5 mm la printare).
-  - Inelul este suprapus cel puțin 4 mm peste corpul bazei pentru o fuziune monolitică perfectă.
+  - Cota impusă: **13 mm înălțime** (4 mm bază + 6 mm roată + 1 mm joc vertical + 2 mm fixare în placa superioară).
 
 ---
 
 ## 2. Riscuri Pedagogice & Dinamica Clasei
 
-### Risc 6: Rătăcirea în Meniul Formelor din Tinkercad
-- **Descriere**: Copiii de 10 ani se pot pierde căutând generatorul de roți dințate printre zecile de categorii din Tinkercad (`Creatures & Characters`, `Hardware`, `Everyday Objects`).
+### Risc 6: Căutarea Generatorului de Roți în Meniurile Tinkercad
+- **Descriere**: Unii elevi de 10 ani se pot pierde prin categoriile de forme din Tinkercad.
 - **Soluție / Safeguard Pedagogic**:
-  - Profesorul proiectează pașii exacți de navigare: click pe `Basic Shapes` $\to$ click pe `Shape Generators` $\to$ click pe `All` $\to$ căutare după forma `Metric Gear` (sau scrierea directă a cuvântului `gear` în bara de căutare a formelor).
+  - Calea directă arătată la videoproiector: `Shape Generators` $\to$ `All` $\to$ căutare după cuvântul `gear`.
+  - Mentorul asistă rapid elevii care nu găsesc forma în primele 2 minute.
 
-### Risc 7: Frustrarea la Debavurarea Capacelor de Blocare
-- **Descriere**: La asamblarea fizică, capacele de retenție (care au cavitate de 4.5 mm pe ax de 4.5 mm după scalare) trebuie să intre presate ferm (*press-fit*). Dacă imprimanta a produs un mic "elephant foot" la primul strat, capacul poate intra greu.
+### Risc 7: Montarea Inversată a Plăcii Superioare
+- **Descriere**: Dacă orificiul pentru inelul de breloc este făcut pe un capăt la placa de jos și pe celălalt capăt la placa de sus, ele nu se vor suprapune corect la montarea inelului metalic.
 - **Soluție / Safeguard Pedagogic**:
-  - Mentorul are la îndemână o unealtă simplă de debavurat (*deburring tool*) sau o pensetă pentru a curăța rapid buza interioară a capacelor înainte de presare.
+  - Recomandarea de a duplica (`Ctrl + D`) placa inferioară gata găurită, ștergând doar axele pline și înlocuindu-le cu cilindri Hole în aceleași poziții.
 
 ---
 
 ## 3. Lista Rapidă de Verificare pentru Profesor (Quick Verification Checklist)
 
-- [ ] Spinner-ele 3D din Lecția 09 sunt printate, curățate și sortate pe tăvițe pentru testare.
-- [ ] Monedele demonstrative și inelele metalice de breloc sunt pregătite la catedră.
-- [ ] Mostra didactică cu roțile mari de 12 și 24 dinți (Scara 2:1) funcționează demonstrativ pe birou.
-- [ ] În Tinkercad Classroom, grila de lucru este setată pe **Snap Grid: 1.0 mm** (fără subdiviziuni zecimale).
-- [ ] Profilul Bambu Studio are presetată scalarea uniformă la **50%** pentru fișierele STL exportate.
-- [ ] Înălțimea de strat în Bambu Studio este setată la 0.20 mm cu 3 pereți perimetrici (*wall loops*).
-- [ ] Quiz-ul Kahoot de 10 întrebări este testat și gata de lansare în ultimele 10 minute.
+- [ ] Spinnerele 3D din Lecția 09 sunt printate, curățate și pregătite cu monede de 1 Leu pentru concurs.
+- [ ] Inelele metalice de breloc (keyring 20–25 mm) sunt pe masa demonstrativă.
+- [ ] Mostra didactică de breloc sandwich funcțional este testată și pusă la îndemâna elevilor.
+- [ ] Generatorul `Parametric Gear nonInvolute circular tooth profile` este localizat în Tinkercad.
+- [ ] Explicația despre limitarea Sim Lab este pregătită pentru a preveni confuzia la clasă.
+- [ ] Profilul Bambu Studio are presetată scalarea la **70%** (cu strat 0.20 mm și 3 pereți perimetrici).
+- [ ] Quiz-ul Kahoot de 10 întrebări este testat și gata de rulare.

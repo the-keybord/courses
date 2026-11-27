@@ -89,19 +89,19 @@ De ce este necesar jocul mecanic (backlash) la printarea 3D FDM?
 ---
 
 ### Întrebarea 9
-Ce joc mecanic de diametru lăsăm la Scara 2:1 între gaura de 10 mm și axul de 9 mm?
+Ce diferență de diametru lăsăm în Tinkercad între gaura de 6 mm și axul de 5 mm?
 - A) Un milimetru întreg *(Corect)*
 - B) Zece milimetri mari
 - C) Trei centimetri compacți
 - D) Zero milimetri fix
-> **Explicație**: La scara dublă 2:1 folosim o toleranță curată de 1 milimetru (10 mm minus 9 mm), care prin felierea la 50% devine exact jocul ideal de 0.5 milimetri.
+> **Explicație**: 6 mm minus 5 mm este egal cu 1 mm toleranță curată de modelare, care la scalarea de 70% în Bambu Studio devine jocul fizic ideal de 0.7 mm.
 
 ---
 
 ### Întrebarea 10
-Ce rol are roata intermediară parazită plasată între două roți dințate?
-- A) Păstrează același sens *(Corect)*
-- B) Oprește complet mișcarea
-- C) Schimbă culoarea roților
-- D) Reduce dinții la zero
-> **Explicație**: Introducerea unei a treia roți între cele două inversează încă o dată sensul de mișcare, făcând ca prima și a treia roată să se rotească în același sens.
+De ce nu se pot roti rotițele în Tinkercad Sim Lab pe ax?
+- A) Erori de coliziune *(Corect)*
+- B) Lipsă de curent
+- C) Culoare prea deschisă
+- D) Formă prea grea
+> **Explicație**: Motorul fizic Sim Lab simplifică roata procedurală și nu recunoaște gaura interioară ca fiind goală, tratând axul și roata ca fiind ciocnite în masă solidă.

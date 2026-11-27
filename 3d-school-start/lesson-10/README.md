@@ -1,189 +1,178 @@
-# Lecția 10 [3DS2.10]: Fabrica de Jucării – Secretele Rotițelor Dințate, Raportul de Transmisie 1:2 & Brelocul Mecanic Dual-Gear (Scara 2:1)
+# Lecția 10 [3DS2.10]: Fabrica de Jucării – Secretele Rotițelor Dințate, Raportul de Transmisie & Brelocul Mecanic Sandwich
 
----
+## 1. Informații Generale despre Lecție & Întrebări Esențiale
 
-## 1. Informații Generale & Întrebări Esențiale
-
-- **Cod Lecție**: 3DS2.10
-- **Modul**: Modulul 2 – Fabrica de jucării
-- **Vârsta Țintă**: 10 – 12 ani (Nivelul 2 – Start)
-- **Durată Totală**: 120 minute (2 ore)
-- **Format**: Sesiune aplicată de inginerie mecanică și modelare 3D în Tinkercad. După ce în Lecția 09 elevii au explorat rotația liberă pe rulmentul unui fidget tri-spinner, această lecție introduce primul mecanism mecanic de transmisie a mișcării prin contact direct: **angrenajul cu două roți dințate (Gears)**. Elevii descoperă istoria roților dințate (de la mecanismul din Antikythera și morile de apă antice, până la ceasurile elvețiene și cutiile de viteze auto), învață regula contra-rotației (sens orar versus sens anti-orar) și fenomenul de multiplicare a vitezei prin **raportul de transmisie 1:2** (la o singură rotație a roții mari cu 24 de dinți, roata mică cu 12 dinți execută două rotații complete!).
-- **Strategia Didactică Scara 2:1 (Fără Zecimale în Tinkercad!)**:
-  Pentru a elimina complet frustrarea copiilor de 10 ani legată de tastarea zecimalelor fine (sub 1 mm) în Tinkercad, întregul proiect este modelat la **Scara 2:1 (Mărime Dublă)**, folosind exclusiv numere întregi și pasul standard al grilei de **1 mm**:
-  - Gaura centrală din roată este de **10 mm**, iar axul cilindric de pe șasiu este de **9 mm** $\to$ o toleranță curată și ușor de înțeles de exact **1 mm**!
-  - Dinții și distanțele dintre centre sunt calculate în milimetri întregi.
-  - În software-ul de feliere **Bambu Studio**, mentorul aplică comanda de scalare la **50%**, iar piesa printată pe Bambu Lab A1 devine un breloc compact de buzunar cu o toleranță fizică reală de **0.5 mm**, rotindu-se fin și impecabil!
-- **Proiect Practic**: Colectarea spinnerelor printate din Lecția 09 + Punerea la imprimat a modelelor pe Bambu Lab A1 + Proiectarea completă în Tinkercad a brelocului mecanic la Scara 2:1 cu două roți dințate în raport 1:2, șasiu rotunjit cu inel de chei, axe calibrate cu toleranță de 1 mm și căpăcele de siguranță anti-cădere.
-
-### Întrebări Esențiale:
-1. De ce două roți dințate aflate în contact direct se rotesc întotdeauna în sensuri opuse (una în sens orar, cealaltă în sens anti-orar)?
-2. Ce se întâmplă cu viteza și forța atunci când o roată mare cu 24 de dinți antrenează o roată mică cu 12 dinți (raportul 1:2)?
-3. De ce este mult mai simplu pentru un inginer să modeleze un mecanism la Scara 2:1 (dublu) cu toleranță de 1 mm și să îl scaleze la 50% pentru producție?
-4. Ce este jocul mecanic dintre dinți (backlash) și de ce adăugăm un spațiu de 1 mm între centrele axelor la Scara 2:1?
-5. De ce axul de pe șasiu are diametrul de 9 mm dacă gaura din roată are diametrul de 10 mm?
+- **Cod Lecție**: `3DS2.10`
+- **Grupa de Vârstă**: 10–12 ani (Nivel Start)
+- **Durata Totală**: 120 minute (2 ore didactice)
+- **Modulul**: Modulul 2 – Fabrica de Jucării
+- **Proiectul Practic**: **Dual-Gear Sandwich Keychain** – un breloc mecanic de buzunar alcătuit dintr-o carcasă ergonomică tip sandwich (placă inferioară cu axe integrate + placă superioară de fixare) care închide între ele două rotițe dințate ce se antrenează reciproc, acționate ușor direct cu degetul pe marginea carcasei.
+- **Întrebări Esențiale**:
+  1. *Cum transmite o roată dințată forța și mișcarea fără să alunece și de ce două roți angrenate direct se rotesc mereu în sensuri opuse?*
+  2. *Ce este un raport de transmisie mecanic și cum putem dubla viteza de rotație folosind roți cu număr diferit de dinți?*
+  3. *De ce modelăm șasiul ca o capsulă tip sandwich din două plăci (inferioară și superioară) și cum ne asigură inelul de chei o asamblare trainică fără căpăcele fragile?*
+  4. *De ce în Tinkercad Sim Lab rotițele nu se pot roti pe ax (eroare de coliziune a generatorului procedural), dar în lumea reală printată 3D funcționează impecabil?*
 
 ### 🔗 Resurse & Linkuri Utile
-- **Tinkercad Classroom**: https://www.tinkercad.com/
-- **Prezentare**: https://canva.com/
-- **Kahoot**: https://kahoot.com/
+- **Prezentare Interactivă**: https://docs.google.com/presentation/d/1zz8ePp8UksfFSn3mvry1JWje8KkxegPwZMTPXEtKXz8/edit?usp=sharing
+- **Quiz Kahoot**: https://create.kahoot.it/details/875964c9-4a5f-4560-97db-9ad5c2dca6e6
+- **tinkerCad**: https://www.tinkercad.com/things/0lwiv9Y4i4V-3ds-211
 
 ---
 
 ## 2. Pregătirea Lecției (Checklist Profesor)
 
-### Software & Echipamente Digitale
-- [ ] Contul Tinkercad Classroom deschis cu codul clasei afișat la videoproiector.
-- [ ] Proiectul demonstrativ `3DS2.10_Dual_Gear_Keychain_Demo_2X` salvat în Tinkercad pentru demonstrația la tablă.
-- [ ] Prezentarea interactivă pregătită conform `presentation_interactive.md`.
-- [ ] Jocul Kahoot de 10 întrebări deschis într-un tab separat (conform `quiz.md`).
-- [ ] Bambu Studio pregătit pe laptopul de catedră pentru demonstrația live a funcției **Scale -> 50%**.
+### Software & Conturi Digitale
+- [ ] **Tinkercad Classroom**: Proiectați codul clasei pe tablă; asigurați-vă că toți elevii au conturile salvate.
+- [ ] **Verificare Generator de Forme**: Testați disponibilitatea generatorului `Parametric Gear nonInvolute circular tooth profile` (creat de `this tinkerer`) sau `Metric Gear` în categoria `Shape Generators` -> `All`.
+- [ ] **Tab-uri Pregătite**: Prezentarea interactivă (`presentation_interactive.md`) deschisă pe ecranul mare; jocul Kahoot pregătit în fundal.
+- [ ] **Bambu Studio**: Profil configurat pentru printarea cu duză de 0.4 mm, strat de 0.20 mm, cu scalare presetată la **70%** pentru fișierele STL exportate.
 
-### Hardware & Materiale Fizice pentru Clasă
-- [ ] Imprimantele 3D **Bambu Lab A1** (sau A1 Combo) pregătite, patul de printare curățat, filamente PLA încărcate în culori vii contrastante.
-- [ ] Tri-spinnerele 3D din Lecția 09 sortate și pregătite pentru distribuirea la Pasul 1.
-- [ ] Mostre didactice la catedră: un model printat la mărime mare 100% (Scara 2:1) și modelul final scalat la 50%, arătând copiilor cum toleranța de 1 mm a devenit 0.5 mm în realitate.
-- [ ] Monede de 1 Leu pentru echiparea spinnerelor din Lecția 09.
-- [ ] Inele metalice de breloc pregătite pentru testul de prindere.
+### Hardware & Imprimante 3D (Bambu Lab A1 / A1 Combo)
+- [ ] **Colectarea Modelelor din Lecția 09**: Toate Fidget Spinnerele din Lecția 09 sunt printate, curățate de pe plăci și așezate în tăvițe individuale pentru fiecare elev.
+- [ ] **Filamente Pregătite**: Role încărcate în AMS lite sau pe suport (ideal 2–3 culori contrastante: carcasă neagră sau albastră, rotițe galbene/portocalii).
+
+### Materiale Fizice în Clasă
+- [ ] **Monede de 1 Leu**: Pentru testarea greutăților pe spinnerele din Lecția 09.
+- [ ] **Inele Metalice de Breloc (Keyring)**: Diametru standard 20–25 mm, pregătite pentru asamblarea demonstrativă a brelocului sandwich.
+- [ ] **Mostră Demonstrativă de Catedră**: Un breloc mecanic sandwich gata asamblat, pentru ca elevii să poată simți tactil rotația dinților și rezistența carcasei.
 
 ---
 
-## 3. Desfășurarea Lecției (Minute-by-Minute Timeline)
+## 3. Planul de Lecție Minut cu Minut (Timeline Operational)
 
 | Interval | Etapă | Activitate Principală |
-| :---: | :---: | :--- |
-| **00:00 – 00:10** | **1. Colectarea Modelelor din Lecția Anterioară** | Distribuirea tri-spinnerelor 3D din Lecția 09. Elevii montează monedele de 1 Leu în lăcașuri și testează rotirea liberă. |
-| **00:10 – 00:25** | **2. Pregătirea & Pornirea Imprimării 3D** | Felierea în Bambu Studio a unui breloc dual-gear: demonstrarea comenzii `Scale 50%` și lansarea printului demonstrativ pe Bambu Lab A1. |
-| **00:25 – 00:45** | **3. Descoperirea Noii Teme & Prezentarea Interactivă** | Parcurgerea prezentării la tablă: istoria angrenajelor, contra-rotația, multiplicatorul de viteză 1:2 și secretul proiectării la Scara 2:1 cu toleranță de 1 mm. |
-| **00:45 – 00:55** | **4. Pauză Scurtă & Prezență** | Pauză activă de relaxare, verificarea prezenței și a logării în Tinkercad. |
-| **00:55 – 01:20** | **5. Demonstrația Profesorului în Tinkercad (Scara 2:1)** | Modelarea live: roata mică (12 dinți) și mare (24 dinți) cu Metric Gear (înălțime 8 mm, gaură 10 mm), șasiul de 136 x 68 x 6 mm cu ureche de inel și cele 2 axe de 9 mm cu toleranță de 1 mm. |
-| **01:20 – 01:45** | **6. Lucru Individual la Propriul Proiect** | Fiecare elev își modelează brelocul la Scara 2:1 pe grila de 1 mm fără zecimale, adaugă mânerul de rotire și își personalizează șasiul. |
-| **01:45 – 01:55** | **7. Joc Kahoot / Evaluare Interactivă** | 10 întrebări dinamice despre roți dințate, raportul 1:2 și logica scalării (conform `quiz.md`). |
-| **01:55 – 02:00** | **8. Concluzii & Pregătirea Cozii de Printare** | Salvarea proiectelor, pregătirea scalării la 50% pentru imprimarea dintre ore și fotografia de grup. |
+| :--- | :--- | :--- |
+| **00:00 – 00:10** | **Pasul 1: Colectare & Feedback** | Înmânarea spinnerelor 3D din Lecția 09; inserarea monedelor de 1 Leu și testul rotației. |
+| **00:10 – 00:25** | **Pasul 2: Teorie & Istorie** | De la Mecanismul Antikythera la cutiile de viteze; contra-rotația și raportul de transmisie. |
+| **00:25 – 00:45** | **Pasul 3: Prezentare Interactivă** | Citire pe roluri din `presentation_interactive.md`; backlash, toleranțe și arhitectura sandwich. |
+| **00:45 – 00:55** | **Pasul 4: Pauză & Conectare** | Pauză activă de 10 minute; hidratare și logare în Tinkercad Classroom. |
+| **00:55 – 01:20** | **Pasul 5: Demonstrație Live Profesor** | Modelarea roților parametrice, construcția capsulei sandwich (2 cilindri + cutie de legătură) și a axelor. |
+| **01:20 – 01:45** | **Pasul 6: Lucru Practic Elevi** | Elevii proiectează propriul breloc sandwich; profesorul verifică toleranțele și poziționarea axelor. |
+| **01:45 – 01:55** | **Pasul 7: Quiz Kahoot** | Jocul celor 10 întrebări teoretice din `quiz.md` (mecanică, cinematică și printare FDM). |
+| **01:55 – 02:00** | **Pasul 8: Salvare & Coadă Print** | Denumirea corectă a proiectelor; instrucțiuni pentru scalarea la 70% în Bambu Studio. |
 
 ---
 
-## 4. Ghid Detaliat Pas cu Pas (Teacher's Master Guide)
+## 4. Detalierea Fiecărei Etape de Curs
 
-### Pasul 1: Colectarea Modelelor din Lecția Anterioară (00:00 – 00:10)
-Profesorul distribuie tri-spinnerele printate:
-- Elevii montează cele 3 monede de 1 Leu în buzunarele brațelor, asamblează axul central și capacele ergonomice de deget.
-- Se testează rotirea liberă și se reamintește regula toleranței de printare.
-- Profesorul anunță tranziția spre mecanisme interconectate:
-  *"Astăzi învățăm cum facem ca două roți să colaboreze și să se învârtă una pe cealaltă prin dinți! Vom crea un breloc mecanic cu două roți în raport 1:2. Iar pentru că la 10 ani este obositor să tastăm numere cu virgule precum 4.4 sau 0.6 mm, aplicăm un truc secret din marile birouri de proiectare: **desenăm totul la Scara 2:1 (de două ori mai mare)**, cu numere întregi și toleranță simplă de 1 mm, iar imprimanta Bambu Lab îl va micșora la 50% când îl printează!"*
-
----
-
-### Pasul 2: Pregătirea & Pornirea Imprimării 3D (00:10 – 00:25)
-Profesorul deschide Bambu Studio pe ecranul mare:
-- Încarcă fișierul demonstrativ modelat la Scara 2:1.
-- Arată clasei cum piesa pare mare pe patul virtual de printare.
-- Apasă pe unealta **Scale** (tasta `S`), tastează valoarea **`50%`** și bifează *Uniform scale*:
-  - Gaura de 10 mm devine instantaneu 5 mm!
-  - Axul de 9 mm devine instantaneu 4.5 mm!
-  - Toleranța de 1 mm dintre ele devine exact **0.5 mm**!
-- Elevii înțeleg instantaneu matematica scalării: *"Am desenat ușor cu numere întregi, iar slicer-ul a micșorat piesa pentru buzunarul nostru!"*
-- Se lansează printul demonstrativ pe Bambu Lab A1.
+### Pasul 1: Colectarea Modelelor din Lecția 09 & Testul Rotației (00:00 – 00:10)
+- Elevii primesc spinnerele printate pe parcursul săptămânii pe Bambu Lab A1.
+- Fiecare elev introduce trei monede de 1 Leu în locașurile brațelor și fixează axul central cu cele două căpăcele de deget.
+- Se face un concurs rapid de 60 de secunde: al cui spinner se învârte cel mai mult timp?
+- Concluzie didactică: o piesă printată 3D devine un mecanism adevărat doar atunci când toleranțele dintre piesele fixe și cele mobile sunt perfect calibrate!
 
 ---
 
-### Pasul 3: Descoperirea Noii Teme & Prezentarea Interactivă (00:25 – 00:45)
-Se parcurge prezentarea conform `presentation_interactive.md`. Elevii citesc cu voce tare propozițiile numerotate:
-
-**1. Ce este o Roată Dințată și unde o întâlnim?**
-- O roată dințată (*Gear*) are pe margine dinți special calculați care se prind în dinții roții vecine pentru a transmite mișcarea fără alunecare.
-- Cel mai vechi mecanism mecanic din lume este **Mecanismul de la Antikythera** (Grecia Antică, peste 2100 de ani), un calculator mecanic din bronz cu roți dințate care prezicea eclipsele și mișcarea planetelor.
-- Astăzi, roțile dințate sunt peste tot: în ceasurile mecanice, în biciclete, în brațele roboților și în cutiile de viteze ale mașinilor.
-
-**2. Regula Contra-Rotației:**
-- Când două roți dințate exterioare sunt în contact:
-  - Dacă roata stângă este rotită în sensul acelor de ceasornic (*clockwise*), dinții ei împing în jos roata vecină.
-  - Ca urmare, roata dreaptă se va roti obligatoriu în sens opus (*counter-clockwise*)!
-
-**3. Raportul de Transmisie 1:2 (Multiplicatorul de Viteză):**
-- **Roata Mare**: are **24 de dinți**.
-- **Roata Mică**: are **12 dinți**.
-- Când roata mare face o singură tură completă, prin punctul de contact trec 24 de dinți. Roata mică, având doar 12 dinți, este forțată să facă **exact 2 rotații complete**!
-- Acesta este un **multiplicator de viteză 1:2**: învârți încet de roata mare, iar roata mică zboară cu viteză dublă!
-
-**4. Secretul Scării 2:1 și Toleranța de 1 mm:**
-- În loc să lucrăm cu zecimale grele, folosim grila standard de 1 mm din Tinkercad.
-- Lăsăm **1 mm joc** între ax și gaură (ax de 9 mm în gaură de 10 mm).
-- Lăsăm **1 mm joc** între dinții roților (*backlash*).
-- Prin micșorarea la 50% în imprimantă, toți acești 1 mm devin exact 0.5 mm, obținând piese care se învârt impecabil!
+### Pasul 2: Teorie & Istoria Angrenajelor Mecanice (00:10 – 00:25)
+- **Mecanismul din Antikythera**: Profesorul proiectează imagini cu primul computer analogic din lume (Grecia Antică, cca. 150 î.Hr.), o cutie din bronz cu peste 30 de roți dințate minuscule care calculau fazele lunii și poziția planetelor.
+- **De Ce Avem Nevoie de Dinți?**: Două roți netede (fricțiune) ar patina la cel mai mic efort. Dinții transmit o forță uriașă fără nicio pierdere de pas (*positive engagement*).
+- **Regula de Aur a Contra-Rotației**: Când două roți dințate exterioare se ating, rotația uneia în sens orar (*clockwise*) o forțează pe cealaltă să se rotească obligatoriu în sens anti-orar (*counter-clockwise*)!
+- **Raportul de Transmisie (Viteză vs Forță)**:
+  - Dacă o roată motoare mare are 21 sau 24 de dinți și antrenează o roată mică de 13 sau 12 dinți, la fiecare rotație completă a roții mari, roata mică execută aproape două rotații complete!
+  - Schimbul fizic universal: câștigăm viteză de rotație, dar pierdem din forța de torsiune (*torque*).
 
 ---
 
-### Pasul 4: Pauză Scurtă & Prezență (00:45 – 00:55)
-Pauză activă de 10 minute pentru relaxare și conectarea în Tinkercad Classroom.
+### Pasul 3: Prezentarea Interactivă & Secretele Inginerești (00:25 – 00:45)
+Se parcurge prezentarea conform fișierului `presentation_interactive.md`. Elevii citesc cu voce tare cele 4 propoziții numerotate per slide.
+
+Puncte esențiale dezbătute:
+1. **Jocul dintre dinți (*Backlash*)**: Dinții nu trebuie presați complet până în fundul canalului opus; un mic spațiu liber de aer previne griparea mecanică.
+2. **De Ce Șasiu Tip Sandwich?**:
+   - În loc de o placă simplă cu căpăcele mici care pot sări, carcasă din 2 plăci (inferioară + superioară) ține roțile captive ca într-un sandwich.
+   - Axele sunt sprijinite la ambele capete (*double support*), devenind practic indestructibile la forfecare.
+   - Inelul metalic de chei trece prin orificiul ambelor plăci, zăvorând carcasă la un capăt!
+3. **⚠️ De Ce NU Funcționează în Tinkercad Sim Lab? (Notă Tehnică Foarte Importantă)**:
+   - În Tinkercad Sim Lab, motorul de fizică simplifică formele geometrice complexe în carcase convexe (*convex hull*).
+   - Generatoarele procedurale de roți dințate (`Parametric Gear`) au orificiul central generat prin cod matematic, pe care motorul Sim Lab nu îl detectează ca pe un gol interior real, ci îl consideră material solid!
+   - Din această cauză, atunci când introducem axul cilindric în gaura roții, Sim Lab detectează o coliziune gravă de suprapunere și blochează roata sau o aruncă în aer.
+   - **Lecție pentru elevi**: Simulatoarele digitale au limitări software. În lumea reală (pe imprimanta 3D Bambu Lab A1), gaura este un gol fizic curat de 6 mm, iar axul de 5 mm se rotește perfect liber și lin!
 
 ---
 
-### Pasul 5: Demonstrația Profesorului în Tinkercad (Scara 2:1) (00:55 – 01:20)
-Profesorul modelează live la tablă, folosind exclusiv numere întregi pe grila de 1 mm:
-
-#### 1. Generarea Roții Mici (12 Dinți) la Scara 2:1:
-- Deschideți meniul: `Shape Generators` -> `All`.
-- Trageți forma **`Metric Gear`** pe planul de lucru.
-- În panoul de setări:
-  - `NumTeeth`: **12**;
-  - `Pitch`: lăsați valoarea standard (de exemplu `4`);
-  - `Height`: **8 mm** (va deveni 4 mm la print);
-  - `Hole`: **10 mm** (va deveni 5 mm la print).
-- Colorați roata în galben solar.
-
-#### 2. Generarea Roții Mari (24 Dinți) cu Mâner:
-- Trageți un al doilea `Metric Gear`.
-- Setați:
-  - `NumTeeth`: **24** (exact dublu!);
-  - `Pitch`: **aceeași valoare exactă** ca la roata mică;
-  - `Height`: **8 mm**;
-  - `Hole`: **10 mm**.
-- Colorați roata în albastru cyan.
-- **Mânerul de învârtit (*Turning Knob*)**:
-  - Trageți un cilindru: Diametru **12 x 12 mm**, Înălțime **10 mm**.
-  - Așezați-l pe fața roții mari și grupați-l (`Ctrl + G`).
-
-#### 3. Măsurarea Distanței Dintre Centre ($L$):
-- Apropiați cele două roți dințate până când dinții se întrepătrund frumos, lăsând un spațiu curat de **1 mm** între ei (*backlash*).
-- Priviți de sus în modul ortogonal (tasta `5`).
-- Măsurați cu rigla distanța dintre centrul roții mari și centrul roții mici: va fi o cotă întreagă curată (de exemplu **61 mm**).
-
-#### 4. Modelarea Șasiului Breloc la Scara 2:1:
-- **Placa de Bază**:
-  - Trageți un cub roșu: Lungime **136 mm**, Lățime **68 mm**, Înălțime **6 mm** (la 50% va deveni 68 x 34 x 3 mm).
-  - În panoul de proprietăți, setați `Radius` la **12 mm** pentru a rotunji perfect toate colțurile șasiului.
-- **Urechea pentru Inelul de Breloc (*Keyring Loop*)**:
-  - Trageți un tub cilindric (*Tube*) pe capătul din stânga al șasiului: Diametru exterior **20 x 20 mm**, Înălțime **6 mm**, Grosime perete **5 mm** (gaura interioară este de 10 mm, care la printare devine 5 mm, ideală pentru orice inel de chei!).
-  - Suprapuneți-l pe marginea bazei și grupați-le.
-- **Cele 2 Axe Cilindrice (Toleranța de 1 mm!)**:
-  - Axul 1 (pentru roata mare): Cilindru Diametru **9 x 9 mm**, Înălțime **13 mm** (gaura din roată este de 10 mm, deci avem exact **1 mm joc**!).
-  - Axul 2 (pentru roata mică): Cilindru identic, Diametru **9 x 9 mm**, Înălțime **13 mm**.
-  - Așezați Axul 1 și Axul 2 pe baza șasiului la distanța exactă măsurată anterior (**61 mm** între centre).
-  - Grupați axele cu baza șasiului (`Ctrl + G`).
-
-#### 5. Capacele de Siguranță (*Locking Retainer Caps*):
-- Modelăm 2 căpăcele tip ciupercă la mărime dublă:
-  - Cilindru plin: Diametru **16 x 16 mm**, Înălțime **4 mm**.
-  - Decupaj central (Hole): Cilindru Diametru **9 x 9 mm**, Adâncime **3 mm**.
-  - Grupați căpăcelul. (La printarea scalată la 50%, acesta se va fixa pe axul de 4.5 mm!).
+### Pasul 4: Pauză Scurtă & Conectare (00:45 – 00:55)
+Pauză de 10 minute pentru relaxare, conectarea la calculatoare și accesarea Tinkercad Classroom.
 
 ---
 
-### Pasul 6: Lucru Individual la Propriul Proiect (01:20 – 01:45)
-Elevii lucrează pe stațiile lor, modelând la Scara 2:1:
-- Pasul este extrem de relaxant și plăcut, deoarece grila Tinkercad este la 1.0 mm și toate cotele sunt întregi (12 dinți, 24 dinți, gaură 10 mm, axe 9 mm, șasiu 6 mm).
-- Fiecare copil își poate decora șasiul cu un text mic sau cu un model spiralat pe fața roții mici folosind unealta *Scribble*.
-- Profesorul verifică la fiecare masă regula de aur: gaura din roată = 10 mm, axul de pe șasiu = 9 mm (diferență de 1 mm).
+### Pasul 5: Demonstrația Profesorului în Tinkercad (00:55 – 01:20)
+Profesorul exemplifică la videoproiector pașii exacți de construcție, lucrând confortabil la o mărime generoasă în Tinkercad, urmând ca modelul să fie scalat la **70%** în Bambu Studio:
+
+#### 1. Generarea Roților Dințate Parametrice:
+- Accesați meniul din dreapta: `Shape Generators` -> `All` (sau căutați cuvântul `gear`).
+- Trageți pe planul de lucru generatorul: **`Parametric Gear nonInvolute circular tooth profile`** (creat de *this tinkerer*).
+- **Roata Mare**:
+  - `pitch`: **4**
+  - `Slop`: **0.1**
+  - `# of teeth`: **21** (sau 24)
+  - `Height`: **6 mm**
+  - `bore dia`: **6 mm** (orificiul central integrat)
+- **Roata Mică**:
+  - Trageți un al doilea `Parametric Gear`.
+  - `pitch`: **4** (identic cu prima roată!)
+  - `Slop`: **0.1**
+  - `# of teeth`: **13** (sau 12)
+  - `Height`: **6 mm**
+  - `bore dia`: **6 mm**
+- Apropiați roțile astfel încât dinții lor să se întrepătrundă curat, lăsând un joc vizual fin de aer (*backlash* de cca. 0.5–1 mm).
+
+#### 2. Tehnica Capsulei Sandwich (Construcția Șasiului din Cilindri + Cutie):
+Pentru ca axele să fie perfect aliniate cu centrele roților fără calcule matematice complicate, folosim metoda geometrică directă demonstrată în clasă:
+1. **Cele 2 Baze Cilindrice**:
+   - Trageți un Cilindru plin (portocaliu) sub centrul roții mari: Diametru **22 x 22 mm**, Înălțime **4 mm**.
+   - Trageți un al doilea Cilindru plin sub centrul roții mici: Diametru **22 x 22 mm**, Înălțime **4 mm**.
+   - Aliniați fiecare cilindru cu centrul orificiului roții corespunzătoare folosind instrumentul *Align* (tasta `L`).
+2. **Corpul de Legătură (Cutia / Red Box)**:
+   - Trageți o Cutie (*Box*): Lățime **22 mm** (aceeași cu diametrul cilindrilor), Înălțime **4 mm**.
+   - Plasați cutia între cei doi cilindri, conectându-i într-o formă fluidă de capsulă (*dog-bone* / *pill shape*).
+   - Grupați cei 2 cilindri și cutia (`Ctrl + G`) $\to$ Obțineți conturul de bază al carcasei!
+   - Faceți o copie identică a acestei capsule (`Ctrl + D`) și mutați-o alături: una va deveni **Placa Inferioară**, iar cealaltă **Placa Superioară**!
+
+#### 3. Placa Inferioară (Cu Axele de Ghidaj):
+- În centrele celor două capete rotunjite ale primei capsule, plasați două axe cilindrice verticale:
+  - Diametru ax: **5 x 5 mm** (orificiul roții fiind de 6 mm, avem o **toleranță generoasă de 1 mm** în Tinkercad!).
+  - Înălțime ax: **13 mm** (acoperă 4 mm placa de jos + 6 mm înălțimea roții + 1 mm joc vertical + 2 mm intrare în placa de sus).
+- Adăugați o gaură cilindrică de breloc (*Hole*) de **5 x 5 mm** la unul dintre capetele carcasei.
+- Grupați totul (`Ctrl + G`).
+
+#### 4. Placa Superioară (Cu Orificii de Ghidaj):
+- Pe a doua capsulă, plasați în exact aceleași centre două cilindri Hole:
+  - Diametru: **5 x 5 mm** (pentru fixare fermă a vârfului axelor) sau **6 x 6 mm**.
+  - Adăugați gaura identică pentru inelul de breloc la același capăt.
+- Grupați totul (`Ctrl + G`).
+
+> [!TIP]
+> **De Ce Este Genială Forma de Capsulă?**
+> Deoarece carcasa are lățimea de 22 mm, iar roțile dințate au diametre mult mai mari, dinții roților ies liber pe ambele laterale ale brelocului! Elevul poate ține brelocul lejer între două degete și poate roti rotițele direct cu degetul mare, exact ca pe un fidget mecanic!
 
 ---
 
-### Pasul 7: Joc Kahoot / Evaluare Interactivă (01:45 – 01:55)
-Rularea celor 10 întrebări teoretice din `quiz.md`. Elevii răspund cu entuziasm la întrebările despre contra-rotație, raportul 1:2 și trucul ingineresc al scalării 2:1 la 50%.
+### Pasul 6: Lucru Practic & Personalizare (01:20 – 01:45)
+- Elevii modelează pe stațiile proprii urmărind pașii de la tablă.
+- Fiecare elev alege culori virtuale atractive (placă neagră, roți contrastante galben/roșu).
+- Opțional: elevii pot decupa forme decorative mici pe placa de sus (ferestre skeleton rotunde pentru a vedea rotația dinților) sau își pot scrie inițialele pe carcasă.
+- **Checklist Verificare Profesor**:
+  - [ ] Pitch-ul este identic pe ambele roți (`pitch = 4`).
+  - [ ] Orificiul roților este de 6 mm, iar axul cilindric are diametrul de 5 mm (toleranță de 1 mm).
+  - [ ] Gaura pentru inelul de breloc trece curat prin ambele plăci la același capăt.
 
 ---
 
-### Pasul 8: Concluzii & Pregătirea Cozii de Printare (01:55 – 02:00)
-- Denumirea proiectelor: `3DS2.10_BrelocGears_NumeElev`.
-- Profesorul reamintește: *"La noapte, pe imprimantele Bambu Lab A1, vom lua proiectele voastre mari și le vom felia la 50%! Data viitoare veți primi brelocul miniatural gata asamblat, cu roțile dințate funcționale!"*.
-- Fotografie de grup cu spinnerele funcționale în mână.
+### Pasul 7: Quiz Kahoot / Consolidare Cunoștințe (01:45 – 01:55)
+Profesorul lansează jocul Kahoot din `quiz.md` (10 întrebări teoretice despre cinematică, contra-rotație, raport de transmisie, backlash și de ce fizica Sim Lab diferă de printarea reală).
+
+---
+
+### Pasul 8: Salvare & Procedura de Scalare în Bambu Studio (01:55 – 02:00)
+- Denumirea proiectelor: `3DS2.10_BrelocSandwich_NumeElev`.
+- Export fișier STL cu toate piesele pe plan (placa de jos, placa de sus, cele 2 roți).
+- **Procedura Profesorului în Bambu Studio**:
+  1. Importați piesele pe platoul de lucru.
+  2. Selectați tot (`Ctrl + A`).
+  3. Deschideți instrumentul *Scale* (tasta `S`), bifați *Uniform Scale* și setați valoarea la **70%**.
+  4. La scalarea de 70%:
+     - Toleranța de 1 mm din Tinkercad devine **0.7 mm fizic**, ideală pentru rotire ultra-ușoară și fără frecare pe Bambu Lab A1.
+     - Dimensiunea totală a brelocului devine extrem de compactă, perfectă pentru buzunar sau agățat la ghiozdan!
+  5. Setați 3 pereți perimetrici (*wall loops*) și înălțimea stratului la 0.20 mm.
+  6. Lansați printul!

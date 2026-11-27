@@ -53,24 +53,24 @@
 
 ---
 
-## Slide 4: Jocul Dintre Dinți (Backlash) & Magia Scalării 2:1
+## Slide 4: Carcasa Tip Sandwich & Scalarea la 70%
 
-1. Pentru ca două roți dințate să se poată roti lin fără să se blocheze, între dinții lor trebuie lăsat un spațiu microscopic de aer numit joc mecanic sau backlash.
-2. La imprimarea tridimensională, dacă dinții sau axul de rotație sunt proiectate prea strâns, plasticul topit se dilată și sudează piesele între ele.
-3. Pentru a lucra ușor doar cu numere întregi și fără fracțiuni zecimale, proiectăm mecanismul la scară dublă doi la unu, lăsând o toleranță generoasă de un milimetru.
-4. Prin micșorarea modelului la cincizeci la sută în programul de feliere înainte de printare, toleranța de un milimetru devine exact jocul ideal de jumătate de milimetru.
+1. În loc să folosim căpăcele minuscule care se pot desprinde ușor, carcasă de tip sandwich ține roțile dințate captive între două plăci rigide.
+2. Axele cilindrice sunt sprijinite la ambele capete în ambele plăci, oferind o rezistență mecanică uriașă la apăsare și torsiune.
+3. Pentru a modela ușor fără zecimale, lucrăm în Tinkercad la dimensiuni confortabile, lăsând un milimetru curat de joc între ax și roată.
+4. Prin micșorarea modelului la șaptezeci la sută în feliatorul Bambu Studio, brelocul devine compact de buzunar, iar toleranța se calibrează perfect pentru print.
 
 > **Ghidul Profesorului**:
-> Explicați pe înțelesul tuturor trucul ingineresc: e mult mai ușor să lucrezi cu 1 milimetru curat în Tinkercad și să lași feliatorul Bambu Studio să scaleze piesa la 50%, obținând automat toleranța perfectă de 0.5 mm fără bătăi de cap cu zecimale!
+> Arătați cum inelul metalic de chei trece prin ambele plăci și le ține zăvorâte mecanic la un capăt. Explicați că la 70% scalare, jocul devine de aproximativ 0.7 mm, ideal pentru ca rotițele din plastic să nu se frece de carcasă.
 
 ---
 
-## Slide 5: Roțile Dințate în Viața Noastră: Biciclete, Roboți și Automobile
+## Slide 5: Realitate Fizică vs Sim Lab: Capcana Simulării Virtuale
 
-1. Pe o bicicletă cu schimbător de viteze, lanțul metalic conectează foi și pinioane de mărimi diferite, permițând ciclistului să urce pante abrupte sau să prindă viteză pe plat.
-2. În cutiile de viteze ale automobilelor se află zeci de roți dințate de oțel scăldate în ulei care transmit puterea motorului către roțile de pe asfalt.
-3. Brațele roboților industriali folosesc reductoare planetare de mare precizie cu roți dințate pentru a poziționa piese la fracțiuni de milimetru fără vibrații.
-4. Înțelegerea roților dințate transformă un simplu pasionat de printare tridimensională într-un adevărat inginer mecanic capabil să construiască mecanisme vii.
+1. În programul Tinkercad Sim Lab, motorul de calcul simplifică formele geometrice complexe pentru a calcula gravitația și ciocnirile.
+2. Din cauza acestei simplificări, generatorul procedural de roți dințate nu este recunoscut cu un orificiu gol în simulator, ci este tratat ca o masă solidă.
+3. Când încercăm să pornim simularea Sim Lab, axul și roata sunt considerate suprapuse în același spațiu, provocând blocarea sau explozia mecanismului.
+4. În realitatea fizică a imprimantei tridimensionale, orificiul este un gol perfect curat în care axul cilindric se rotește complet liber și silențios.
 
 > **Ghidul Profesorului**:
-> Întrebați elevii pe ce pinion pun lanțul bicicletei când urcă un deal greu (pe pinionul mare din spate, pentru forță maximă) și pe ce pinion pun lanțul când vor viteză pe drum drept (pe pinionul mic). Conectați răspunsul la raportul 1:2 studiat astăzi!
+> Răspundeți din timp curiozității elevilor care apasă butonul Sim Lab din Tinkercad: explicați-le că simulatoarele pe calculator au limite matematice, dar inginerii adevărați testează mecanismele pe bancul real de probă, prin printare 3D!
